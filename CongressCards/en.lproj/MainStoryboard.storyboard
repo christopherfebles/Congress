@@ -1,23 +1,86 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--Hello World View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="HelloWorldViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pCq-bU-HJV">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="zJ4-Yd-IdG" userLabel="currentImage">
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="548" id="Gpk-QN-0tu"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="802-o1-6po" appends="YES" id="LV1-1W-uqM"/>
+                                            <outletCollection property="gestureRecognizers" destination="auY-dN-JaQ" appends="YES" id="9nm-qu-46W"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="zJ4-Yd-IdG" firstAttribute="top" secondItem="pCq-bU-HJV" secondAttribute="top" type="default" id="4B0-X8-gCa"/>
+                                    <constraint firstItem="zJ4-Yd-IdG" firstAttribute="centerX" secondItem="pCq-bU-HJV" secondAttribute="centerX" type="default" id="4Pp-mo-eeB"/>
+                                    <constraint firstItem="zJ4-Yd-IdG" firstAttribute="leading" secondItem="pCq-bU-HJV" secondAttribute="leading" type="default" id="Jtz-Q1-mTh"/>
+                                    <constraint firstItem="zJ4-Yd-IdG" firstAttribute="trailing" secondItem="pCq-bU-HJV" secondAttribute="trailing" type="default" id="iYM-wj-Q2y"/>
+                                    <constraint firstAttribute="bottom" secondItem="zJ4-Yd-IdG" secondAttribute="bottom" constant="9" id="kgE-gF-hnd"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pCq-bU-HJV" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="HUr-jT-UHu"/>
+                            <constraint firstItem="pCq-bU-HJV" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="b1t-O3-4N1"/>
+                            <constraint firstItem="pCq-bU-HJV" firstAttribute="top" secondItem="3" secondAttribute="top" constant="-9" id="fzW-XI-bAp"/>
+                            <constraint firstItem="pCq-bU-HJV" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="iBx-xl-bLx"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="currentImage" destination="zJ4-Yd-IdG" id="Uny-RI-gnN"/>
+                        <outlet property="scrollView" destination="pCq-bU-HJV" id="Q2L-um-Eb6"/>
+                        <outlet property="swipeLeftRecognizer" destination="auY-dN-JaQ" id="vzq-zh-Add"/>
+                        <outlet property="swipeRightRecognizer" destination="802-o1-6po" id="YPp-fH-Q9h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="auY-dN-JaQ">
+                    <connections>
+                        <action selector="leftSwipe:" destination="2" id="YIB-Yo-wJa"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="802-o1-6po">
+                    <connections>
+                        <action selector="rightSwipe:" destination="2" id="8Fi-GW-NIZ"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
         </scene>
     </scenes>
+    <classes>
+        <class className="HelloWorldViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HelloWorldViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="leftSwipe:"/>
+                <relationship kind="action" name="rightSwipe:"/>
+                <relationship kind="outlet" name="currentImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="nextImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="previousImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="swipeLeftRecognizer" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="outlet" name="swipeRightRecognizer" candidateClass="UISwipeGestureRecognizer"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

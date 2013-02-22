@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		007B867B16D70AB1002A3EE7 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007B867A16D70AB1002A3EE7 /* CoreImage.framework */; };
+		007B867D16D70AD2002A3EE7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007B867C16D70AD2002A3EE7 /* QuartzCore.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		00C6858D16BB767000865F27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C6858C16BB767000865F27 /* UIKit.framework */; };
 		00C6858F16BB767000865F27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C6858E16BB767000865F27 /* Foundation.framework */; };
 		00C6859116BB767000865F27 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C6859016BB767000865F27 /* CoreGraphics.framework */; };
@@ -18,9 +20,15 @@
 		00C685A316BB767000865F27 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00C685A216BB767000865F27 /* Default-568h@2x.png */; };
 		00C685A616BB767000865F27 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C685A416BB767000865F27 /* MainStoryboard.storyboard */; };
 		00C685A916BB767000865F27 /* HelloWorldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C685A816BB767000865F27 /* HelloWorldViewController.m */; };
+		00C685B416BB7CD900865F27 /* Biden.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00C685B016BB7CD900865F27 /* Biden.jpg */; };
+		00C685B516BB7CD900865F27 /* Boehner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00C685B116BB7CD900865F27 /* Boehner.jpg */; };
+		00C685B616BB7CD900865F27 /* Inouye.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00C685B216BB7CD900865F27 /* Inouye.jpg */; };
+		00C685B716BB7CD900865F27 /* Obama.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00C685B316BB7CD900865F27 /* Obama.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		007B867A16D70AB1002A3EE7 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		007B867C16D70AD2002A3EE7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		00C6858916BB767000865F27 /* CongressCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CongressCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00C6858C16BB767000865F27 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		00C6858E16BB767000865F27 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,6 +45,10 @@
 		00C685A516BB767000865F27 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		00C685A716BB767000865F27 /* HelloWorldViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldViewController.h; sourceTree = "<group>"; };
 		00C685A816BB767000865F27 /* HelloWorldViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldViewController.m; sourceTree = "<group>"; };
+		00C685B016BB7CD900865F27 /* Biden.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Biden.jpg; sourceTree = "<group>"; };
+		00C685B116BB7CD900865F27 /* Boehner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Boehner.jpg; sourceTree = "<group>"; };
+		00C685B216BB7CD900865F27 /* Inouye.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Inouye.jpg; sourceTree = "<group>"; };
+		00C685B316BB7CD900865F27 /* Obama.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Obama.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				007B867D16D70AD2002A3EE7 /* QuartzCore.framework in Frameworks */,
+				007B867B16D70AB1002A3EE7 /* CoreImage.framework in Frameworks */,
 				00C6858D16BB767000865F27 /* UIKit.framework in Frameworks */,
 				00C6858F16BB767000865F27 /* Foundation.framework in Frameworks */,
 				00C6859116BB767000865F27 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +87,8 @@
 		00C6858B16BB767000865F27 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				007B867C16D70AD2002A3EE7 /* QuartzCore.framework */,
+				007B867A16D70AB1002A3EE7 /* CoreImage.framework */,
 				00C6858C16BB767000865F27 /* UIKit.framework */,
 				00C6858E16BB767000865F27 /* Foundation.framework */,
 				00C6859016BB767000865F27 /* CoreGraphics.framework */,
@@ -96,6 +112,7 @@
 		00C6859316BB767000865F27 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				00C685AF16BB79B500865F27 /* Photos */,
 				00C6859416BB767000865F27 /* CongressCards-Info.plist */,
 				00C6859516BB767000865F27 /* InfoPlist.strings */,
 				00C6859816BB767000865F27 /* main.m */,
@@ -105,6 +122,17 @@
 				00C685A216BB767000865F27 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		00C685AF16BB79B500865F27 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				00C685B016BB7CD900865F27 /* Biden.jpg */,
+				00C685B116BB7CD900865F27 /* Boehner.jpg */,
+				00C685B216BB7CD900865F27 /* Inouye.jpg */,
+				00C685B316BB7CD900865F27 /* Obama.jpg */,
+			);
+			path = Photos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +192,10 @@
 				00C685A116BB767000865F27 /* Default@2x.png in Resources */,
 				00C685A316BB767000865F27 /* Default-568h@2x.png in Resources */,
 				00C685A616BB767000865F27 /* MainStoryboard.storyboard in Resources */,
+				00C685B416BB7CD900865F27 /* Biden.jpg in Resources */,
+				00C685B516BB7CD900865F27 /* Boehner.jpg in Resources */,
+				00C685B616BB7CD900865F27 /* Inouye.jpg in Resources */,
+				00C685B716BB7CD900865F27 /* Obama.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +296,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CongressCards/CongressCards-Prefix.pch";
 				INFOPLIST_FILE = "CongressCards/CongressCards-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -275,6 +308,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CongressCards/CongressCards-Prefix.pch";
 				INFOPLIST_FILE = "CongressCards/CongressCards-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -299,6 +333,7 @@
 				00C685AE16BB767000865F27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

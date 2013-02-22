@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HelloWorldViewController : UIViewController
+@interface HelloWorldViewController : UIViewController <UIGestureRecognizerDelegate>
+
+- (void)initImage;
 
 @end
