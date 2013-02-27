@@ -22,6 +22,8 @@
 
 @implementation HelloWorldViewController
 
+@synthesize fetchedResultsController, managedObjectContext;
+
 - (IBAction)rightSwipe:(id)sender {
     //Go back to previous image
     position--;
@@ -32,12 +34,7 @@
     [fileName appendString:@".jpg"];
     UIImage *picture = [UIImage imageNamed:fileName];
     
-    CATransition *animation = [CATransition animation];
-    animation.duration = 0.5;
-    animation.type = kCATransitionMoveIn;
-    animation.subtype = kCATransitionFromLeft;
-    [self.currentImage.layer addAnimation:animation forKey:@"imageTransition"];
-    self.currentImage.image = picture;
+    [self setImage:picture withAnimationSubType: kCATransitionFromLeft];
 }
 
 - (IBAction)leftSwipe:(id)sender {
@@ -49,14 +46,30 @@
     NSMutableString *fileName = [NSMutableString stringWithString:photos[position]];
     [fileName appendString:@".jpg"];
     UIImage *picture = [UIImage imageNamed:fileName];
+    
+    [self setImage:picture withAnimationSubType: kCATransitionFromRight];
+}
 
+- (void)setImage:(UIImage *)image
+    withAnimationSubType:(NSString *) animationSubType
+{
     CATransition *animation = [CATransition animation];
     animation.duration = 0.5;
     animation.type = kCATransitionMoveIn;
-    animation.subtype = kCATransitionFromRight;
+    animation.subtype = animationSubType;
     [self.currentImage.layer addAnimation:animation forKey:@"imageTransition"];
-    self.currentImage.image = picture;
-
+    self.currentImage.image = image;
+ 
+//    self.currentImage.frame = CGRectMake(0, 0, self.currentImage.bounds.size.width, image.size.height);
+//    self.currentImage.frame = CGRectMake(20,
+//                                     [UIScreen mainScreen].bounds.size.height-self.currentImage.bounds.size.height+20,
+//                                     [UIScreen mainScreen].bounds.size.width,
+//                                     self.currentImage.bounds.size.height);
+    
+    self.currentImage.frame = CGRectMake(20,
+                                         [UIScreen mainScreen].bounds.size.height-image.size.height+40,
+                                         [UIScreen mainScreen].bounds.size.width,
+                                         image.size.height);
 }
 
 - (void)viewDidLoad
@@ -67,11 +80,15 @@
     [self.view addGestureRecognizer:self.swipeLeftRecognizer];
     [self.view addGestureRecognizer:self.swipeRightRecognizer];
     
-    self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width*3, self.scrollView.frame.size.height);
+//    self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width*3, self.scrollView.frame.size.height);
     
     photos = [NSArray arrayWithObjects: @"Obama", @"Biden", @"Boehner", @"Inouye", nil];
     position = 0;
-    [self initImage];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [self initImage];    
 }
 
 - (void)didReceiveMemoryWarning
@@ -87,7 +104,8 @@
     NSMutableString *fileName = [NSMutableString stringWithString:photos[0]];
     [fileName appendString:@".jpg"];
     UIImage *picture = [UIImage imageNamed:fileName];
-    [self.currentImage setImage:picture];
+    [self setImage:picture withAnimationSubType: kCATransitionFromRight];
+//    [self.currentImage setImage:picture];
 }
 
 @end

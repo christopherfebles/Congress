@@ -7,8 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
 
-@interface HelloWorldViewController : UIViewController <UIGestureRecognizerDelegate>
+@interface HelloWorldViewController : UIViewController <UIGestureRecognizerDelegate> {
+    NSFetchedResultsController *fetchedResultsController;
+    NSManagedObjectContext *managedObjectContext;
+}
+
+@property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
+@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 
 - (void)initImage;
 

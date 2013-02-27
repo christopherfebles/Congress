@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		007B867B16D70AB1002A3EE7 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007B867A16D70AB1002A3EE7 /* CoreImage.framework */; };
 		007B867D16D70AD2002A3EE7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007B867C16D70AD2002A3EE7 /* QuartzCore.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		007B867F16D70CBB002A3EE7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007B867E16D70CBB002A3EE7 /* CoreData.framework */; };
+		007B868216D70CF9002A3EE7 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 007B868016D70CF9002A3EE7 /* DataModel.xcdatamodeld */; };
+		009A9F3916D71F8F0085CFC5 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 009A9F3816D71F8F0085CFC5 /* DataManager.m */; };
 		00C6858D16BB767000865F27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C6858C16BB767000865F27 /* UIKit.framework */; };
 		00C6858F16BB767000865F27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C6858E16BB767000865F27 /* Foundation.framework */; };
 		00C6859116BB767000865F27 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C6859016BB767000865F27 /* CoreGraphics.framework */; };
@@ -29,6 +32,10 @@
 /* Begin PBXFileReference section */
 		007B867A16D70AB1002A3EE7 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		007B867C16D70AD2002A3EE7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		007B867E16D70CBB002A3EE7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		007B868116D70CF9002A3EE7 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		009A9F3716D71F8F0085CFC5 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		009A9F3816D71F8F0085CFC5 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		00C6858916BB767000865F27 /* CongressCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CongressCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00C6858C16BB767000865F27 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		00C6858E16BB767000865F27 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -56,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				007B867F16D70CBB002A3EE7 /* CoreData.framework in Frameworks */,
 				007B867D16D70AD2002A3EE7 /* QuartzCore.framework in Frameworks */,
 				007B867B16D70AB1002A3EE7 /* CoreImage.framework in Frameworks */,
 				00C6858D16BB767000865F27 /* UIKit.framework in Frameworks */,
@@ -87,6 +95,7 @@
 		00C6858B16BB767000865F27 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				007B867E16D70CBB002A3EE7 /* CoreData.framework */,
 				007B867C16D70AD2002A3EE7 /* QuartzCore.framework */,
 				007B867A16D70AB1002A3EE7 /* CoreImage.framework */,
 				00C6858C16BB767000865F27 /* UIKit.framework */,
@@ -99,6 +108,8 @@
 		00C6859216BB767000865F27 /* CongressCards */ = {
 			isa = PBXGroup;
 			children = (
+				009A9F3716D71F8F0085CFC5 /* DataManager.h */,
+				009A9F3816D71F8F0085CFC5 /* DataManager.m */,
 				00C6859B16BB767000865F27 /* HelloWorldAppDelegate.h */,
 				00C6859C16BB767000865F27 /* HelloWorldAppDelegate.m */,
 				00C685A416BB767000865F27 /* MainStoryboard.storyboard */,
@@ -120,6 +131,7 @@
 				00C6859E16BB767000865F27 /* Default.png */,
 				00C685A016BB767000865F27 /* Default@2x.png */,
 				00C685A216BB767000865F27 /* Default-568h@2x.png */,
+				007B868016D70CF9002A3EE7 /* DataModel.xcdatamodeld */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -209,6 +221,8 @@
 				00C6859916BB767000865F27 /* main.m in Sources */,
 				00C6859D16BB767000865F27 /* HelloWorldAppDelegate.m in Sources */,
 				00C685A916BB767000865F27 /* HelloWorldViewController.m in Sources */,
+				007B868216D70CF9002A3EE7 /* DataModel.xcdatamodeld in Sources */,
+				009A9F3916D71F8F0085CFC5 /* DataManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +350,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		007B868016D70CF9002A3EE7 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				007B868116D70CF9002A3EE7 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 007B868116D70CF9002A3EE7 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 00C6858116BB767000865F27 /* Project object */;
 }
