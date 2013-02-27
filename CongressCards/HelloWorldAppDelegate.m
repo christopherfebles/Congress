@@ -3,7 +3,7 @@
 //  CongressCards
 //
 //  Created by Christopher Febles on 1/31/13.
-//  Copyright (c) 2013 Christopher Febles. All rights reserved.
+//  Copyright © 2013 Christopher Febles. All rights reserved.
 //
 
 #import "HelloWorldAppDelegate.h"

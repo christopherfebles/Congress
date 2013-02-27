@@ -3,7 +3,7 @@
 //  CongressCards
 //
 //  Created by Christopher Febles on 1/31/13.
-//  Copyright (c) 2013 Christopher Febles. All rights reserved.
+//  Copyright © 2013 Christopher Febles. All rights reserved.
 //
 
 #import "HelloWorldViewController.h"
@@ -59,12 +59,6 @@
     animation.subtype = animationSubType;
     [self.currentImage.layer addAnimation:animation forKey:@"imageTransition"];
     self.currentImage.image = image;
- 
-//    self.currentImage.frame = CGRectMake(0, 0, self.currentImage.bounds.size.width, image.size.height);
-//    self.currentImage.frame = CGRectMake(20,
-//                                     [UIScreen mainScreen].bounds.size.height-self.currentImage.bounds.size.height+20,
-//                                     [UIScreen mainScreen].bounds.size.width,
-//                                     self.currentImage.bounds.size.height);
     
     self.currentImage.frame = CGRectMake(20,
                                          [UIScreen mainScreen].bounds.size.height-image.size.height+40,
@@ -79,9 +73,7 @@
     
     [self.view addGestureRecognizer:self.swipeLeftRecognizer];
     [self.view addGestureRecognizer:self.swipeRightRecognizer];
-    
-//    self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width*3, self.scrollView.frame.size.height);
-    
+        
     photos = [NSArray arrayWithObjects: @"Obama", @"Biden", @"Boehner", @"Inouye", nil];
     position = 0;
 }
@@ -105,7 +97,6 @@
     [fileName appendString:@".jpg"];
     UIImage *picture = [UIImage imageNamed:fileName];
     [self setImage:picture withAnimationSubType: kCATransitionFromRight];
-//    [self.currentImage setImage:picture];
 }
 
 @end
