@@ -8,6 +8,7 @@
 
 #import "HelloWorldViewController.h"
 #import <QuartzCore/QuartzCore.h>
+#import "DataManager.h"
 
 @interface HelloWorldViewController () {
     NSArray *photos;
@@ -76,6 +77,8 @@
         
     photos = [NSArray arrayWithObjects: @"Obama", @"Biden", @"Boehner", @"Inouye", nil];
     position = 0;
+    
+    [DataManager loadSenatorsFromXML];
 }
 
 - (void)viewDidAppear:(BOOL)animated
