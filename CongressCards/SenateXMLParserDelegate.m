@@ -16,7 +16,7 @@
    namespaceURI:(NSString *)namespaceURI
   qualifiedName:(NSString *)qualifiedName attributes:(NSDictionary *)attributeDict
 {
-    NSLog(@"Started parsing %@", elementName);
+//    NSLog(@"Started parsing %@", elementName);
     
     if ( senators == nil )
         senators = [[NSMutableArray alloc] init];
@@ -25,9 +25,16 @@
         
         if ( member != nil ) {
             //Set Photo Filename
-            NSMutableString *fileName = [NSMutableString stringWithString: [member firstName]];
+            NSString *firstName = [[member firstName] stringByReplacingOccurrencesOfString:@" " withString:@"_"];
+            firstName = [firstName stringByReplacingOccurrencesOfString:@",_Jr." withString:@""];
+            firstName = [firstName stringByReplacingOccurrencesOfString:@",_III" withString:@""];
+            firstName = [firstName stringByReplacingOccurrencesOfString:@",_IV" withString:@""];
+            NSString *lastName = [[member lastName] stringByReplacingOccurrencesOfString:@" " withString:@"_"];
+            
+            NSMutableString *fileName = [NSMutableString stringWithString: firstName];
             [fileName appendString:@"_"];
-            [fileName appendString:[member lastName]];
+            [fileName appendString:lastName];
+            
             NSMutableString *photoFileName = [NSMutableString stringWithString: fileName];
             [photoFileName appendString:@".jpeg"];
             
@@ -43,6 +50,7 @@
                 tempImage = [UIImage imageNamed:photoFileName];
                 if ( !tempImage ) {
                     //If still not found, default to blank
+                    NSLog(@"Unable to load image for member: %@", photoFileName);
                     photoFileName = [NSMutableString stringWithString: @"blank.jpeg"];
                 }
             }
@@ -59,7 +67,7 @@
 }
 
 - (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string {
-    NSLog(@"Processing value for : %@", string);
+//    NSLog(@"Processing value for : %@", string);
     elementValue = string;
 }
 
@@ -67,9 +75,9 @@
   namespaceURI:(NSString *)namespaceURI
  qualifiedName:(NSString *)qName
 {
-    NSLog(@"Setting value for element: %@", elementName);
+//    NSLog(@"Setting value for element: %@", elementName);
     if ( elementValue != nil ) {
-        NSLog(@"Processing value for: %@", elementValue);
+//        NSLog(@"Processing value for: %@", elementValue);
         if ([elementName isEqualToString:@"member_full"]) {
             member.memberFull = elementValue;
         } else if ([elementName isEqualToString:@"last_name"]) {
@@ -95,7 +103,7 @@
         }
         elementValue = nil;
     }
-    NSLog(@"Finished parsing %@", elementName);
+//    NSLog(@"Finished parsing %@", elementName);
 }
 
 @end

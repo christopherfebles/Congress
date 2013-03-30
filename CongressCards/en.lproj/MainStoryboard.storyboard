@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -12,6 +12,18 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <textView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BBl-ev-wMx">
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="uMH-u0-NMt"/>
+                                    <constraint firstAttribute="width" constant="319" id="wkq-dn-Plq"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" scrollEnabled="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="pCq-bU-HJV">
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="zJ4-Yd-IdG" userLabel="currentImage">
@@ -29,15 +41,17 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="zJ4-Yd-IdG" secondAttribute="trailing" constant="321" id="EUe-tp-RyD"/>
-                                    <constraint firstAttribute="bottom" secondItem="zJ4-Yd-IdG" secondAttribute="bottom" constant="557" id="SFA-2K-v5e"/>
+                                    <constraint firstAttribute="trailing" secondItem="zJ4-Yd-IdG" secondAttribute="trailing" constant="321" id="Bnn-fd-73k"/>
                                     <constraint firstItem="zJ4-Yd-IdG" firstAttribute="leading" secondItem="pCq-bU-HJV" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="occ-Dm-oi4"/>
+                                    <constraint firstAttribute="bottom" secondItem="zJ4-Yd-IdG" secondAttribute="bottom" constant="557" id="sIV-b2-4S9"/>
                                     <constraint firstItem="zJ4-Yd-IdG" firstAttribute="top" secondItem="pCq-bU-HJV" secondAttribute="top" constant="20" symbolic="YES" type="default" id="wAJ-2M-f7X"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="BBl-ev-wMx" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="M7H-go-7Nq"/>
+                            <constraint firstAttribute="bottom" secondItem="BBl-ev-wMx" secondAttribute="bottom" constant="1" id="S65-bm-sTc"/>
                             <constraint firstItem="pCq-bU-HJV" firstAttribute="top" secondItem="3" secondAttribute="top" constant="-29" id="UUh-Al-UFK"/>
                             <constraint firstItem="pCq-bU-HJV" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="-21" id="Wub-ZM-P6A"/>
                             <constraint firstItem="pCq-bU-HJV" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="Y6c-Ui-vry"/>
@@ -49,6 +63,7 @@
                         <outlet property="scrollView" destination="pCq-bU-HJV" id="Q2L-um-Eb6"/>
                         <outlet property="swipeLeftRecognizer" destination="auY-dN-JaQ" id="vzq-zh-Add"/>
                         <outlet property="swipeRightRecognizer" destination="802-o1-6po" id="YPp-fH-Q9h"/>
+                        <outlet property="textView" destination="BBl-ev-wMx" id="d6J-cV-MSv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
@@ -75,6 +90,7 @@
                 <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
                 <relationship kind="outlet" name="swipeLeftRecognizer" candidateClass="UISwipeGestureRecognizer"/>
                 <relationship kind="outlet" name="swipeRightRecognizer" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="outlet" name="textView" candidateClass="UITextView"/>
             </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">

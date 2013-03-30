@@ -17,7 +17,8 @@
 @property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 
-- (void)initImage;
+- (void)updateImage: (bool)rightAnimation;
 - (void)setupData;
+- (void)addBorder;
 
 @end

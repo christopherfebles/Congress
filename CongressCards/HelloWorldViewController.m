@@ -18,6 +18,7 @@
 }
 @property (weak, nonatomic) IBOutlet UIImageView *currentImage;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 @property (strong, nonatomic) IBOutlet UISwipeGestureRecognizer *swipeLeftRecognizer;
 @property (strong, nonatomic) IBOutlet UISwipeGestureRecognizer *swipeRightRecognizer;
 
@@ -33,12 +34,7 @@
     if ( position < 0 )
         position = [photos count]-1;
     
-//    NSMutableString *fileName = [NSMutableString stringWithString:photos[position]];
-//    [fileName appendString:@".jpg"];    
-//    UIImage *picture = [UIImage imageNamed:fileName];
-    UIImage *picture = [UIImage imageNamed:[photos[position] photoFileName]];
-    
-    [self setImage:picture withAnimationSubType: kCATransitionFromLeft];
+    [self updateImage:NO];
 }
 
 - (IBAction)leftSwipe:(id)sender {
@@ -47,14 +43,45 @@
     if ( position > ([photos count]-1) )
         position = 0;
     
-//    NSMutableString *fileName = [NSMutableString stringWithString:photos[position]];
-//    [fileName appendString:@".jpg"];
-//    UIImage *picture = [UIImage imageNamed:fileName];
-    UIImage *picture = [UIImage imageNamed:[photos[position] photoFileName]];
-    
-    [self setImage:picture withAnimationSubType: kCATransitionFromRight];
+    [self updateImage:YES];
 }
 
+- (void)updateImage: (bool)rightAnimation
+{
+    Member *member = photos[position];
+    
+    NSString *animationSubType = kCATransitionFromLeft;
+    if ( rightAnimation )
+        animationSubType = kCATransitionFromRight;
+    
+    UIImage *picture = [UIImage imageNamed:[member photoFileName]];
+    [self setImage:picture withAnimationSubType: animationSubType];
+    
+    [self addBorder];
+    
+    NSMutableString *displayText = [NSMutableString stringWithString:[member firstName]];
+    [displayText appendString:@" "];
+    [displayText appendString:[member memberFull]];
+    
+    self.textView.text = displayText;
+}
+
+- (void)addBorder
+{
+    Member *member = photos[position];
+    
+    if ( [[member party] isEqualToString:@"R"] ) {
+        self.view.layer.borderColor = [UIColor redColor].CGColor;
+    } else if ( [[member party] isEqualToString:@"D"] ) {
+        self.view.layer.borderColor = [UIColor blueColor].CGColor;
+    } else if ( [[member party] isEqualToString:@"I"] ) {
+        self.view.layer.borderColor = [UIColor whiteColor].CGColor;
+    }
+
+    self.view.layer.borderWidth = 5;
+}
+
+//For animation, see http://goo.gl/DkA1W
 - (void)setImage:(UIImage *)image
     withAnimationSubType:(NSString *) animationSubType
 {
@@ -66,7 +93,7 @@
     self.currentImage.image = image;
     
     self.currentImage.frame = CGRectMake(20,
-                                         [UIScreen mainScreen].bounds.size.height-image.size.height+40,
+                                         [UIScreen mainScreen].bounds.size.height-image.size.height+25, //Adjust constant to move image around
                                          [UIScreen mainScreen].bounds.size.width,
                                          image.size.height);
 }
@@ -78,13 +105,14 @@
     
     [self.view addGestureRecognizer:self.swipeLeftRecognizer];
     [self.view addGestureRecognizer:self.swipeRightRecognizer];
+    [self.view addSubview:self.textView];
     
     [self setupData];
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    [self initImage];    
+    [self updateImage:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -93,35 +121,17 @@
     // Dispose of any resources that can be recreated.
 }
 
-//For animation, see http://goo.gl/DkA1W
-- (void)initImage
-{
-    //Set image to current position
-//    NSMutableString *fileName = [NSMutableString stringWithString:photos[0]];
-//    [fileName appendString:@".jpg"];
-//    UIImage *picture = [UIImage imageNamed:fileName];
-    UIImage *picture = [UIImage imageNamed:[photos[0] photoFileName]];
-    [self setImage:picture withAnimationSubType: kCATransitionFromRight];
-}
-
 //Load the XML and setup the data to display
 - (void)setupData
 {
     position = 0;
-//    photos = [NSArray arrayWithObjects: @"Obama", @"Biden", @"Boehner", @"Inouye", nil];
     
-//    NSMutableArray *photoList = [[NSMutableArray alloc] init];
+    NSMutableArray *photoList = [[NSMutableArray alloc] init];
+    
     senators = [DataManager loadSenatorsFromXML];
+    [photoList addObjectsFromArray:senators];
     
-    //No need for this, since SenateXMLParserDelegate now checks all image paths
-//    for( Senator *senator in senators ) {
-//        //Default image is "blank.jpeg"
-//        if ( [[NSFileManager defaultManager] fileExistsAtPath:[senator photoFileName]] ) {
-//            [photoList addObject:senator];
-//        }
-//    }
-    
-    photos = senators;
+    photos = photoList;
 }
 
 @end
