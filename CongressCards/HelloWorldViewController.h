@@ -18,5 +18,6 @@
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 
 - (void)initImage;
+- (void)setupData;
 
 @end

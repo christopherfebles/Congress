@@ -9,10 +9,12 @@
 #import "HelloWorldViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #import "DataManager.h"
+#import "Senator.h"
 
 @interface HelloWorldViewController () {
     NSArray *photos;
     int position;
+    NSArray *senators;
 }
 @property (weak, nonatomic) IBOutlet UIImageView *currentImage;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -31,9 +33,10 @@
     if ( position < 0 )
         position = [photos count]-1;
     
-    NSMutableString *fileName = [NSMutableString stringWithString:photos[position]];
-    [fileName appendString:@".jpg"];
-    UIImage *picture = [UIImage imageNamed:fileName];
+//    NSMutableString *fileName = [NSMutableString stringWithString:photos[position]];
+//    [fileName appendString:@".jpg"];    
+//    UIImage *picture = [UIImage imageNamed:fileName];
+    UIImage *picture = [UIImage imageNamed:[photos[position] photoFileName]];
     
     [self setImage:picture withAnimationSubType: kCATransitionFromLeft];
 }
@@ -44,9 +47,10 @@
     if ( position > ([photos count]-1) )
         position = 0;
     
-    NSMutableString *fileName = [NSMutableString stringWithString:photos[position]];
-    [fileName appendString:@".jpg"];
-    UIImage *picture = [UIImage imageNamed:fileName];
+//    NSMutableString *fileName = [NSMutableString stringWithString:photos[position]];
+//    [fileName appendString:@".jpg"];
+//    UIImage *picture = [UIImage imageNamed:fileName];
+    UIImage *picture = [UIImage imageNamed:[photos[position] photoFileName]];
     
     [self setImage:picture withAnimationSubType: kCATransitionFromRight];
 }
@@ -74,11 +78,8 @@
     
     [self.view addGestureRecognizer:self.swipeLeftRecognizer];
     [self.view addGestureRecognizer:self.swipeRightRecognizer];
-        
-    photos = [NSArray arrayWithObjects: @"Obama", @"Biden", @"Boehner", @"Inouye", nil];
-    position = 0;
     
-    [DataManager loadSenatorsFromXML];
+    [self setupData];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -96,10 +97,31 @@
 - (void)initImage
 {
     //Set image to current position
-    NSMutableString *fileName = [NSMutableString stringWithString:photos[0]];
-    [fileName appendString:@".jpg"];
-    UIImage *picture = [UIImage imageNamed:fileName];
+//    NSMutableString *fileName = [NSMutableString stringWithString:photos[0]];
+//    [fileName appendString:@".jpg"];
+//    UIImage *picture = [UIImage imageNamed:fileName];
+    UIImage *picture = [UIImage imageNamed:[photos[0] photoFileName]];
     [self setImage:picture withAnimationSubType: kCATransitionFromRight];
+}
+
+//Load the XML and setup the data to display
+- (void)setupData
+{
+    position = 0;
+//    photos = [NSArray arrayWithObjects: @"Obama", @"Biden", @"Boehner", @"Inouye", nil];
+    
+//    NSMutableArray *photoList = [[NSMutableArray alloc] init];
+    senators = [DataManager loadSenatorsFromXML];
+    
+    //No need for this, since SenateXMLParserDelegate now checks all image paths
+//    for( Senator *senator in senators ) {
+//        //Default image is "blank.jpeg"
+//        if ( [[NSFileManager defaultManager] fileExistsAtPath:[senator photoFileName]] ) {
+//            [photoList addObject:senator];
+//        }
+//    }
+    
+    photos = senators;
 }
 
 @end

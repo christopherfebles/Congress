@@ -10,6 +10,6 @@
 
 @implementation Member
 
-@synthesize memberFull, lastName, firstName, party, state, address, phone, email, website, bioguide_id;
+@synthesize memberFull, lastName, firstName, party, state, address, phone, email, website, bioguide_id, photoFileName;
 
 @end

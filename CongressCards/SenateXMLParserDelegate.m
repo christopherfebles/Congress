@@ -24,6 +24,30 @@
     if ([elementName isEqualToString:@"member"]) {
         
         if ( member != nil ) {
+            //Set Photo Filename
+            NSMutableString *fileName = [NSMutableString stringWithString: [member firstName]];
+            [fileName appendString:@"_"];
+            [fileName appendString:[member lastName]];
+            NSMutableString *photoFileName = [NSMutableString stringWithString: fileName];
+            [photoFileName appendString:@".jpeg"];
+            
+            //Check if file exists
+            UIImage *tempImage = [UIImage imageNamed:photoFileName];
+            if ( !tempImage ) {
+                //Append state and check again
+                photoFileName = [NSMutableString stringWithString: fileName];
+                [photoFileName appendString:@"_"];
+                [photoFileName appendString:[member state]];
+                [photoFileName appendString:@".jpeg"];
+                
+                tempImage = [UIImage imageNamed:photoFileName];
+                if ( !tempImage ) {
+                    //If still not found, default to blank
+                    photoFileName = [NSMutableString stringWithString: @"blank.jpeg"];
+                }
+            }
+            
+            member.photoFileName = photoFileName;
             //Save member
             [senators addObject:member];
         }
@@ -48,6 +72,26 @@
         NSLog(@"Processing value for: %@", elementValue);
         if ([elementName isEqualToString:@"member_full"]) {
             member.memberFull = elementValue;
+        } else if ([elementName isEqualToString:@"last_name"]) {
+            member.lastName = elementValue;
+        } else if ([elementName isEqualToString:@"first_name"]) {
+            member.firstName = elementValue;
+        } else if ([elementName isEqualToString:@"party"]) {
+            member.party = elementValue;
+        } else if ([elementName isEqualToString:@"state"]) {
+            member.state = elementValue;
+        } else if ([elementName isEqualToString:@"address"]) {
+            member.address = elementValue;
+        } else if ([elementName isEqualToString:@"phone"]) {
+            member.phone = elementValue;
+        } else if ([elementName isEqualToString:@"email"]) {
+            member.email = elementValue;
+        } else if ([elementName isEqualToString:@"website"]) {
+            member.website = elementValue;
+        } else if ([elementName isEqualToString:@"class"]) {
+            member.senatorClass = elementValue;
+        } else if ([elementName isEqualToString:@"bioguide_id"]) {
+            member.bioguide_id = elementValue;
         }
         elementValue = nil;
     }

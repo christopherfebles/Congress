@@ -19,6 +19,7 @@
     NSString *email;
     NSString *website;
     NSString *bioguide_id;
+    NSString *photoFileName;
 }
 
 @property (nonatomic, retain) NSString *memberFull;
@@ -31,5 +32,6 @@
 @property (nonatomic, retain) NSString *email;
 @property (nonatomic, retain) NSString *website;
 @property (nonatomic, retain) NSString *bioguide_id;
+@property (nonatomic, retain) NSString *photoFileName;
 
 @end
