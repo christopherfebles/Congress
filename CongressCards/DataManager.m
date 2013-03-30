@@ -8,6 +8,7 @@
 
 #import "DataManager.h"
 #import "SenateXMLParserDelegate.h"
+#import "Senator.h"
 
 @implementation DataManager
 
@@ -15,7 +16,6 @@ NSString *const SenateURL = @"http://www.senate.gov/general/contact_information/
 
 +(NSArray *) loadSenatorsFromXML {
     
-//    NSMutableArray *senatorList = [[NSMutableArray alloc] init];
     NSURL *url = [NSURL URLWithString:SenateURL];
     NSData *data = [[NSData alloc] initWithContentsOfURL:url];
     NSXMLParser *parser = [[NSXMLParser alloc] initWithData:data];
@@ -26,7 +26,16 @@ NSString *const SenateURL = @"http://www.senate.gov/general/contact_information/
     
     NSMutableArray *senators = [delegate senators];
     
-    return senators;
+    //Let's try sorting the senators by state
+    //See: http://stackoverflow.com/questions/805547/how-to-sort-an-nsmutablearray-with-custom-objects-in-it
+    NSArray *sortedArray;
+    sortedArray = [senators sortedArrayUsingComparator:^NSComparisonResult(id a, id b) {
+        NSString *first = [(Senator*)a state];
+        NSString *second = [(Senator*)b state];
+        return [first compare:second];
+    }];
+    
+    return sortedArray;
 }
 
 @end
