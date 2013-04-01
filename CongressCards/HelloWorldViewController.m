@@ -91,11 +91,13 @@
     animation.subtype = animationSubType;
     [self.currentImage.layer addAnimation:animation forKey:@"imageTransition"];
     self.currentImage.image = image;
+
+    int x = 20;
+    int y = 0;
+    int width = [UIScreen mainScreen].bounds.size.width;
+    int height = [UIScreen mainScreen].bounds.size.height;
     
-    self.currentImage.frame = CGRectMake(20,
-                                         [UIScreen mainScreen].bounds.size.height-image.size.height+25, //Adjust constant to move image around
-                                         [UIScreen mainScreen].bounds.size.width,
-                                         image.size.height);
+    self.currentImage.frame = CGRectMake(x, y, width, height);
 }
 
 - (void)viewDidLoad

@@ -25,36 +25,20 @@
         
         if ( member != nil ) {
             //Set Photo Filename
-            NSString *firstName = [[member firstName] stringByReplacingOccurrencesOfString:@" " withString:@"_"];
-            firstName = [firstName stringByReplacingOccurrencesOfString:@",_Jr." withString:@""];
-            firstName = [firstName stringByReplacingOccurrencesOfString:@",_III" withString:@""];
-            firstName = [firstName stringByReplacingOccurrencesOfString:@",_IV" withString:@""];
-            NSString *lastName = [[member lastName] stringByReplacingOccurrencesOfString:@" " withString:@"_"];
-            
-            NSMutableString *fileName = [NSMutableString stringWithString: firstName];
-            [fileName appendString:@"_"];
-            [fileName appendString:lastName];
-            
-            NSMutableString *photoFileName = [NSMutableString stringWithString: fileName];
-            [photoFileName appendString:@".jpeg"];
+            NSMutableString *photoFileName = [[NSMutableString alloc] init];
+            [photoFileName appendString:@"Senate_"];
+            [photoFileName appendString:[member state]];
+            [photoFileName appendString:@"_"];
+            [photoFileName appendString:[member senatorClass]];
+            [photoFileName appendString:@"_"];
+            [photoFileName appendString:[member party]];
+            [photoFileName appendString:@".jpg"];
             
             //Check if file exists
             UIImage *tempImage = [UIImage imageNamed:photoFileName];
-            if ( !tempImage ) {
-                //Append state and check again
-                photoFileName = [NSMutableString stringWithString: fileName];
-                [photoFileName appendString:@"_"];
-                [photoFileName appendString:[member state]];
-                [photoFileName appendString:@".jpeg"];
+            if ( !tempImage )
+                NSLog(@"Image not found: %@", photoFileName);
                 
-                tempImage = [UIImage imageNamed:photoFileName];
-                if ( !tempImage ) {
-                    //If still not found, default to blank
-                    NSLog(@"Unable to load image for member: %@", photoFileName);
-                    photoFileName = [NSMutableString stringWithString: @"blank.jpeg"];
-                }
-            }
-            
             member.photoFileName = photoFileName;
             //Save member
             [senators addObject:member];
