@@ -23,23 +23,12 @@
     
     if ([elementName isEqualToString:@"member"]) {
         
-        if ( member != nil ) {
-            //Set Photo Filename
-            NSMutableString *photoFileName = [[NSMutableString alloc] init];
-            [photoFileName appendString:@"Senate_"];
-            [photoFileName appendString:[member state]];
-            [photoFileName appendString:@"_"];
-            [photoFileName appendString:[member senatorClass]];
-            [photoFileName appendString:@"_"];
-            [photoFileName appendString:[member party]];
-            [photoFileName appendString:@".jpg"];
-            
-            //Check if file exists
-            UIImage *tempImage = [UIImage imageNamed:photoFileName];
+        if ( member != nil ) {            
+            //Check if image exists for this member
+            UIImage *tempImage = [UIImage imageNamed:member.photoFileName];
             if ( !tempImage )
-                NSLog(@"Image not found: %@", photoFileName);
+                NSLog(@"Image not found: %@", member.photoFileName);
                 
-            member.photoFileName = photoFileName;
             //Save member
             [senators addObject:member];
         }
@@ -62,11 +51,9 @@
 //    NSLog(@"Setting value for element: %@", elementName);
     if ( elementValue != nil ) {
 //        NSLog(@"Processing value for: %@", elementValue);
-        if ([elementName isEqualToString:@"member_full"]) {
-            member.memberFull = elementValue;
-        } else if ([elementName isEqualToString:@"last_name"]) {
+        if ([elementName isEqualToString:@"lastName"]) {
             member.lastName = elementValue;
-        } else if ([elementName isEqualToString:@"first_name"]) {
+        } else if ([elementName isEqualToString:@"firstName"]) {
             member.firstName = elementValue;
         } else if ([elementName isEqualToString:@"party"]) {
             member.party = elementValue;
@@ -82,8 +69,10 @@
             member.website = elementValue;
         } else if ([elementName isEqualToString:@"class"]) {
             member.senatorClass = elementValue;
-        } else if ([elementName isEqualToString:@"bioguide_id"]) {
+        } else if ([elementName isEqualToString:@"bioguideId"]) {
             member.bioguide_id = elementValue;
+        } else if ([elementName isEqualToString:@"imgFileName"]) {
+            member.photoFileName = elementValue;
         }
         elementValue = nil;
     }

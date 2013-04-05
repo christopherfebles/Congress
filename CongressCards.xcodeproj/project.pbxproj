@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00165966170E737D00304EDE /* house.xml in Resources */ = {isa = PBXBuildFile; fileRef = 00165964170E737D00304EDE /* house.xml */; };
+		00165967170E737D00304EDE /* senate.xml in Resources */ = {isa = PBXBuildFile; fileRef = 00165965170E737D00304EDE /* senate.xml */; };
 		00316D691708F713005D1F2F /* House_AK_At_Large_R.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00316B4D1708F711005D1F2F /* House_AK_At_Large_R.jpg */; };
 		00316D6A1708F713005D1F2F /* House_AL_1_R.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00316B4E1708F711005D1F2F /* House_AL_1_R.jpg */; };
 		00316D6B1708F713005D1F2F /* House_AL_2_R.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00316B4F1708F711005D1F2F /* House_AL_2_R.jpg */; };
@@ -551,6 +553,8 @@
 		007B867D16D70AD2002A3EE7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007B867C16D70AD2002A3EE7 /* QuartzCore.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		007B867F16D70CBB002A3EE7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007B867E16D70CBB002A3EE7 /* CoreData.framework */; };
 		007B868216D70CF9002A3EE7 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 007B868016D70CF9002A3EE7 /* DataModel.xcdatamodeld */; };
+		008D0D48170A38FE00C5681D /* Representative.m in Sources */ = {isa = PBXBuildFile; fileRef = 008D0D47170A38FE00C5681D /* Representative.m */; };
+		008D0D4B170A3C7800C5681D /* HouseXMLParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 008D0D4A170A3C7800C5681D /* HouseXMLParserDelegate.m */; };
 		009A9F3916D71F8F0085CFC5 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 009A9F3816D71F8F0085CFC5 /* DataManager.m */; };
 		00C6858D16BB767000865F27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C6858C16BB767000865F27 /* UIKit.framework */; };
 		00C6858F16BB767000865F27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C6858E16BB767000865F27 /* Foundation.framework */; };
@@ -569,6 +573,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00165964170E737D00304EDE /* house.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = house.xml; sourceTree = "<group>"; };
+		00165965170E737D00304EDE /* senate.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = senate.xml; sourceTree = "<group>"; };
 		00316B4D1708F711005D1F2F /* House_AK_At_Large_R.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = House_AK_At_Large_R.jpg; sourceTree = "<group>"; };
 		00316B4E1708F711005D1F2F /* House_AL_1_R.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = House_AL_1_R.jpg; sourceTree = "<group>"; };
 		00316B4F1708F711005D1F2F /* House_AL_2_R.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = House_AL_2_R.jpg; sourceTree = "<group>"; };
@@ -1113,6 +1119,10 @@
 		007B867C16D70AD2002A3EE7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		007B867E16D70CBB002A3EE7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		007B868116D70CF9002A3EE7 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		008D0D46170A38FE00C5681D /* Representative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Representative.h; sourceTree = "<group>"; };
+		008D0D47170A38FE00C5681D /* Representative.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Representative.m; sourceTree = "<group>"; };
+		008D0D49170A3C7800C5681D /* HouseXMLParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HouseXMLParserDelegate.h; sourceTree = "<group>"; };
+		008D0D4A170A3C7800C5681D /* HouseXMLParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HouseXMLParserDelegate.m; sourceTree = "<group>"; };
 		009A9F3716D71F8F0085CFC5 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		009A9F3816D71F8F0085CFC5 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		00C6858916BB767000865F27 /* CongressCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CongressCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1156,6 +1166,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00165963170E736B00304EDE /* XML */ = {
+			isa = PBXGroup;
+			children = (
+				00165964170E737D00304EDE /* house.xml */,
+				00165965170E737D00304EDE /* senate.xml */,
+			);
+			name = XML;
+			sourceTree = "<group>";
+		};
+		008D0D45170A38C900C5681D /* Data Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0E13679117037C1C00593D57 /* Member.h */,
+				0E13679217037C1C00593D57 /* Member.m */,
+				0E13679417037D8200593D57 /* Senator.h */,
+				0E13679517037D8200593D57 /* Senator.m */,
+				008D0D46170A38FE00C5681D /* Representative.h */,
+				008D0D47170A38FE00C5681D /* Representative.m */,
+			);
+			name = "Data Classes";
+			sourceTree = "<group>";
+		};
 		00C6858016BB767000865F27 = {
 			isa = PBXGroup;
 			children = (
@@ -1191,12 +1223,11 @@
 			children = (
 				0E1367971703845B00593D57 /* SenateXMLParserDelegate.h */,
 				0E1367981703845C00593D57 /* SenateXMLParserDelegate.m */,
+				008D0D49170A3C7800C5681D /* HouseXMLParserDelegate.h */,
+				008D0D4A170A3C7800C5681D /* HouseXMLParserDelegate.m */,
 				009A9F3716D71F8F0085CFC5 /* DataManager.h */,
 				009A9F3816D71F8F0085CFC5 /* DataManager.m */,
-				0E13679117037C1C00593D57 /* Member.h */,
-				0E13679217037C1C00593D57 /* Member.m */,
-				0E13679417037D8200593D57 /* Senator.h */,
-				0E13679517037D8200593D57 /* Senator.m */,
+				008D0D45170A38C900C5681D /* Data Classes */,
 				00C685A416BB767000865F27 /* MainStoryboard.storyboard */,
 				00C6859B16BB767000865F27 /* HelloWorldAppDelegate.h */,
 				00C6859C16BB767000865F27 /* HelloWorldAppDelegate.m */,
@@ -1210,6 +1241,7 @@
 		00C6859316BB767000865F27 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				00165963170E736B00304EDE /* XML */,
 				00C685AF16BB79B500865F27 /* Photos */,
 				00C6859416BB767000865F27 /* CongressCards-Info.plist */,
 				00C6859516BB767000865F27 /* InfoPlist.strings */,
@@ -2367,6 +2399,8 @@
 				00316F821708F713005D1F2F /* Senate_WV_2_D.jpg in Resources */,
 				00316F831708F713005D1F2F /* Senate_WY_1_R.jpg in Resources */,
 				00316F841708F713005D1F2F /* Senate_WY_2_R.jpg in Resources */,
+				00165966170E737D00304EDE /* house.xml in Resources */,
+				00165967170E737D00304EDE /* senate.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2385,6 +2419,8 @@
 				0E13679317037C1C00593D57 /* Member.m in Sources */,
 				0E13679617037D8200593D57 /* Senator.m in Sources */,
 				0E1367991703845C00593D57 /* SenateXMLParserDelegate.m in Sources */,
+				008D0D48170A38FE00C5681D /* Representative.m in Sources */,
+				008D0D4B170A3C7800C5681D /* HouseXMLParserDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

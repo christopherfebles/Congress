@@ -59,11 +59,7 @@
     
     [self addBorder];
     
-    NSMutableString *displayText = [NSMutableString stringWithString:[member firstName]];
-    [displayText appendString:@" "];
-    [displayText appendString:[member memberFull]];
-    
-    self.textView.text = displayText;
+    self.textView.text = [member memberFull];
 }
 
 - (void)addBorder
@@ -93,7 +89,7 @@
     self.currentImage.image = image;
 
     int x = 20;
-    int y = 0;
+    int y = -10;
     int width = [UIScreen mainScreen].bounds.size.width;
     int height = [UIScreen mainScreen].bounds.size.height;
     
@@ -108,6 +104,7 @@
     [self.view addGestureRecognizer:self.swipeLeftRecognizer];
     [self.view addGestureRecognizer:self.swipeRightRecognizer];
     [self.view addSubview:self.textView];
+    [self.view bringSubviewToFront:self.textView];
     
     [self setupData];
 }

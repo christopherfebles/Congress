@@ -12,12 +12,9 @@
 
 @implementation DataManager
 
-NSString *const SenateURL = @"http://www.senate.gov/general/contact_information/senators_cfm.xml";
-
 +(NSArray *) loadSenatorsFromXML {
     
-    NSURL *url = [NSURL URLWithString:SenateURL];
-    NSData *data = [[NSData alloc] initWithContentsOfURL:url];
+    NSData *data = [[NSData alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"senate" ofType:@"xml"]];
     NSXMLParser *parser = [[NSXMLParser alloc] initWithData:data];
     
     SenateXMLParserDelegate *delegate = [[SenateXMLParserDelegate alloc] init];
