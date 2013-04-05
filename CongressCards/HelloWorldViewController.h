@@ -21,4 +21,7 @@
 - (void)setupData;
 - (void)addBorder;
 
++ (UIImage *) houseLogo;
++ (UIImage *) senateLogo;
+
 @end

@@ -58,6 +58,7 @@
     [self setImage:picture withAnimationSubType: animationSubType];
     
     [self addBorder];
+    [self addLogo:[member isMemberOfClass:[Senator class]]];
     
     self.textView.text = [member memberFull];
 }
@@ -131,6 +132,43 @@
     [photoList addObjectsFromArray:senators];
     
     photos = photoList;
+}
+
+- (void) addLogo: (BOOL) senate {
+    UIImage *logo;
+    if ( senate )
+        logo = [HelloWorldViewController senateLogo];
+    else
+        logo = [HelloWorldViewController houseLogo];
+    
+    UIImageView *logoView = [[UIImageView alloc] initWithImage:logo];
+    [logoView setContentMode:UIViewContentModeScaleAspectFit];
+    
+    int x = 5;
+    int y = -15;
+    int width = [UIScreen mainScreen].bounds.size.width / 4;
+    int height = [UIScreen mainScreen].bounds.size.height / 4;
+    
+    logoView.frame = CGRectMake(x, y, width, height);
+    
+    [self.view addSubview:logoView];
+    [self.view bringSubviewToFront:logoView];
+}
+
++ (UIImage *) houseLogo {
+    static UIImage *houseImage = nil;
+    if (!houseImage) {
+        houseImage = [UIImage imageNamed:@"house_logo.png"];
+    }
+    return houseImage;
+}
++ (UIImage *) senateLogo {
+    static UIImage *senateImage = nil;
+    if (!senateImage) {
+        senateImage = [UIImage imageNamed:@"senate_logo.png"];
+    }
+    return senateImage;
+
 }
 
 @end

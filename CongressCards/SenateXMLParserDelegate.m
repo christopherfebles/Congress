@@ -28,7 +28,7 @@
             UIImage *tempImage = [UIImage imageNamed:member.photoFileName];
             if ( !tempImage )
                 NSLog(@"Image not found: %@", member.photoFileName);
-                
+            else
             //Save member
             [senators addObject:member];
         }

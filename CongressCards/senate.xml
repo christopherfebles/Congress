@@ -252,8 +252,8 @@
 		<imgFileName>Senate_DE_1_D.jpg</imgFileName>
 	</member>
 	<member>
-		<firstName>Jr.</firstName>
-		<lastName>Casey</lastName>
+		<firstName>Bob</firstName>
+		<lastName>Casey, Jr.</lastName>
 		<isSenator>true</isSenator>
 		<classDistrict>1</classDistrict>
 		<party>D</party>
@@ -1061,7 +1061,7 @@
 		<website>http://www.portman.senate.gov</website>
 		<email>http://www.portman.senate.gov/public/index.cfm/contact?p=contact-form</email>
 		<phone>(202) 224-3353</phone>
-		<address>338 RUSSELL SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<address>448 RUSSELL SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
 		<imgFileName>Senate_OH_3_R.jpg</imgFileName>
 	</member>
 	<member>

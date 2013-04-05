@@ -556,6 +556,8 @@
 		008D0D48170A38FE00C5681D /* Representative.m in Sources */ = {isa = PBXBuildFile; fileRef = 008D0D47170A38FE00C5681D /* Representative.m */; };
 		008D0D4B170A3C7800C5681D /* HouseXMLParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 008D0D4A170A3C7800C5681D /* HouseXMLParserDelegate.m */; };
 		009A9F3916D71F8F0085CFC5 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 009A9F3816D71F8F0085CFC5 /* DataManager.m */; };
+		00BC6DE4170F93C200DA13FC /* house_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 00BC6DE2170F93C200DA13FC /* house_logo.png */; };
+		00BC6DE5170F93C200DA13FC /* senate_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 00BC6DE3170F93C200DA13FC /* senate_logo.png */; };
 		00C6858D16BB767000865F27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C6858C16BB767000865F27 /* UIKit.framework */; };
 		00C6858F16BB767000865F27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C6858E16BB767000865F27 /* Foundation.framework */; };
 		00C6859116BB767000865F27 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C6859016BB767000865F27 /* CoreGraphics.framework */; };
@@ -1125,6 +1127,8 @@
 		008D0D4A170A3C7800C5681D /* HouseXMLParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HouseXMLParserDelegate.m; sourceTree = "<group>"; };
 		009A9F3716D71F8F0085CFC5 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		009A9F3816D71F8F0085CFC5 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		00BC6DE2170F93C200DA13FC /* house_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = house_logo.png; sourceTree = "<group>"; };
+		00BC6DE3170F93C200DA13FC /* senate_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = senate_logo.png; sourceTree = "<group>"; };
 		00C6858916BB767000865F27 /* CongressCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CongressCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00C6858C16BB767000865F27 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		00C6858E16BB767000865F27 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -1258,6 +1262,8 @@
 		00C685AF16BB79B500865F27 /* Photos */ = {
 			isa = PBXGroup;
 			children = (
+				00BC6DE2170F93C200DA13FC /* house_logo.png */,
+				00BC6DE3170F93C200DA13FC /* senate_logo.png */,
 				00316B4D1708F711005D1F2F /* House_AK_At_Large_R.jpg */,
 				00316B4E1708F711005D1F2F /* House_AL_1_R.jpg */,
 				00316B4F1708F711005D1F2F /* House_AL_2_R.jpg */,
@@ -2401,6 +2407,8 @@
 				00316F841708F713005D1F2F /* Senate_WY_2_R.jpg in Resources */,
 				00165966170E737D00304EDE /* house.xml in Resources */,
 				00165967170E737D00304EDE /* senate.xml in Resources */,
+				00BC6DE4170F93C200DA13FC /* house_logo.png in Resources */,
+				00BC6DE5170F93C200DA13FC /* senate_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

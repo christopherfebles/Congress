@@ -3486,8 +3486,8 @@
 		<imgFileName>House_NJ_9_D.jpg</imgFileName>
 	</member>
 	<member>
-		<firstName>Jr.</firstName>
-		<lastName>Payne</lastName>
+		<firstName>Donald</firstName>
+		<lastName>Payne, Jr.</lastName>
 		<isSenator>false</isSenator>
 		<classDistrict>10</classDistrict>
 		<party>D</party>
@@ -3514,8 +3514,8 @@
 		<imgFileName>House_NJ_11_R.jpg</imgFileName>
 	</member>
 	<member>
-		<firstName>Jr.</firstName>
-		<lastName>Holt</lastName>
+		<firstName>Rush</firstName>
+		<lastName>Holt, Jr.</lastName>
 		<isSenator>false</isSenator>
 		<classDistrict>12</classDistrict>
 		<party>D</party>
@@ -5474,8 +5474,8 @@
 		<imgFileName>House_TX_33_D.jpg</imgFileName>
 	</member>
 	<member>
-		<firstName>Jr.</firstName>
-		<lastName>Vela</lastName>
+		<firstName>Filemon</firstName>
+		<lastName>Vela, Jr.</lastName>
 		<isSenator>false</isSenator>
 		<classDistrict>34</classDistrict>
 		<party>D</party>
@@ -6048,8 +6048,8 @@
 		<imgFileName>House_WY_At_Large_R.jpg</imgFileName>
 	</member>
 	<member>
-		<firstName>Jr.</firstName>
-		<lastName>Fa'aua'a Hunkin Faleomavaega</lastName>
+		<firstName>Eni</firstName>
+		<lastName>Fa'aua'a Hunkin Faleomavaega, Jr.</lastName>
 		<isSenator>false</isSenator>
 		<classDistrict>Samoa</classDistrict>
 		<party>D</party>
