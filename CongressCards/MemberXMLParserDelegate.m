@@ -41,7 +41,9 @@
 
 - (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string {
 //    NSLog(@"Processing value for : %@", string);
-    elementValue = string;
+    if ( !elementValue )
+        elementValue = [NSMutableString string];
+    [elementValue appendString:string];
 }
 
 - (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName
@@ -50,6 +52,8 @@
 {
 //    NSLog(@"Setting value for element: %@", elementName);
     if ( elementValue != nil ) {
+        elementValue = [[NSMutableString alloc] initWithString:[elementValue stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]];
+        
 //        NSLog(@"Processing value for: %@", elementValue);
         if ([elementName isEqualToString:@"lastName"]) {
             member.lastName = elementValue;

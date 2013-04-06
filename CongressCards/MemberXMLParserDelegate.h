@@ -13,11 +13,11 @@
 @interface MemberXMLParserDelegate : NSObject <NSXMLParserDelegate> {
     Member *member;
     NSMutableArray *members;
-    NSString *elementValue;
+    NSMutableString *elementValue;
 }
 
 @property (nonatomic, retain) Member *member;
 @property (nonatomic, retain) NSMutableArray *members;
-@property (nonatomic, retain) NSString *elementValue;
+@property (nonatomic, retain) NSMutableString *elementValue;
 
 @end

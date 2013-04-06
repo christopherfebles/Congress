@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <members>
 	<member>
 		<firstName>Jo</firstName>
@@ -140,7 +141,7 @@
 		<imgFileName>House_AZ_2_D.jpg</imgFileName>
 	</member>
 	<member>
-		<firstName>Raúl</firstName>
+		<firstName>Ra√∫l</firstName>
 		<lastName>Grijalva</lastName>
 		<isSenator>false</isSenator>
 		<classDistrict>3</classDistrict>
@@ -813,7 +814,7 @@
 	</member>
 	<member>
 		<firstName>Linda</firstName>
-		<lastName>Sánchez</lastName>
+		<lastName>S√°nchez</lastName>
 		<isSenator>false</isSenator>
 		<classDistrict>38</classDistrict>
 		<party>D</party>
@@ -1820,7 +1821,7 @@
 		<imgFileName>House_HI_2_D.jpg</imgFileName>
 	</member>
 	<member>
-		<firstName>Raúl</firstName>
+		<firstName>Ra√∫l</firstName>
 		<lastName>Labrador</lastName>
 		<isSenator>false</isSenator>
 		<classDistrict>1</classDistrict>
@@ -1877,7 +1878,7 @@
 	</member>
 	<member>
 		<firstName>Luis</firstName>
-		<lastName>Gutiérrez</lastName>
+		<lastName>Guti√©rrez</lastName>
 		<isSenator>false</isSenator>
 		<classDistrict>4</classDistrict>
 		<party>D</party>
@@ -2170,7 +2171,7 @@
 		<imgFileName>House_IN_6_R.jpg</imgFileName>
 	</member>
 	<member>
-		<firstName>André</firstName>
+		<firstName>Andr√©</firstName>
 		<lastName>Carson</lastName>
 		<isSenator>false</isSenator>
 		<classDistrict>7</classDistrict>
@@ -3557,7 +3558,7 @@
 	</member>
 	<member>
 		<firstName>Ben</firstName>
-		<lastName>Luján</lastName>
+		<lastName>Luj√°n</lastName>
 		<isSenator>false</isSenator>
 		<classDistrict>3</classDistrict>
 		<party>D</party>
@@ -3655,7 +3656,7 @@
 	</member>
 	<member>
 		<firstName>Nydia</firstName>
-		<lastName>Velázquez</lastName>
+		<lastName>Vel√°zquez</lastName>
 		<isSenator>false</isSenator>
 		<classDistrict>7</classDistrict>
 		<party>D</party>
@@ -3766,7 +3767,7 @@
 		<imgFileName>House_NY_14_D.jpg</imgFileName>
 	</member>
 	<member>
-		<firstName>José</firstName>
+		<firstName>Jos√©</firstName>
 		<lastName>Serrano</lastName>
 		<isSenator>false</isSenator>
 		<classDistrict>15</classDistrict>
@@ -5208,7 +5209,7 @@
 		<imgFileName>House_TX_14_R.jpg</imgFileName>
 	</member>
 	<member>
-		<firstName>Rubén</firstName>
+		<firstName>Rub√©n</firstName>
 		<lastName>Hinojosa</lastName>
 		<isSenator>false</isSenator>
 		<classDistrict>15</classDistrict>
@@ -5278,7 +5279,7 @@
 		<imgFileName>House_TX_19_R.jpg</imgFileName>
 	</member>
 	<member>
-		<firstName>Joaquín</firstName>
+		<firstName>Joaqu√≠n</firstName>
 		<lastName>Castro</lastName>
 		<isSenator>false</isSenator>
 		<classDistrict>20</classDistrict>

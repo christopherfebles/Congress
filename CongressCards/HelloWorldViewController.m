@@ -19,6 +19,11 @@
     NSArray *senators;
     NSArray *representatives;
     BOOL viewingSenate;
+    
+    //Dynamically added views
+    UIWebView *nameWebView;
+    UIImageView *logoView;
+    UIImageView *sealView;
 }
 @property (weak, nonatomic) IBOutlet UIImageView *currentImage;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -65,7 +70,44 @@
     [self addLogo:[member senator]];
     [self addStateSeal:member];
     
-    self.textView.text = [member memberFull];
+    //Add UIWebView instead of a UITextView
+    [self addMemberName: member];
+}
+
+- (void) addMemberName: (Member *) member {
+    int x = 0;
+    int y = [UIScreen mainScreen].bounds.size.height - 75;
+    int width = [UIScreen mainScreen].bounds.size.width;
+    int height = [UIScreen mainScreen].bounds.size.height;
+    
+    if ( nameWebView != nil )
+        [nameWebView removeFromSuperview];
+    nameWebView = [[UIWebView alloc] initWithFrame:CGRectMake(x, y, width, height)];
+    
+    NSMutableString *htmlString =
+        [[NSMutableString alloc] initWithString:@"<span style=\"color: white; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;\"><span style=\"font-variant:small-caps;\">"];
+    if ( [member senator] )
+        [htmlString appendString:@"Senator"];
+    else if ( ![member senator] && ![[member state] isEqualToString:@"AS"] && ![[member state] isEqualToString:@"DC"] && ![[member state] isEqualToString:@"GU"] &&
+             ![[member state] isEqualToString:@"PR"] && ![[member state] isEqualToString:@"VI"] && ![[member state] isEqualToString:@"MP"])
+        [htmlString appendString:@"Representative"];
+    else if ( [[member state] isEqualToString:@"PR"] )
+        [htmlString appendString:@"Resident Commissioner"];
+    else
+        [htmlString appendString:@"Delegate"];
+    
+    [htmlString appendString:@"&nbsp;"];
+    [htmlString appendString:[member firstName]];
+    [htmlString appendString:@"</span>&nbsp;<span style=\"font-variant:small-caps; font-size: xx-large;\">"];
+    [htmlString appendString:[member lastName]];
+    [htmlString appendString:@"</span></span>"];
+
+    [nameWebView loadHTMLString:htmlString baseURL:nil];
+    nameWebView.opaque = NO;
+    nameWebView.backgroundColor = [UIColor clearColor];
+    
+    [self.view addSubview:nameWebView];
+    [self.view bringSubviewToFront:nameWebView];
 }
 
 - (void)addBorderToView: (UIView *) view
@@ -113,8 +155,8 @@
     
     [self.view addGestureRecognizer:self.swipeLeftRecognizer];
     [self.view addGestureRecognizer:self.swipeRightRecognizer];
-    [self.view addSubview:self.textView];
-    [self.view bringSubviewToFront:self.textView];
+//    [self.view addSubview:self.textView];
+//    [self.view bringSubviewToFront:self.textView];
     
     [self setupData];
 }
@@ -154,7 +196,10 @@
     else
         logo = [HelloWorldViewController houseLogo];
     
-    UIImageView *logoView = [[UIImageView alloc] initWithImage:logo];
+    if ( logoView != nil )
+        [logoView removeFromSuperview];
+    
+    logoView = [[UIImageView alloc] initWithImage:logo];
     [logoView setContentMode:UIViewContentModeScaleAspectFit];
     
     int x = 5;
@@ -184,7 +229,9 @@
             return;
     }
     
-    UIImageView *sealView = [[UIImageView alloc] initWithImage:seal];
+    if ( sealView != nil )
+        [sealView removeFromSuperview];
+    sealView = [[UIImageView alloc] initWithImage:seal];
     [sealView setContentMode:UIViewContentModeScaleAspectFit];
     
     int x = [UIScreen mainScreen].bounds.size.width - 85;
@@ -208,7 +255,9 @@
     }
     
     UILabel *sealLabel = [[UILabel alloc] initWithFrame:[sealView frame]];
-    sealLabel.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.0];
+//    sealLabel.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.0];
+    sealLabel.opaque = NO;
+    sealLabel.backgroundColor = [UIColor clearColor];
     sealLabel.font = [UIFont boldSystemFontOfSize:18];
     sealLabel.textColor = [self getPartyColor:[member party]];
     sealLabel.shadowColor = [UIColor blackColor];
