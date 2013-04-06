@@ -34,8 +34,12 @@
     //See: http://stackoverflow.com/questions/805547/how-to-sort-an-nsmutablearray-with-custom-objects-in-it
     NSArray *sortedArray;
     sortedArray = [members sortedArrayUsingComparator:^NSComparisonResult(id a, id b) {
-        NSString *first = [(Member*)a state];
-        NSString *second = [(Member*)b state];
+        NSMutableString *first = [[NSMutableString alloc] initWithString:[(Member*)a state]];
+        [first appendString:[(Member*)a classDistrict]];
+        
+        NSMutableString *second = [[NSMutableString alloc] initWithString:[(Member*)b state]];
+        [second appendString:[(Member*)b classDistrict]];
+        
         return [first compare:second];
     }];
     

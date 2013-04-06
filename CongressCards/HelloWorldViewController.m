@@ -61,25 +61,30 @@
     UIImage *picture = [UIImage imageNamed:[member photoFileName]];
     [self setImage:picture withAnimationSubType: animationSubType];
     
-    [self addBorder];
+    [self addBorderToView: self.view withMember: member];
     [self addLogo:[member senator]];
+    [self addStateSeal:member];
     
     self.textView.text = [member memberFull];
 }
 
-- (void)addBorder
+- (void)addBorderToView: (UIView *) view
+             withMember: (Member *) member
 {
-    Member *member = photos[position];
-    
-    if ( [[member party] isEqualToString:@"R"] ) {
-        self.view.layer.borderColor = [UIColor redColor].CGColor;
-    } else if ( [[member party] isEqualToString:@"D"] ) {
-        self.view.layer.borderColor = [UIColor blueColor].CGColor;
-    } else if ( [[member party] isEqualToString:@"I"] ) {
-        self.view.layer.borderColor = [UIColor whiteColor].CGColor;
-    }
+    view.layer.borderColor = [self getPartyColor:[member party]].CGColor;
+    view.layer.borderWidth = 5;
+}
 
-    self.view.layer.borderWidth = 5;
+- (UIColor *) getPartyColor: (NSString *) party {
+    UIColor *retVal = nil;
+    if ( [party isEqualToString:@"R"] ) {
+        retVal = [UIColor redColor];
+    } else if ( [party isEqualToString:@"D"] ) {
+        retVal = [UIColor blueColor];
+    } else if ( [party isEqualToString:@"I"] ) {
+        retVal = [UIColor whiteColor];
+    }
+    return retVal;
 }
 
 //For animation, see http://goo.gl/DkA1W
@@ -129,6 +134,8 @@
 - (void)setupData
 {
     position = 0;
+    lastHousePosition = 0;
+    lastSenatePosition = 0;
     
     NSMutableArray *photoList = [[NSMutableArray alloc] init];
     
@@ -163,6 +170,57 @@
     
     [self.view addSubview:logoView];
     [self.view bringSubviewToFront:logoView];
+}
+
+- (void) addStateSeal: (Member *) member {
+    NSMutableString *filename = [[NSMutableString alloc] initWithString:[member state]];
+    [filename appendString:@".png"];
+    UIImage *seal = [UIImage imageNamed:filename];
+    if ( !seal ) {
+        filename = [[NSMutableString alloc] initWithString:[filename stringByDeletingPathExtension]];
+        [filename appendString:@".gif"];
+        seal = [UIImage imageNamed:filename];
+        if ( !seal )
+            return;
+    }
+    
+    UIImageView *sealView = [[UIImageView alloc] initWithImage:seal];
+    [sealView setContentMode:UIViewContentModeScaleAspectFit];
+    
+    int x = [UIScreen mainScreen].bounds.size.width - 85;
+    int y = [UIScreen mainScreen].bounds.size.height - 125;
+    int width = [UIScreen mainScreen].bounds.size.width / 4;
+    int height = [UIScreen mainScreen].bounds.size.height / 4;
+    
+    sealView.frame = CGRectMake(x, y, width, height);
+    
+//    sealView.userInteractionEnabled = YES;
+//    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(switchChamber:)];
+//    [sealView addGestureRecognizer:tap];
+    
+    NSMutableString *labelText = [[NSMutableString alloc] initWithString:[member state]];
+    if ( ![member senator] ) {
+        [labelText appendString:@" - "];
+        NSString *district = [member classDistrict];
+        if ( [district isEqualToString:@"At Large"] )
+            district = @"AL";
+        [labelText appendString:district];
+    }
+    
+    UILabel *sealLabel = [[UILabel alloc] initWithFrame:[sealView frame]];
+    sealLabel.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.0];
+    sealLabel.font = [UIFont boldSystemFontOfSize:18];
+    sealLabel.textColor = [self getPartyColor:[member party]];
+    sealLabel.shadowColor = [UIColor blackColor];
+    sealLabel.shadowOffset = CGSizeMake(0, -3.0);
+    sealLabel.text = labelText;
+    sealLabel.textAlignment = NSTextAlignmentCenter;
+    
+    [self.view addSubview:sealView];
+    [self.view addSubview:sealLabel];
+    [self.view bringSubviewToFront:sealView];
+    [self.view bringSubviewToFront:sealLabel];
+    
 }
 
 - (IBAction) switchChamber: (UIGestureRecognizer *) sender  {

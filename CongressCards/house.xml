@@ -6051,29 +6051,29 @@
 		<firstName>Eni</firstName>
 		<lastName>Fa'aua'a Hunkin Faleomavaega, Jr.</lastName>
 		<isSenator>false</isSenator>
-		<classDistrict>Samoa</classDistrict>
+		<classDistrict>At Large</classDistrict>
 		<party>D</party>
-		<state>American</state>
+		<state>AS</state>
 		<bioguideId>null</bioguideId>
 		<website>null</website>
 		<email>null</email>
 		<phone>null</phone>
 		<address>null</address>
-		<imgFileName>House_American_Samoa_D.jpg</imgFileName>
+		<imgFileName>House_AS_At_Large_D.jpg</imgFileName>
 	</member>
 	<member>
 		<firstName>Eleanor</firstName>
 		<lastName>Holmes Norton</lastName>
 		<isSenator>false</isSenator>
-		<classDistrict>Columbia</classDistrict>
+		<classDistrict>At Large</classDistrict>
 		<party>D</party>
-		<state>District of</state>
+		<state>DC</state>
 		<bioguideId>null</bioguideId>
 		<website>null</website>
 		<email>null</email>
 		<phone>null</phone>
 		<address>null</address>
-		<imgFileName>House_District_of_Columbia_D.jpg</imgFileName>
+		<imgFileName>House_DC_At_Large_D.jpg</imgFileName>
 	</member>
 	<member>
 		<firstName>Madeleine</firstName>
@@ -6093,21 +6093,21 @@
 		<firstName>Pedro</firstName>
 		<lastName>Pierluisi</lastName>
 		<isSenator>false</isSenator>
-		<classDistrict>Rico</classDistrict>
+		<classDistrict>At Large</classDistrict>
 		<party>D</party>
-		<state>Puerto</state>
+		<state>PR</state>
 		<bioguideId>null</bioguideId>
 		<website>null</website>
 		<email>null</email>
 		<phone>null</phone>
 		<address>null</address>
-		<imgFileName>House_Puerto_Rico_D.jpg</imgFileName>
+		<imgFileName>House_PR_At_Large_D.jpg</imgFileName>
 	</member>
 	<member>
 		<firstName>Donna</firstName>
 		<lastName>Christian-Christensen</lastName>
 		<isSenator>false</isSenator>
-		<classDistrict>Virgin</classDistrict>
+		<classDistrict>At Large</classDistrict>
 		<party>D</party>
 		<state>VI</state>
 		<bioguideId>null</bioguideId>
@@ -6115,20 +6115,20 @@
 		<email>null</email>
 		<phone>null</phone>
 		<address>null</address>
-		<imgFileName>House_VI_Virgin_D.jpg</imgFileName>
+		<imgFileName>House_VI_At_Large_D.jpg</imgFileName>
 	</member>
 	<member>
 		<firstName>Gregorio</firstName>
 		<lastName>Sablan</lastName>
 		<isSenator>false</isSenator>
-		<classDistrict>Islands</classDistrict>
+		<classDistrict>At Large</classDistrict>
 		<party>D</party>
-		<state>Northern Mariana</state>
+		<state>MP</state>
 		<bioguideId>null</bioguideId>
 		<website>null</website>
 		<email>null</email>
 		<phone>null</phone>
 		<address>null</address>
-		<imgFileName>House_Northern_Mariana_Islands_D.jpg</imgFileName>
+		<imgFileName>House_MP_At_Large_D.jpg</imgFileName>
 	</member>
 </members>
