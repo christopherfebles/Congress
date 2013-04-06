@@ -235,7 +235,7 @@
     [sealView setContentMode:UIViewContentModeScaleAspectFit];
     
     int x = [UIScreen mainScreen].bounds.size.width - 85;
-    int y = [UIScreen mainScreen].bounds.size.height - 125;
+    int y = [UIScreen mainScreen].bounds.size.height - 155;
     int width = [UIScreen mainScreen].bounds.size.width / 4;
     int height = [UIScreen mainScreen].bounds.size.height / 4;
     
