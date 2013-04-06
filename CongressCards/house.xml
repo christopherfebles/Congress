@@ -5886,13 +5886,13 @@
 		<isSenator>false</isSenator>
 		<classDistrict>1</classDistrict>
 		<party>R</party>
-		<state>West Virginia 1</state>
+		<state>WV</state>
 		<bioguideId>null</bioguideId>
 		<website>null</website>
 		<email>null</email>
 		<phone>null</phone>
 		<address>null</address>
-		<imgFileName>House_West_Virginia_1_1_R.jpg</imgFileName>
+		<imgFileName>House_WV_1_R.jpg</imgFileName>
 	</member>
 	<member>
 		<firstName>Shelley</firstName>
@@ -5900,13 +5900,13 @@
 		<isSenator>false</isSenator>
 		<classDistrict>2</classDistrict>
 		<party>R</party>
-		<state>West Virginia 2</state>
+		<state>WV</state>
 		<bioguideId>null</bioguideId>
 		<website>null</website>
 		<email>null</email>
 		<phone>null</phone>
 		<address>null</address>
-		<imgFileName>House_West_Virginia_2_2_R.jpg</imgFileName>
+		<imgFileName>House_WV_2_R.jpg</imgFileName>
 	</member>
 	<member>
 		<firstName>Nick</firstName>
@@ -5914,13 +5914,13 @@
 		<isSenator>false</isSenator>
 		<classDistrict>3</classDistrict>
 		<party>D</party>
-		<state>West Virginia 3</state>
+		<state>WV</state>
 		<bioguideId>null</bioguideId>
 		<website>null</website>
 		<email>null</email>
 		<phone>null</phone>
 		<address>null</address>
-		<imgFileName>House_West_Virginia_3_3_D.jpg</imgFileName>
+		<imgFileName>House_WV_3_D.jpg</imgFileName>
 	</member>
 	<member>
 		<firstName>Paul</firstName>
