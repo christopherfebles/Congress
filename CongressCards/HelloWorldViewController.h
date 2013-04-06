@@ -8,14 +8,18 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import "StatePickerViewDelegate.h"
 
-@interface HelloWorldViewController : UIViewController <UIGestureRecognizerDelegate> {
+@interface HelloWorldViewController : UIViewController <UIGestureRecognizerDelegate, UIPickerViewDelegate> {
     NSFetchedResultsController *fetchedResultsController;
     NSManagedObjectContext *managedObjectContext;
+    
+    StatePickerViewDelegate *statePickerDelegate;
 }
 
 @property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, retain) StatePickerViewDelegate *statePickerDelegate;
 
 - (void)updateImage: (bool)rightAnimation;
 - (void)setupData;

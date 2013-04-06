@@ -10,6 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import "DataManager.h"
 #import "Member.h"
+#import "StatePickerViewDelegate.h"
 
 @interface HelloWorldViewController () {
     NSArray *photos;
@@ -19,11 +20,14 @@
     NSArray *senators;
     NSArray *representatives;
     BOOL viewingSenate;
+    BOOL switchingState;
     
     //Dynamically added views
     UIWebView *nameWebView;
     UIImageView *logoView;
     UIImageView *sealView;
+    UIPickerView *statePickerView;
+    UIToolbar *pickerToolbar;
 }
 @property (weak, nonatomic) IBOutlet UIImageView *currentImage;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -35,9 +39,10 @@
 
 @implementation HelloWorldViewController
 
-@synthesize fetchedResultsController, managedObjectContext;
+@synthesize fetchedResultsController, managedObjectContext, statePickerDelegate;
 
 - (IBAction)rightSwipe:(id)sender {
+    if ( switchingState ) return;
     //Go back to previous image
     position--;
     if ( position < 0 )
@@ -47,6 +52,7 @@
 }
 
 - (IBAction)leftSwipe:(id)sender {
+    if ( switchingState ) return;
     //Go forward to next image
     position++;
     if ( position > ([photos count]-1) )
@@ -155,8 +161,6 @@
     
     [self.view addGestureRecognizer:self.swipeLeftRecognizer];
     [self.view addGestureRecognizer:self.swipeRightRecognizer];
-//    [self.view addSubview:self.textView];
-//    [self.view bringSubviewToFront:self.textView];
     
     [self setupData];
 }
@@ -241,9 +245,9 @@
     
     sealView.frame = CGRectMake(x, y, width, height);
     
-//    sealView.userInteractionEnabled = YES;
-//    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(switchChamber:)];
-//    [sealView addGestureRecognizer:tap];
+    sealView.userInteractionEnabled = YES;
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(switchState:)];
+    [sealView addGestureRecognizer:tap];
     
     NSMutableString *labelText = [[NSMutableString alloc] initWithString:[member state]];
     if ( ![member senator] ) {
@@ -273,6 +277,7 @@
 }
 
 - (IBAction) switchChamber: (UIGestureRecognizer *) sender  {
+    if ( switchingState ) return;
     //Switch between House and Senate views
     NSMutableArray *photoList = [[NSMutableArray alloc] init];
     if ( viewingSenate ) {
@@ -291,6 +296,83 @@
     
     photos = photoList;
     [self updateImage:YES];
+}
+
+- (IBAction) switchState: (UIGestureRecognizer *) sender  {
+    
+    switchingState = YES;
+    if ( statePickerView )
+        [statePickerView removeFromSuperview];
+    if ( pickerToolbar )
+        [pickerToolbar removeFromSuperview];
+    if (!statePickerDelegate)
+        statePickerDelegate = [[StatePickerViewDelegate alloc] init];
+    
+    Member *currentMember = photos[position];
+    NSInteger pickerIndex = [statePickerDelegate getIndex:[currentMember state]];
+    int x = 0;
+    int width = [UIScreen mainScreen].bounds.size.width;
+    int height = 200;
+    int y = [UIScreen mainScreen].bounds.size.height;
+    
+    statePickerView = [[UIPickerView alloc] initWithFrame:CGRectMake(x, y, width, height)];
+    statePickerView.delegate = statePickerDelegate;
+    statePickerView.dataSource = statePickerDelegate;
+    statePickerView.showsSelectionIndicator = YES;
+    [statePickerView selectRow:pickerIndex inComponent:0 animated:YES];
+    
+    pickerToolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(x, y-44, width, 44)];
+    pickerToolbar.barStyle = UIBarStyleBlackOpaque;
+    pickerToolbar.hidden = NO;
+    
+    NSMutableArray *barItems = [[NSMutableArray alloc] init];    
+    UIBarButtonItem *doneBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(statePickerDone)];
+    UIBarButtonItem *cancelBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(statePickerCancel)];
+    UIBarButtonItem *flexSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
+    [barItems addObject:flexSpace];
+    [barItems addObject:cancelBtn];
+    [barItems addObject:doneBtn];
+    
+    [pickerToolbar setItems:barItems animated:YES];
+    [pickerToolbar sizeToFit];
+    
+    [self.view addSubview:statePickerView];
+    [self.view addSubview:pickerToolbar];
+    
+    CGAffineTransform transform = CGAffineTransformMakeTranslation(0, -height);
+    [UIView animateWithDuration:0.5 animations:^{
+        statePickerView.transform = transform;
+        pickerToolbar.transform = transform;
+    }];
+}
+
+- (void) statePickerDone {
+    // Get the selected state, navigate to the first Member in that state, and close the picker
+    NSInteger row = [statePickerView selectedRowInComponent:0];
+    
+    NSString *selectedState = [statePickerDelegate getAbbr:row];
+    
+    for ( int x = 0; x < [photos count]; x++ ) {
+        Member *member = photos[x];
+        if ( [[member state] isEqualToString:selectedState] ) {
+            position = x;
+            [self updateImage:YES];
+            break;
+        }
+    }
+    
+    [self statePickerCancel];
+}
+
+- (void) statePickerCancel {
+    //Slides the PickerView down out of sight
+    CGAffineTransform transform = CGAffineTransformMakeTranslation(0, 200);
+
+    [UIView animateWithDuration:0.5 animations:^{
+        statePickerView.transform = transform;
+        pickerToolbar.transform = transform;
+    }];
+    switchingState = NO;
 }
 
 + (UIImage *) houseLogo {
