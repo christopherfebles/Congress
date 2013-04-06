@@ -7,28 +7,35 @@
 //
 
 #import "DataManager.h"
-#import "SenateXMLParserDelegate.h"
-#import "Senator.h"
+#import "MemberXMLParserDelegate.h"
+#import "Member.h"
 
 @implementation DataManager
 
 +(NSArray *) loadSenatorsFromXML {
-    
-    NSData *data = [[NSData alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"senate" ofType:@"xml"]];
+    return [DataManager loadFromXML:@"senate"];
+}
+
++(NSArray *) loadRepresentativesFromXML {
+    return [DataManager loadFromXML:@"house"];;
+}
+
++(NSArray *) loadFromXML: (NSString *) xmlFileName {
+    NSData *data = [[NSData alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:xmlFileName ofType:@"xml"]];
     NSXMLParser *parser = [[NSXMLParser alloc] initWithData:data];
     
-    SenateXMLParserDelegate *delegate = [[SenateXMLParserDelegate alloc] init];
+    MemberXMLParserDelegate *delegate = [[MemberXMLParserDelegate alloc] init];
     [parser setDelegate:delegate];
     [parser parse];
     
-    NSMutableArray *senators = [delegate senators];
+    NSMutableArray *members = [delegate members];
     
-    //Let's try sorting the senators by state
+    //Let's try sorting the members by state
     //See: http://stackoverflow.com/questions/805547/how-to-sort-an-nsmutablearray-with-custom-objects-in-it
     NSArray *sortedArray;
-    sortedArray = [senators sortedArrayUsingComparator:^NSComparisonResult(id a, id b) {
-        NSString *first = [(Senator*)a state];
-        NSString *second = [(Senator*)b state];
+    sortedArray = [members sortedArrayUsingComparator:^NSComparisonResult(id a, id b) {
+        NSString *first = [(Member*)a state];
+        NSString *second = [(Member*)b state];
         return [first compare:second];
     }];
     

@@ -553,8 +553,6 @@
 		007B867D16D70AD2002A3EE7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007B867C16D70AD2002A3EE7 /* QuartzCore.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		007B867F16D70CBB002A3EE7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007B867E16D70CBB002A3EE7 /* CoreData.framework */; };
 		007B868216D70CF9002A3EE7 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 007B868016D70CF9002A3EE7 /* DataModel.xcdatamodeld */; };
-		008D0D48170A38FE00C5681D /* Representative.m in Sources */ = {isa = PBXBuildFile; fileRef = 008D0D47170A38FE00C5681D /* Representative.m */; };
-		008D0D4B170A3C7800C5681D /* HouseXMLParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 008D0D4A170A3C7800C5681D /* HouseXMLParserDelegate.m */; };
 		009A9F3916D71F8F0085CFC5 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 009A9F3816D71F8F0085CFC5 /* DataManager.m */; };
 		00BC6DE4170F93C200DA13FC /* house_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 00BC6DE2170F93C200DA13FC /* house_logo.png */; };
 		00BC6DE5170F93C200DA13FC /* senate_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 00BC6DE3170F93C200DA13FC /* senate_logo.png */; };
@@ -570,8 +568,7 @@
 		00C685A616BB767000865F27 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C685A416BB767000865F27 /* MainStoryboard.storyboard */; };
 		00C685A916BB767000865F27 /* HelloWorldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C685A816BB767000865F27 /* HelloWorldViewController.m */; };
 		0E13679317037C1C00593D57 /* Member.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E13679217037C1C00593D57 /* Member.m */; };
-		0E13679617037D8200593D57 /* Senator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E13679517037D8200593D57 /* Senator.m */; };
-		0E1367991703845C00593D57 /* SenateXMLParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1367981703845C00593D57 /* SenateXMLParserDelegate.m */; };
+		0E1367991703845C00593D57 /* MemberXMLParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1367981703845C00593D57 /* MemberXMLParserDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1121,10 +1118,6 @@
 		007B867C16D70AD2002A3EE7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		007B867E16D70CBB002A3EE7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		007B868116D70CF9002A3EE7 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
-		008D0D46170A38FE00C5681D /* Representative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Representative.h; sourceTree = "<group>"; };
-		008D0D47170A38FE00C5681D /* Representative.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Representative.m; sourceTree = "<group>"; };
-		008D0D49170A3C7800C5681D /* HouseXMLParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HouseXMLParserDelegate.h; sourceTree = "<group>"; };
-		008D0D4A170A3C7800C5681D /* HouseXMLParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HouseXMLParserDelegate.m; sourceTree = "<group>"; };
 		009A9F3716D71F8F0085CFC5 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		009A9F3816D71F8F0085CFC5 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		00BC6DE2170F93C200DA13FC /* house_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = house_logo.png; sourceTree = "<group>"; };
@@ -1147,10 +1140,8 @@
 		00C685A816BB767000865F27 /* HelloWorldViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldViewController.m; sourceTree = "<group>"; };
 		0E13679117037C1C00593D57 /* Member.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Member.h; sourceTree = "<group>"; };
 		0E13679217037C1C00593D57 /* Member.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Member.m; sourceTree = "<group>"; };
-		0E13679417037D8200593D57 /* Senator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Senator.h; sourceTree = "<group>"; };
-		0E13679517037D8200593D57 /* Senator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Senator.m; sourceTree = "<group>"; };
-		0E1367971703845B00593D57 /* SenateXMLParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SenateXMLParserDelegate.h; sourceTree = "<group>"; };
-		0E1367981703845C00593D57 /* SenateXMLParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SenateXMLParserDelegate.m; sourceTree = "<group>"; };
+		0E1367971703845B00593D57 /* MemberXMLParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberXMLParserDelegate.h; sourceTree = "<group>"; };
+		0E1367981703845C00593D57 /* MemberXMLParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberXMLParserDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1184,10 +1175,6 @@
 			children = (
 				0E13679117037C1C00593D57 /* Member.h */,
 				0E13679217037C1C00593D57 /* Member.m */,
-				0E13679417037D8200593D57 /* Senator.h */,
-				0E13679517037D8200593D57 /* Senator.m */,
-				008D0D46170A38FE00C5681D /* Representative.h */,
-				008D0D47170A38FE00C5681D /* Representative.m */,
 			);
 			name = "Data Classes";
 			sourceTree = "<group>";
@@ -1225,10 +1212,8 @@
 		00C6859216BB767000865F27 /* CongressCards */ = {
 			isa = PBXGroup;
 			children = (
-				0E1367971703845B00593D57 /* SenateXMLParserDelegate.h */,
-				0E1367981703845C00593D57 /* SenateXMLParserDelegate.m */,
-				008D0D49170A3C7800C5681D /* HouseXMLParserDelegate.h */,
-				008D0D4A170A3C7800C5681D /* HouseXMLParserDelegate.m */,
+				0E1367971703845B00593D57 /* MemberXMLParserDelegate.h */,
+				0E1367981703845C00593D57 /* MemberXMLParserDelegate.m */,
 				009A9F3716D71F8F0085CFC5 /* DataManager.h */,
 				009A9F3816D71F8F0085CFC5 /* DataManager.m */,
 				008D0D45170A38C900C5681D /* Data Classes */,
@@ -2425,10 +2410,7 @@
 				007B868216D70CF9002A3EE7 /* DataModel.xcdatamodeld in Sources */,
 				009A9F3916D71F8F0085CFC5 /* DataManager.m in Sources */,
 				0E13679317037C1C00593D57 /* Member.m in Sources */,
-				0E13679617037D8200593D57 /* Senator.m in Sources */,
-				0E1367991703845C00593D57 /* SenateXMLParserDelegate.m in Sources */,
-				008D0D48170A38FE00C5681D /* Representative.m in Sources */,
-				008D0D4B170A3C7800C5681D /* HouseXMLParserDelegate.m in Sources */,
+				0E1367991703845C00593D57 /* MemberXMLParserDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

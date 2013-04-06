@@ -9,12 +9,15 @@
 #import "HelloWorldViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #import "DataManager.h"
-#import "Senator.h"
+#import "Member.h"
 
 @interface HelloWorldViewController () {
     NSArray *photos;
     int position;
+    int lastSenatePosition;
+    int lastHousePosition;
     NSArray *senators;
+    NSArray *representatives;
 }
 @property (weak, nonatomic) IBOutlet UIImageView *currentImage;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -58,7 +61,7 @@
     [self setImage:picture withAnimationSubType: animationSubType];
     
     [self addBorder];
-    [self addLogo:[member isMemberOfClass:[Senator class]]];
+    [self addLogo:[member senator]];
     
     self.textView.text = [member memberFull];
 }
@@ -129,6 +132,7 @@
     NSMutableArray *photoList = [[NSMutableArray alloc] init];
     
     senators = [DataManager loadSenatorsFromXML];
+    representatives = [DataManager loadRepresentativesFromXML];
     [photoList addObjectsFromArray:senators];
     
     photos = photoList;

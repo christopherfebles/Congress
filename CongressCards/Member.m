@@ -10,7 +10,7 @@
 
 @implementation Member
 
-@synthesize memberFull, lastName, firstName, party, state, address, phone, email, website, bioguide_id, photoFileName;
+@synthesize memberFull, lastName, firstName, party, state, address, phone, email, website, bioguide_id, photoFileName, classDistrict, senator;
 
 - (NSString *) memberFull {
     

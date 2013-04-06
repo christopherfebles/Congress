@@ -20,6 +20,8 @@
     NSString *website;
     NSString *bioguide_id;
     NSString *photoFileName;
+    NSString *classDistrict;
+    BOOL senator;
 }
 
 @property (nonatomic, retain) NSString *memberFull;
@@ -33,5 +35,9 @@
 @property (nonatomic, retain) NSString *website;
 @property (nonatomic, retain) NSString *bioguide_id;
 @property (nonatomic, retain) NSString *photoFileName;
+@property (nonatomic, retain) NSString *classDistrict;
+@property (nonatomic, assign) BOOL senator;
+
+- (NSString *) memberFull;
 
 @end

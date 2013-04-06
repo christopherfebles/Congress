@@ -11,5 +11,6 @@
 @interface DataManager : NSObject
 
 +(NSArray *) loadSenatorsFromXML;
++(NSArray *) loadRepresentativesFromXML;
 
 @end
