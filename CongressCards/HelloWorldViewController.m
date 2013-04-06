@@ -18,6 +18,7 @@
     int lastHousePosition;
     NSArray *senators;
     NSArray *representatives;
+    BOOL viewingSenate;
 }
 @property (weak, nonatomic) IBOutlet UIImageView *currentImage;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -136,6 +137,7 @@
     [photoList addObjectsFromArray:senators];
     
     photos = photoList;
+    viewingSenate = YES;
 }
 
 - (void) addLogo: (BOOL) senate {
@@ -155,8 +157,33 @@
     
     logoView.frame = CGRectMake(x, y, width, height);
     
+    logoView.userInteractionEnabled = YES;
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(switchChamber:)];
+    [logoView addGestureRecognizer:tap];
+    
     [self.view addSubview:logoView];
     [self.view bringSubviewToFront:logoView];
+}
+
+- (IBAction) switchChamber: (UIGestureRecognizer *) sender  {
+    //Switch between House and Senate views
+    NSMutableArray *photoList = [[NSMutableArray alloc] init];
+    if ( viewingSenate ) {
+        //Switch to House
+        viewingSenate = NO;
+        [photoList addObjectsFromArray:representatives];
+        lastSenatePosition = position;
+        position = lastHousePosition;
+    } else {
+        //Switch to Senate
+        viewingSenate = YES;
+        [photoList addObjectsFromArray:senators];
+        lastHousePosition = position;
+        position = lastSenatePosition;
+    }
+    
+    photos = photoList;
+    [self updateImage:YES];
 }
 
 + (UIImage *) houseLogo {
