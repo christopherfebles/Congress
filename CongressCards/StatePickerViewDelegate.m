@@ -12,6 +12,14 @@
 
 @synthesize states;
 
+- (id)init {
+    self = [super init];
+    if (self) {
+        [self populateStates];
+    }
+    return self;
+}
+
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow: (NSInteger)row inComponent:(NSInteger)component {
     // Handle the selection
 //    if ( !states ) [self populateStates];
@@ -53,14 +61,20 @@
 }
 
 - (NSArray *) sortKeys {
-    NSArray *stateAbbrs = [states allKeys];
-    stateAbbrs = [stateAbbrs sortedArrayUsingComparator:^NSComparisonResult(id a, id b) {
+    //Return a list of State abbreviations, sorted alphabetically by full state name
+    NSArray *stateNames = [states allValues];
+    stateNames = [stateNames sortedArrayUsingComparator:^NSComparisonResult(id a, id b) {
         NSString *first = (NSString *)a;
         NSString *second = (NSString *)b;
         
         return [first compare:second];
     }];
-    return stateAbbrs;
+    
+    NSMutableArray *sortedKeys = [[NSMutableArray alloc] init];
+    for ( NSString *stateName in stateNames )
+        [sortedKeys addObject:[states allKeysForObject:stateName][0]];    
+    
+    return sortedKeys;
 }
 
 - (void) populateStates {

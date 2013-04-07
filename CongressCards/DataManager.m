@@ -9,6 +9,7 @@
 #import "DataManager.h"
 #import "MemberXMLParserDelegate.h"
 #import "Member.h"
+#import "StatePickerViewDelegate.h"
 
 @implementation DataManager
 
@@ -34,10 +35,16 @@
     //See: http://stackoverflow.com/questions/805547/how-to-sort-an-nsmutablearray-with-custom-objects-in-it
     NSArray *sortedArray;
     sortedArray = [members sortedArrayUsingComparator:^NSComparisonResult(id a, id b) {
-        NSMutableString *first = [[NSMutableString alloc] initWithString:[(Member*)a state]];
+        
+        //Sort by full state name
+        NSDictionary *states = [[[StatePickerViewDelegate alloc] init] states];
+        NSString *firstState = [states objectForKey:[(Member*)a state]];
+        NSString *secondState = [states objectForKey:[(Member*)b state]];
+        
+        NSMutableString *first = [[NSMutableString alloc] initWithString:firstState];
         [first appendString:[(Member*)a classDistrict]];
         
-        NSMutableString *second = [[NSMutableString alloc] initWithString:[(Member*)b state]];
+        NSMutableString *second = [[NSMutableString alloc] initWithString:secondState];
         [second appendString:[(Member*)b classDistrict]];
         
         return [first compare:second];
