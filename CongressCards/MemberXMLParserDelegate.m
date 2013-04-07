@@ -10,7 +10,7 @@
 
 @implementation MemberXMLParserDelegate
 
-@synthesize members, member, elementValue;
+@synthesize members, member, elementValue, curCommittee;
 
 - (void) parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName
    namespaceURI:(NSString *)namespaceURI
@@ -51,8 +51,15 @@
  qualifiedName:(NSString *)qName
 {
 //    NSLog(@"Setting value for element: %@", elementName);
+    
     if ( elementValue != nil ) {
         elementValue = [[NSMutableString alloc] initWithString:[elementValue stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]];
+        
+        //Check for Java "null"
+        if ( [elementValue isEqualToString:@"null"] ) {
+            elementValue = nil;
+            return;
+        }
         
 //        NSLog(@"Processing value for: %@", elementValue);
         if ([elementName isEqualToString:@"lastName"]) {
@@ -79,6 +86,16 @@
             member.photoFileName = elementValue;
         } else if ([elementName isEqualToString:@"isSenator"]) {
             member.senator = [elementValue isEqualToString:@"true"];
+        } else if ([elementName isEqualToString:@"hometown"]) {
+            member.hometown = elementValue;
+        } else if ([elementName isEqualToString:@"leadershipPosition"]) {
+            member.leadershipPosition = elementValue;
+        } else if ([elementName isEqualToString:@"name"]) {
+            curCommittee = [[CommitteeAssignment alloc] init];
+            curCommittee.name = elementValue;
+        } else if ([elementName isEqualToString:@"position"]) {
+            curCommittee.position = elementValue;
+            [member addCommitteeAssignment:curCommittee];
         }
         elementValue = nil;
     }

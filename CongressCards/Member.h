@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CommitteeAssignment.h"
 
 @interface Member : NSObject {
     NSString *memberFull;
@@ -21,6 +22,9 @@
     NSString *bioguide_id;
     NSString *photoFileName;
     NSString *classDistrict;
+    NSString *hometown;
+    NSString *leadershipPosition;
+    NSMutableArray *committees;
     BOOL senator;
 }
 
@@ -36,8 +40,12 @@
 @property (nonatomic, retain) NSString *bioguide_id;
 @property (nonatomic, retain) NSString *photoFileName;
 @property (nonatomic, retain) NSString *classDistrict;
+@property (nonatomic, retain) NSString *hometown;
+@property (nonatomic, retain) NSString *leadershipPosition;
+@property (nonatomic, retain) NSMutableArray *committees;
 @property (nonatomic, assign) BOOL senator;
 
 - (NSString *) memberFull;
+- (void) addCommitteeAssignment: (CommitteeAssignment *) newCommittee;
 
 @end

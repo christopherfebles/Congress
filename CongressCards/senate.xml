@@ -12,7 +12,11 @@
 		<email>null</email>
 		<phone>null</phone>
 		<address>null</address>
+		<hometown>null</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_Vice_President_of_the_United_States_Democratic_Party_null.jpg</imgFileName>
+		<committees>
+		</committees>
 	</member>
 	<member>
 		<firstName>Patrick</firstName>
@@ -26,7 +30,11 @@
 		<email>null</email>
 		<phone>null</phone>
 		<address>null</address>
+		<hometown>null</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_President_pro_tempore_Democratic_Party_null.jpg</imgFileName>
+		<committees>
+		</committees>
 	</member>
 	<member>
 		<firstName>Lamar</firstName>
@@ -40,7 +48,27 @@
 		<email>http://www.alexander.senate.gov/public/index.cfm?p=Email</email>
 		<phone>(202) 224-4944</phone>
 		<address>455 DIRKSEN SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Maryville</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_TN_2_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on Appropriations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Energy and Natural Resources</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Health, Education, Labor, and Pensions</name>
+				<position>Ranking</position>
+			</committee>
+			<committee>
+				<name>Committee on Rules and Administration</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Kelly</firstName>
@@ -54,7 +82,35 @@
 		<email>http://www.ayotte.senate.gov/?p=contact</email>
 		<phone>(202) 224-3324</phone>
 		<address>144 RUSSELL SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Nashua</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_NH_3_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Commission on Security and Cooperation in Europe</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Special Committee on Aging</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Armed Services</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on the Budget</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Commerce, Science, and Transportation</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Homeland Security and Governmental Affairs</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Tammy</firstName>
@@ -68,7 +124,27 @@
 		<email>http://www.baldwin.senate.gov/contact.cfm</email>
 		<phone>(202) 224-5653</phone>
 		<address>1 RUSSELL COURTYARD WASHINGTON DC 20510</address>
+		<hometown>Madison</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_WI_1_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Special Committee on Aging</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on the Budget</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Homeland Security and Governmental Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Health, Education, Labor, and Pensions</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>John</firstName>
@@ -82,7 +158,27 @@
 		<email>http://www.barrasso.senate.gov/public/index.cfm?FuseAction=ContactUs.ContactForm</email>
 		<phone>(202) 224-6441</phone>
 		<address>307 DIRKSEN SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Casper</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_WY_1_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on Indian Affairs</name>
+				<position>Vice_chairman</position>
+			</committee>
+			<committee>
+				<name>Committee on Energy and Natural Resources</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Environment and Public Works</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Foreign Relations</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Max</firstName>
@@ -96,7 +192,27 @@
 		<email>http://www.baucus.senate.gov/contact/emailForm.cfm?subj=issue</email>
 		<phone>(202) 224-2651</phone>
 		<address>511 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Missoula</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_MT_2_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Joint Committee on Taxation</name>
+				<position>Vice_chairman</position>
+			</committee>
+			<committee>
+				<name>Committee on Agriculture, Nutrition, and Forestry</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Environment and Public Works</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Finance</name>
+				<position>Chairman</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Mark</firstName>
@@ -110,7 +226,31 @@
 		<email>http://www.begich.senate.gov/public/index.cfm?p=EmailSenator</email>
 		<phone>(202) 224-3004</phone>
 		<address>111 RUSSELL SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Anchorage</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_AK_2_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on Indian Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Appropriations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Commerce, Science, and Transportation</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Homeland Security and Governmental Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Veterans' Affairs</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Michael</firstName>
@@ -124,7 +264,23 @@
 		<email>http://www.bennet.senate.gov/contact/</email>
 		<phone>(202) 224-5852</phone>
 		<address>458 RUSSELL SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Denver</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_CO_3_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on Agriculture, Nutrition, and Forestry</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Finance</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Health, Education, Labor, and Pensions</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Richard</firstName>
@@ -138,7 +294,35 @@
 		<email>http://www.blumenthal.senate.gov/contact/</email>
 		<phone>(202) 224-2823</phone>
 		<address>702 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Greenwich</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_CT_3_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Commission on Security and Cooperation in Europe</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Special Committee on Aging</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Armed Services</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Commerce, Science, and Transportation</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on the Judiciary</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Veterans' Affairs</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Roy</firstName>
@@ -152,7 +336,31 @@
 		<email>http://www.blunt.senate.gov/public/index.cfm/contact-form?p=contact-roy</email>
 		<phone>(202) 224-5721</phone>
 		<address>260 RUSSELL SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Springfield</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_MO_3_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Joint Committee on the Library</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Appropriations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Armed Services</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Commerce, Science, and Transportation</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Rules and Administration</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>John</firstName>
@@ -166,7 +374,27 @@
 		<email>http://www.boozman.senate.gov/public/index.cfm/e-mail-me</email>
 		<phone>(202) 224-4843</phone>
 		<address>320 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Rogers</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_AR_3_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on Agriculture, Nutrition, and Forestry</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Appropriations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Environment and Public Works</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Veterans' Affairs</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Barbara</firstName>
@@ -180,7 +408,27 @@
 		<email>http://www.boxer.senate.gov/en/contact/</email>
 		<phone>(202) 224-3553</phone>
 		<address>112 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Greenbrae</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_CA_3_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Select Committee on Ethics</name>
+				<position>Chairman</position>
+			</committee>
+			<committee>
+				<name>Committee on Commerce, Science, and Transportation</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Environment and Public Works</name>
+				<position>Chairman</position>
+			</committee>
+			<committee>
+				<name>Committee on Foreign Relations</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Sherrod</firstName>
@@ -194,7 +442,31 @@
 		<email>http://www.brown.senate.gov/contact/</email>
 		<phone>(202) 224-2315</phone>
 		<address>713 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Lorain</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_OH_1_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Select Committee on Ethics</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Agriculture, Nutrition, and Forestry</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Banking, Housing, and Urban Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Finance</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Veterans' Affairs</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Richard</firstName>
@@ -208,7 +480,27 @@
 		<email>http://www.burr.senate.gov/public/index.cfm?FuseAction=Contact.ContactForm</email>
 		<phone>(202) 224-3154</phone>
 		<address>217 RUSSELL SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Winston-Salem</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_NC_3_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Select Committee on Intelligence</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Finance</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Health, Education, Labor, and Pensions</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Veterans' Affairs</name>
+				<position>Ranking</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Maria</firstName>
@@ -222,7 +514,31 @@
 		<email>http://www.cantwell.senate.gov/public/index.cfm/email-maria</email>
 		<phone>(202) 224-3441</phone>
 		<address>311 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Edmonds</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_WA_1_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on Indian Affairs</name>
+				<position>Chairman</position>
+			</committee>
+			<committee>
+				<name>Committee on Commerce, Science, and Transportation</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Energy and Natural Resources</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Finance</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Small Business and Entrepreneurship</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Ben</firstName>
@@ -236,7 +552,31 @@
 		<email>http://www.cardin.senate.gov/contact/</email>
 		<phone>(202) 224-4524</phone>
 		<address>509 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Baltimore</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_MD_1_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Commission on Security and Cooperation in Europe</name>
+				<position>Chairman</position>
+			</committee>
+			<committee>
+				<name>Committee on Environment and Public Works</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Finance</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Foreign Relations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Small Business and Entrepreneurship</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Tom</firstName>
@@ -250,7 +590,23 @@
 		<email>http://carper.senate.gov/public/index.cfm/email-senator-carper</email>
 		<phone>(202) 224-2441</phone>
 		<address>513 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Wilmington</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_DE_1_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on Environment and Public Works</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Finance</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Homeland Security and Governmental Affairs</name>
+				<position>Chairman</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Bob</firstName>
@@ -264,7 +620,31 @@
 		<email>http://www.casey.senate.gov/contact/</email>
 		<phone>(202) 224-6324</phone>
 		<address>393 RUSSELL SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Scranton</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_PA_1_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Joint Economic Committee</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Special Committee on Aging</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Finance</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Foreign Relations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Health, Education, Labor, and Pensions</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Saxby</firstName>
@@ -278,7 +658,35 @@
 		<email>http://www.chambliss.senate.gov/public/index.cfm?p=Email</email>
 		<phone>(202) 224-3521</phone>
 		<address>416 RUSSELL SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Moultrie</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_GA_2_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Commission on Security and Cooperation in Europe</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Joint Committee on Printing</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Select Committee on Intelligence</name>
+				<position>Vice_chairman</position>
+			</committee>
+			<committee>
+				<name>Committee on Agriculture, Nutrition, and Forestry</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Armed Services</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Rules and Administration</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Dan</firstName>
@@ -293,7 +701,27 @@
 		<phone>(202) 224-5623</phone>
 		<address>493 RUSSELL SENATE OFFICE BUILDING WASHINGTON DC
       20510</address>
+		<hometown>Indianapolis</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_IN_3_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Joint Economic Committee</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Select Committee on Intelligence</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Appropriations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Commerce, Science, and Transportation</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Tom</firstName>
@@ -307,7 +735,23 @@
 		<email>http://www.coburn.senate.gov/public/index.cfm/contactsenatorcoburn?p=ContactForm</email>
 		<phone>(202) 224-5754</phone>
 		<address>172 RUSSELL SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Muskogee</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_OK_3_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Select Committee on Intelligence</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Banking, Housing, and Urban Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Homeland Security and Governmental Affairs</name>
+				<position>Ranking</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Thad</firstName>
@@ -321,7 +765,23 @@
 		<email>http://www.cochran.senate.gov/public/index.cfm/email-me</email>
 		<phone>(202) 224-5054</phone>
 		<address>113 DIRKSEN SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Oxford</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_MS_2_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on Agriculture, Nutrition, and Forestry</name>
+				<position>Ranking</position>
+			</committee>
+			<committee>
+				<name>Committee on Appropriations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Rules and Administration</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Susan</firstName>
@@ -335,7 +795,23 @@
 		<email>http://www.collins.senate.gov/public/index.cfm/email</email>
 		<phone>(202) 224-2523</phone>
 		<address>413 DIRKSEN SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Bangor</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_ME_2_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Select Committee on Intelligence</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Special Committee on Aging</name>
+				<position>Ranking</position>
+			</committee>
+			<committee>
+				<name>Committee on Appropriations</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Chris</firstName>
@@ -349,7 +825,27 @@
 		<email>http://www.coons.senate.gov/contact/</email>
 		<phone>(202) 224-5042</phone>
 		<address>127A RUSSELL SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Wilmington</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_DE_2_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on the Budget</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Energy and Natural Resources</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Foreign Relations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on the Judiciary</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Bob</firstName>
@@ -363,7 +859,23 @@
 		<email>http://www.corker.senate.gov/public/index.cfm?p=ContactMe</email>
 		<phone>(202) 224-3344</phone>
 		<address>425 DIRKSEN SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Chattanooga</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_TN_1_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Special Committee on Aging</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Banking, Housing, and Urban Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Foreign Relations</name>
+				<position>Ranking</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>John</firstName>
@@ -377,7 +889,23 @@
 		<email>http://www.cornyn.senate.gov/public/index.cfm?p=ContactForm</email>
 		<phone>(202) 224-2934</phone>
 		<address>517 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>San Antonio</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_TX_2_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>United States Senate Caucus on International Narcotics Control</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Finance</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on the Judiciary</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Mo</firstName>
@@ -391,7 +919,23 @@
 		<email>http://www.cowan.senate.gov/contact</email>
 		<phone>(202) 224-2742</phone>
 		<address>359 DIRKSEN SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Stoughton</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_MA_2_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on Agriculture, Nutrition, and Forestry</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Commerce, Science, and Transportation</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Small Business and Entrepreneurship</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Mike</firstName>
@@ -405,7 +949,31 @@
 		<email>http://www.crapo.senate.gov/contact/email.cfm</email>
 		<phone>(202) 224-6142</phone>
 		<address>239 DIRKSEN SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Idaho Falls</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_ID_3_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on Indian Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Banking, Housing, and Urban Affairs</name>
+				<position>Ranking</position>
+			</committee>
+			<committee>
+				<name>Committee on the Budget</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Environment and Public Works</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Finance</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Ted</firstName>
@@ -419,7 +987,31 @@
 		<email>http://www.cruz.senate.gov/contact.cfm</email>
 		<phone>(202) 224-5922</phone>
 		<address>B40B DIRKSEN SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Houston</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_TX_1_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Special Committee on Aging</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Armed Services</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Commerce, Science, and Transportation</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on the Judiciary</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Rules and Administration</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Joe</firstName>
@@ -433,7 +1025,23 @@
 		<email>http://www.donnelly.senate.gov/contact.cfm</email>
 		<phone>(202) 224-4814</phone>
 		<address>B33 RUSSELL SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Granger</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_IN_1_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Special Committee on Aging</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Agriculture, Nutrition, and Forestry</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Armed Services</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Dick</firstName>
@@ -447,7 +1055,31 @@
 		<email>http://www.durbin.senate.gov/public/index.cfm/contact</email>
 		<phone>(202) 224-2152</phone>
 		<address>711 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Springfield</hometown>
+		<leadershipPosition>Assistant Majority Leader</leadershipPosition>
 		<imgFileName>Senate_IL_2_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Joint Committee on the Library</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Appropriations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Foreign Relations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on the Judiciary</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Rules and Administration</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Mike</firstName>
@@ -461,7 +1093,31 @@
 		<email>http://www.enzi.senate.gov/public/index.cfm/contact?p=e-mail-senator-enzi</email>
 		<phone>(202) 224-3424</phone>
 		<address>379A RUSSELL SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Gillette</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_WY_2_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on the Budget</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Finance</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Homeland Security and Governmental Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Health, Education, Labor, and Pensions</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Small Business and Entrepreneurship</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Dianne</firstName>
@@ -475,7 +1131,31 @@
 		<email>http://www.feinstein.senate.gov/public/index.cfm/e-mail-me</email>
 		<phone>(202) 224-3841</phone>
 		<address>331 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>San Francisco</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_CA_1_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>United States Senate Caucus on International Narcotics Control</name>
+				<position>Chairman</position>
+			</committee>
+			<committee>
+				<name>Select Committee on Intelligence</name>
+				<position>Chairman</position>
+			</committee>
+			<committee>
+				<name>Committee on Appropriations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on the Judiciary</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Rules and Administration</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Deb</firstName>
@@ -489,7 +1169,31 @@
 		<email>http://www.fischer.senate.gov/public/index.cfm/email-me</email>
 		<phone>(202) 224-6551</phone>
 		<address>825 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Valentine</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_NE_1_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on Indian Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Armed Services</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Commerce, Science, and Transportation</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Environment and Public Works</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Small Business and Entrepreneurship</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Jeff</firstName>
@@ -503,7 +1207,27 @@
 		<email>http://www.flake.senate.gov/contact.cfm</email>
 		<phone>(202) 224-4521</phone>
 		<address>B85 RUSSELL SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Mesa</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_AZ_1_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Special Committee on Aging</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Energy and Natural Resources</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Foreign Relations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on the Judiciary</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Al</firstName>
@@ -517,7 +1241,27 @@
 		<email>http://www.franken.senate.gov/?p=contact</email>
 		<phone>(202) 224-5641</phone>
 		<address>309 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Minneapolis</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_MN_2_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on Indian Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Energy and Natural Resources</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Health, Education, Labor, and Pensions</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on the Judiciary</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Kirsten</firstName>
@@ -531,7 +1275,27 @@
 		<email>http://www.gillibrand.senate.gov/contact/</email>
 		<phone>(202) 224-4451</phone>
 		<address>478 RUSSELL SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Hudson</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_NY_1_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Special Committee on Aging</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Agriculture, Nutrition, and Forestry</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Armed Services</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Environment and Public Works</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Lindsey</firstName>
@@ -545,7 +1309,27 @@
 		<email>http://lgraham.senate.gov/public/index.cfm?FuseAction=Contact.LandingPage</email>
 		<phone>(202) 224-5972</phone>
 		<address>290 RUSSELL SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Seneca</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_SC_2_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on Appropriations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Armed Services</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on the Budget</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on the Judiciary</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Chuck</firstName>
@@ -559,7 +1343,35 @@
 		<email>http://www.grassley.senate.gov/contact/contact.cfm</email>
 		<phone>(202) 224-3744</phone>
 		<address>135 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>New Hartford</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_IA_3_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Joint Committee on Taxation</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>United States Senate Caucus on International Narcotics Control</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Agriculture, Nutrition, and Forestry</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on the Budget</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Finance</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on the Judiciary</name>
+				<position>Ranking</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Kay</firstName>
@@ -573,7 +1385,27 @@
 		<email>http://www.hagan.senate.gov/?p=contact</email>
 		<phone>(202) 224-6342</phone>
 		<address>521 DIRKSEN SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Greensboro</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_NC_2_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on Armed Services</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Banking, Housing, and Urban Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Health, Education, Labor, and Pensions</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Small Business and Entrepreneurship</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Tom</firstName>
@@ -587,7 +1419,27 @@
 		<email>http://www.harkin.senate.gov/contact.cfm</email>
 		<phone>(202) 224-3254</phone>
 		<address>731 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Cumming</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_IA_2_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on Agriculture, Nutrition, and Forestry</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Appropriations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Health, Education, Labor, and Pensions</name>
+				<position>Chairman</position>
+			</committee>
+			<committee>
+				<name>Committee on Small Business and Entrepreneurship</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Orrin</firstName>
@@ -601,7 +1453,31 @@
 		<email>http://www.hatch.senate.gov/public/index.cfm/contact?p=Email-Orrin</email>
 		<phone>(202) 224-5251</phone>
 		<address>104 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Salt Lake City</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_UT_1_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Joint Committee on Taxation</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Special Committee on Aging</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Finance</name>
+				<position>Ranking</position>
+			</committee>
+			<committee>
+				<name>Committee on Health, Education, Labor, and Pensions</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on the Judiciary</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Martin</firstName>
@@ -615,7 +1491,23 @@
 		<email>http://www.heinrich.senate.gov/contact.cfm</email>
 		<phone>(202) 224-5521</phone>
 		<address>B40D DIRKSEN SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Albuquerque</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_NM_1_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Joint Economic Committee</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Select Committee on Intelligence</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Energy and Natural Resources</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Heidi</firstName>
@@ -629,7 +1521,31 @@
 		<email>http://www.heitkamp.senate.gov/contact.cfm</email>
 		<phone>(202) 224-2043</phone>
 		<address>G55 DIRKSEN SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Mandan</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_ND_1_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on Indian Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Agriculture, Nutrition, and Forestry</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Banking, Housing, and Urban Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Homeland Security and Governmental Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Small Business and Entrepreneurship</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Dean</firstName>
@@ -643,7 +1559,31 @@
 		<email>http://www.heller.senate.gov/public/index.cfm/contact-form</email>
 		<phone>(202) 224-6244</phone>
 		<address>361A RUSSELL SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Carson City</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_NV_1_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Special Committee on Aging</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Banking, Housing, and Urban Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Commerce, Science, and Transportation</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Energy and Natural Resources</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Veterans' Affairs</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Mazie</firstName>
@@ -657,7 +1597,23 @@
 		<email>http://www.hirono.senate.gov/contact.cfm</email>
 		<phone>(202) 224-6361</phone>
 		<address>B40E DIRKSEN SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Honolulu</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_HI_1_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on Armed Services</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on the Judiciary</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Veterans' Affairs</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>John</firstName>
@@ -671,7 +1627,27 @@
 		<email>http://www.hoeven.senate.gov/public/index.cfm/email-the-senator</email>
 		<phone>(202) 224-2551</phone>
 		<address>120 RUSSELL SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Bismarck</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_ND_3_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on Indian Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Agriculture, Nutrition, and Forestry</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Appropriations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Energy and Natural Resources</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Jim</firstName>
@@ -685,7 +1661,19 @@
 		<email>http://www.inhofe.senate.gov/public/index.cfm?FuseAction=Contact.ContactForm</email>
 		<phone>(202) 224-4721</phone>
 		<address>205 RUSSELL SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Tulsa</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_OK_2_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on Armed Services</name>
+				<position>Ranking</position>
+			</committee>
+			<committee>
+				<name>Committee on Environment and Public Works</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Johnny</firstName>
@@ -699,7 +1687,27 @@
 		<email>http://www.isakson.senate.gov/public/index.cfm/email-me</email>
 		<phone>(202) 224-3643</phone>
 		<address>131 RUSSELL SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Marietta</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_GA_3_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Select Committee on Ethics</name>
+				<position>Vice_chairman</position>
+			</committee>
+			<committee>
+				<name>Committee on Finance</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Health, Education, Labor, and Pensions</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Veterans' Affairs</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Mike</firstName>
@@ -713,7 +1721,27 @@
 		<email>http://www.johanns.senate.gov/public/?p=ContactSenatorJohanns</email>
 		<phone>(202) 224-4224</phone>
 		<address>404 RUSSELL SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Omaha</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_NE_2_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on Agriculture, Nutrition, and Forestry</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Appropriations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Banking, Housing, and Urban Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Veterans' Affairs</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Ron</firstName>
@@ -727,7 +1755,31 @@
 		<email>http://www.ronjohnson.senate.gov/public/index.cfm/contact</email>
 		<phone>(202) 224-5323</phone>
 		<address>386 RUSSELL SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Oshkosh</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_WI_3_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on the Budget</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Commerce, Science, and Transportation</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Foreign Relations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Homeland Security and Governmental Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Small Business and Entrepreneurship</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Tim</firstName>
@@ -741,7 +1793,27 @@
 		<email>http://www.johnson.senate.gov/public/index.cfm?p=Contact</email>
 		<phone>(202) 224-5842</phone>
 		<address>136 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Vermillion</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_SD_2_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on Indian Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Appropriations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Banking, Housing, and Urban Affairs</name>
+				<position>Chairman</position>
+			</committee>
+			<committee>
+				<name>Committee on Energy and Natural Resources</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Tim</firstName>
@@ -755,7 +1827,23 @@
 		<email>http://www.kaine.senate.gov/contact.cfm</email>
 		<phone>(202) 224-4024</phone>
 		<address>B40C DIRKSEN SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Richmond</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_VA_1_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on Armed Services</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on the Budget</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Foreign Relations</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Angus</firstName>
@@ -769,7 +1857,27 @@
 		<email>http://www.king.senate.gov/contact.cfm</email>
 		<phone>(202) 224-5344</phone>
 		<address>188 RUSSELL SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Brunswick</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_ME_1_I.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Select Committee on Intelligence</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Armed Services</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on the Budget</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Rules and Administration</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Mark</firstName>
@@ -783,7 +1891,27 @@
 		<email>http://www.kirk.senate.gov/?p=contact</email>
 		<phone>(202) 224-2854</phone>
 		<address>524 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Highland Park</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_IL_3_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Special Committee on Aging</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Appropriations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Banking, Housing, and Urban Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Health, Education, Labor, and Pensions</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Amy</firstName>
@@ -797,7 +1925,31 @@
 		<email>http://www.klobuchar.senate.gov/emailamy.cfm</email>
 		<phone>(202) 224-3244</phone>
 		<address>302 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Minneapolis</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_MN_1_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Joint Economic Committee</name>
+				<position>Vice_chairman</position>
+			</committee>
+			<committee>
+				<name>Committee on Agriculture, Nutrition, and Forestry</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Commerce, Science, and Transportation</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on the Judiciary</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Rules and Administration</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Mary</firstName>
@@ -811,7 +1963,27 @@
 		<email>http://www.landrieu.senate.gov/?p=contact</email>
 		<phone>(202) 224-5824</phone>
 		<address>703 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>New Orleans</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_LA_2_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on Appropriations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Energy and Natural Resources</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Homeland Security and Governmental Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Small Business and Entrepreneurship</name>
+				<position>Chairman</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Frank</firstName>
@@ -825,7 +1997,23 @@
 		<email>http://www.lautenberg.senate.gov/contact/routing.cfm</email>
 		<phone>(202) 224-3224</phone>
 		<address>141 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Cliffside Park</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_NJ_2_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on Appropriations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Commerce, Science, and Transportation</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Environment and Public Works</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Patrick</firstName>
@@ -839,7 +2027,31 @@
 		<email>http://www.leahy.senate.gov/contact/</email>
 		<phone>(202) 224-4242</phone>
 		<address>437 RUSSELL SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Middlesex</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_VT_3_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Joint Committee on the Library</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Agriculture, Nutrition, and Forestry</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Appropriations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on the Judiciary</name>
+				<position>Chairman</position>
+			</committee>
+			<committee>
+				<name>Committee on Rules and Administration</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Mike</firstName>
@@ -853,7 +2065,27 @@
 		<email>http://www.lee.senate.gov/public/index.cfm/contact</email>
 		<phone>(202) 224-5444</phone>
 		<address>316 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Alphine</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_UT_3_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Joint Economic Committee</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Armed Services</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Energy and Natural Resources</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on the Judiciary</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Carl</firstName>
@@ -867,7 +2099,27 @@
 		<email>http://www.levin.senate.gov/contact/</email>
 		<phone>(202) 224-6221</phone>
 		<address>269 RUSSELL SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Detroit</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_MI_2_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Select Committee on Intelligence</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Armed Services</name>
+				<position>Chairman</position>
+			</committee>
+			<committee>
+				<name>Committee on Homeland Security and Governmental Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Small Business and Entrepreneurship</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Joe</firstName>
@@ -881,7 +2133,27 @@
 		<email>http://www.manchin.senate.gov/public/index.cfm/contact-form</email>
 		<phone>(202) 224-3954</phone>
 		<address>306 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Charleston</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_WV_1_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Special Committee on Aging</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Armed Services</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Banking, Housing, and Urban Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Energy and Natural Resources</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>John</firstName>
@@ -895,7 +2167,31 @@
 		<email>http://www.mccain.senate.gov/public/index.cfm?FuseAction=Contact.ContactForm</email>
 		<phone>(202) 224-2235</phone>
 		<address>241 RUSSELL SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Phoenix</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_AZ_3_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on Indian Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Select Committee on Intelligence</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Armed Services</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Foreign Relations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Homeland Security and Governmental Affairs</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Claire</firstName>
@@ -909,7 +2205,27 @@
 		<email>http://www.mccaskill.senate.gov/?p=contact</email>
 		<phone>(202) 224-6154</phone>
 		<address>506 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>St. Louis</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_MO_1_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Special Committee on Aging</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Armed Services</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Commerce, Science, and Transportation</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Homeland Security and Governmental Affairs</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Mitch</firstName>
@@ -923,7 +2239,27 @@
 		<email>http://www.mcconnell.senate.gov/public/index.cfm?p=contact</email>
 		<phone>(202) 224-2541</phone>
 		<address>317 RUSSELL SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Louisville</hometown>
+		<leadershipPosition>Minority Leader</leadershipPosition>
 		<imgFileName>Senate_KY_2_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Select Committee on Intelligence</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Agriculture, Nutrition, and Forestry</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Appropriations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Rules and Administration</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Bob</firstName>
@@ -937,7 +2273,23 @@
 		<email>http://menendez.senate.gov/contact/</email>
 		<phone>(202) 224-4744</phone>
 		<address>528 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Hoboken</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_NJ_1_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on Banking, Housing, and Urban Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Finance</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Foreign Relations</name>
+				<position>Chairman</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Jeff</firstName>
@@ -951,7 +2303,27 @@
 		<email>http://www.merkley.senate.gov/contact/</email>
 		<phone>(202) 224-3753</phone>
 		<address>313 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Portland</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_OR_2_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on Appropriations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Banking, Housing, and Urban Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on the Budget</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Environment and Public Works</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Barbara</firstName>
@@ -965,7 +2337,23 @@
 		<email>http://www.mikulski.senate.gov/contact/</email>
 		<phone>(202) 224-4654</phone>
 		<address>503 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Baltimore</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_MD_3_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Select Committee on Intelligence</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Appropriations</name>
+				<position>Chairman</position>
+			</committee>
+			<committee>
+				<name>Committee on Health, Education, Labor, and Pensions</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Jerry</firstName>
@@ -979,7 +2367,23 @@
 		<email>http://moran.senate.gov/public/index.cfm/e-mail-jerry</email>
 		<phone>(202) 224-6521</phone>
 		<address>354 RUSSELL SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Hays</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_KS_3_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on Appropriations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Banking, Housing, and Urban Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Veterans' Affairs</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Lisa</firstName>
@@ -993,7 +2397,27 @@
 		<email>http://www.murkowski.senate.gov/public/index.cfm?p=Contact</email>
 		<phone>(202) 224-6665</phone>
 		<address>709 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Anchorage</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_AK_3_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on Indian Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Appropriations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Energy and Natural Resources</name>
+				<position>Ranking</position>
+			</committee>
+			<committee>
+				<name>Committee on Health, Education, Labor, and Pensions</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Chris</firstName>
@@ -1007,7 +2431,23 @@
 		<email>http://www.murphy.senate.gov/contact.cfm</email>
 		<phone>(202) 224-4041</phone>
 		<address>B40A DIRKSEN SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Cheshire</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_CT_1_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Joint Economic Committee</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Foreign Relations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Health, Education, Labor, and Pensions</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Patty</firstName>
@@ -1021,7 +2461,31 @@
 		<email>http://www.murray.senate.gov/public/index.cfm/contactme</email>
 		<phone>(202) 224-2621</phone>
 		<address>154 RUSSELL SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Seattle</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_WA_3_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on Appropriations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on the Budget</name>
+				<position>Chairman</position>
+			</committee>
+			<committee>
+				<name>Committee on Health, Education, Labor, and Pensions</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Rules and Administration</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Veterans' Affairs</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Bill</firstName>
@@ -1035,7 +2499,31 @@
 		<email>http://www.billnelson.senate.gov/contact/index.cfm</email>
 		<phone>(202) 224-5274</phone>
 		<address>716 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Orlando</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_FL_1_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Special Committee on Aging</name>
+				<position>Chairman</position>
+			</committee>
+			<committee>
+				<name>Committee on Armed Services</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on the Budget</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Commerce, Science, and Transportation</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Finance</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Rand</firstName>
@@ -1049,7 +2537,27 @@
 		<email>http://www.paul.senate.gov/?p=contact</email>
 		<phone>(202) 224-4343</phone>
 		<address>208 RUSSELL SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Bowling Green</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_KY_3_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on Foreign Relations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Homeland Security and Governmental Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Health, Education, Labor, and Pensions</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Small Business and Entrepreneurship</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Rob</firstName>
@@ -1063,7 +2571,27 @@
 		<email>http://www.portman.senate.gov/public/index.cfm/contact?p=contact-form</email>
 		<phone>(202) 224-3353</phone>
 		<address>448 RUSSELL SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Terrace Park</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_OH_3_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on the Budget</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Energy and Natural Resources</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Finance</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Homeland Security and Governmental Affairs</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Mark</firstName>
@@ -1077,7 +2605,35 @@
 		<email>http://www.pryor.senate.gov/public/index.cfm?p=ContactMe</email>
 		<phone>(202) 224-2353</phone>
 		<address>255 DIRKSEN SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Little Rock</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_AR_2_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Select Committee on Ethics</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Appropriations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Commerce, Science, and Transportation</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Homeland Security and Governmental Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Rules and Administration</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Small Business and Entrepreneurship</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Jack</firstName>
@@ -1091,7 +2647,23 @@
 		<email>http://www.reed.senate.gov/contact/</email>
 		<phone>(202) 224-4642</phone>
 		<address>728 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Cranston</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_RI_2_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on Appropriations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Armed Services</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Banking, Housing, and Urban Affairs</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Harry</firstName>
@@ -1105,7 +2677,15 @@
 		<email>http://www.reid.senate.gov/contact/index.cfm</email>
 		<phone>(202) 224-3542</phone>
 		<address>522 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Las Vegas</hometown>
+		<leadershipPosition>Majority Leader</leadershipPosition>
 		<imgFileName>Senate_NV_3_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Select Committee on Intelligence</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Jim</firstName>
@@ -1119,7 +2699,35 @@
 		<email>http://www.risch.senate.gov/public/index.cfm?p=Email</email>
 		<phone>(202) 224-2752</phone>
 		<address>483 RUSSELL SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Boise</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_ID_2_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>United States Senate Caucus on International Narcotics Control</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Select Committee on Ethics</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Select Committee on Intelligence</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Energy and Natural Resources</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Foreign Relations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Small Business and Entrepreneurship</name>
+				<position>Ranking</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Pat</firstName>
@@ -1133,7 +2741,39 @@
 		<email>http://www.roberts.senate.gov/public/index.cfm?p=EmailPat</email>
 		<phone>(202) 224-4774</phone>
 		<address>109 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Dodge City</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_KS_2_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Joint Committee on the Library</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Joint Committee on Printing</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Select Committee on Ethics</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Agriculture, Nutrition, and Forestry</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Finance</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Health, Education, Labor, and Pensions</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Rules and Administration</name>
+				<position>Ranking</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Jay</firstName>
@@ -1147,7 +2787,31 @@
 		<email>http://www.rockefeller.senate.gov/public/index.cfm/email-jay</email>
 		<phone>(202) 224-6472</phone>
 		<address>531 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Charleston</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_WV_2_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Joint Committee on Taxation</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Select Committee on Intelligence</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Commerce, Science, and Transportation</name>
+				<position>Chairman</position>
+			</committee>
+			<committee>
+				<name>Committee on Finance</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Veterans' Affairs</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Marco</firstName>
@@ -1161,7 +2825,31 @@
 		<email>http://www.rubio.senate.gov/public/index.cfm/contact</email>
 		<phone>(202) 224-3041</phone>
 		<address>317 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Miami</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_FL_3_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Commission on Security and Cooperation in Europe</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Select Committee on Intelligence</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Commerce, Science, and Transportation</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Foreign Relations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Small Business and Entrepreneurship</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Bernie</firstName>
@@ -1175,7 +2863,35 @@
 		<email>http://www.sanders.senate.gov/contact/</email>
 		<phone>(202) 224-5141</phone>
 		<address>332 DIRKSEN SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Burlington</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_VT_1_I.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Joint Economic Committee</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on the Budget</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Energy and Natural Resources</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Environment and Public Works</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Health, Education, Labor, and Pensions</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Veterans' Affairs</name>
+				<position>Chairman</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Brian</firstName>
@@ -1189,7 +2905,23 @@
 		<email>http://www.schatz.senate.gov/contact.cfm</email>
 		<phone>(202) 224-3934</phone>
 		<address>722 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Honolulu</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_HI_3_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on Indian Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Commerce, Science, and Transportation</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Energy and Natural Resources</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Chuck</firstName>
@@ -1203,7 +2935,39 @@
 		<email>http://www.schumer.senate.gov/Contact/contact_chuck.cfm</email>
 		<phone>(202) 224-6542</phone>
 		<address>322 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Brooklyn</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_NY_3_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Joint Committee on the Library</name>
+				<position>Vice_chairman</position>
+			</committee>
+			<committee>
+				<name>Joint Committee on Printing</name>
+				<position>Chairman</position>
+			</committee>
+			<committee>
+				<name>United States Senate Caucus on International Narcotics Control</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Banking, Housing, and Urban Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Finance</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on the Judiciary</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Rules and Administration</name>
+				<position>Chairman</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Tim</firstName>
@@ -1217,7 +2981,31 @@
 		<email>http://www.scott.senate.gov/contact.cfm</email>
 		<phone>(202) 224-6121</phone>
 		<address>167 RUSSELL SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>North Charleston</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_SC_3_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Special Committee on Aging</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Commerce, Science, and Transportation</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Energy and Natural Resources</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Health, Education, Labor, and Pensions</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Small Business and Entrepreneurship</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Jeff</firstName>
@@ -1231,7 +3019,27 @@
 		<email>http://www.sessions.senate.gov/public/index.cfm?FuseAction=ConstituentServices.ContactMe</email>
 		<phone>(202) 224-4124</phone>
 		<address>326 RUSSELL SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Mobile</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_AL_2_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on Armed Services</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on the Budget</name>
+				<position>Ranking</position>
+			</committee>
+			<committee>
+				<name>Committee on Environment and Public Works</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on the Judiciary</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Jeanne</firstName>
@@ -1245,7 +3053,31 @@
 		<email>http://www.shaheen.senate.gov/contact/</email>
 		<phone>(202) 224-2841</phone>
 		<address>520 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Madbury</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_NH_2_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Commission on Security and Cooperation in Europe</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Appropriations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Armed Services</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Foreign Relations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Small Business and Entrepreneurship</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Richard</firstName>
@@ -1259,7 +3091,23 @@
 		<email>http://www.shelby.senate.gov/public/index.cfm/emailsenatorshelby</email>
 		<phone>(202) 224-5744</phone>
 		<address>304 RUSSELL SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Tuscaloosa</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_AL_3_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on Appropriations</name>
+				<position>Ranking</position>
+			</committee>
+			<committee>
+				<name>Committee on Banking, Housing, and Urban Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Rules and Administration</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Debbie</firstName>
@@ -1273,7 +3121,27 @@
 		<email>http://www.stabenow.senate.gov/?p=contact</email>
 		<phone>(202) 224-4822</phone>
 		<address>133 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Lansing</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_MI_1_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on Agriculture, Nutrition, and Forestry</name>
+				<position>Chairman</position>
+			</committee>
+			<committee>
+				<name>Committee on the Budget</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Energy and Natural Resources</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Finance</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Jon</firstName>
@@ -1287,7 +3155,31 @@
 		<email>http://www.tester.senate.gov/Contact/index.cfm</email>
 		<phone>(202) 224-2644</phone>
 		<address>706 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Big Sandy</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_MT_1_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on Indian Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Appropriations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Banking, Housing, and Urban Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Homeland Security and Governmental Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Veterans' Affairs</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>John</firstName>
@@ -1301,7 +3193,23 @@
 		<email>http://www.thune.senate.gov/public/index.cfm/contact</email>
 		<phone>(202) 224-2321</phone>
 		<address>511 DIRKSEN SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Sioux Falls</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_SD_3_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on Agriculture, Nutrition, and Forestry</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Commerce, Science, and Transportation</name>
+				<position>Ranking</position>
+			</committee>
+			<committee>
+				<name>Committee on Finance</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Pat</firstName>
@@ -1315,7 +3223,27 @@
 		<email>http://www.toomey.senate.gov/?p=contact</email>
 		<phone>(202) 224-4254</phone>
 		<address>502 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Zionsville</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_PA_3_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Joint Economic Committee</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Banking, Housing, and Urban Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on the Budget</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Finance</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Mark</firstName>
@@ -1329,7 +3257,23 @@
 		<email>http://www.markudall.senate.gov/?p=contact</email>
 		<phone>(202) 224-5941</phone>
 		<address>730 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Eldorado Springs</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_CO_2_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Select Committee on Intelligence</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Armed Services</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Energy and Natural Resources</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Tom</firstName>
@@ -1343,7 +3287,43 @@
 		<email>http://www.tomudall.senate.gov/?p=contact</email>
 		<phone>(202) 224-6621</phone>
 		<address>110 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Santa Fe</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_NM_2_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Commission on Security and Cooperation in Europe</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Joint Committee on Printing</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>United States Senate Caucus on International Narcotics Control</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Indian Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Appropriations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Environment and Public Works</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Foreign Relations</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Rules and Administration</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>David</firstName>
@@ -1357,7 +3337,27 @@
 		<email>http://www.vitter.senate.gov/contact</email>
 		<phone>(202) 224-4623</phone>
 		<address>516 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Metairie</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_LA_3_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Committee on Armed Services</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Banking, Housing, and Urban Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Environment and Public Works</name>
+				<position>Ranking</position>
+			</committee>
+			<committee>
+				<name>Committee on Small Business and Entrepreneurship</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Mark</firstName>
@@ -1371,7 +3371,39 @@
 		<email>http://www.warner.senate.gov/public/index.cfm?p=Contact</email>
 		<phone>(202) 224-2023</phone>
 		<address>475 RUSSELL SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Alexandria</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_VA_2_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Joint Economic Committee</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Joint Committee on Printing</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Select Committee on Intelligence</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Banking, Housing, and Urban Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on the Budget</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Commerce, Science, and Transportation</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Rules and Administration</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Elizabeth</firstName>
@@ -1385,7 +3417,23 @@
 		<email>http://www.warren.senate.gov/contact.cfm</email>
 		<phone>(202) 224-4543</phone>
 		<address>2 RUSSELL COURTYARD WASHINGTON DC 20510</address>
+		<hometown>Cambridge</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_MA_1_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Special Committee on Aging</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Banking, Housing, and Urban Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Health, Education, Labor, and Pensions</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Sheldon</firstName>
@@ -1399,7 +3447,39 @@
 		<email>http://www.whitehouse.senate.gov/contact/</email>
 		<phone>(202) 224-2921</phone>
 		<address>530 HART SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Providence</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_RI_1_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Commission on Security and Cooperation in Europe</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>United States Senate Caucus on International Narcotics Control</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Special Committee on Aging</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on the Budget</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Environment and Public Works</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Health, Education, Labor, and Pensions</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on the Judiciary</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Roger</firstName>
@@ -1413,7 +3493,35 @@
 		<email>http://www.wicker.senate.gov/public/index.cfm?FuseAction=Contact.EMailSenatorWicker</email>
 		<phone>(202) 224-6253</phone>
 		<address>555 DIRKSEN SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Tupelo</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_MS_1_R.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Commission on Security and Cooperation in Europe</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Joint Economic Committee</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Armed Services</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on the Budget</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Commerce, Science, and Transportation</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Environment and Public Works</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 	<member>
 		<firstName>Ron</firstName>
@@ -1427,6 +3535,34 @@
 		<email>http://www.wyden.senate.gov/contact/</email>
 		<phone>(202) 224-5244</phone>
 		<address>221 DIRKSEN SENATE OFFICE BUILDING WASHINGTON DC 20510</address>
+		<hometown>Portland</hometown>
+		<leadershipPosition>null</leadershipPosition>
 		<imgFileName>Senate_OR_3_D.jpg</imgFileName>
+		<committees>
+			<committee>
+				<name>Joint Committee on Taxation</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Select Committee on Intelligence</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Special Committee on Aging</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on the Budget</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Committee on Energy and Natural Resources</name>
+				<position>Chairman</position>
+			</committee>
+			<committee>
+				<name>Committee on Finance</name>
+				<position>Member</position>
+			</committee>
+		</committees>
 	</member>
 </members>

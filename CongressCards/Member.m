@@ -7,10 +7,12 @@
 //
 
 #import "Member.h"
+#import "CommitteeAssignment.h"
 
 @implementation Member
 
-@synthesize memberFull, lastName, firstName, party, state, address, phone, email, website, bioguide_id, photoFileName, classDistrict, senator;
+@synthesize memberFull, lastName, firstName, party, state, address, phone, email, website,
+        bioguide_id, photoFileName, classDistrict, hometown, leadershipPosition, committees, senator;
 
 - (NSString *) memberFull {
     
@@ -24,6 +26,12 @@
     [displayText appendString:@")"];
     
     return displayText;
+}
+
+- (void) addCommitteeAssignment: (CommitteeAssignment *) newCommittee {
+    if ( !self.committees )
+        self.committees = [[NSMutableArray alloc] init];
+    [[self committees] addObject:newCommittee];
 }
 
 @end

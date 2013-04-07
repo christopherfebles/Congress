@@ -75,8 +75,6 @@
     [self addBorderToView: self.view withMember: member];
     [self addLogo:[member senator]];
     [self addStateSeal:member];
-    
-    //Add UIWebView instead of a UITextView
     [self addMemberName: member];
 }
 
@@ -91,7 +89,7 @@
     nameWebView = [[UIWebView alloc] initWithFrame:CGRectMake(x, y, width, height)];
     
     NSMutableString *htmlString =
-        [[NSMutableString alloc] initWithString:@"<span style=\"color: white; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;\"><span style=\"font-variant:small-caps;\">"];
+        [[NSMutableString alloc] initWithString:@"<span style=\"color: white; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  line-height: 95%;\"><span style=\"font-variant:small-caps;\">"];
     if ( [member senator] )
         [htmlString appendString:@"Senator"];
     else if ( ![member senator] && ![[member state] isEqualToString:@"AS"] && ![[member state] isEqualToString:@"DC"] && ![[member state] isEqualToString:@"GU"] &&
@@ -106,8 +104,16 @@
     [htmlString appendString:[member firstName]];
     [htmlString appendString:@"</span>&nbsp;<span style=\"font-variant:small-caps; font-size: xx-large;\">"];
     [htmlString appendString:[member lastName]];
-    [htmlString appendString:@"</span></span>"];
+    [htmlString appendString:@"</span>"];
 
+    //Add Leadership position, if available
+    if ( [member leadershipPosition] ) {
+        [htmlString appendString:@"<br><span style=\"font-family:'Snell Roundhand'; font-size: large;\">"];
+        [htmlString appendString:[member leadershipPosition]];
+        [htmlString appendString:@"</span>"];
+    }
+    [htmlString appendString:@"</span>"];
+    
     [nameWebView loadHTMLString:htmlString baseURL:nil];
     nameWebView.opaque = NO;
     nameWebView.backgroundColor = [UIColor clearColor];
