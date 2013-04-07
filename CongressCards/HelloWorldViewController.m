@@ -111,6 +111,27 @@
         [htmlString appendString:@"<br><span style=\"font-family:'Snell Roundhand'; font-size: large;\">"];
         [htmlString appendString:[member leadershipPosition]];
         [htmlString appendString:@"</span>"];
+    } else {
+        //If no leadership position, check committee leadership
+        if ( [[member committees] count] > 0 ) {
+            CommitteeAssignment *displayCommittee = nil;
+            NSString * committeeHTML = @"<br><span style=\"font-family:'Snell Roundhand'; font-size: large;\">";
+            //Get highest ranked position (Assuming each Member can only chair one committee)
+            for ( CommitteeAssignment *committee in [member committees] ) {
+                if ( [[committee position] isEqualToString:@"Ranking Member"] ||
+                    [[committee position] isEqualToString:@"Chairman"]) {
+                    displayCommittee = committee;
+                    break;
+                } else if ( [[committee position] isEqualToString:@"Vice Chairman"] )
+                    displayCommittee = committee;
+            }
+            if ( displayCommittee ) {
+                [htmlString appendString:committeeHTML];
+                [htmlString appendString:@"Committee "];
+                [htmlString appendString:[displayCommittee position]];
+                [htmlString appendString:@"</span>"];
+            }
+        }
     }
     [htmlString appendString:@"</span>"];
     

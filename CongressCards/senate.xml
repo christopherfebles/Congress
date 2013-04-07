@@ -62,7 +62,7 @@
 			</committee>
 			<committee>
 				<name>Committee on Health, Education, Labor, and Pensions</name>
-				<position>Ranking</position>
+				<position>Ranking Member</position>
 			</committee>
 			<committee>
 				<name>Committee on Rules and Administration</name>
@@ -87,10 +87,6 @@
 		<imgFileName>Senate_NH_3_R.jpg</imgFileName>
 		<committees>
 			<committee>
-				<name>Commission on Security and Cooperation in Europe</name>
-				<position>Member</position>
-			</committee>
-			<committee>
 				<name>Special Committee on Aging</name>
 				<position>Member</position>
 			</committee>
@@ -108,6 +104,10 @@
 			</committee>
 			<committee>
 				<name>Committee on Homeland Security and Governmental Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Commission on Security and Cooperation in Europe</name>
 				<position>Member</position>
 			</committee>
 		</committees>
@@ -164,7 +164,7 @@
 		<committees>
 			<committee>
 				<name>Committee on Indian Affairs</name>
-				<position>Vice_chairman</position>
+				<position>Vice Chairman</position>
 			</committee>
 			<committee>
 				<name>Committee on Energy and Natural Resources</name>
@@ -197,10 +197,6 @@
 		<imgFileName>Senate_MT_2_D.jpg</imgFileName>
 		<committees>
 			<committee>
-				<name>Joint Committee on Taxation</name>
-				<position>Vice_chairman</position>
-			</committee>
-			<committee>
 				<name>Committee on Agriculture, Nutrition, and Forestry</name>
 				<position>Member</position>
 			</committee>
@@ -211,6 +207,10 @@
 			<committee>
 				<name>Committee on Finance</name>
 				<position>Chairman</position>
+			</committee>
+			<committee>
+				<name>Joint Committee on Taxation</name>
+				<position>Vice Chairman</position>
 			</committee>
 		</committees>
 	</member>
@@ -299,10 +299,6 @@
 		<imgFileName>Senate_CT_3_D.jpg</imgFileName>
 		<committees>
 			<committee>
-				<name>Commission on Security and Cooperation in Europe</name>
-				<position>Member</position>
-			</committee>
-			<committee>
 				<name>Special Committee on Aging</name>
 				<position>Member</position>
 			</committee>
@@ -320,6 +316,10 @@
 			</committee>
 			<committee>
 				<name>Committee on Veterans' Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Commission on Security and Cooperation in Europe</name>
 				<position>Member</position>
 			</committee>
 		</committees>
@@ -341,10 +341,6 @@
 		<imgFileName>Senate_MO_3_R.jpg</imgFileName>
 		<committees>
 			<committee>
-				<name>Joint Committee on the Library</name>
-				<position>Member</position>
-			</committee>
-			<committee>
 				<name>Committee on Appropriations</name>
 				<position>Member</position>
 			</committee>
@@ -358,6 +354,10 @@
 			</committee>
 			<committee>
 				<name>Committee on Rules and Administration</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Joint Committee on the Library</name>
 				<position>Member</position>
 			</committee>
 		</committees>
@@ -498,7 +498,7 @@
 			</committee>
 			<committee>
 				<name>Committee on Veterans' Affairs</name>
-				<position>Ranking</position>
+				<position>Ranking Member</position>
 			</committee>
 		</committees>
 	</member>
@@ -557,10 +557,6 @@
 		<imgFileName>Senate_MD_1_D.jpg</imgFileName>
 		<committees>
 			<committee>
-				<name>Commission on Security and Cooperation in Europe</name>
-				<position>Chairman</position>
-			</committee>
-			<committee>
 				<name>Committee on Environment and Public Works</name>
 				<position>Member</position>
 			</committee>
@@ -575,6 +571,10 @@
 			<committee>
 				<name>Committee on Small Business and Entrepreneurship</name>
 				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Commission on Security and Cooperation in Europe</name>
+				<position>Chairman</position>
 			</committee>
 		</committees>
 	</member>
@@ -625,10 +625,6 @@
 		<imgFileName>Senate_PA_1_D.jpg</imgFileName>
 		<committees>
 			<committee>
-				<name>Joint Economic Committee</name>
-				<position>Member</position>
-			</committee>
-			<committee>
 				<name>Special Committee on Aging</name>
 				<position>Member</position>
 			</committee>
@@ -642,6 +638,10 @@
 			</committee>
 			<committee>
 				<name>Committee on Health, Education, Labor, and Pensions</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Joint Economic Committee</name>
 				<position>Member</position>
 			</committee>
 		</committees>
@@ -663,16 +663,8 @@
 		<imgFileName>Senate_GA_2_R.jpg</imgFileName>
 		<committees>
 			<committee>
-				<name>Commission on Security and Cooperation in Europe</name>
-				<position>Member</position>
-			</committee>
-			<committee>
-				<name>Joint Committee on Printing</name>
-				<position>Member</position>
-			</committee>
-			<committee>
 				<name>Select Committee on Intelligence</name>
-				<position>Vice_chairman</position>
+				<position>Vice Chairman</position>
 			</committee>
 			<committee>
 				<name>Committee on Agriculture, Nutrition, and Forestry</name>
@@ -684,6 +676,14 @@
 			</committee>
 			<committee>
 				<name>Committee on Rules and Administration</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Commission on Security and Cooperation in Europe</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Joint Committee on Printing</name>
 				<position>Member</position>
 			</committee>
 		</committees>
@@ -706,10 +706,6 @@
 		<imgFileName>Senate_IN_3_R.jpg</imgFileName>
 		<committees>
 			<committee>
-				<name>Joint Economic Committee</name>
-				<position>Member</position>
-			</committee>
-			<committee>
 				<name>Select Committee on Intelligence</name>
 				<position>Member</position>
 			</committee>
@@ -719,6 +715,10 @@
 			</committee>
 			<committee>
 				<name>Committee on Commerce, Science, and Transportation</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Joint Economic Committee</name>
 				<position>Member</position>
 			</committee>
 		</committees>
@@ -749,7 +749,7 @@
 			</committee>
 			<committee>
 				<name>Committee on Homeland Security and Governmental Affairs</name>
-				<position>Ranking</position>
+				<position>Ranking Member</position>
 			</committee>
 		</committees>
 	</member>
@@ -771,7 +771,7 @@
 		<committees>
 			<committee>
 				<name>Committee on Agriculture, Nutrition, and Forestry</name>
-				<position>Ranking</position>
+				<position>Ranking Member</position>
 			</committee>
 			<committee>
 				<name>Committee on Appropriations</name>
@@ -805,7 +805,7 @@
 			</committee>
 			<committee>
 				<name>Special Committee on Aging</name>
-				<position>Ranking</position>
+				<position>Ranking Member</position>
 			</committee>
 			<committee>
 				<name>Committee on Appropriations</name>
@@ -873,7 +873,7 @@
 			</committee>
 			<committee>
 				<name>Committee on Foreign Relations</name>
-				<position>Ranking</position>
+				<position>Ranking Member</position>
 			</committee>
 		</committees>
 	</member>
@@ -894,15 +894,15 @@
 		<imgFileName>Senate_TX_2_R.jpg</imgFileName>
 		<committees>
 			<committee>
-				<name>United States Senate Caucus on International Narcotics Control</name>
-				<position>Member</position>
-			</committee>
-			<committee>
 				<name>Committee on Finance</name>
 				<position>Member</position>
 			</committee>
 			<committee>
 				<name>Committee on the Judiciary</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>United States Senate Caucus on International Narcotics Control</name>
 				<position>Member</position>
 			</committee>
 		</committees>
@@ -959,7 +959,7 @@
 			</committee>
 			<committee>
 				<name>Committee on Banking, Housing, and Urban Affairs</name>
-				<position>Ranking</position>
+				<position>Ranking Member</position>
 			</committee>
 			<committee>
 				<name>Committee on the Budget</name>
@@ -1060,10 +1060,6 @@
 		<imgFileName>Senate_IL_2_D.jpg</imgFileName>
 		<committees>
 			<committee>
-				<name>Joint Committee on the Library</name>
-				<position>Member</position>
-			</committee>
-			<committee>
 				<name>Committee on Appropriations</name>
 				<position>Member</position>
 			</committee>
@@ -1077,6 +1073,10 @@
 			</committee>
 			<committee>
 				<name>Committee on Rules and Administration</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Joint Committee on the Library</name>
 				<position>Member</position>
 			</committee>
 		</committees>
@@ -1136,10 +1136,6 @@
 		<imgFileName>Senate_CA_1_D.jpg</imgFileName>
 		<committees>
 			<committee>
-				<name>United States Senate Caucus on International Narcotics Control</name>
-				<position>Chairman</position>
-			</committee>
-			<committee>
 				<name>Select Committee on Intelligence</name>
 				<position>Chairman</position>
 			</committee>
@@ -1154,6 +1150,10 @@
 			<committee>
 				<name>Committee on Rules and Administration</name>
 				<position>Member</position>
+			</committee>
+			<committee>
+				<name>United States Senate Caucus on International Narcotics Control</name>
+				<position>Chairman</position>
 			</committee>
 		</committees>
 	</member>
@@ -1348,14 +1348,6 @@
 		<imgFileName>Senate_IA_3_R.jpg</imgFileName>
 		<committees>
 			<committee>
-				<name>Joint Committee on Taxation</name>
-				<position>Member</position>
-			</committee>
-			<committee>
-				<name>United States Senate Caucus on International Narcotics Control</name>
-				<position>Member</position>
-			</committee>
-			<committee>
 				<name>Committee on Agriculture, Nutrition, and Forestry</name>
 				<position>Member</position>
 			</committee>
@@ -1369,7 +1361,15 @@
 			</committee>
 			<committee>
 				<name>Committee on the Judiciary</name>
-				<position>Ranking</position>
+				<position>Ranking Member</position>
+			</committee>
+			<committee>
+				<name>Joint Committee on Taxation</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>United States Senate Caucus on International Narcotics Control</name>
+				<position>Member</position>
 			</committee>
 		</committees>
 	</member>
@@ -1458,16 +1458,12 @@
 		<imgFileName>Senate_UT_1_R.jpg</imgFileName>
 		<committees>
 			<committee>
-				<name>Joint Committee on Taxation</name>
-				<position>Member</position>
-			</committee>
-			<committee>
 				<name>Special Committee on Aging</name>
 				<position>Member</position>
 			</committee>
 			<committee>
 				<name>Committee on Finance</name>
-				<position>Ranking</position>
+				<position>Ranking Member</position>
 			</committee>
 			<committee>
 				<name>Committee on Health, Education, Labor, and Pensions</name>
@@ -1475,6 +1471,10 @@
 			</committee>
 			<committee>
 				<name>Committee on the Judiciary</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Joint Committee on Taxation</name>
 				<position>Member</position>
 			</committee>
 		</committees>
@@ -1496,15 +1496,15 @@
 		<imgFileName>Senate_NM_1_D.jpg</imgFileName>
 		<committees>
 			<committee>
-				<name>Joint Economic Committee</name>
-				<position>Member</position>
-			</committee>
-			<committee>
 				<name>Select Committee on Intelligence</name>
 				<position>Member</position>
 			</committee>
 			<committee>
 				<name>Committee on Energy and Natural Resources</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Joint Economic Committee</name>
 				<position>Member</position>
 			</committee>
 		</committees>
@@ -1667,7 +1667,7 @@
 		<committees>
 			<committee>
 				<name>Committee on Armed Services</name>
-				<position>Ranking</position>
+				<position>Ranking Member</position>
 			</committee>
 			<committee>
 				<name>Committee on Environment and Public Works</name>
@@ -1693,7 +1693,7 @@
 		<committees>
 			<committee>
 				<name>Select Committee on Ethics</name>
-				<position>Vice_chairman</position>
+				<position>Vice Chairman</position>
 			</committee>
 			<committee>
 				<name>Committee on Finance</name>
@@ -1930,10 +1930,6 @@
 		<imgFileName>Senate_MN_1_D.jpg</imgFileName>
 		<committees>
 			<committee>
-				<name>Joint Economic Committee</name>
-				<position>Vice_chairman</position>
-			</committee>
-			<committee>
 				<name>Committee on Agriculture, Nutrition, and Forestry</name>
 				<position>Member</position>
 			</committee>
@@ -1948,6 +1944,10 @@
 			<committee>
 				<name>Committee on Rules and Administration</name>
 				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Joint Economic Committee</name>
+				<position>Vice Chairman</position>
 			</committee>
 		</committees>
 	</member>
@@ -2032,10 +2032,6 @@
 		<imgFileName>Senate_VT_3_D.jpg</imgFileName>
 		<committees>
 			<committee>
-				<name>Joint Committee on the Library</name>
-				<position>Member</position>
-			</committee>
-			<committee>
 				<name>Committee on Agriculture, Nutrition, and Forestry</name>
 				<position>Member</position>
 			</committee>
@@ -2049,6 +2045,10 @@
 			</committee>
 			<committee>
 				<name>Committee on Rules and Administration</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Joint Committee on the Library</name>
 				<position>Member</position>
 			</committee>
 		</committees>
@@ -2070,10 +2070,6 @@
 		<imgFileName>Senate_UT_3_R.jpg</imgFileName>
 		<committees>
 			<committee>
-				<name>Joint Economic Committee</name>
-				<position>Member</position>
-			</committee>
-			<committee>
 				<name>Committee on Armed Services</name>
 				<position>Member</position>
 			</committee>
@@ -2083,6 +2079,10 @@
 			</committee>
 			<committee>
 				<name>Committee on the Judiciary</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Joint Economic Committee</name>
 				<position>Member</position>
 			</committee>
 		</committees>
@@ -2411,7 +2411,7 @@
 			</committee>
 			<committee>
 				<name>Committee on Energy and Natural Resources</name>
-				<position>Ranking</position>
+				<position>Ranking Member</position>
 			</committee>
 			<committee>
 				<name>Committee on Health, Education, Labor, and Pensions</name>
@@ -2436,15 +2436,15 @@
 		<imgFileName>Senate_CT_1_D.jpg</imgFileName>
 		<committees>
 			<committee>
-				<name>Joint Economic Committee</name>
-				<position>Member</position>
-			</committee>
-			<committee>
 				<name>Committee on Foreign Relations</name>
 				<position>Member</position>
 			</committee>
 			<committee>
 				<name>Committee on Health, Education, Labor, and Pensions</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Joint Economic Committee</name>
 				<position>Member</position>
 			</committee>
 		</committees>
@@ -2704,10 +2704,6 @@
 		<imgFileName>Senate_ID_2_R.jpg</imgFileName>
 		<committees>
 			<committee>
-				<name>United States Senate Caucus on International Narcotics Control</name>
-				<position>Member</position>
-			</committee>
-			<committee>
 				<name>Select Committee on Ethics</name>
 				<position>Member</position>
 			</committee>
@@ -2725,7 +2721,11 @@
 			</committee>
 			<committee>
 				<name>Committee on Small Business and Entrepreneurship</name>
-				<position>Ranking</position>
+				<position>Ranking Member</position>
+			</committee>
+			<committee>
+				<name>United States Senate Caucus on International Narcotics Control</name>
+				<position>Member</position>
 			</committee>
 		</committees>
 	</member>
@@ -2746,14 +2746,6 @@
 		<imgFileName>Senate_KS_2_R.jpg</imgFileName>
 		<committees>
 			<committee>
-				<name>Joint Committee on the Library</name>
-				<position>Member</position>
-			</committee>
-			<committee>
-				<name>Joint Committee on Printing</name>
-				<position>Member</position>
-			</committee>
-			<committee>
 				<name>Select Committee on Ethics</name>
 				<position>Member</position>
 			</committee>
@@ -2771,7 +2763,15 @@
 			</committee>
 			<committee>
 				<name>Committee on Rules and Administration</name>
-				<position>Ranking</position>
+				<position>Ranking Member</position>
+			</committee>
+			<committee>
+				<name>Joint Committee on the Library</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Joint Committee on Printing</name>
+				<position>Member</position>
 			</committee>
 		</committees>
 	</member>
@@ -2792,10 +2792,6 @@
 		<imgFileName>Senate_WV_2_D.jpg</imgFileName>
 		<committees>
 			<committee>
-				<name>Joint Committee on Taxation</name>
-				<position>Member</position>
-			</committee>
-			<committee>
 				<name>Select Committee on Intelligence</name>
 				<position>Member</position>
 			</committee>
@@ -2809,6 +2805,10 @@
 			</committee>
 			<committee>
 				<name>Committee on Veterans' Affairs</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Joint Committee on Taxation</name>
 				<position>Member</position>
 			</committee>
 		</committees>
@@ -2830,10 +2830,6 @@
 		<imgFileName>Senate_FL_3_R.jpg</imgFileName>
 		<committees>
 			<committee>
-				<name>Commission on Security and Cooperation in Europe</name>
-				<position>Member</position>
-			</committee>
-			<committee>
 				<name>Select Committee on Intelligence</name>
 				<position>Member</position>
 			</committee>
@@ -2847,6 +2843,10 @@
 			</committee>
 			<committee>
 				<name>Committee on Small Business and Entrepreneurship</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Commission on Security and Cooperation in Europe</name>
 				<position>Member</position>
 			</committee>
 		</committees>
@@ -2868,10 +2868,6 @@
 		<imgFileName>Senate_VT_1_I.jpg</imgFileName>
 		<committees>
 			<committee>
-				<name>Joint Economic Committee</name>
-				<position>Member</position>
-			</committee>
-			<committee>
 				<name>Committee on the Budget</name>
 				<position>Member</position>
 			</committee>
@@ -2890,6 +2886,10 @@
 			<committee>
 				<name>Committee on Veterans' Affairs</name>
 				<position>Chairman</position>
+			</committee>
+			<committee>
+				<name>Joint Economic Committee</name>
+				<position>Member</position>
 			</committee>
 		</committees>
 	</member>
@@ -2940,18 +2940,6 @@
 		<imgFileName>Senate_NY_3_D.jpg</imgFileName>
 		<committees>
 			<committee>
-				<name>Joint Committee on the Library</name>
-				<position>Vice_chairman</position>
-			</committee>
-			<committee>
-				<name>Joint Committee on Printing</name>
-				<position>Chairman</position>
-			</committee>
-			<committee>
-				<name>United States Senate Caucus on International Narcotics Control</name>
-				<position>Member</position>
-			</committee>
-			<committee>
 				<name>Committee on Banking, Housing, and Urban Affairs</name>
 				<position>Member</position>
 			</committee>
@@ -2966,6 +2954,18 @@
 			<committee>
 				<name>Committee on Rules and Administration</name>
 				<position>Chairman</position>
+			</committee>
+			<committee>
+				<name>Joint Committee on the Library</name>
+				<position>Vice Chairman</position>
+			</committee>
+			<committee>
+				<name>Joint Committee on Printing</name>
+				<position>Chairman</position>
+			</committee>
+			<committee>
+				<name>United States Senate Caucus on International Narcotics Control</name>
+				<position>Member</position>
 			</committee>
 		</committees>
 	</member>
@@ -3029,7 +3029,7 @@
 			</committee>
 			<committee>
 				<name>Committee on the Budget</name>
-				<position>Ranking</position>
+				<position>Ranking Member</position>
 			</committee>
 			<committee>
 				<name>Committee on Environment and Public Works</name>
@@ -3058,10 +3058,6 @@
 		<imgFileName>Senate_NH_2_D.jpg</imgFileName>
 		<committees>
 			<committee>
-				<name>Commission on Security and Cooperation in Europe</name>
-				<position>Member</position>
-			</committee>
-			<committee>
 				<name>Committee on Appropriations</name>
 				<position>Member</position>
 			</committee>
@@ -3075,6 +3071,10 @@
 			</committee>
 			<committee>
 				<name>Committee on Small Business and Entrepreneurship</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Commission on Security and Cooperation in Europe</name>
 				<position>Member</position>
 			</committee>
 		</committees>
@@ -3097,7 +3097,7 @@
 		<committees>
 			<committee>
 				<name>Committee on Appropriations</name>
-				<position>Ranking</position>
+				<position>Ranking Member</position>
 			</committee>
 			<committee>
 				<name>Committee on Banking, Housing, and Urban Affairs</name>
@@ -3203,7 +3203,7 @@
 			</committee>
 			<committee>
 				<name>Committee on Commerce, Science, and Transportation</name>
-				<position>Ranking</position>
+				<position>Ranking Member</position>
 			</committee>
 			<committee>
 				<name>Committee on Finance</name>
@@ -3228,10 +3228,6 @@
 		<imgFileName>Senate_PA_3_R.jpg</imgFileName>
 		<committees>
 			<committee>
-				<name>Joint Economic Committee</name>
-				<position>Member</position>
-			</committee>
-			<committee>
 				<name>Committee on Banking, Housing, and Urban Affairs</name>
 				<position>Member</position>
 			</committee>
@@ -3241,6 +3237,10 @@
 			</committee>
 			<committee>
 				<name>Committee on Finance</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Joint Economic Committee</name>
 				<position>Member</position>
 			</committee>
 		</committees>
@@ -3292,18 +3292,6 @@
 		<imgFileName>Senate_NM_2_D.jpg</imgFileName>
 		<committees>
 			<committee>
-				<name>Commission on Security and Cooperation in Europe</name>
-				<position>Member</position>
-			</committee>
-			<committee>
-				<name>Joint Committee on Printing</name>
-				<position>Member</position>
-			</committee>
-			<committee>
-				<name>United States Senate Caucus on International Narcotics Control</name>
-				<position>Member</position>
-			</committee>
-			<committee>
 				<name>Committee on Indian Affairs</name>
 				<position>Member</position>
 			</committee>
@@ -3321,6 +3309,18 @@
 			</committee>
 			<committee>
 				<name>Committee on Rules and Administration</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Commission on Security and Cooperation in Europe</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Joint Committee on Printing</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>United States Senate Caucus on International Narcotics Control</name>
 				<position>Member</position>
 			</committee>
 		</committees>
@@ -3351,7 +3351,7 @@
 			</committee>
 			<committee>
 				<name>Committee on Environment and Public Works</name>
-				<position>Ranking</position>
+				<position>Ranking Member</position>
 			</committee>
 			<committee>
 				<name>Committee on Small Business and Entrepreneurship</name>
@@ -3376,14 +3376,6 @@
 		<imgFileName>Senate_VA_2_D.jpg</imgFileName>
 		<committees>
 			<committee>
-				<name>Joint Economic Committee</name>
-				<position>Member</position>
-			</committee>
-			<committee>
-				<name>Joint Committee on Printing</name>
-				<position>Member</position>
-			</committee>
-			<committee>
 				<name>Select Committee on Intelligence</name>
 				<position>Member</position>
 			</committee>
@@ -3401,6 +3393,14 @@
 			</committee>
 			<committee>
 				<name>Committee on Rules and Administration</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Joint Economic Committee</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Joint Committee on Printing</name>
 				<position>Member</position>
 			</committee>
 		</committees>
@@ -3452,14 +3452,6 @@
 		<imgFileName>Senate_RI_1_D.jpg</imgFileName>
 		<committees>
 			<committee>
-				<name>Commission on Security and Cooperation in Europe</name>
-				<position>Member</position>
-			</committee>
-			<committee>
-				<name>United States Senate Caucus on International Narcotics Control</name>
-				<position>Member</position>
-			</committee>
-			<committee>
 				<name>Special Committee on Aging</name>
 				<position>Member</position>
 			</committee>
@@ -3477,6 +3469,14 @@
 			</committee>
 			<committee>
 				<name>Committee on the Judiciary</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Commission on Security and Cooperation in Europe</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>United States Senate Caucus on International Narcotics Control</name>
 				<position>Member</position>
 			</committee>
 		</committees>
@@ -3498,14 +3498,6 @@
 		<imgFileName>Senate_MS_1_R.jpg</imgFileName>
 		<committees>
 			<committee>
-				<name>Commission on Security and Cooperation in Europe</name>
-				<position>Member</position>
-			</committee>
-			<committee>
-				<name>Joint Economic Committee</name>
-				<position>Member</position>
-			</committee>
-			<committee>
 				<name>Committee on Armed Services</name>
 				<position>Member</position>
 			</committee>
@@ -3519,6 +3511,14 @@
 			</committee>
 			<committee>
 				<name>Committee on Environment and Public Works</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Commission on Security and Cooperation in Europe</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Joint Economic Committee</name>
 				<position>Member</position>
 			</committee>
 		</committees>
@@ -3540,10 +3540,6 @@
 		<imgFileName>Senate_OR_3_D.jpg</imgFileName>
 		<committees>
 			<committee>
-				<name>Joint Committee on Taxation</name>
-				<position>Member</position>
-			</committee>
-			<committee>
 				<name>Select Committee on Intelligence</name>
 				<position>Member</position>
 			</committee>
@@ -3561,6 +3557,10 @@
 			</committee>
 			<committee>
 				<name>Committee on Finance</name>
+				<position>Member</position>
+			</committee>
+			<committee>
+				<name>Joint Committee on Taxation</name>
 				<position>Member</position>
 			</committee>
 		</committees>
