@@ -34,6 +34,7 @@
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 @property (strong, nonatomic) IBOutlet UISwipeGestureRecognizer *swipeLeftRecognizer;
 @property (strong, nonatomic) IBOutlet UISwipeGestureRecognizer *swipeRightRecognizer;
+@property (strong, nonatomic) IBOutlet UITapGestureRecognizer *tapRecognizer;
 
 @end
 
@@ -59,6 +60,11 @@
         position = 0;
     
     [self updateImage:YES];
+}
+
+- (IBAction)handleTap {
+    NSLog(@"Registered Tap.");
+    //Switch to other controller view
 }
 
 - (void)updateImage: (bool)rightAnimation
@@ -188,6 +194,7 @@
     
     [self.view addGestureRecognizer:self.swipeLeftRecognizer];
     [self.view addGestureRecognizer:self.swipeRightRecognizer];
+    [self.view addGestureRecognizer:self.tapRecognizer];
     
     [self setupData];
 }
@@ -371,9 +378,12 @@
         statePickerView.transform = transform;
         pickerToolbar.transform = transform;
     }];
+    
+    self.tapRecognizer.enabled = NO;
 }
 
 - (void) statePickerDone {
+//    NSLog(@"Done.");
     // Get the selected state, navigate to the first Member in that state, and close the picker
     NSInteger row = [statePickerView selectedRowInComponent:0];
     
@@ -392,6 +402,8 @@
 }
 
 - (void) statePickerCancel {
+//    NSLog(@"Cancel.");
+
     //Slides the PickerView down out of sight
     CGAffineTransform transform = CGAffineTransformMakeTranslation(0, 200);
 
@@ -400,6 +412,7 @@
         pickerToolbar.transform = transform;
     }];
     switchingState = NO;
+    self.tapRecognizer.enabled = YES;
 }
 
 + (UIImage *) houseLogo {

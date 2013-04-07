@@ -63,10 +63,16 @@
                         <outlet property="scrollView" destination="pCq-bU-HJV" id="Q2L-um-Eb6"/>
                         <outlet property="swipeLeftRecognizer" destination="auY-dN-JaQ" id="vzq-zh-Add"/>
                         <outlet property="swipeRightRecognizer" destination="802-o1-6po" id="YPp-fH-Q9h"/>
+                        <outlet property="tapRecognizer" destination="qWL-Ag-gbu" id="seT-dC-tbn"/>
                         <outlet property="textView" destination="BBl-ev-wMx" id="d6J-cV-MSv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="qWL-Ag-gbu">
+                    <connections>
+                        <action selector="handleTap" destination="2" id="BXc-Lw-Uo0"/>
+                    </connections>
+                </tapGestureRecognizer>
                 <swipeGestureRecognizer direction="left" id="auY-dN-JaQ">
                     <connections>
                         <action selector="leftSwipe:" destination="2" id="YIB-Yo-wJa"/>
@@ -86,10 +92,13 @@
             <relationships>
                 <relationship kind="action" name="leftSwipe:"/>
                 <relationship kind="action" name="rightSwipe:"/>
+                <relationship kind="action" name="switchChamber:" candidateClass="UIGestureRecognizer"/>
+                <relationship kind="action" name="switchState:" candidateClass="UIGestureRecognizer"/>
                 <relationship kind="outlet" name="currentImage" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
                 <relationship kind="outlet" name="swipeLeftRecognizer" candidateClass="UISwipeGestureRecognizer"/>
                 <relationship kind="outlet" name="swipeRightRecognizer" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="outlet" name="tapRecognizer" candidateClass="UITapGestureRecognizer"/>
                 <relationship kind="outlet" name="textView" candidateClass="UITextView"/>
             </relationships>
         </class>
