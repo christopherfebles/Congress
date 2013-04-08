@@ -299,7 +299,7 @@
     sealLabel.font = [UIFont boldSystemFontOfSize:18];
     sealLabel.textColor = [self getPartyColor:[member party]];
     sealLabel.shadowColor = [UIColor blackColor];
-    sealLabel.shadowOffset = CGSizeMake(0, -3.0);
+    sealLabel.shadowOffset = CGSizeMake(0, -2.5);
     sealLabel.text = labelText;
     sealLabel.textAlignment = NSTextAlignmentCenter;
     
