@@ -11,6 +11,8 @@
 #import "DataManager.h"
 #import "Member.h"
 #import "StatePickerViewDelegate.h"
+#import "HelloWorldAppDelegate.h"
+#import "BackViewController.h"
 
 @interface HelloWorldViewController () {
     NSArray *photos;
@@ -65,6 +67,13 @@
 - (IBAction)handleTap {
     NSLog(@"Registered Tap.");
     //Switch to other controller view
+    
+    BackViewController *vc = [[BackViewController alloc] init];
+    HelloWorldAppDelegate *appDelegate = (HelloWorldAppDelegate *)[[UIApplication sharedApplication] delegate];
+    
+    [appDelegate transitionToViewController:vc
+                             withTransition:UIViewAnimationOptionTransitionFlipFromRight];
+    
 }
 
 - (void)updateImage: (bool)rightAnimation
@@ -201,6 +210,7 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
+    [super viewDidAppear:animated];  //Not sure this changes anything. Leaving in because it seems more correct.
     [self updateImage:YES];
 }
 

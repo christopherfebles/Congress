@@ -23,5 +23,7 @@ NSPersistentStoreCoordinator *persistentStoreCoordinator;
 @property (nonatomic, retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
 - (NSString *)applicationDocumentsDirectory;
+- (void)transitionToViewController:(UIViewController *)viewController
+                    withTransition:(UIViewAnimationOptions)transition;
 
 @end

@@ -12,6 +12,7 @@
 		001A0596171260F90054B66C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 001A0595171260F90054B66C /* Default-568h@2x.png */; };
 		001A05981712610D0054B66C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 001A05971712610D0054B66C /* Default.png */; };
 		001A059A171261430054B66C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 001A0599171261430054B66C /* Default@2x.png */; };
+		001A05A01712635E0054B66C /* BackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001A059F1712635E0054B66C /* BackViewController.m */; };
 		00316D691708F713005D1F2F /* House_AK_At_Large_R.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00316B4D1708F711005D1F2F /* House_AK_At_Large_R.jpg */; };
 		00316D6A1708F713005D1F2F /* House_AL_1_R.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00316B4E1708F711005D1F2F /* House_AL_1_R.jpg */; };
 		00316D6B1708F713005D1F2F /* House_AL_2_R.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00316B4F1708F711005D1F2F /* House_AL_2_R.jpg */; };
@@ -645,6 +646,8 @@
 		001A0595171260F90054B66C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		001A05971712610D0054B66C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
 		001A0599171261430054B66C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		001A059E1712635E0054B66C /* BackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackViewController.h; sourceTree = "<group>"; };
+		001A059F1712635E0054B66C /* BackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackViewController.m; sourceTree = "<group>"; };
 		00316B4D1708F711005D1F2F /* House_AK_At_Large_R.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = House_AK_At_Large_R.jpg; sourceTree = "<group>"; };
 		00316B4E1708F711005D1F2F /* House_AL_1_R.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = House_AL_1_R.jpg; sourceTree = "<group>"; };
 		00316B4F1708F711005D1F2F /* House_AL_2_R.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = House_AL_2_R.jpg; sourceTree = "<group>"; };
@@ -1445,6 +1448,8 @@
 				00C6859C16BB767000865F27 /* HelloWorldAppDelegate.m */,
 				00C685A716BB767000865F27 /* HelloWorldViewController.h */,
 				00C685A816BB767000865F27 /* HelloWorldViewController.m */,
+				001A059E1712635E0054B66C /* BackViewController.h */,
+				001A059F1712635E0054B66C /* BackViewController.m */,
 				00C6859316BB767000865F27 /* Supporting Files */,
 			);
 			name = Congress;
@@ -2705,6 +2710,7 @@
 				0E1367991703845C00593D57 /* MemberXMLParserDelegate.m in Sources */,
 				008C22DC17100FEA00CE5E54 /* StatePickerViewDelegate.m in Sources */,
 				008C23021710E7EA00CE5E54 /* CommitteeAssignment.m in Sources */,
+				001A05A01712635E0054B66C /* BackViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2794,6 +2800,7 @@
 				INFOPLIST_FILE = "CongressCards/Congress-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = Congress;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -2806,6 +2813,7 @@
 				INFOPLIST_FILE = "CongressCards/Congress-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = Congress;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
