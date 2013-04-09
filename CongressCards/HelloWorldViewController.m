@@ -30,6 +30,7 @@
     UIImageView *sealView;
     UIPickerView *statePickerView;
     UIToolbar *pickerToolbar;
+    UILabel *sealLabel;
 }
 @property (weak, nonatomic) IBOutlet UIImageView *currentImage;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -155,7 +156,7 @@
     nameWebView.backgroundColor = [UIColor clearColor];
     
     [self.view addSubview:nameWebView];
-    [self.view bringSubviewToFront:nameWebView];
+//    [self.view bringSubviewToFront:nameWebView];
 }
 
 - (void)addBorderToView: (UIView *) view
@@ -283,7 +284,7 @@
     [sealView setContentMode:UIViewContentModeScaleAspectFit];
     
     int x = [UIScreen mainScreen].bounds.size.width - 85;
-    int y = [UIScreen mainScreen].bounds.size.height - 155;
+    int y = [UIScreen mainScreen].bounds.size.height - 185;  //155
     int width = [UIScreen mainScreen].bounds.size.width / 4;
     int height = [UIScreen mainScreen].bounds.size.height / 4;
     
@@ -302,8 +303,7 @@
         [labelText appendString:district];
     }
     
-    UILabel *sealLabel = [[UILabel alloc] initWithFrame:[sealView frame]];
-//    sealLabel.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.0];
+    sealLabel = [[UILabel alloc] initWithFrame:[sealView frame]];
     sealLabel.opaque = NO;
     sealLabel.backgroundColor = [UIColor clearColor];
     sealLabel.font = [UIFont boldSystemFontOfSize:18];
