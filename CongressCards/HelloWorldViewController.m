@@ -23,6 +23,7 @@
     NSArray *representatives;
     BOOL viewingSenate;
     BOOL switchingState;
+    int initCount;
     
     //Dynamically added views
     UIWebView *nameWebView;
@@ -66,10 +67,13 @@
 }
 
 - (IBAction)handleTap {
-    NSLog(@"Registered Tap.");
+//    NSLog(@"Registered Tap.");
     //Switch to other controller view
     
     BackViewController *vc = [[BackViewController alloc] init];
+    vc.member = photos[position];
+    vc.mainController = self;
+    
     HelloWorldAppDelegate *appDelegate = (HelloWorldAppDelegate *)[[UIApplication sharedApplication] delegate];
     
     [appDelegate transitionToViewController:vc
@@ -92,6 +96,30 @@
     [self addLogo:[member senator]];
     [self addStateSeal:member];
     [self addMemberName: member];
+}
+
+//For animation, see http://goo.gl/DkA1W
+- (void)setImage:(UIImage *)image
+withAnimationSubType:(NSString *) animationSubType
+{
+    CATransition *animation = [CATransition animation];
+    animation.duration = 0.5;
+    animation.type = kCATransitionMoveIn;
+    animation.subtype = animationSubType;
+    if ( !self.incomingTransition )
+        [self.currentImage.layer addAnimation:animation forKey:@"imageTransition"];
+    else if ( initCount > 1 ) {
+        self.incomingTransition = NO;
+        initCount = 0;
+    }
+    self.currentImage.image = image;
+    
+    int x = 20;
+    int y = -10;
+    int width = [UIScreen mainScreen].bounds.size.width;
+    int height = [UIScreen mainScreen].bounds.size.height;
+    
+    self.currentImage.frame = CGRectMake(x, y, width, height);
 }
 
 - (void) addMemberName: (Member *) member {
@@ -178,29 +206,12 @@
     return retVal;
 }
 
-//For animation, see http://goo.gl/DkA1W
-- (void)setImage:(UIImage *)image
-    withAnimationSubType:(NSString *) animationSubType
-{
-    CATransition *animation = [CATransition animation];
-    animation.duration = 0.5;
-    animation.type = kCATransitionMoveIn;
-    animation.subtype = animationSubType;
-    [self.currentImage.layer addAnimation:animation forKey:@"imageTransition"];
-    self.currentImage.image = image;
-
-    int x = 20;
-    int y = -10;
-    int width = [UIScreen mainScreen].bounds.size.width;
-    int height = [UIScreen mainScreen].bounds.size.height;
-    
-    self.currentImage.frame = CGRectMake(x, y, width, height);
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    initCount = 0;
     
     [self.view addGestureRecognizer:self.swipeLeftRecognizer];
     [self.view addGestureRecognizer:self.swipeRightRecognizer];
@@ -211,8 +222,9 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    [super viewDidAppear:animated];  //Not sure this changes anything. Leaving in because it seems more correct.
+    [super viewDidAppear:animated];
     [self updateImage:YES];
+    initCount++;
 }
 
 - (void)didReceiveMemoryWarning
@@ -439,6 +451,10 @@
     }
     return senateImage;
 
+}
+
+-(NSUInteger)supportedInterfaceOrientations{
+    return UIInterfaceOrientationMaskPortrait;
 }
 
 @end

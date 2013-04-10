@@ -8,6 +8,7 @@
 
 #import "HelloWorldAppDelegate.h"
 #import "HelloWorldViewController.h"
+#import "ParentViewController.h"
 
 @implementation HelloWorldAppDelegate
 
@@ -60,9 +61,10 @@
     return YES;
 }
 
-- (void)transitionToViewController:(UIViewController *)viewController
+- (void)transitionToViewController:(ParentViewController *)viewController
                     withTransition:(UIViewAnimationOptions)transition
 {
+    viewController.incomingTransition = YES;
     [UIView transitionFromView:self.window.rootViewController.view
                         toView:viewController.view
                       duration:0.65f

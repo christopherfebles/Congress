@@ -21,6 +21,7 @@
     NSString *website;
     NSString *bioguide_id;
     NSString *photoFileName;
+    NSString *thumbnailFileName;
     NSString *classDistrict;
     NSString *hometown;
     NSString *leadershipPosition;
@@ -39,6 +40,7 @@
 @property (nonatomic, retain) NSString *website;
 @property (nonatomic, retain) NSString *bioguide_id;
 @property (nonatomic, retain) NSString *photoFileName;
+@property (nonatomic, retain) NSString *thumbnailFileName;
 @property (nonatomic, retain) NSString *classDistrict;
 @property (nonatomic, retain) NSString *hometown;
 @property (nonatomic, retain) NSString *leadershipPosition;

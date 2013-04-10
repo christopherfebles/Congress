@@ -11,8 +11,8 @@
 
 @implementation Member
 
-@synthesize memberFull, lastName, firstName, party, state, address, phone, email, website,
-        bioguide_id, photoFileName, classDistrict, hometown, leadershipPosition, committees, senator;
+@synthesize memberFull, lastName, firstName, party, state, address, phone, email, website, bioguide_id, photoFileName,
+    thumbnailFileName, classDistrict, hometown, leadershipPosition, committees, senator;
 
 - (NSString *) memberFull {
     
@@ -32,6 +32,11 @@
     if ( !self.committees )
         self.committees = [[NSMutableArray alloc] init];
     [[self committees] addObject:newCommittee];
+}
+
+- (void) setPhotoFileName:(NSString *)newPhotoFileName {
+    photoFileName = newPhotoFileName;
+    thumbnailFileName = [newPhotoFileName stringByReplacingOccurrencesOfString:@".jpg" withString:@"_thumb.jpg"];
 }
 
 @end

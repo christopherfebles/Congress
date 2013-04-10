@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 #import "StatePickerViewDelegate.h"
+#import "ParentViewController.h"
 
-@interface HelloWorldViewController : UIViewController <UIGestureRecognizerDelegate, UIPickerViewDelegate> {
+@interface HelloWorldViewController : ParentViewController <UIGestureRecognizerDelegate, UIPickerViewDelegate> {
     NSFetchedResultsController *fetchedResultsController;
     NSManagedObjectContext *managedObjectContext;
     

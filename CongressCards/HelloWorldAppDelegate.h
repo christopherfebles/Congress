@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import "ParentViewController.h"
 
 @interface HelloWorldAppDelegate : UIResponder <UIApplicationDelegate> {
 
@@ -23,7 +24,7 @@ NSPersistentStoreCoordinator *persistentStoreCoordinator;
 @property (nonatomic, retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
 - (NSString *)applicationDocumentsDirectory;
-- (void)transitionToViewController:(UIViewController *)viewController
+- (void)transitionToViewController:(ParentViewController *)viewController
                     withTransition:(UIViewAnimationOptions)transition;
 
 @end

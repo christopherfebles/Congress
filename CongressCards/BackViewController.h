@@ -7,11 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Member.h"
+#import "HelloWorldViewController.h"
+#import "ParentViewController.h"
 
-@interface BackViewController : UIViewController {
-    UIWebView *tempWebView;
+@interface BackViewController : ParentViewController {
+    Member *member;
+    UIImageView *imageView;
+    HelloWorldViewController *mainController;
 }
 
-@property (nonatomic, strong) UIWebView *tempWebView;
+@property (nonatomic, strong) Member *member;
+@property (nonatomic, strong) UIImageView *imageView;
+@property (nonatomic, strong) HelloWorldViewController *mainController;
+@property (nonatomic, strong) UITapGestureRecognizer *tapRecognizer;
 
 @end
