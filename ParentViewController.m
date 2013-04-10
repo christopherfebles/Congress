@@ -10,6 +10,20 @@
 
 @implementation ParentViewController
 
-@synthesize incomingTransition;
+@synthesize initCount, incomingTransition;
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+	// Do any additional setup after loading the view, typically from a nib.
+    
+    initCount = 0;
+    incomingTransition = NO;
+}
+
+- (void) setIncomingTransition:(BOOL)newIncomingTransition {
+    incomingTransition = newIncomingTransition;
+    initCount = 0;
+}
 
 @end

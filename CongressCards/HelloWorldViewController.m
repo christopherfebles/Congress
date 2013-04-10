@@ -23,7 +23,6 @@
     NSArray *representatives;
     BOOL viewingSenate;
     BOOL switchingState;
-    int initCount;
     
     //Dynamically added views
     UIWebView *nameWebView;
@@ -108,7 +107,7 @@ withAnimationSubType:(NSString *) animationSubType
     animation.subtype = animationSubType;
     if ( !self.incomingTransition )
         [self.currentImage.layer addAnimation:animation forKey:@"imageTransition"];
-    else if ( initCount > 1 ) {
+    else if ( initCount > 0 ) {
         self.incomingTransition = NO;
         initCount = 0;
     }
@@ -210,8 +209,6 @@ withAnimationSubType:(NSString *) animationSubType
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
-    initCount = 0;
     
     [self.view addGestureRecognizer:self.swipeLeftRecognizer];
     [self.view addGestureRecognizer:self.swipeRightRecognizer];

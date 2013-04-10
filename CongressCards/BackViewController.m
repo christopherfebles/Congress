@@ -36,11 +36,11 @@
     //Add subviews to main view here
     //Because this method is called twice, (Once initially, and once after rotation)
     //  it's safer to remove the views from their superview before re-adding them
-    
-    [self.view addGestureRecognizer:self.tapRecognizer];
-    
-    [self.imageView removeFromSuperview];
-    [self.view addSubview:self.imageView];
+    if ( initCount > 0 ) {
+        [self.imageView removeFromSuperview];
+        [self.view addSubview:self.imageView];
+    }
+    initCount++;
 }
 
 -(void)setupView {
@@ -51,21 +51,23 @@
 
 -(void) setupMainView {
     self.tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap)];
+    
+    self.view.backgroundColor = [UIColor lightGrayColor];
+    [self.view addGestureRecognizer:self.tapRecognizer];
 }
 
 -(void) setupImageView {
     
     //Add image view
-    UIImage *image = [UIImage imageNamed:[member photoFileName]];    
-    UIImage *thumb = [UIImage imageWithCGImage:image.CGImage scale:0.25 orientation:image.imageOrientation];
+    UIImage *thumbImg = [UIImage imageNamed:[member thumbnailFileName]];
     
-    int x = 20;
-    int y = -10;
-    int width = thumb.size.width;
-    int height = thumb.size.height;
+    int x = 0;
+    int y = 0;
+    int width = thumbImg.size.width;
+    int height = thumbImg.size.height;
     
     self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(x, y, width, height)];
-    self.imageView.image = image;
+    self.imageView.image = thumbImg;
 }
 
 - (void) handleTap {

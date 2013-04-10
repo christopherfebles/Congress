@@ -10,8 +10,10 @@
 
 @interface ParentViewController : UIViewController {
     BOOL incomingTransition;
+    int initCount;
 }
 
 @property (nonatomic, assign) BOOL incomingTransition;
+@property (nonatomic, assign) int initCount;
 
 @end
