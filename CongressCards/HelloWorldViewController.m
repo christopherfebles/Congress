@@ -25,6 +25,7 @@
     BOOL switchingState;
     
     //Dynamically added views
+    UITextView *nameTextView;
     UIWebView *nameWebView;
     UIImageView *logoView;
     UIImageView *sealView;
@@ -95,6 +96,7 @@
     [self addLogo:[member senator]];
     [self addStateSeal:member];
     [self addMemberName: member];
+//    [self addMemberNameViaTextView: member];
 }
 
 //For animation, see http://goo.gl/DkA1W
@@ -119,6 +121,107 @@ withAnimationSubType:(NSString *) animationSubType
     int height = [UIScreen mainScreen].bounds.size.height;
     
     self.currentImage.frame = CGRectMake(x, y, width, height);
+}
+
+//There is a bug in UITextView: http://www.cocoanetics.com/2012/12/radar-uitextview-ignores-minimummaximum-line-height-in-attributed-string/
+- (void) addMemberNameViaTextView: (Member *) member {
+    int x = 0;
+    int y = [UIScreen mainScreen].bounds.size.height - 75;
+    int width = [UIScreen mainScreen].bounds.size.width;
+    int height = [UIScreen mainScreen].bounds.size.height;
+    
+    if ( nameTextView != nil )
+        [nameTextView removeFromSuperview];
+    nameTextView = [[UITextView alloc] initWithFrame:CGRectMake(x, y, width, height)];
+    nameTextView.backgroundColor = [UIColor blackColor];
+    nameTextView.editable = NO;
+    
+    NSMutableString *titleAndFirstName = [[NSMutableString alloc] initWithString:@""];
+    
+    NSShadow *textShadow = [[NSShadow alloc] init];
+    textShadow.shadowOffset = CGSizeMake(1, 1);
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    paragraphStyle.lineSpacing = 1.0f;
+    
+    UIFont *font = [UIFont fontWithName: @"BodoniSvtyTwoSCITCTT-Book" size:14.0];
+    
+    NSDictionary *nameAndTitleAttrs = @{NSForegroundColorAttributeName: [UIColor whiteColor],
+                                        NSBackgroundColorAttributeName: [UIColor clearColor],
+                                        NSShadowAttributeName:textShadow,
+                                        NSFontAttributeName: font,
+                                        NSParagraphStyleAttributeName: paragraphStyle
+                                      };
+    
+    if ( [member senator] )
+        [titleAndFirstName appendString:@"Senator"];
+    else if ( ![member senator] && ![[member state] isEqualToString:@"AS"] && ![[member state] isEqualToString:@"DC"] && ![[member state] isEqualToString:@"GU"] &&
+             ![[member state] isEqualToString:@"PR"] && ![[member state] isEqualToString:@"VI"] && ![[member state] isEqualToString:@"MP"])
+        [titleAndFirstName appendString:@"Representative"];
+    else if ( [[member state] isEqualToString:@"PR"] )
+        [titleAndFirstName appendString:@"Resident Commissioner"];
+    else
+        [titleAndFirstName appendString:@"Delegate"];
+    
+    [titleAndFirstName appendString:@" "];
+    [titleAndFirstName appendString:[member firstName]];
+    [titleAndFirstName appendString:@" "];
+    
+    NSMutableString *lastName = [[NSMutableString alloc] initWithString:@""];
+    [lastName appendString:[member lastName]];
+    font = [UIFont fontWithName: @"BodoniSvtyTwoSCITCTT-Book" size:28.0];
+    NSDictionary *lastNameAttrs = @{NSForegroundColorAttributeName: [UIColor whiteColor],
+                                    NSBackgroundColorAttributeName: [UIColor clearColor],
+                                    NSShadowAttributeName:textShadow,
+                                    NSFontAttributeName: font,
+                                    NSParagraphStyleAttributeName: paragraphStyle
+                                        };
+    
+    //Add Leadership position, if available
+    NSMutableString *leadershipPosition = [[NSMutableString alloc] initWithString:@""];
+    font = [UIFont fontWithName: @"SnellRoundhand" size:14.0];
+    NSDictionary *leadershipAttrs = @{NSForegroundColorAttributeName: [UIColor whiteColor],
+                                      NSBackgroundColorAttributeName: [UIColor clearColor],
+                                      NSShadowAttributeName:textShadow,
+                                      NSFontAttributeName: font,
+                                      NSParagraphStyleAttributeName: paragraphStyle
+                                      };
+    [leadershipPosition appendString:@"\n"];
+    if ( [member leadershipPosition] ) {
+        [leadershipPosition appendString:[member leadershipPosition]];
+    } else {
+        //If no leadership position, check committee leadership
+        if ( [[member committees] count] > 0 ) {
+            CommitteeAssignment *displayCommittee = nil;
+            //Get highest ranked position (Assuming each Member can only chair one committee)
+            for ( CommitteeAssignment *committee in [member committees] ) {
+                if ( [[committee position] isEqualToString:@"Ranking Member"] ||
+                    [[committee position] isEqualToString:@"Chairman"]) {
+                    displayCommittee = committee;
+                    break;
+                } else if ( [[committee position] isEqualToString:@"Vice Chairman"] )
+                    displayCommittee = committee;
+            }
+            if ( displayCommittee ) {
+                [leadershipPosition appendString:@"Committee "];
+                [leadershipPosition appendString:[displayCommittee position]];
+            }
+        }
+    }    
+    
+    //Combine all strings
+    NSMutableString *combinedString = [[NSMutableString alloc] initWithString:titleAndFirstName];
+    [combinedString appendString: lastName];
+    [combinedString appendString: leadershipPosition];
+    
+    NSMutableAttributedString *displayString = [[NSMutableAttributedString alloc] initWithString:combinedString];
+    //Set ranges using substring objects length
+    [displayString setAttributes:nameAndTitleAttrs range:NSMakeRange(0, titleAndFirstName.length)];
+    [displayString setAttributes:lastNameAttrs range:NSMakeRange(titleAndFirstName.length, lastName.length)];
+    [displayString setAttributes:leadershipAttrs range:NSMakeRange(titleAndFirstName.length+lastName.length, leadershipPosition.length)];
+    
+    nameTextView.attributedText = displayString;
+    
+    [self.view addSubview:nameTextView];
 }
 
 - (void) addMemberName: (Member *) member {
@@ -183,7 +286,6 @@ withAnimationSubType:(NSString *) animationSubType
     nameWebView.backgroundColor = [UIColor clearColor];
     
     [self.view addSubview:nameWebView];
-//    [self.view bringSubviewToFront:nameWebView];
 }
 
 - (void)addBorderToView: (UIView *) view
