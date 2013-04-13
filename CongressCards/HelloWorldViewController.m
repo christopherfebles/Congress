@@ -288,25 +288,6 @@ withAnimationSubType:(NSString *) animationSubType
     [self.view addSubview:nameWebView];
 }
 
-- (void)addBorderToView: (UIView *) view
-             withMember: (Member *) member
-{
-    view.layer.borderColor = [self getPartyColor:[member party]].CGColor;
-    view.layer.borderWidth = 5;
-}
-
-- (UIColor *) getPartyColor: (NSString *) party {
-    UIColor *retVal = nil;
-    if ( [party isEqualToString:@"R"] ) {
-        retVal = [UIColor redColor];
-    } else if ( [party isEqualToString:@"D"] ) {
-        retVal = [UIColor blueColor];
-    } else if ( [party isEqualToString:@"I"] ) {
-        retVal = [UIColor whiteColor];
-    }
-    return retVal;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -322,6 +303,7 @@ withAnimationSubType:(NSString *) animationSubType
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
     [self updateImage:YES];
     initCount++;
 }

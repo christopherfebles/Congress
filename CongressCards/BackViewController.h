@@ -11,14 +11,14 @@
 #import "HelloWorldViewController.h"
 #import "ParentViewController.h"
 
-@interface BackViewController : ParentViewController {
+@interface BackViewController : ParentViewController <UIGestureRecognizerDelegate, UIWebViewDelegate> {
     Member *member;
-    UIImageView *imageView;
     HelloWorldViewController *mainController;
+    UIWebView *backWebView;
 }
 
 @property (nonatomic, strong) Member *member;
-@property (nonatomic, strong) UIImageView *imageView;
+@property (nonatomic, strong) UIWebView *backWebView;
 @property (nonatomic, strong) HelloWorldViewController *mainController;
 @property (nonatomic, strong) UITapGestureRecognizer *tapRecognizer;
 

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Member.h"
 
 @interface ParentViewController : UIViewController {
     BOOL incomingTransition;
@@ -15,5 +16,10 @@
 
 @property (nonatomic, assign) BOOL incomingTransition;
 @property (nonatomic, assign) int initCount;
+
+- (void)addBorderToView: (UIView *) view
+             withMember: (Member *) member;
+
+- (UIColor *) getPartyColor: (NSString *) party;
 
 @end

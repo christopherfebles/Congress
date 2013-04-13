@@ -7,6 +7,8 @@
 //
 
 #import "ParentViewController.h"
+#import "Member.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation ParentViewController
 
@@ -24,6 +26,25 @@
 - (void) setIncomingTransition:(BOOL)newIncomingTransition {
     incomingTransition = newIncomingTransition;
     initCount = 0;
+}
+
+- (void)addBorderToView: (UIView *) view
+             withMember: (Member *) member
+{
+    view.layer.borderColor = [self getPartyColor:[member party]].CGColor;
+    view.layer.borderWidth = 5;
+}
+
+- (UIColor *) getPartyColor: (NSString *) party {
+    UIColor *retVal = nil;
+    if ( [party isEqualToString:@"R"] ) {
+        retVal = [UIColor redColor];
+    } else if ( [party isEqualToString:@"D"] ) {
+        retVal = [UIColor blueColor];
+    } else if ( [party isEqualToString:@"I"] ) {
+        retVal = [UIColor whiteColor];
+    }
+    return retVal;
 }
 
 @end
