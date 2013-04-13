@@ -228,7 +228,14 @@
         [htmlString appendString:@"     <ul style=\"list-style-type: none; margin: 0; padding: 0;\">"];
         for ( CommitteeAssignment *committee in sortedArray ) {
             [htmlString appendString:@"         <li>\n"];
-            [htmlString appendString:[committee name]];
+            if ( ![[committee website] isEqualToString:@""] ) {
+                [htmlString appendString:@"             <a href=\""];
+                [htmlString appendString:[committee website]];
+                [htmlString appendString:@"\">"];
+                [htmlString appendString:[committee name]];
+                [htmlString appendString:@"</a>\n"];
+            } else
+                [htmlString appendString:[committee name]];
             [htmlString appendString:@"         </li>\n"];
         }
         [htmlString appendString:@"     </ul>\n"];

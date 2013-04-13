@@ -11,9 +11,13 @@
 @interface CommitteeAssignment : NSObject {
     NSString *name;
     NSString *position;
+    NSMutableDictionary *committeeSites;
 }
 
 @property (nonatomic, retain) NSString *name;
 @property (nonatomic, retain) NSString *position;
+@property (nonatomic, retain) NSMutableDictionary *committeeSites;
+
+- (NSString *) website;
 
 @end
