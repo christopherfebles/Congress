@@ -8,6 +8,7 @@
 
 #import "Member.h"
 #import "CommitteeAssignment.h"
+#import "StatePickerViewDelegate.h"
 
 @implementation Member
 
@@ -37,6 +38,25 @@
 - (void) setPhotoFileName:(NSString *)newPhotoFileName {
     photoFileName = newPhotoFileName;
     thumbnailFileName = [newPhotoFileName stringByReplacingOccurrencesOfString:@".jpg" withString:@"_thumb.jpg"];
+}
+
+- (NSString *) address {
+    NSMutableString *retVal = [[NSMutableString alloc] initWithString:[address capitalizedString]];
+    
+    //Capitalize states in address
+    NSArray *stateAbbrs = [[[StatePickerViewDelegate alloc] init].states allKeys];
+    for ( NSString *abbr in stateAbbrs ) {
+        NSMutableString *abbrToCheck = [[NSMutableString alloc] initWithString:abbr];
+        [abbrToCheck appendString:@" "];
+        [abbrToCheck insertString:@" " atIndex:0];
+        NSRange range = [retVal rangeOfString:abbrToCheck options:NSCaseInsensitiveSearch];
+        if ( range.location != NSNotFound ) {
+            [retVal replaceCharactersInRange:range withString:abbrToCheck];
+            break;
+        }
+    }
+    
+    return retVal;
 }
 
 @end

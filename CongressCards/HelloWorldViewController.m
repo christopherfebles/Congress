@@ -236,15 +236,7 @@ withAnimationSubType:(NSString *) animationSubType
     
     NSMutableString *htmlString =
         [[NSMutableString alloc] initWithString:@"<span style=\"color: white; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  line-height: 95%;\"><span style=\"font-variant:small-caps;\">"];
-    if ( [member senator] )
-        [htmlString appendString:@"Senator"];
-    else if ( ![member senator] && ![[member state] isEqualToString:@"AS"] && ![[member state] isEqualToString:@"DC"] && ![[member state] isEqualToString:@"GU"] &&
-             ![[member state] isEqualToString:@"PR"] && ![[member state] isEqualToString:@"VI"] && ![[member state] isEqualToString:@"MP"])
-        [htmlString appendString:@"Representative"];
-    else if ( [[member state] isEqualToString:@"PR"] )
-        [htmlString appendString:@"Resident Commissioner"];
-    else
-        [htmlString appendString:@"Delegate"];
+    [htmlString appendString:[self getMemberTitle:member]];
     
     [htmlString appendString:@"&nbsp;"];
     [htmlString appendString:[member firstName]];
@@ -360,16 +352,10 @@ withAnimationSubType:(NSString *) animationSubType
 }
 
 - (void) addStateSeal: (Member *) member {
-    NSMutableString *filename = [[NSMutableString alloc] initWithString:[member state]];
-    [filename appendString:@".png"];
+    NSString *filename = [self getStateSealImgFilename:[member state]];
     UIImage *seal = [UIImage imageNamed:filename];
-    if ( !seal ) {
-        filename = [[NSMutableString alloc] initWithString:[filename stringByDeletingPathExtension]];
-        [filename appendString:@".gif"];
-        seal = [UIImage imageNamed:filename];
-        if ( !seal )
-            return;
-    }
+    if ( !seal )
+        return;
     
     if ( sealView != nil )
         [sealView removeFromSuperview];

@@ -47,4 +47,45 @@
     return retVal;
 }
 
+
+- (NSString *) getPartyColorAsString: (NSString *) party {
+    NSString *retVal = nil;
+    if ( [party isEqualToString:@"R"] ) {
+        retVal = @"red";
+    } else if ( [party isEqualToString:@"D"] ) {
+        retVal = @"blue";
+    } else if ( [party isEqualToString:@"I"] ) {
+        retVal = @"white";
+    }
+    return retVal;
+}
+
+- (NSString *) getMemberTitle: (Member *) member {
+    NSString *retVal = nil;
+    if ( [member senator] )
+        retVal = @"Senator";
+    else if ( ![member senator] && ![[member state] isEqualToString:@"AS"] && ![[member state] isEqualToString:@"DC"] && ![[member state] isEqualToString:@"GU"] &&
+             ![[member state] isEqualToString:@"PR"] && ![[member state] isEqualToString:@"VI"] && ![[member state] isEqualToString:@"MP"])
+        retVal = @"Representative";
+    else if ( [[member state] isEqualToString:@"PR"] )
+        retVal = @"Resident Commissioner";
+    else
+        retVal = @"Delegate";
+    return retVal;
+}
+
+- (NSString *) getStateSealImgFilename: (NSString *) state {
+    NSMutableString *filename = [[NSMutableString alloc] initWithString:state];
+    [filename appendString:@".png"];
+    UIImage *seal = [UIImage imageNamed:filename];
+    if ( !seal ) {
+        filename = [[NSMutableString alloc] initWithString:[filename stringByDeletingPathExtension]];
+        [filename appendString:@".gif"];
+        seal = [UIImage imageNamed:filename];
+        if ( !seal )
+            return @"";
+    }
+    return filename;
+}
+
 @end

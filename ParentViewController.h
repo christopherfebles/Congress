@@ -21,5 +21,10 @@
              withMember: (Member *) member;
 
 - (UIColor *) getPartyColor: (NSString *) party;
+- (NSString *) getPartyColorAsString: (NSString *) party;
+
+- (NSString *) getMemberTitle: (Member *) member;
+
+- (NSString *) getStateSealImgFilename: (NSString *) state;
 
 @end
