@@ -10,7 +10,7 @@
 
 @implementation CommitteeAssignment
 
-@synthesize name, position, committeeSites;
+@synthesize name, position, committeeSites, link;
 
 - (NSString *) website {
     if ( !committeeSites )

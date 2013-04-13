@@ -12,10 +12,12 @@
     NSString *name;
     NSString *position;
     NSMutableDictionary *committeeSites;
+    NSString *link;
 }
 
 @property (nonatomic, retain) NSString *name;
 @property (nonatomic, retain) NSString *position;
+@property (nonatomic, retain) NSString *link;
 @property (nonatomic, retain) NSMutableDictionary *committeeSites;
 
 - (NSString *) website;

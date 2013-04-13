@@ -36,18 +36,33 @@
     NSArray *sortedArray;
     sortedArray = [members sortedArrayUsingComparator:^NSComparisonResult(id a, id b) {
         
+        NSComparisonResult retVal;
+        
         //Sort by full state name
         NSDictionary *states = [[[StatePickerViewDelegate alloc] init] states];
         NSString *firstState = [states objectForKey:[(Member*)a state]];
         NSString *secondState = [states objectForKey:[(Member*)b state]];
+
+        if ( [firstState isEqualToString:secondState] ) {
+            //Compare district
+            NSInteger firstDist = [[(Member*)a classDistrict] integerValue];
+            NSInteger secondDist = [[(Member*)b classDistrict] integerValue];
+            if ( firstDist == secondDist )
+                retVal = NSOrderedSame;
+            else if ( firstDist > secondDist )
+                retVal = NSOrderedDescending;
+            else
+                retVal = NSOrderedAscending;
+        } else
+            retVal = [firstState compare:secondState];
         
-        NSMutableString *first = [[NSMutableString alloc] initWithString:firstState];
-        [first appendString:[(Member*)a classDistrict]];
+//        NSMutableString *first = [[NSMutableString alloc] initWithString:firstState];
+//        [first appendString:[(Member*)a classDistrict]];
+//        
+//        NSMutableString *second = [[NSMutableString alloc] initWithString:secondState];
+//        [second appendString:[(Member*)b classDistrict]];
         
-        NSMutableString *second = [[NSMutableString alloc] initWithString:secondState];
-        [second appendString:[(Member*)b classDistrict]];
-        
-        return [first compare:second];
+        return retVal;
     }];
     
     return sortedArray;

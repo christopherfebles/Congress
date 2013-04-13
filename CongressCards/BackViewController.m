@@ -151,31 +151,54 @@
     [htmlString appendString:@"         <li>\n"];
     [htmlString appendString:[member phone]];
     [htmlString appendString:@"         </li>\n"];
-    [htmlString appendString:@"         <li>\n"];
-    [htmlString appendString:@"             <a href=\""];
-    [htmlString appendString:[member email]];
-    [htmlString appendString:@"\">Contact Online</a>\n"];
-    [htmlString appendString:@"         </li>\n"];
-    [htmlString appendString:@"         <li>\n"];
-    [htmlString appendString:@"				<a href=\""];
-    [htmlString appendString:[member website]];
-    [htmlString appendString:@"\">Official Website</a>"];
-    [htmlString appendString:@"         </li>\n"];
+    
+    if ( [member email] ) {
+        [htmlString appendString:@"         <li>\n"];
+        [htmlString appendString:@"             <a href=\""];
+        [htmlString appendString:[member email]];
+        [htmlString appendString:@"\">Contact Online</a>\n"];
+        [htmlString appendString:@"         </li>\n"];
+    } else {
+        [htmlString appendString:@"         <li>&nbsp;</li>\n"];        
+    }
+    
+    if ( [member website] ) {
+        [htmlString appendString:@"         <li>\n"];
+        [htmlString appendString:@"				<a href=\""];
+        [htmlString appendString:[member website]];
+        [htmlString appendString:@"\">Official Website</a>"];
+        [htmlString appendString:@"         </li>\n"];
+    } else {
+        [htmlString appendString:@"         <li>&nbsp;</li>\n"];
+    }
+    
     [htmlString appendString:@"     </ul>\n"];
     [htmlString appendString:@" </div>\n"];
     [htmlString appendString:@" <div style=\"float: right; position: absolute; left: 360px; top: 77px;\">\n"];
     [htmlString appendString:@"     <ul style=\"list-style-type: none; margin: 0; padding: 0; font-size: x-small;\">"];
-    [htmlString appendString:@"         <li style=\"font-size: x-small;\">\n"];
-    [htmlString appendString:@"				Hometown:&nbsp;"];
-    [htmlString appendString:[member hometown]];
-    [htmlString appendString:@",&nbsp;"];
-    [htmlString appendString:[member state]];
-    [htmlString appendString:@"         </li>\n"];
-    [htmlString appendString:@"         <li>\n"];
-    [htmlString appendString:@"				<a href=\"http://bioguide.congress.gov/scripts/biodisplay.pl?index="];
-    [htmlString appendString:[member bioguide_id]];
-    [htmlString appendString:@"\">Congressional Biography</a>"];
-    [htmlString appendString:@"         </li>\n"];
+    
+    if ( [member hometown] ) {
+        [htmlString appendString:@"         <li style=\"font-size: x-small;\">\n"];
+        [htmlString appendString:@"				Hometown:&nbsp;"];
+        [htmlString appendString:[member hometown]];
+        [htmlString appendString:@",&nbsp;"];
+        [htmlString appendString:[member state]];
+        [htmlString appendString:@"         </li>\n"];
+    } else {
+        [htmlString appendString:@"         <li>&nbsp;</li>\n"];
+    }
+    
+    if ( [member bioguide_id] ) {
+        [htmlString appendString:@"         <li>\n"];
+        [htmlString appendString:@"				<a href=\"http://bioguide.congress.gov/scripts/biodisplay.pl?index="];
+        [htmlString appendString:[member bioguide_id]];
+        [htmlString appendString:@"\">Congressional Biography</a>"];
+        [htmlString appendString:@"         </li>\n"];
+    } else {
+        [htmlString appendString:@"         <li>&nbsp;</li>\n"];
+    }
+    
+    
     [htmlString appendString:@"         <li>&nbsp;</li>\n"];
     [htmlString appendString:@"         <li>&nbsp;</li>\n"];
     [htmlString appendString:@"     </ul>\n"];
@@ -228,9 +251,12 @@
         [htmlString appendString:@"     <ul style=\"list-style-type: none; margin: 0; padding: 0;\">"];
         for ( CommitteeAssignment *committee in sortedArray ) {
             [htmlString appendString:@"         <li>\n"];
-            if ( ![[committee website] isEqualToString:@""] ) {
+            if ( ![[committee website] isEqualToString:@""] || [committee link] ) {
                 [htmlString appendString:@"             <a href=\""];
-                [htmlString appendString:[committee website]];
+                if ( [committee link] )
+                    [htmlString appendString:[committee link]];
+                else
+                    [htmlString appendString:[committee website]];
                 [htmlString appendString:@"\">"];
                 [htmlString appendString:[committee name]];
                 [htmlString appendString:@"</a>\n"];

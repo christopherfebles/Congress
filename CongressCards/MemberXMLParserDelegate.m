@@ -96,6 +96,9 @@
         } else if ([elementName isEqualToString:@"position"]) {
             curCommittee.position = elementValue;
             [member addCommitteeAssignment:curCommittee];
+        } else if ([elementName isEqualToString:@"link"]) {
+            curCommittee.link = elementValue;
+//            [member addCommitteeAssignment:curCommittee];
         }
         elementValue = nil;
     }

@@ -56,6 +56,11 @@
         }
     }
     
+    //Capitalize HOB addresses
+    NSRange range = [retVal rangeOfString:@" Hob "];
+    if ( range.location != NSNotFound )
+        [retVal replaceCharactersInRange:range withString:@" HOB "];
+    
     return retVal;
 }
 
