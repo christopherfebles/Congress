@@ -12,7 +12,7 @@
 
 @implementation ParentViewController
 
-@synthesize initCount, incomingTransition;
+@synthesize initCount, incomingTransition, position, photos;
 
 - (void)viewDidLoad
 {
@@ -86,6 +86,20 @@
             return @"";
     }
     return filename;
+}
+
+- (IBAction)rightSwipe:(id)sender {
+    //Go back to previous image
+    position--;
+    if ( position < 0 )
+        position = [photos count]-1;
+}
+
+- (IBAction)leftSwipe:(id)sender {
+    //Go forward to next image
+    position++;
+    if ( position > ([photos count]-1) )
+        position = 0;
 }
 
 @end

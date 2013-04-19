@@ -14,7 +14,6 @@
 @interface HelloWorldViewController : ParentViewController <UIGestureRecognizerDelegate, UIPickerViewDelegate> {
     NSFetchedResultsController *fetchedResultsController;
     NSManagedObjectContext *managedObjectContext;
-    
     StatePickerViewDelegate *statePickerDelegate;
 }
 

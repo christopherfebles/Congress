@@ -21,5 +21,8 @@
 @property (nonatomic, strong) UIWebView *backWebView;
 @property (nonatomic, strong) HelloWorldViewController *mainController;
 @property (nonatomic, strong) UITapGestureRecognizer *tapRecognizer;
+@property (nonatomic, strong) UISwipeGestureRecognizer *swipeLeftRecognizer;
+@property (nonatomic, strong) UISwipeGestureRecognizer *swipeRightRecognizer;
+
 
 @end

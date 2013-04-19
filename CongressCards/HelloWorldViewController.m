@@ -15,8 +15,6 @@
 #import "BackViewController.h"
 
 @interface HelloWorldViewController () {
-    NSArray *photos;
-    int position;
     int lastSenatePosition;
     int lastHousePosition;
     NSArray *senators;
@@ -48,21 +46,13 @@
 
 - (IBAction)rightSwipe:(id)sender {
     if ( switchingState ) return;
-    //Go back to previous image
-    position--;
-    if ( position < 0 )
-        position = [photos count]-1;
-    
+    [super rightSwipe:sender];    
     [self updateImage:NO];
 }
 
 - (IBAction)leftSwipe:(id)sender {
     if ( switchingState ) return;
-    //Go forward to next image
-    position++;
-    if ( position > ([photos count]-1) )
-        position = 0;
-    
+    [super leftSwipe:sender];    
     [self updateImage:YES];
 }
 
@@ -72,6 +62,8 @@
     
     BackViewController *vc = [[BackViewController alloc] init];
     vc.member = photos[position];
+    vc.photos = photos;
+    vc.position = position;
     vc.mainController = self;
     
     HelloWorldAppDelegate *appDelegate = (HelloWorldAppDelegate *)[[UIApplication sharedApplication] delegate];

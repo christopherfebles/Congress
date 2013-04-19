@@ -8,10 +8,13 @@
 
 #import "BackViewController.h"
 #import "HelloWorldAppDelegate.h"
+#import <QuartzCore/QuartzCore.h>
 
-@implementation BackViewController
+@implementation BackViewController {
+    CATransition *animation;
+}
 
-@synthesize member, mainController, tapRecognizer, backWebView;
+@synthesize member, mainController, tapRecognizer, backWebView, swipeLeftRecognizer, swipeRightRecognizer;
 
 - (void)viewDidLoad
 {
@@ -47,6 +50,16 @@
 
 -(void) setupMainView {
     self.view.backgroundColor = [UIColor underPageBackgroundColor];
+    
+    //Gesture Recognizers
+    self.tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap)];
+    self.tapRecognizer.delegate = self;
+    self.tapRecognizer.cancelsTouchesInView = NO;
+    //Swipe
+    self.swipeLeftRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(leftSwipe:)];
+    self.swipeLeftRecognizer.direction = UISwipeGestureRecognizerDirectionLeft;
+    self.swipeRightRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(rightSwipe:)];
+    self.swipeRightRecognizer.direction = UISwipeGestureRecognizerDirectionRight;
 }
 
 - (NSString *) getLongPartyName: (NSString *) party {
@@ -67,19 +80,20 @@
     int x = -5;
     int y = -5;
     int width = self.view.bounds.size.width;
-    int height = self.view.bounds.size.height;
-    self.tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap)];
-    self.tapRecognizer.delegate = self;
-    self.tapRecognizer.cancelsTouchesInView = NO;
+    int height = self.view.bounds.size.height;        
     
-    self.backWebView = [[UIWebView alloc] initWithFrame:CGRectMake(x, y, width, height)];
-    self.backWebView.backgroundColor = [UIColor clearColor];
-    self.backWebView.opaque = NO;
-    self.backWebView.scrollView.scrollEnabled = NO;
-    self.backWebView.scrollView.bounces = NO;
-    self.backWebView.delegate = self;
-//    self.backWebView.scalesPageToFit = YES;
-    [self.backWebView addGestureRecognizer:self.tapRecognizer];
+    if ( !self.backWebView ) {
+        self.backWebView = [[UIWebView alloc] initWithFrame:CGRectMake(x, y, width, height)];
+        self.backWebView.backgroundColor = [UIColor clearColor];
+        self.backWebView.opaque = NO;
+        self.backWebView.scrollView.scrollEnabled = NO;
+        self.backWebView.scrollView.bounces = NO;
+        self.backWebView.delegate = self;
+    //    self.backWebView.scalesPageToFit = YES;
+        [self.backWebView addGestureRecognizer:self.tapRecognizer];
+        [self.backWebView addGestureRecognizer:self.swipeLeftRecognizer];
+        [self.backWebView addGestureRecognizer:self.swipeRightRecognizer];
+    }
     
     //Setup display using HTML/CSS
     NSString *title = [self getMemberTitle:member];
@@ -273,6 +287,11 @@
     
     NSString *path = [[NSBundle mainBundle] bundlePath];
     NSURL *baseURL = [NSURL fileURLWithPath:path];
+    if ( animation ) {
+        [backWebView.layer addAnimation:animation forKey:kCATransition];
+        animation = nil;
+    }
+    
     [backWebView loadHTMLString:htmlString baseURL:baseURL];
 }
 
@@ -280,8 +299,30 @@
     //Switch back to main view
     HelloWorldAppDelegate *appDelegate = (HelloWorldAppDelegate *)[[UIApplication sharedApplication] delegate];
     
+    //Reset position
+    self.mainController.position = self.position;
     [appDelegate transitionToViewController:self.mainController
                              withTransition:UIViewAnimationOptionTransitionFlipFromRight];
+}
+
+- (IBAction)rightSwipe:(id)sender {
+    [super rightSwipe:sender];
+    member = photos[position];
+    animation = [CATransition animation];
+    animation.duration = 0.5;
+    animation.type = kCATransitionMoveIn;
+    animation.subtype = kCATransitionFromLeft;
+    [self setupBackView];
+}
+
+- (IBAction)leftSwipe:(id)sender {
+    [super leftSwipe:sender];
+    member = photos[position];
+    animation = [CATransition animation];
+    animation.duration = 0.5;
+    animation.type = kCATransitionMoveIn;
+    animation.subtype = kCATransitionFromRight;
+    [self setupBackView];
 }
 
 -(NSUInteger)supportedInterfaceOrientations{
