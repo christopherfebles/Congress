@@ -62,44 +62,44 @@
         }
         
 //        NSLog(@"Processing value for: %@", elementValue);
-        if ([elementName isEqualToString:@"lastName"]) {
-            member.lastName = elementValue;
-        } else if ([elementName isEqualToString:@"firstName"]) {
-            member.firstName = elementValue;
-        } else if ([elementName isEqualToString:@"party"]) {
-            member.party = elementValue;
-        } else if ([elementName isEqualToString:@"state"]) {
-            member.state = elementValue;
-        } else if ([elementName isEqualToString:@"address"]) {
-            member.address = elementValue;
-        } else if ([elementName isEqualToString:@"phone"]) {
-            member.phone = elementValue;
-        } else if ([elementName isEqualToString:@"email"]) {
-            member.email = elementValue;
-        } else if ([elementName isEqualToString:@"website"]) {
-            member.website = elementValue;
-        } else if ([elementName isEqualToString:@"classDistrict"]) {
-            member.classDistrict = elementValue;
-        } else if ([elementName isEqualToString:@"bioguideId"]) {
-            member.bioguide_id = elementValue;
-        } else if ([elementName isEqualToString:@"imgFileName"]) {
-            member.photoFileName = elementValue;
-        } else if ([elementName isEqualToString:@"isSenator"]) {
-            member.senator = [elementValue isEqualToString:@"true"];
-        } else if ([elementName isEqualToString:@"hometown"]) {
-            member.hometown = elementValue;
-        } else if ([elementName isEqualToString:@"leadershipPosition"]) {
-            member.leadershipPosition = elementValue;
-        } else if ([elementName isEqualToString:@"name"]) {
-            curCommittee = [[CommitteeAssignment alloc] init];
-            curCommittee.name = elementValue;
-        } else if ([elementName isEqualToString:@"position"]) {
-            curCommittee.position = elementValue;
-            [member addCommitteeAssignment:curCommittee];
-        } else if ([elementName isEqualToString:@"link"]) {
-            curCommittee.link = elementValue;
+//        if ([elementName isEqualToString:@"lastName"]) {
+//            member.lastName = elementValue;
+//        } else if ([elementName isEqualToString:@"firstName"]) {
+//            member.firstName = elementValue;
+//        } else if ([elementName isEqualToString:@"party"]) {
+//            member.party = elementValue;
+//        } else if ([elementName isEqualToString:@"state"]) {
+//            member.state = elementValue;
+//        } else if ([elementName isEqualToString:@"address"]) {
+//            member.address = elementValue;
+//        } else if ([elementName isEqualToString:@"phone"]) {
+//            member.phone = elementValue;
+//        } else if ([elementName isEqualToString:@"email"]) {
+//            member.email = elementValue;
+//        } else if ([elementName isEqualToString:@"website"]) {
+//            member.website = elementValue;
+//        } else if ([elementName isEqualToString:@"classDistrict"]) {
+//            member.classDistrict = elementValue;
+//        } else if ([elementName isEqualToString:@"bioguideId"]) {
+//            member.bioguide_id = elementValue;
+//        } else if ([elementName isEqualToString:@"imgFileName"]) {
+//            member.photoFileName = elementValue;
+//        } else if ([elementName isEqualToString:@"isSenator"]) {
+//            member.senator = [elementValue isEqualToString:@"true"];
+//        } else if ([elementName isEqualToString:@"hometown"]) {
+//            member.hometown = elementValue;
+//        } else if ([elementName isEqualToString:@"leadershipPosition"]) {
+//            member.leadershipPosition = elementValue;
+//        } else if ([elementName isEqualToString:@"name"]) {
+//            curCommittee = [[CommitteeAssignment alloc] init];
+//            curCommittee.name = elementValue;
+//        } else if ([elementName isEqualToString:@"position"]) {
+//            curCommittee.position = elementValue;
 //            [member addCommitteeAssignment:curCommittee];
-        }
+//        } else if ([elementName isEqualToString:@"link"]) {
+//            curCommittee.link = elementValue;
+////            [member addCommitteeAssignment:curCommittee];
+//        }
         elementValue = nil;
     }
 //    NSLog(@"Finished parsing %@", elementName);

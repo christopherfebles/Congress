@@ -9,18 +9,18 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 #import "Member.h"
-#import "CommitteeAssignment.h"
+#import "Committee.h"
 
 @interface MemberXMLParserDelegate : NSObject <NSXMLParserDelegate> {
     Member *member;
     NSMutableArray *members;
     NSMutableString *elementValue;
-    CommitteeAssignment *curCommittee;
+    Committee *curCommittee;
 }
 
 @property (nonatomic, retain) Member *member;
 @property (nonatomic, retain) NSMutableArray *members;
 @property (nonatomic, retain) NSMutableString *elementValue;
-@property (nonatomic, retain) CommitteeAssignment *curCommittee;
+@property (nonatomic, retain) Committee *curCommittee;
 
 @end

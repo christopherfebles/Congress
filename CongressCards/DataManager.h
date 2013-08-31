@@ -10,7 +10,9 @@
 
 @interface DataManager : NSObject
 
-+(NSArray *) loadSenatorsFromXML;
-+(NSArray *) loadRepresentativesFromXML;
++(NSArray *) loadSenators;
++(NSArray *) loadRepresentatives;
+
++(NSArray *) updateLocalFiles;
 
 @end
