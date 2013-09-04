@@ -7,7 +7,7 @@
 //
 
 #import "BackViewController.h"
-#import "HelloWorldAppDelegate.h"
+#import "CongressAppDelegate.h"
 #import <QuartzCore/QuartzCore.h>
 
 @implementation BackViewController {
@@ -297,7 +297,7 @@
 
 - (void) handleTap {
     //Switch back to main view
-    HelloWorldAppDelegate *appDelegate = (HelloWorldAppDelegate *)[[UIApplication sharedApplication] delegate];
+    CongressAppDelegate *appDelegate = (CongressAppDelegate *)[[UIApplication sharedApplication] delegate];
     
     //Reset position
     self.mainController.position = self.position;

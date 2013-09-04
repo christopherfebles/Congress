@@ -1194,9 +1194,11 @@
 		00C6859116BB767000865F27 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C6859016BB767000865F27 /* CoreGraphics.framework */; };
 		00C6859716BB767000865F27 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00C6859516BB767000865F27 /* InfoPlist.strings */; };
 		00C6859916BB767000865F27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C6859816BB767000865F27 /* main.m */; };
-		00C6859D16BB767000865F27 /* HelloWorldAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C6859C16BB767000865F27 /* HelloWorldAppDelegate.m */; };
+		00C6859D16BB767000865F27 /* CongressAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C6859C16BB767000865F27 /* CongressAppDelegate.m */; };
 		00C685A616BB767000865F27 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C685A416BB767000865F27 /* MainStoryboard.storyboard */; };
-		00C685A916BB767000865F27 /* HelloWorldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C685A816BB767000865F27 /* HelloWorldViewController.m */; };
+		00C685A916BB767000865F27 /* FrontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C685A816BB767000865F27 /* FrontViewController.m */; };
+		00E88D3817D6B3570061F895 /* iPhoneIcon@120.png in Resources */ = {isa = PBXBuildFile; fileRef = 00E88D3717D6B3570061F895 /* iPhoneIcon@120.png */; };
+		00E88D3A17D6B3A90061F895 /* spotlightiPhoneIcon@80.png in Resources */ = {isa = PBXBuildFile; fileRef = 00E88D3917D6B3A90061F895 /* spotlightiPhoneIcon@80.png */; };
 		0E13679317037C1C00593D57 /* Member.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E13679217037C1C00593D57 /* Member.m */; };
 		0E1367991703845C00593D57 /* MemberXMLParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1367981703845C00593D57 /* MemberXMLParserDelegate.m */; };
 /* End PBXBuildFile section */
@@ -2397,11 +2399,13 @@
 		00C6859616BB767000865F27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		00C6859816BB767000865F27 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		00C6859A16BB767000865F27 /* Congress-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Congress-Prefix.pch"; sourceTree = "<group>"; };
-		00C6859B16BB767000865F27 /* HelloWorldAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldAppDelegate.h; sourceTree = "<group>"; };
-		00C6859C16BB767000865F27 /* HelloWorldAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldAppDelegate.m; sourceTree = "<group>"; };
+		00C6859B16BB767000865F27 /* CongressAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CongressAppDelegate.h; sourceTree = "<group>"; };
+		00C6859C16BB767000865F27 /* CongressAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CongressAppDelegate.m; sourceTree = "<group>"; };
 		00C685A516BB767000865F27 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		00C685A716BB767000865F27 /* HelloWorldViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldViewController.h; sourceTree = "<group>"; };
-		00C685A816BB767000865F27 /* HelloWorldViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldViewController.m; sourceTree = "<group>"; };
+		00C685A716BB767000865F27 /* FrontViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrontViewController.h; sourceTree = "<group>"; };
+		00C685A816BB767000865F27 /* FrontViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrontViewController.m; sourceTree = "<group>"; };
+		00E88D3717D6B3570061F895 /* iPhoneIcon@120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhoneIcon@120.png"; sourceTree = "<group>"; };
+		00E88D3917D6B3A90061F895 /* spotlightiPhoneIcon@80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spotlightiPhoneIcon@80.png"; sourceTree = "<group>"; };
 		0E13679117037C1C00593D57 /* Member.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Member.h; sourceTree = "<group>"; };
 		0E13679217037C1C00593D57 /* Member.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Member.m; sourceTree = "<group>"; };
 		0E1367971703845B00593D57 /* MemberXMLParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberXMLParserDelegate.h; sourceTree = "<group>"; };
@@ -2437,6 +2441,8 @@
 		006FD2751711CEA700215083 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				00E88D3917D6B3A90061F895 /* spotlightiPhoneIcon@80.png */,
+				00E88D3717D6B3570061F895 /* iPhoneIcon@120.png */,
 				006FD2761711CF2C00215083 /* iPadIcon.png */,
 				006FD2771711CF2C00215083 /* iPadIcon@2x.png */,
 				006FD2781711CF2C00215083 /* iTunesArtwork */,
@@ -2569,10 +2575,10 @@
 				00C685A416BB767000865F27 /* MainStoryboard.storyboard */,
 				0063EEFA1714FF76006D6EE1 /* ParentViewController.h */,
 				0063EEFB1714FF76006D6EE1 /* ParentViewController.m */,
-				00C6859B16BB767000865F27 /* HelloWorldAppDelegate.h */,
-				00C6859C16BB767000865F27 /* HelloWorldAppDelegate.m */,
-				00C685A716BB767000865F27 /* HelloWorldViewController.h */,
-				00C685A816BB767000865F27 /* HelloWorldViewController.m */,
+				00C6859B16BB767000865F27 /* CongressAppDelegate.h */,
+				00C6859C16BB767000865F27 /* CongressAppDelegate.m */,
+				00C685A716BB767000865F27 /* FrontViewController.h */,
+				00C685A816BB767000865F27 /* FrontViewController.m */,
 				001A059E1712635E0054B66C /* BackViewController.h */,
 				001A059F1712635E0054B66C /* BackViewController.m */,
 				00C6859316BB767000865F27 /* Supporting Files */,
@@ -3738,6 +3744,11 @@
 				CLASSPREFIX = HelloWorld;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Christopher Febles";
+				TargetAttributes = {
+					00C6858816BB767000865F27 = {
+						DevelopmentTeam = 5N5H886NMZ;
+					};
+				};
 			};
 			buildConfigurationList = 00C6858416BB767000865F27 /* Build configuration list for PBXProject "Congress" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -4565,6 +4576,7 @@
 				0063ED841714F5CF006D6EE1 /* House_MA_2_D_thumb.jpg in Resources */,
 				0063ED851714F5CF006D6EE1 /* House_MA_3_D_thumb.jpg in Resources */,
 				0063ED861714F5CF006D6EE1 /* House_MA_4_D_thumb.jpg in Resources */,
+				00E88D3A17D6B3A90061F895 /* spotlightiPhoneIcon@80.png in Resources */,
 				0063ED871714F5CF006D6EE1 /* House_MA_5_D_thumb.jpg in Resources */,
 				0063ED881714F5CF006D6EE1 /* House_MA_6_D_thumb.jpg in Resources */,
 				0063ED891714F5CF006D6EE1 /* House_MA_7_D_thumb.jpg in Resources */,
@@ -4589,6 +4601,7 @@
 				0063ED9C1714F5CF006D6EE1 /* House_MI_7_R_thumb.jpg in Resources */,
 				0063ED9D1714F5CF006D6EE1 /* House_MI_8_R_thumb.jpg in Resources */,
 				0063ED9E1714F5CF006D6EE1 /* House_MI_9_D_thumb.jpg in Resources */,
+				00E88D3817D6B3570061F895 /* iPhoneIcon@120.png in Resources */,
 				0063ED9F1714F5CF006D6EE1 /* House_MI_10_R_thumb.jpg in Resources */,
 				0063EDA01714F5CF006D6EE1 /* House_MI_11_R_thumb.jpg in Resources */,
 				0063EDA11714F5CF006D6EE1 /* House_MI_12_D_thumb.jpg in Resources */,
@@ -4947,8 +4960,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				00C6859916BB767000865F27 /* main.m in Sources */,
-				00C6859D16BB767000865F27 /* HelloWorldAppDelegate.m in Sources */,
-				00C685A916BB767000865F27 /* HelloWorldViewController.m in Sources */,
+				00C6859D16BB767000865F27 /* CongressAppDelegate.m in Sources */,
+				00C685A916BB767000865F27 /* FrontViewController.m in Sources */,
 				007B868216D70CF9002A3EE7 /* DataModel.xcdatamodeld in Sources */,
 				009A9F3916D71F8F0085CFC5 /* DataManager.m in Sources */,
 				0E13679317037C1C00593D57 /* Member.m in Sources */,
@@ -5041,6 +5054,7 @@
 		00C685AD16BB767000865F27 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CongressCards/Congress-Prefix.pch";
 				INFOPLIST_FILE = "CongressCards/Congress-Info.plist";
@@ -5054,6 +5068,7 @@
 		00C685AE16BB767000865F27 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CongressCards/Congress-Prefix.pch";
 				INFOPLIST_FILE = "CongressCards/Congress-Info.plist";

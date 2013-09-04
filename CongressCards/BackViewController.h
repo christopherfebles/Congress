@@ -8,18 +8,18 @@
 
 #import <UIKit/UIKit.h>
 #import "Member.h"
-#import "HelloWorldViewController.h"
+#import "FrontViewController.h"
 #import "ParentViewController.h"
 
 @interface BackViewController : ParentViewController <UIGestureRecognizerDelegate, UIWebViewDelegate> {
     Member *member;
-    HelloWorldViewController *mainController;
+    FrontViewController *mainController;
     UIWebView *backWebView;
 }
 
 @property (nonatomic, strong) Member *member;
 @property (nonatomic, strong) UIWebView *backWebView;
-@property (nonatomic, strong) HelloWorldViewController *mainController;
+@property (nonatomic, strong) FrontViewController *mainController;
 @property (nonatomic, strong) UITapGestureRecognizer *tapRecognizer;
 @property (nonatomic, strong) UISwipeGestureRecognizer *swipeLeftRecognizer;
 @property (nonatomic, strong) UISwipeGestureRecognizer *swipeRightRecognizer;
