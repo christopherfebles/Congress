@@ -5068,12 +5068,15 @@
 		00C685AE16BB767000865F27 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Christopher Febles (5N5H886NMZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Christopher Febles (5N5H886NMZ)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CongressCards/Congress-Prefix.pch";
 				INFOPLIST_FILE = "CongressCards/Congress-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = Congress;
+				PROVISIONING_PROFILE = "5B8FE3F5-6390-4E6B-8FD4-64A47AD65836";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5B8FE3F5-6390-4E6B-8FD4-64A47AD65836";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
