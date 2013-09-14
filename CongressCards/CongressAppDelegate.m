@@ -1,6 +1,6 @@
 //
-//  HelloWorldAppDelegate.m
-//  CongressCards
+//  CongressAppDelegate.m
+//  Congress
 //
 //  Created by Christopher Febles on 1/31/13.
 //  Copyright © 2013 Christopher Febles. All rights reserved.
@@ -39,7 +39,7 @@
         return persistentStoreCoordinator;
     }
     NSURL *storeUrl = [NSURL fileURLWithPath: [[self applicationDocumentsDirectory]
-                                               stringByAppendingPathComponent: @"CongressCards.sqlite"]];
+                                               stringByAppendingPathComponent: @"Congress.sqlite"]];
     NSError *error = nil;
     persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc]
                                   initWithManagedObjectModel:[self managedObjectModel]];

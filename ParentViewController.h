@@ -28,7 +28,6 @@
 - (NSString *) getPartyColorAsString: (NSString *) party;
 - (IBAction)rightSwipe:(id)sender;
 - (IBAction)leftSwipe:(id)sender;
-- (NSString *) getMemberTitle: (Member *) member;
 
 - (NSString *) getStateSealImgFilename: (NSString *) state;
 

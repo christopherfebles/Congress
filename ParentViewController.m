@@ -47,7 +47,6 @@
     return retVal;
 }
 
-
 - (NSString *) getPartyColorAsString: (NSString *) party {
     NSString *retVal = nil;
     if ( [party isEqualToString:@"R"] ) {
@@ -57,20 +56,6 @@
     } else if ( [party isEqualToString:@"I"] ) {
         retVal = @"white";
     }
-    return retVal;
-}
-
-- (NSString *) getMemberTitle: (Member *) member {
-    NSString *retVal = nil;
-    if ( [member senator] )
-        retVal = @"Senator";
-    else if ( ![member senator] && ![[member state] isEqualToString:@"AS"] && ![[member state] isEqualToString:@"DC"] && ![[member state] isEqualToString:@"GU"] &&
-             ![[member state] isEqualToString:@"PR"] && ![[member state] isEqualToString:@"VI"] && ![[member state] isEqualToString:@"MP"])
-        retVal = @"Representative";
-    else if ( [[member state] isEqualToString:@"PR"] )
-        retVal = @"Resident Commissioner";
-    else
-        retVal = @"Delegate";
     return retVal;
 }
 

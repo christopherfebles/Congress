@@ -1,6 +1,6 @@
 //
-//  HelloWorldViewController.m
-//  CongressCards
+//  FrontViewController.m
+//  Congress
 //
 //  Created by Christopher Febles on 1/31/13.
 //  Copyright © 2013 Christopher Febles. All rights reserved.
@@ -86,7 +86,7 @@
     [self setImage:picture withAnimationSubType: animationSubType];
     
     [self addBorderToView: self.view withMember: member];
-    [self addLogo:[member senator]];
+    [self addLogo:member.isSenator];
     [self addStateSeal:member];
     [self addMemberName: member];
 //    [self addMemberNameViaTextView: member];
@@ -145,18 +145,9 @@ withAnimationSubType:(NSString *) animationSubType
                                         NSParagraphStyleAttributeName: paragraphStyle
                                       };
     
-    if ( [member senator] )
-        [titleAndFirstName appendString:@"Senator"];
-    else if ( ![member senator] && ![[member state] isEqualToString:@"AS"] && ![[member state] isEqualToString:@"DC"] && ![[member state] isEqualToString:@"GU"] &&
-             ![[member state] isEqualToString:@"PR"] && ![[member state] isEqualToString:@"VI"] && ![[member state] isEqualToString:@"MP"])
-        [titleAndFirstName appendString:@"Representative"];
-    else if ( [[member state] isEqualToString:@"PR"] )
-        [titleAndFirstName appendString:@"Resident Commissioner"];
-    else
-        [titleAndFirstName appendString:@"Delegate"];
-    
+    [titleAndFirstName appendString:member.fullTitle];
     [titleAndFirstName appendString:@" "];
-    [titleAndFirstName appendString:[member firstName]];
+    [titleAndFirstName appendString:member.firstName];
     [titleAndFirstName appendString:@" "];
     
     NSMutableString *lastName = [[NSMutableString alloc] initWithString:@""];
@@ -179,27 +170,27 @@ withAnimationSubType:(NSString *) animationSubType
                                       NSParagraphStyleAttributeName: paragraphStyle
                                       };
     [leadershipPosition appendString:@"\n"];
-    if ( [member leadershipPosition] ) {
-        [leadershipPosition appendString:[member leadershipPosition]];
-    } else {
-        //If no leadership position, check committee leadership
-        if ( [[member committees] count] > 0 ) {
-            CommitteeAssignment *displayCommittee = nil;
-            //Get highest ranked position (Assuming each Member can only chair one committee)
-            for ( CommitteeAssignment *committee in [member committees] ) {
-                if ( [[committee position] isEqualToString:@"Ranking Member"] ||
-                    [[committee position] isEqualToString:@"Chairman"]) {
-                    displayCommittee = committee;
-                    break;
-                } else if ( [[committee position] isEqualToString:@"Vice Chairman"] )
-                    displayCommittee = committee;
-            }
-            if ( displayCommittee ) {
-                [leadershipPosition appendString:@"Committee "];
-                [leadershipPosition appendString:[displayCommittee position]];
-            }
-        }
-    }    
+//    if ( [member leadershipPosition] ) {
+//        [leadershipPosition appendString:[member leadershipPosition]];
+//    } else {
+//        //If no leadership position, check committee leadership
+//        if ( [[member committees] count] > 0 ) {
+//            Committee *displayCommittee = nil;
+//            //Get highest ranked position (Assuming each Member can only chair one committee)
+//            for ( Committee *committee in [member committees] ) {
+//                if ( [[committee position] isEqualToString:@"Ranking Member"] ||
+//                    [[committee position] isEqualToString:@"Chairman"]) {
+//                    displayCommittee = committee;
+//                    break;
+//                } else if ( [[committee position] isEqualToString:@"Vice Chairman"] )
+//                    displayCommittee = committee;
+//            }
+//            if ( displayCommittee ) {
+//                [leadershipPosition appendString:@"Committee "];
+//                [leadershipPosition appendString:[displayCommittee position]];
+//            }
+//        }
+//    }    
     
     //Combine all strings
     NSMutableString *combinedString = [[NSMutableString alloc] initWithString:titleAndFirstName];
@@ -229,7 +220,7 @@ withAnimationSubType:(NSString *) animationSubType
     
     NSMutableString *htmlString =
         [[NSMutableString alloc] initWithString:@"<span style=\"color: white; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  line-height: 95%;\"><span style=\"font-variant:small-caps;\">"];
-    [htmlString appendString:[self getMemberTitle:member]];
+    [htmlString appendString:member.fullTitle];
     
     [htmlString appendString:@"&nbsp;"];
     [htmlString appendString:[member firstName]];
@@ -237,33 +228,33 @@ withAnimationSubType:(NSString *) animationSubType
     [htmlString appendString:[member lastName]];
     [htmlString appendString:@"</span>"];
 
-    //Add Leadership position, if available
-    if ( [member leadershipPosition] ) {
-        [htmlString appendString:@"<br><span style=\"font-family:'Snell Roundhand'; font-size: large;\">"];
-        [htmlString appendString:[member leadershipPosition]];
-        [htmlString appendString:@"</span>"];
-    } else {
-        //If no leadership position, check committee leadership
-        if ( [[member committees] count] > 0 ) {
-            CommitteeAssignment *displayCommittee = nil;
-            NSString * committeeHTML = @"<br><span style=\"font-family:'Snell Roundhand'; font-size: large;\">";
-            //Get highest ranked position (Assuming each Member can only chair one committee)
-            for ( CommitteeAssignment *committee in [member committees] ) {
-                if ( [[committee position] isEqualToString:@"Ranking Member"] ||
-                    [[committee position] isEqualToString:@"Chairman"]) {
-                    displayCommittee = committee;
-                    break;
-                } else if ( [[committee position] isEqualToString:@"Vice Chairman"] )
-                    displayCommittee = committee;
-            }
-            if ( displayCommittee ) {
-                [htmlString appendString:committeeHTML];
-                [htmlString appendString:@"Committee "];
-                [htmlString appendString:[displayCommittee position]];
-                [htmlString appendString:@"</span>"];
-            }
-        }
-    }
+//    //Add Leadership position, if available
+//    if ( [member leadershipPosition] ) {
+//        [htmlString appendString:@"<br><span style=\"font-family:'Snell Roundhand'; font-size: large;\">"];
+//        [htmlString appendString:[member leadershipPosition]];
+//        [htmlString appendString:@"</span>"];
+//    } else {
+//        //If no leadership position, check committee leadership
+//        if ( [[member committees] count] > 0 ) {
+//            Committee *displayCommittee = nil;
+//            NSString * committeeHTML = @"<br><span style=\"font-family:'Snell Roundhand'; font-size: large;\">";
+//            //Get highest ranked position (Assuming each Member can only chair one committee)
+//            for ( Committee *committee in [member committees] ) {
+//                if ( [[committee position] isEqualToString:@"Ranking Member"] ||
+//                    [[committee position] isEqualToString:@"Chairman"]) {
+//                    displayCommittee = committee;
+//                    break;
+//                } else if ( [[committee position] isEqualToString:@"Vice Chairman"] )
+//                    displayCommittee = committee;
+//            }
+//            if ( displayCommittee ) {
+//                [htmlString appendString:committeeHTML];
+//                [htmlString appendString:@"Committee "];
+//                [htmlString appendString:[displayCommittee position]];
+//                [htmlString appendString:@"</span>"];
+//            }
+//        }
+//    }
     [htmlString appendString:@"</span>"];
     
     [nameWebView loadHTMLString:htmlString baseURL:nil];
@@ -368,10 +359,10 @@ withAnimationSubType:(NSString *) animationSubType
     [sealView addGestureRecognizer:tap];
     
     NSMutableString *labelText = [[NSMutableString alloc] initWithString:[member state]];
-    if ( ![member senator] ) {
+    if ( !member.isSenator ) {
         [labelText appendString:@" - "];
-        NSString *district = [member classDistrict];
-        if ( [district isEqualToString:@"At Large"] )
+        NSString *district = [member district];
+        if ( [district isEqualToString:@"0"] )
             district = @"AL";
         [labelText appendString:district];
     }
@@ -428,7 +419,7 @@ withAnimationSubType:(NSString *) animationSubType
         statePickerDelegate = [[StatePickerViewDelegate alloc] init];
     
     Member *currentMember = photos[position];
-    NSInteger pickerIndex = [statePickerDelegate getIndex:[currentMember state]];
+    NSInteger pickerIndex = [statePickerDelegate getStateIndex:[currentMember state]];
     int x = 0;
     int width = [UIScreen mainScreen].bounds.size.width;
     int height = 200;
@@ -477,7 +468,7 @@ withAnimationSubType:(NSString *) animationSubType
     // Get the selected state, navigate to the first Member in that state, and close the picker
     NSInteger row = [statePickerView selectedRowInComponent:0];
     
-    NSString *selectedState = [statePickerDelegate getAbbr:row];
+    NSString *selectedState = [statePickerDelegate getStateAbbreviation:row];
     
     for ( int x = 0; x < [photos count]; x++ ) {
         Member *member = photos[x];

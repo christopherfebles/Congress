@@ -96,7 +96,7 @@
     }
     
     //Setup display using HTML/CSS
-    NSString *title = [self getMemberTitle:member];
+    NSString *title = member.fullTitle;
     NSString *state = [[[StatePickerViewDelegate alloc] init].states valueForKey:[member state]];
     NSMutableString *htmlString = [[NSMutableString alloc] initWithString:@""];
     
@@ -127,49 +127,49 @@
     [htmlString appendString:state];
     [htmlString appendString:@"</div>\n"];
     
-    //Add Leadership position, if available
-    if ( [member leadershipPosition] ) {
-        [htmlString appendString:@"	<div style=\"font-family:'Snell Roundhand'; font-size: medium;\">"];
-        [htmlString appendString:[member leadershipPosition]];
-        [htmlString appendString:@"</div>\n"];
-    } else {
-        //If no leadership position, check committee leadership
-        if ( [[member committees] count] > 0 ) {
-            CommitteeAssignment *displayCommittee = nil;
-            NSString * committeeHTML = @"   <div style=\"font-family:'Snell Roundhand'; font-size: medium;\">";
-            //Get highest ranked position (Assuming each Member can only chair one committee)
-            for ( CommitteeAssignment *committee in [member committees] ) {
-                if ( [[committee position] isEqualToString:@"Ranking Member"] ||
-                    [[committee position] isEqualToString:@"Chairman"]) {
-                    displayCommittee = committee;
-                    break;
-                } else if ( [[committee position] isEqualToString:@"Vice Chairman"] )
-                    displayCommittee = committee;
-            }
-            if ( displayCommittee ) {
-                [htmlString appendString:committeeHTML];
-                [htmlString appendString:@"Committee "];
-                [htmlString appendString:[displayCommittee position]];
-                [htmlString appendString:@"</div>\n"];
-            }
-        }
-    }
+//    //Add Leadership position, if available
+//    if ( [member leadershipPosition] ) {
+//        [htmlString appendString:@"	<div style=\"font-family:'Snell Roundhand'; font-size: medium;\">"];
+//        [htmlString appendString:[member leadershipPosition]];
+//        [htmlString appendString:@"</div>\n"];
+//    } else {
+//        //If no leadership position, check committee leadership
+//        if ( [[member committees] count] > 0 ) {
+//            Committee *displayCommittee = nil;
+//            NSString * committeeHTML = @"   <div style=\"font-family:'Snell Roundhand'; font-size: medium;\">";
+//            //Get highest ranked position (Assuming each Member can only chair one committee)
+//            for ( Committee *committee in [member committees] ) {
+//                if ( [[committee position] isEqualToString:@"Ranking Member"] ||
+//                    [[committee position] isEqualToString:@"Chairman"]) {
+//                    displayCommittee = committee;
+//                    break;
+//                } else if ( [[committee position] isEqualToString:@"Vice Chairman"] )
+//                    displayCommittee = committee;
+//            }
+//            if ( displayCommittee ) {
+//                [htmlString appendString:committeeHTML];
+//                [htmlString appendString:@"Committee "];
+//                [htmlString appendString:[displayCommittee position]];
+//                [htmlString appendString:@"</div>\n"];
+//            }
+//        }
+//    }
     
     [htmlString appendString:@"</div>\n"];
     [htmlString appendString:@"<div>\n"];
     [htmlString appendString:@" <div style=\"float:left; position: absolute; left: 160px; top: 77px; width: 145px;\">\n"];
     [htmlString appendString:@"     <ul style=\"list-style-type: none; margin: 0; padding: 0; font-size: x-small;\">"];
     [htmlString appendString:@"         <li style=\"font-size: x-small;\">\n"];
-    [htmlString appendString:[member address]];
+    [htmlString appendString:[member office]];
     [htmlString appendString:@"         </li>\n"];
     [htmlString appendString:@"         <li>\n"];
     [htmlString appendString:[member phone]];
     [htmlString appendString:@"         </li>\n"];
     
-    if ( [member email] ) {
+    if ( [member contactForm] ) {
         [htmlString appendString:@"         <li>\n"];
         [htmlString appendString:@"             <a href=\""];
-        [htmlString appendString:[member email]];
+        [htmlString appendString:[member contactForm]];
         [htmlString appendString:@"\">Contact Online</a>\n"];
         [htmlString appendString:@"         </li>\n"];
     } else {
@@ -191,21 +191,21 @@
     [htmlString appendString:@" <div style=\"float: right; position: absolute; left: 360px; top: 77px;\">\n"];
     [htmlString appendString:@"     <ul style=\"list-style-type: none; margin: 0; padding: 0; font-size: x-small;\">"];
     
-    if ( [member hometown] ) {
-        [htmlString appendString:@"         <li style=\"font-size: x-small;\">\n"];
-        [htmlString appendString:@"				Hometown:&nbsp;"];
-        [htmlString appendString:[member hometown]];
-        [htmlString appendString:@",&nbsp;"];
-        [htmlString appendString:[member state]];
-        [htmlString appendString:@"         </li>\n"];
-    } else {
+//    if ( [member hometown] ) {
+//        [htmlString appendString:@"         <li style=\"font-size: x-small;\">\n"];
+//        [htmlString appendString:@"				Hometown:&nbsp;"];
+//        [htmlString appendString:[member hometown]];
+//        [htmlString appendString:@",&nbsp;"];
+//        [htmlString appendString:[member state]];
+//        [htmlString appendString:@"         </li>\n"];
+//    } else {
         [htmlString appendString:@"         <li>&nbsp;</li>\n"];
-    }
+//    }
     
-    if ( [member bioguide_id] ) {
+    if ( [member bioguideId] ) {
         [htmlString appendString:@"         <li>\n"];
         [htmlString appendString:@"				<a href=\"http://bioguide.congress.gov/scripts/biodisplay.pl?index="];
-        [htmlString appendString:[member bioguide_id]];
+        [htmlString appendString:[member bioguideId]];
         [htmlString appendString:@"\">Congressional Biography</a>"];
         [htmlString appendString:@"         </li>\n"];
     } else {
@@ -220,64 +220,64 @@
     [htmlString appendString:@"</div>\n"];
     if ( [member committees] != nil && [[member committees] count] > 0 ) {
         
-        NSArray *sortedArray;
-        sortedArray = [[member committees] sortedArrayUsingComparator:^NSComparisonResult(id a, id b) {
-            NSString *first = [(CommitteeAssignment*)a position];
-            NSString *second = [(CommitteeAssignment*)b position];
-            NSComparisonResult retVal = [[(CommitteeAssignment*)a name] compare:[(CommitteeAssignment*)b name]];
-            
-            if ( [first isEqualToString:@"Chairman"] && ![second isEqualToString:@"Chairman"])
-                retVal = NSOrderedAscending;
-            else if ( [first isEqualToString:@"Chairman"] && [second isEqualToString:@"Chairman"])
-                retVal = NSOrderedSame;
-            else if ( [second isEqualToString:@"Chairman"] && ![first isEqualToString:@"Chairman"])
-                retVal = NSOrderedDescending;
-            else if ( [first isEqualToString:@"Vice Chairman"] && ![second isEqualToString:@"Vice Chairman"])
-                retVal = NSOrderedAscending;
-            else if ( [first isEqualToString:@"Vice Chairman"] && [second isEqualToString:@"Vice Chairman"])
-                retVal = NSOrderedSame;
-            else if ( [second isEqualToString:@"Vice Chairman"] && ![first isEqualToString:@"Vice Chairman"])
-                retVal = NSOrderedDescending;
-            else if ( [first isEqualToString:@"Ranking Member"] && ![second isEqualToString:@"Ranking Member"])
-                retVal = NSOrderedAscending;
-            else if ( [first isEqualToString:@"Ranking Member"] && [second isEqualToString:@"Ranking Member"])
-                retVal = NSOrderedSame;
-            else if ( [second isEqualToString:@"Ranking Member"] && ![first isEqualToString:@"Ranking Member"])
-                retVal = NSOrderedDescending;
-            
-            return retVal;
-        }];
+//        NSArray *sortedArray;
+//        sortedArray = [[member committees] sortedArrayUsingComparator:^NSComparisonResult(id a, id b) {
+//            NSString *first = [(Committee*)a position];
+//            NSString *second = [(Committee*)b position];
+//            NSComparisonResult retVal = [[(Committee*)a name] compare:[(Committee*)b name]];
+//            
+//            if ( [first isEqualToString:@"Chairman"] && ![second isEqualToString:@"Chairman"])
+//                retVal = NSOrderedAscending;
+//            else if ( [first isEqualToString:@"Chairman"] && [second isEqualToString:@"Chairman"])
+//                retVal = NSOrderedSame;
+//            else if ( [second isEqualToString:@"Chairman"] && ![first isEqualToString:@"Chairman"])
+//                retVal = NSOrderedDescending;
+//            else if ( [first isEqualToString:@"Vice Chairman"] && ![second isEqualToString:@"Vice Chairman"])
+//                retVal = NSOrderedAscending;
+//            else if ( [first isEqualToString:@"Vice Chairman"] && [second isEqualToString:@"Vice Chairman"])
+//                retVal = NSOrderedSame;
+//            else if ( [second isEqualToString:@"Vice Chairman"] && ![first isEqualToString:@"Vice Chairman"])
+//                retVal = NSOrderedDescending;
+//            else if ( [first isEqualToString:@"Ranking Member"] && ![second isEqualToString:@"Ranking Member"])
+//                retVal = NSOrderedAscending;
+//            else if ( [first isEqualToString:@"Ranking Member"] && [second isEqualToString:@"Ranking Member"])
+//                retVal = NSOrderedSame;
+//            else if ( [second isEqualToString:@"Ranking Member"] && ![first isEqualToString:@"Ranking Member"])
+//                retVal = NSOrderedDescending;
+//            
+//            return retVal;
+//        }];
         
         
         [htmlString appendString:@"<div>\n"];
         [htmlString appendString:@" <div style=\"float:left; width: 95px; font-size: small; position: absolute; left: 160px; top: 130px;\">\n"];
         [htmlString appendString:@"     <h3>Rank</h3>\n"];
         [htmlString appendString:@"     <ul style=\"list-style-type: none; margin: 0; padding: 0;\">"];
-        for ( CommitteeAssignment *committee in sortedArray ) {
-            [htmlString appendString:@"         <li>\n"];
-            [htmlString appendString:[committee position]];
-            [htmlString appendString:@"         </li>\n"];
-        }
+//        for ( Committee *committee in sortedArray ) {
+//            [htmlString appendString:@"         <li>\n"];
+//            [htmlString appendString:[committee position]];
+//            [htmlString appendString:@"         </li>\n"];
+//        }
         [htmlString appendString:@"     </ul>\n"];
         [htmlString appendString:@" </div>\n"];
         [htmlString appendString:@" <div style=\"float:left; width: 50%; font-size: small; position: absolute; left: 260px; top: 130px;\">\n"];
         [htmlString appendString:@"     <h3>Committee</h3>\n"];
         [htmlString appendString:@"     <ul style=\"list-style-type: none; margin: 0; padding: 0;\">"];
-        for ( CommitteeAssignment *committee in sortedArray ) {
-            [htmlString appendString:@"         <li>\n"];
-            if ( ![[committee website] isEqualToString:@""] || [committee link] ) {
-                [htmlString appendString:@"             <a href=\""];
-                if ( [committee link] )
-                    [htmlString appendString:[committee link]];
-                else
-                    [htmlString appendString:[committee website]];
-                [htmlString appendString:@"\">"];
-                [htmlString appendString:[committee name]];
-                [htmlString appendString:@"</a>\n"];
-            } else
-                [htmlString appendString:[committee name]];
-            [htmlString appendString:@"         </li>\n"];
-        }
+//        for ( Committee *committee in sortedArray ) {
+//            [htmlString appendString:@"         <li>\n"];
+//            if ( ![[committee website] isEqualToString:@""] || [committee link] ) {
+//                [htmlString appendString:@"             <a href=\""];
+//                if ( [committee link] )
+//                    [htmlString appendString:[committee link]];
+//                else
+//                    [htmlString appendString:[committee website]];
+//                [htmlString appendString:@"\">"];
+//                [htmlString appendString:[committee name]];
+//                [htmlString appendString:@"</a>\n"];
+//            } else
+//                [htmlString appendString:[committee name]];
+//            [htmlString appendString:@"         </li>\n"];
+//        }
         [htmlString appendString:@"     </ul>\n"];
         [htmlString appendString:@" </div>\n"];
         [htmlString appendString:@"</div>\n"];

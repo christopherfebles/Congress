@@ -1,6 +1,6 @@
 //
-//  HelloWorldViewController.h
-//  CongressCards
+//  FrontViewController.h
+//  Congress
 //
 //  Created by Christopher Febles on 1/31/13.
 //  Copyright © 2013 Christopher Febles. All rights reserved.

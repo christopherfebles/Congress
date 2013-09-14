@@ -1,19 +1,15 @@
 //
 //  Member.m
-//  CongressCards
+//  Congress
 //
 //  Created by Christopher Febles on 3/27/13.
 //  Copyright (c) 2013 Christopher Febles. All rights reserved.
 //
 
 #import "Member.h"
-#import "CommitteeAssignment.h"
-#import "StatePickerViewDelegate.h"
+#import "Committee.h"
 
 @implementation Member
-
-@synthesize memberFull, lastName, firstName, party, state, address, phone, email, website, bioguide_id, photoFileName,
-    thumbnailFileName, classDistrict, hometown, leadershipPosition, committees, senator;
 
 - (NSString *) memberFull {
     
@@ -29,39 +25,54 @@
     return displayText;
 }
 
-- (void) addCommitteeAssignment: (CommitteeAssignment *) newCommittee {
-    if ( !self.committees )
+- (void) addCommittee: (Committee *) newCommittee {
+    if ( !self.committees ) {
         self.committees = [[NSMutableArray alloc] init];
-    [[self committees] addObject:newCommittee];
+    }
+    [self.committees addObject:newCommittee];
+}
+
+- (void) addFECId: (NSString *) fecId {
+    if ( !self.fecIds ) {
+        self.fecIds = [[NSMutableArray alloc] init];
+    }
+    [self.fecIds addObject:fecId];
 }
 
 - (void) setPhotoFileName:(NSString *)newPhotoFileName {
-    photoFileName = newPhotoFileName;
-    thumbnailFileName = [newPhotoFileName stringByReplacingOccurrencesOfString:@".jpg" withString:@"_thumb.jpg"];
+    _photoFileName = newPhotoFileName;
+    _thumbnailFileName = [newPhotoFileName stringByReplacingOccurrencesOfString:@".png" withString:@"_thumb.png"];
 }
 
-- (NSString *) address {
-    NSMutableString *retVal = [[NSMutableString alloc] initWithString:[address capitalizedString]];
+- (BOOL) isSenator {
+    return [self.chamber isEqualToString:@"senate"];
+}
+
+- (NSString *) fullTitle {
+    NSString *title = self.title;
+    if ( [title isEqualToString:@"Rep"] )
+        title = @"Representative";
+    else if ( [title isEqualToString:@"Del"] )
+        title = @"Delegate";
+    else if ( [title isEqualToString:@"Com"] )
+        title = @"Resident Commissioner";
+    else if ( [title isEqualToString:@"Sen"] )
+        title = @"Senator";
+    return title;
+}
+
+- (BOOL)isEqual:(id)other {
     
-    //Capitalize states in address
-    NSArray *stateAbbrs = [[[StatePickerViewDelegate alloc] init].states allKeys];
-    for ( NSString *abbr in stateAbbrs ) {
-        NSMutableString *abbrToCheck = [[NSMutableString alloc] initWithString:abbr];
-        [abbrToCheck appendString:@" "];
-        [abbrToCheck insertString:@" " atIndex:0];
-        NSRange range = [retVal rangeOfString:abbrToCheck options:NSCaseInsensitiveSearch];
-        if ( range.location != NSNotFound ) {
-            [retVal replaceCharactersInRange:range withString:abbrToCheck];
-            break;
-        }
-    }
+    if (other == self)
+        return YES;
+    if (!other || ![other isKindOfClass:[self class]])
+        return NO;
     
-    //Capitalize HOB addresses
-    NSRange range = [retVal rangeOfString:@" Hob "];
-    if ( range.location != NSNotFound )
-        [retVal replaceCharactersInRange:range withString:@" HOB "];
-    
-    return retVal;
+    return [self.bioguideId isEqualToString:((Member *)other).bioguideId];
+}
+
+- (NSUInteger)hash {
+    return [self.bioguideId hash];
 }
 
 @end
