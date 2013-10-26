@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Member.h"
 
 @interface Committee : NSObject
 
@@ -18,5 +19,11 @@
 @property (nonatomic, retain) NSString *phone;
 @property (nonatomic, assign) BOOL subcommittee;
 @property (nonatomic, retain) NSString *parentCommitteeId;
+@property (nonatomic, retain) Committee *parentCommittee;
+@property (nonatomic, retain) NSMutableArray *committeeMembers;
+@property (nonatomic, retain) NSMutableArray *subCommittees;
+
+- (void) addCommitteeMember: (Member *) newCommitteeMember;
+- (void) addSubCommittee: (Committee *) newCommittee;
 
 @end

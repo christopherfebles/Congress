@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <CoreData/CoreData.h>
 #import "Member.h"
 #import "Committee.h"
 
@@ -17,5 +16,8 @@
 @property (nonatomic, retain) NSMutableArray *members;
 @property (nonatomic, retain) NSMutableString *elementValue;
 @property (nonatomic, retain) Committee *currentCommittee;
+@property (nonatomic, retain) Member *committeeMember;
+@property (nonatomic, retain) Committee *parentCommittee;
+@property (nonatomic, retain) Committee *subCommittee;
 
 @end

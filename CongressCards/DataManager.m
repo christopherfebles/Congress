@@ -14,11 +14,23 @@
 @implementation DataManager
 
 +(NSArray *) loadSenatorsFromXML {
-    return [DataManager loadFromXML:@"senators"];
+//    NSLog(@"Loading Senators...");
+    
+    NSArray *retVal = [DataManager loadFromXML:@"senators"];
+    
+//    NSLog(@"Done loading Senators.");
+    
+    return retVal;
 }
 
 +(NSArray *) loadRepresentativesFromXML {
-    return [DataManager loadFromXML:@"representatives"];;
+//    NSLog(@"Loading Representatives...");
+    
+    NSArray *retVal = [DataManager loadFromXML:@"representatives"];
+    
+//    NSLog(@"Done loading Representatives.");
+    
+    return retVal;
 }
 
 +(NSArray *) loadFromXML: (NSString *) xmlFileName {
@@ -49,9 +61,9 @@
             if ( aMember.isSenator ) {
                 //Order senior Senators first
                 if ( [aMember.stateRank isEqualToString:@"junior"] ) {
-                    retVal = NSOrderedAscending;
-                } else {
                     retVal = NSOrderedDescending;
+                } else {
+                    retVal = NSOrderedAscending;
                 }
             } else {
                 //Order Representatives by district

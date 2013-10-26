@@ -7,8 +7,25 @@
 //
 
 #import "Committee.h"
+#import "Member.h"
 
 @implementation Committee
+
+- (void) addCommitteeMember: (Member *) newCommitteeMember {
+    if ( !self.committeeMembers ) {
+        self.committeeMembers = [[NSMutableArray alloc] init];
+    }
+    
+    [self.committeeMembers addObject:newCommitteeMember];
+}
+
+- (void) addSubCommittee:(Committee *)newCommittee {
+    if ( !self.subCommittees ) {
+        self.subCommittees = [[NSMutableArray alloc] init];
+    }
+    
+    [self.subCommittees addObject:newCommittee];
+}
 
 - (BOOL)isEqual:(id)other {
     

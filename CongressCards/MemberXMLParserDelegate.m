@@ -7,14 +7,14 @@
 //
 
 #import "MemberXMLParserDelegate.h"
-
+// I really feel like there's a better way to do this, but I can't seem to find it.
 @implementation MemberXMLParserDelegate
 
 - (void) parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName
    namespaceURI:(NSString *)namespaceURI
   qualifiedName:(NSString *)qualifiedName attributes:(NSDictionary *)attributeDict
 {
-    NSLog(@"Started parsing %@", elementName);
+//    NSLog(@"Started parsing %@", elementName);
     
     if ( !self.members )
         self.members = [[NSMutableArray alloc] init];
@@ -27,12 +27,19 @@
         //Create new Member
         self.member = [[Member alloc] init];
     }
-
+    
+    if ( [elementName isEqualToString:@"parent_committee"] ) {
+        self.parentCommittee = [[Committee alloc] init];
+    }
+    
+    if ( [elementName isEqualToString:@"subcommittees"] ) {
+        self.subCommittee = [[Committee alloc] init];
+    }
     
 }
 
 - (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string {
-    NSLog(@"Processing value for : %@", string);
+//    NSLog(@"Processing value for : %@", string);
     if ( !self.elementValue )
         self.elementValue = [NSMutableString string];
     [self.elementValue appendString:string];
@@ -42,7 +49,8 @@
   namespaceURI:(NSString *)namespaceURI
  qualifiedName:(NSString *)qName
 {
-    NSLog(@"Setting value for element: %@", elementName);
+    //Maybe I should have given each field a unique name. Live and learn.
+//    NSLog(@"Setting value for element: %@", elementName);
     
     if ( self.elementValue != nil ) {
         self.elementValue = [[NSMutableString alloc] initWithString:[self.elementValue stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]];
@@ -53,7 +61,7 @@
             return;
         }
         
-        NSLog(@"Processing value for: %@", self.elementValue);
+//        NSLog(@"Processing value for: %@", self.elementValue);
         
         //Sunlight Fields
         if ([elementName isEqualToString:@"in_office"]) {
@@ -72,7 +80,12 @@
             self.member.title = self.elementValue;
         } else if ([elementName isEqualToString:@"chamber"]) {
             if ( self.currentCommittee && !self.currentCommittee.chamber ) {
+                //Committee chamber may be "joint"
                 self.currentCommittee.chamber = self.elementValue;
+            } else if ( self.subCommittee ) {
+                self.subCommittee.chamber = self.elementValue;
+            } else if ( self.parentCommittee ) {
+                self.parentCommittee.chamber = self.elementValue;
             } else {
                 self.member.chamber = self.elementValue;
             }
@@ -120,11 +133,27 @@
         
         //Contact fields
         else if ([elementName isEqualToString:@"phone"]) {
-            self.member.phone = self.elementValue;
+            if ( self.currentCommittee && !self.currentCommittee.phone ) {
+                self.currentCommittee.phone = self.elementValue;
+            } else if ( self.subCommittee ) {
+                self.subCommittee.phone = self.elementValue;
+            } else if ( self.parentCommittee ) {
+                self.parentCommittee.phone = self.elementValue;
+            } else {
+                self.member.phone = self.elementValue;
+            }
         } else if ([elementName isEqualToString:@"website"]) {
             self.member.website = self.elementValue;
         } else if ([elementName isEqualToString:@"office"]) {
-            self.member.office = self.elementValue;
+            if ( self.currentCommittee && !self.currentCommittee.office ) {
+                self.currentCommittee.office = self.elementValue;
+            } else if ( self.subCommittee ) {
+                self.subCommittee.office = self.elementValue;
+            } else if ( self.parentCommittee ) {
+                self.parentCommittee.office = self.elementValue;
+            } else {
+                self.member.office = self.elementValue;
+            }
         } else if ([elementName isEqualToString:@"contact_form"]) {
             self.member.contactForm = self.elementValue;
         } else if ([elementName isEqualToString:@"fax"]) {
@@ -142,19 +171,62 @@
         
         //Committees
         else if ([elementName isEqualToString:@"name"]) {
-            self.currentCommittee.name = self.elementValue;
+            if ( self.currentCommittee && !self.currentCommittee.name ) {
+                self.currentCommittee.name = self.elementValue;
+            } else if ( self.subCommittee ) {
+                self.subCommittee.name = self.elementValue;
+            } else if ( self.parentCommittee ) {
+                self.parentCommittee.name = self.elementValue;
+            }
         } else if ([elementName isEqualToString:@"committee_id"]) {
-            self.currentCommittee.committeeId = self.elementValue;
+            if ( self.currentCommittee && !self.currentCommittee.committeeId ) {
+                self.currentCommittee.committeeId = self.elementValue;
+            } else if ( self.subCommittee ) {
+                self.subCommittee.committeeId = self.elementValue;
+            } else if ( self.parentCommittee ) {
+                self.parentCommittee.committeeId = self.elementValue;
+            }
         } else if ([elementName isEqualToString:@"subcommittee"]) {
-            self.currentCommittee.subcommittee = [self.elementValue isEqualToString:@"true"];
+            if ( self.currentCommittee && !self.currentCommittee.subcommittee ) {
+                self.currentCommittee.subcommittee = [self.elementValue isEqualToString:@"true"];
+            } else if ( self.subCommittee ) {
+                self.subCommittee.subcommittee = [self.elementValue isEqualToString:@"true"];
+            } else if ( self.parentCommittee ) {
+                self.parentCommittee.subcommittee = [self.elementValue isEqualToString:@"true"];
+            }
         } else if ([elementName isEqualToString:@"parent_committee_id"]) {
-            self.currentCommittee.parentCommitteeId = self.elementValue;
+            if ( self.currentCommittee && !self.currentCommittee.parentCommitteeId ) {
+                self.currentCommittee.parentCommitteeId = self.elementValue;
+            } else if ( self.subCommittee ) {
+                self.subCommittee.parentCommitteeId = self.elementValue;
+            } else if ( self.parentCommittee ) {
+                self.parentCommittee.parentCommitteeId = self.elementValue;
+            }
+        } else if ([elementName isEqualToString:@"url"]) {
+            if ( self.currentCommittee && !self.currentCommittee.url ) {
+                self.currentCommittee.url = self.elementValue;
+            } else if ( self.subCommittee ) {
+                self.subCommittee.url = self.elementValue;
+            } else if ( self.parentCommittee ) {
+                self.parentCommittee.url = self.elementValue;
+            }
         }
         
         self.elementValue = nil;
     }
     
     if ( [elementName isEqualToString:@"committee"] ) {
+        //Save last processed Parent or Subcommittee
+        if ( self.parentCommittee ) {
+            self.currentCommittee.parentCommittee = self.parentCommittee;
+            self.currentCommittee.parentCommitteeId = self.parentCommittee.parentCommitteeId;
+            self.parentCommittee = nil;
+        }
+        if ( self.subCommittee ) {
+            [self.currentCommittee addSubCommittee:self.subCommittee];
+            self.subCommittee = nil;
+        }
+        
         if ( self.currentCommittee ) {
             [self.member addCommittee:self.currentCommittee];
         }
@@ -176,7 +248,24 @@
         self.member = nil;
     }
     
-    NSLog(@"Finished parsing %@", elementName);
+    if ( [elementName isEqualToString:@"subcommittees"] ) {
+        //Save last processed Subcommittee
+        if ( self.subCommittee ) {
+            [self.currentCommittee addSubCommittee:self.subCommittee];
+            self.subCommittee = nil;
+        }
+    }
+    
+    if ( [elementName isEqualToString:@"parent_committee"] ) {
+        //Save last processed Parent Committee
+        if ( self.parentCommittee ) {
+            self.currentCommittee.parentCommittee = self.parentCommittee;
+            self.currentCommittee.parentCommitteeId = self.parentCommittee.parentCommitteeId;
+            self.parentCommittee = nil;
+        }
+    }
+    
+//    NSLog(@"Finished parsing %@", elementName);
 }
 
 @end

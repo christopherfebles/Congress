@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Committee.h"
+@class Committee;
 
 @interface Member : NSObject
 

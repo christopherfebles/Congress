@@ -13,13 +13,13 @@
 
 - (NSString *) memberFull {
     
-    NSMutableString *displayText = [NSMutableString stringWithString:[self firstName]];
+    NSMutableString *displayText = [NSMutableString stringWithString:self.firstName];
     [displayText appendString:@" "];
-    [displayText appendString:[self lastName]];
+    [displayText appendString:self.lastName];
     [displayText appendString:@" ("];
-    [displayText appendString:[self party]];
+    [displayText appendString:self.party];
     [displayText appendString:@"-"];
-    [displayText appendString:[self state]];
+    [displayText appendString:self.state];
     [displayText appendString:@")"];
     
     return displayText;
@@ -39,9 +39,20 @@
     [self.fecIds addObject:fecId];
 }
 
-- (void) setPhotoFileName:(NSString *)newPhotoFileName {
-    _photoFileName = newPhotoFileName;
-    _thumbnailFileName = [newPhotoFileName stringByReplacingOccurrencesOfString:@".png" withString:@"_thumb.png"];
+- (NSString *) photoFileName {
+    if ( !_photoFileName ) {
+        _photoFileName = [self.bioguideId stringByAppendingString:@".png"];
+    }
+    
+    return _photoFileName;
+}
+
+- (NSString *) thumbnailFileName {
+    if ( !_thumbnailFileName ) {
+        _thumbnailFileName = [self.bioguideId stringByAppendingString:@"_thumb.png"];
+    }
+    
+    return _thumbnailFileName;
 }
 
 - (BOOL) isSenator {
