@@ -9,7 +9,17 @@
 #import "Member.h"
 #import "Committee.h"
 
-@implementation Member
+@implementation Member {
+    BOOL sorted;
+}
+
+- (id)init {
+    self = [super init];
+    if (self) {
+        sorted = NO;
+    }
+    return self;
+}
 
 - (NSString *) memberFull {
     
@@ -37,6 +47,21 @@
         self.fecIds = [[NSMutableArray alloc] init];
     }
     [self.fecIds addObject:fecId];
+}
+
+- (NSMutableArray *) committees {
+    
+    if ( !sorted ) {
+        //Sort alphabetically
+        NSArray *sortedArray = [_committees sortedArrayUsingComparator:^NSComparisonResult(id a, id b) {
+            NSComparisonResult retVal = [[(Committee*)a name] compare:[(Committee*)b name]];
+            
+            return retVal;
+        }];
+        _committees = [[NSMutableArray alloc] initWithArray:sortedArray];
+    }
+    
+    return _committees;
 }
 
 - (NSString *) photoFileName {

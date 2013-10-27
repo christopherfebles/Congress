@@ -43,7 +43,8 @@
 
 @implementation FrontViewController
 
-@synthesize fetchedResultsController, managedObjectContext, statePickerDelegate;
+#pragma mark -
+#pragma mark Interface Controls
 
 - (IBAction)rightSwipe:(id)sender {
     if ( switchingState ) return;
@@ -62,34 +63,35 @@
     //Switch to other controller view
     
     BackViewController *vc = [[BackViewController alloc] init];
-    vc.member = photos[position];
-    vc.photos = photos;
-    vc.position = position;
+    vc.member = self.photos[self.position];
+    vc.photos = self.photos;
+    vc.position = self.position;
     vc.mainController = self;
     
     CongressAppDelegate *appDelegate = (CongressAppDelegate *)[[UIApplication sharedApplication] delegate];
     
     [appDelegate transitionToViewController:vc
                              withTransition:UIViewAnimationOptionTransitionFlipFromRight];
-    
 }
+
+#pragma mark -
+#pragma mark Image Handling
 
 - (void)updateImage: (bool)rightAnimation
 {
-    Member *member = photos[position];
+    Member *member = self.photos[self.position];
     
     NSString *animationSubType = kCATransitionFromLeft;
     if ( rightAnimation )
         animationSubType = kCATransitionFromRight;
     
-    UIImage *picture = [UIImage imageNamed:[member photoFileName]];
+    UIImage *picture = [UIImage imageNamed:member.photoFileName];
     [self setImage:picture withAnimationSubType: animationSubType];
     
     [self addBorderToView: self.view withMember: member];
     [self addLogo:member.isSenator];
     [self addStateSeal:member];
     [self addMemberName: member];
-//    [self addMemberNameViaTextView: member];
 }
 
 //For animation, see http://goo.gl/DkA1W
@@ -102,9 +104,9 @@ withAnimationSubType:(NSString *) animationSubType
     animation.subtype = animationSubType;
     if ( !self.incomingTransition )
         [self.currentImage.layer addAnimation:animation forKey:@"imageTransition"];
-    else if ( initCount > 0 ) {
+    else if ( self.initCount > 0 ) {
         self.incomingTransition = NO;
-        initCount = 0;
+        self.initCount = 0;
     }
     self.currentImage.image = image;
     
@@ -116,8 +118,10 @@ withAnimationSubType:(NSString *) animationSubType
     self.currentImage.frame = CGRectMake(x, y, width, height);
 }
 
-//There is a bug in UITextView: http://www.cocoanetics.com/2012/12/radar-uitextview-ignores-minimummaximum-line-height-in-attributed-string/
-- (void) addMemberNameViaTextView: (Member *) member {
+#pragma mark -
+#pragma mark Build Interface
+
+- (void) addMemberName: (Member *) member {
     int x = 0;
     int y = [UIScreen mainScreen].bounds.size.height - 75;
     int width = [UIScreen mainScreen].bounds.size.width;
@@ -151,7 +155,7 @@ withAnimationSubType:(NSString *) animationSubType
     [titleAndFirstName appendString:@" "];
     
     NSMutableString *lastName = [[NSMutableString alloc] initWithString:@""];
-    [lastName appendString:[member lastName]];
+    [lastName appendString:member.lastName];
     font = [UIFont fontWithName: @"BodoniSvtyTwoSCITCTT-Book" size:28.0];
     NSDictionary *lastNameAttrs = @{NSForegroundColorAttributeName: [UIColor whiteColor],
                                     NSBackgroundColorAttributeName: [UIColor clearColor],
@@ -160,152 +164,22 @@ withAnimationSubType:(NSString *) animationSubType
                                     NSParagraphStyleAttributeName: paragraphStyle
                                         };
     
-    //Add Leadership position, if available
-    NSMutableString *leadershipPosition = [[NSMutableString alloc] initWithString:@""];
-    font = [UIFont fontWithName: @"SnellRoundhand" size:14.0];
-    NSDictionary *leadershipAttrs = @{NSForegroundColorAttributeName: [UIColor whiteColor],
-                                      NSBackgroundColorAttributeName: [UIColor clearColor],
-                                      NSShadowAttributeName:textShadow,
-                                      NSFontAttributeName: font,
-                                      NSParagraphStyleAttributeName: paragraphStyle
-                                      };
-    [leadershipPosition appendString:@"\n"];
-//    if ( [member leadershipPosition] ) {
-//        [leadershipPosition appendString:[member leadershipPosition]];
-//    } else {
-//        //If no leadership position, check committee leadership
-//        if ( [[member committees] count] > 0 ) {
-//            Committee *displayCommittee = nil;
-//            //Get highest ranked position (Assuming each Member can only chair one committee)
-//            for ( Committee *committee in [member committees] ) {
-//                if ( [[committee position] isEqualToString:@"Ranking Member"] ||
-//                    [[committee position] isEqualToString:@"Chairman"]) {
-//                    displayCommittee = committee;
-//                    break;
-//                } else if ( [[committee position] isEqualToString:@"Vice Chairman"] )
-//                    displayCommittee = committee;
-//            }
-//            if ( displayCommittee ) {
-//                [leadershipPosition appendString:@"Committee "];
-//                [leadershipPosition appendString:[displayCommittee position]];
-//            }
-//        }
-//    }    
+    //New Sunlight API source does not contain leadership information
+    //Committee leadership positions only available if all committee members are imported.
+    //  Currently, committee members are not imported.
+    //See previous revisions for Leadership code
     
     //Combine all strings
     NSMutableString *combinedString = [[NSMutableString alloc] initWithString:titleAndFirstName];
     [combinedString appendString: lastName];
-    [combinedString appendString: leadershipPosition];
     
     NSMutableAttributedString *displayString = [[NSMutableAttributedString alloc] initWithString:combinedString];
     //Set ranges using substring objects length
     [displayString setAttributes:nameAndTitleAttrs range:NSMakeRange(0, titleAndFirstName.length)];
     [displayString setAttributes:lastNameAttrs range:NSMakeRange(titleAndFirstName.length, lastName.length)];
-    [displayString setAttributes:leadershipAttrs range:NSMakeRange(titleAndFirstName.length+lastName.length, leadershipPosition.length)];
-    
     nameTextView.attributedText = displayString;
     
     [self.view addSubview:nameTextView];
-}
-
-- (void) addMemberName: (Member *) member {
-    int x = 0;
-    int y = [UIScreen mainScreen].bounds.size.height - 75;
-    int width = [UIScreen mainScreen].bounds.size.width;
-    int height = [UIScreen mainScreen].bounds.size.height;
-    
-    if ( nameWebView != nil )
-        [nameWebView removeFromSuperview];
-    nameWebView = [[UIWebView alloc] initWithFrame:CGRectMake(x, y, width, height)];
-    
-    NSMutableString *htmlString =
-        [[NSMutableString alloc] initWithString:@"<span style=\"color: white; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  line-height: 95%;\"><span style=\"font-variant:small-caps;\">"];
-    [htmlString appendString:member.fullTitle];
-    
-    [htmlString appendString:@"&nbsp;"];
-    [htmlString appendString:[member firstName]];
-    [htmlString appendString:@"</span>&nbsp;<span style=\"font-variant:small-caps; font-size: xx-large;\">"];
-    [htmlString appendString:[member lastName]];
-    [htmlString appendString:@"</span>"];
-
-//    //Add Leadership position, if available
-//    if ( [member leadershipPosition] ) {
-//        [htmlString appendString:@"<br><span style=\"font-family:'Snell Roundhand'; font-size: large;\">"];
-//        [htmlString appendString:[member leadershipPosition]];
-//        [htmlString appendString:@"</span>"];
-//    } else {
-//        //If no leadership position, check committee leadership
-//        if ( [[member committees] count] > 0 ) {
-//            Committee *displayCommittee = nil;
-//            NSString * committeeHTML = @"<br><span style=\"font-family:'Snell Roundhand'; font-size: large;\">";
-//            //Get highest ranked position (Assuming each Member can only chair one committee)
-//            for ( Committee *committee in [member committees] ) {
-//                if ( [[committee position] isEqualToString:@"Ranking Member"] ||
-//                    [[committee position] isEqualToString:@"Chairman"]) {
-//                    displayCommittee = committee;
-//                    break;
-//                } else if ( [[committee position] isEqualToString:@"Vice Chairman"] )
-//                    displayCommittee = committee;
-//            }
-//            if ( displayCommittee ) {
-//                [htmlString appendString:committeeHTML];
-//                [htmlString appendString:@"Committee "];
-//                [htmlString appendString:[displayCommittee position]];
-//                [htmlString appendString:@"</span>"];
-//            }
-//        }
-//    }
-    [htmlString appendString:@"</span>"];
-    
-    [nameWebView loadHTMLString:htmlString baseURL:nil];
-    nameWebView.opaque = NO;
-    nameWebView.backgroundColor = [UIColor clearColor];
-    
-    [self.view addSubview:nameWebView];
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    
-    [self.view addGestureRecognizer:self.swipeLeftRecognizer];
-    [self.view addGestureRecognizer:self.swipeRightRecognizer];
-    [self.view addGestureRecognizer:self.tapRecognizer];
-    
-    [self setupData];
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
-    [self updateImage:YES];
-    
-    initCount++;
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-//Load the XML and setup the data to display
-- (void)setupData
-{
-    position = 0;
-    lastHousePosition = 0;
-    lastSenatePosition = 0;
-    
-    NSMutableArray *photoList = [[NSMutableArray alloc] init];
-    
-    senators = [DataManager loadSenatorsFromXML];
-    representatives = [DataManager loadRepresentativesFromXML];
-    [photoList addObjectsFromArray:senators];
-    
-    photos = photoList;
-    viewingSenate = YES;
 }
 
 - (void) addLogo: (BOOL) senate {
@@ -334,6 +208,28 @@ withAnimationSubType:(NSString *) animationSubType
     
     [self.view addSubview:logoView];
     [self.view bringSubviewToFront:logoView];
+}
+
+- (IBAction) switchChamber: (UIGestureRecognizer *) sender  {
+    if ( switchingState ) return;
+    //Switch between House and Senate views
+    NSMutableArray *photoList = [[NSMutableArray alloc] init];
+    if ( viewingSenate ) {
+        //Switch to House
+        viewingSenate = NO;
+        [photoList addObjectsFromArray:representatives];
+        lastSenatePosition = self.position;
+        self.position = lastHousePosition;
+    } else {
+        //Switch to Senate
+        viewingSenate = YES;
+        [photoList addObjectsFromArray:senators];
+        lastHousePosition = self.position;
+        self.position = lastSenatePosition;
+    }
+    
+    self.photos = photoList;
+    [self updateImage:YES];
 }
 
 - (void) addStateSeal: (Member *) member {
@@ -367,11 +263,11 @@ withAnimationSubType:(NSString *) animationSubType
         [labelText appendString:district];
     }
     
-    sealLabel = [[UILabel alloc] initWithFrame:[sealView frame]];
+    sealLabel = [[UILabel alloc] initWithFrame:sealView.frame];
     sealLabel.opaque = NO;
     sealLabel.backgroundColor = [UIColor clearColor];
     sealLabel.font = [UIFont boldSystemFontOfSize:18];
-    sealLabel.textColor = [self getPartyColor:[member party]];
+    sealLabel.textColor = [self getPartyColor:member.party];
     sealLabel.shadowColor = [UIColor blackColor];
     sealLabel.shadowOffset = CGSizeMake(0, -2.5);
     sealLabel.text = labelText;
@@ -384,28 +280,6 @@ withAnimationSubType:(NSString *) animationSubType
     
 }
 
-- (IBAction) switchChamber: (UIGestureRecognizer *) sender  {
-    if ( switchingState ) return;
-    //Switch between House and Senate views
-    NSMutableArray *photoList = [[NSMutableArray alloc] init];
-    if ( viewingSenate ) {
-        //Switch to House
-        viewingSenate = NO;
-        [photoList addObjectsFromArray:representatives];
-        lastSenatePosition = position;
-        position = lastHousePosition;
-    } else {
-        //Switch to Senate
-        viewingSenate = YES;
-        [photoList addObjectsFromArray:senators];
-        lastHousePosition = position;
-        position = lastSenatePosition;
-    }
-    
-    photos = photoList;
-    [self updateImage:YES];
-}
-
 - (IBAction) switchState: (UIGestureRecognizer *) sender  {
     
     switchingState = YES;
@@ -415,11 +289,11 @@ withAnimationSubType:(NSString *) animationSubType
     }
     if ( pickerToolbar )
         [pickerToolbar removeFromSuperview];
-    if (!statePickerDelegate)
-        statePickerDelegate = [[StatePickerViewDelegate alloc] init];
+    if (!self.statePickerDelegate)
+        self.statePickerDelegate = [[StatePickerViewDelegate alloc] init];
     
-    Member *currentMember = photos[position];
-    NSInteger pickerIndex = [statePickerDelegate getStateIndex:[currentMember state]];
+    Member *currentMember = self.photos[self.position];
+    NSInteger pickerIndex = [self.statePickerDelegate getStateIndex:[currentMember state]];
     int x = 0;
     int width = [UIScreen mainScreen].bounds.size.width;
     int height = 200;
@@ -429,8 +303,8 @@ withAnimationSubType:(NSString *) animationSubType
     statePickerBackgroundView = [[UIView alloc] initWithFrame:CGRectMake(x, y, width, height)];
     statePickerBackgroundView.backgroundColor = [UIColor whiteColor];
     statePickerBackgroundView.alpha = 0.5;
-    statePickerView.delegate = statePickerDelegate;
-    statePickerView.dataSource = statePickerDelegate;
+    statePickerView.delegate = self.statePickerDelegate;
+    statePickerView.dataSource = self.statePickerDelegate;
     statePickerView.showsSelectionIndicator = YES;
     [statePickerView selectRow:pickerIndex inComponent:0 animated:YES];
     
@@ -468,12 +342,12 @@ withAnimationSubType:(NSString *) animationSubType
     // Get the selected state, navigate to the first Member in that state, and close the picker
     NSInteger row = [statePickerView selectedRowInComponent:0];
     
-    NSString *selectedState = [statePickerDelegate getStateAbbreviation:row];
+    NSString *selectedState = [self.statePickerDelegate getStateAbbreviation:row];
     
-    for ( int x = 0; x < [photos count]; x++ ) {
-        Member *member = photos[x];
-        if ( [[member state] isEqualToString:selectedState] ) {
-            position = x;
+    for ( int x = 0; x < [self.photos count]; x++ ) {
+        Member *member = self.photos[x];
+        if ( [member.state isEqualToString:selectedState] ) {
+            self.position = x;
             [self updateImage:YES];
             break;
         }
@@ -497,6 +371,26 @@ withAnimationSubType:(NSString *) animationSubType
     self.tapRecognizer.enabled = YES;
 }
 
+#pragma mark -
+#pragma mark Initialization
+
+//Load the XML and setup the data to display
+- (void)setupData
+{
+    self.position = 0;
+    lastHousePosition = 0;
+    lastSenatePosition = 0;
+    
+    NSMutableArray *photoList = [[NSMutableArray alloc] init];
+    
+    senators = [DataManager loadSenatorsFromXML];
+    representatives = [DataManager loadRepresentativesFromXML];
+    [photoList addObjectsFromArray:senators];
+    
+    self.photos = photoList;
+    viewingSenate = YES;
+}
+
 + (UIImage *) houseLogo {
     static UIImage *houseImage = nil;
     if (!houseImage) {
@@ -510,7 +404,39 @@ withAnimationSubType:(NSString *) animationSubType
         senateImage = [UIImage imageNamed:@"senate_logo.png"];
     }
     return senateImage;
+    
+}
 
+#pragma mark Default Methods
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+	// Do any additional setup after loading the view, typically from a nib.
+    
+    [self.view addGestureRecognizer:self.swipeLeftRecognizer];
+    [self.view addGestureRecognizer:self.swipeRightRecognizer];
+    [self.view addGestureRecognizer:self.tapRecognizer];
+    
+    [self setupData];
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [self updateImage:YES];
+    
+    self.initCount++;
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 -(NSUInteger)supportedInterfaceOrientations{

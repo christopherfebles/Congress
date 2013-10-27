@@ -1,0 +1,57 @@
+<div style="width: 200px; margin: auto; float: left; text-align: center; position: absolute; top: 6px; left: -19px;" >
+    <img src="${thumbnailFileName}" />
+    <img src="${stateSealImgFilename}" style="width: 115px" />
+</div>
+<div id="titleDiv" style="text-align: center; color: white; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; line-height: 115%; float: left; position: absolute; left: 225px; top: 6px;">
+    <div style="font-variant:small-caps;">
+        ${title}
+    </div>
+    <div style="font-variant:small-caps; font-size: xx-large;">
+        ${firstName}&nbsp;${lastName}
+    </div>
+    <div style="font-variant:small-caps;">
+        <span style="color:${partyColor};">
+            ${longPartyName}
+        </span>
+        &nbsp;-&nbsp;
+        ${state}
+    </div>
+</div>
+<div>
+    <div style="float:left; position: absolute; left: 160px; top: 65px; width: 195px;">
+        <ul style="list-style-type: none; margin: 0; padding: 0; font-size: x-small;">
+            <li style="font-size: x-small;">
+                ${office}
+            </li>
+            <li>
+                ${phone}
+            </li>
+            <li>
+                <a href="${website}">Official Website</a>
+            </li>
+            <li>
+                <a href="http://bioguide.congress.gov/scripts/biodisplay.pl?index=${bioguideId}">Congressional Biography</a>
+            </li>
+        </ul>
+    </div>
+    <div style="float: right; position: absolute; left: 360px; top: 65px;">
+        <ul style="list-style-type: none; margin: 0; padding: 0; font-size: x-small;">
+            <li>
+                <a href="${contactForm}">Online Contact Form</a>
+            </li>
+            <li>
+                ${twitter}
+                ${facebook}
+            </li>
+      <!--  <li>&nbsp;</li>
+            <li>&nbsp;</li> -->
+        </ul>
+    </div>
+</div>
+<div style="float:left; width: 100%; font-size: small; position: absolute; left: 160px; top: 130px; border-top: 1px solid black;">
+<!--        <h3>Committee</h3> -->
+    <br>
+    <ul style="list-style-type: none; margin: 0; padding: 0; font-size: small;">
+        ${committeeList}
+    </ul>
+</div>

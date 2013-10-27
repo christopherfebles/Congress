@@ -12,26 +12,34 @@
 
 @implementation ParentViewController
 
-@synthesize initCount, incomingTransition, position, photos;
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    if ([self respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)])
+    {
+        [self preferredStatusBarStyle];
+        [self performSelector:@selector(setNeedsStatusBarAppearanceUpdate)];
+    }
+    else
+    {
+        // iOS 6
+        [[UIApplication sharedApplication] setStatusBarStyle:[self preferredStatusBarStyle]];
+    }
     
-    initCount = 0;
-    incomingTransition = NO;
+    self.initCount = 0;
+    self.incomingTransition = NO;
 }
 
 - (void) setIncomingTransition:(BOOL)newIncomingTransition {
-    incomingTransition = newIncomingTransition;
-    initCount = 0;
+    _incomingTransition = newIncomingTransition;
+    self.initCount = 0;
 }
 
 - (void)addBorderToView: (UIView *) view
              withMember: (Member *) member
 {
-    view.layer.borderColor = [self getPartyColor:[member party]].CGColor;
+    view.layer.borderColor = [self getPartyColor:member.party].CGColor;
     view.layer.borderWidth = 5;
 }
 
@@ -61,30 +69,27 @@
 
 - (NSString *) getStateSealImgFilename: (NSString *) state {
     NSMutableString *filename = [[NSMutableString alloc] initWithString:state];
-    [filename appendString:@".png"];
-    UIImage *seal = [UIImage imageNamed:filename];
-    if ( !seal ) {
-        filename = [[NSMutableString alloc] initWithString:[filename stringByDeletingPathExtension]];
+    
+    if ( [state isEqualToString:@"VI"] ) {
         [filename appendString:@".gif"];
-        seal = [UIImage imageNamed:filename];
-        if ( !seal )
-            return @"";
+    } else {
+        [filename appendString:@".png"];
     }
     return filename;
 }
 
 - (IBAction)rightSwipe:(id)sender {
     //Go back to previous image
-    position--;
-    if ( position < 0 )
-        position = [photos count]-1;
+    self.position--;
+    if ( self.position < 0 )
+        self.position = [self.photos count]-1;
 }
 
 - (IBAction)leftSwipe:(id)sender {
     //Go forward to next image
-    position++;
-    if ( position > ([photos count]-1) )
-        position = 0;
+    self.position++;
+    if ( self.position > ([self.photos count]-1) )
+        self.position = 0;
 }
 
 @end

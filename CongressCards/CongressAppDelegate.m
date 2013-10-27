@@ -13,42 +13,42 @@
 @implementation CongressAppDelegate
 
 - (NSManagedObjectContext *) managedObjectContext {
-    if (managedObjectContext != nil) {
-        return managedObjectContext;
+    if (_managedObjectContext != nil) {
+        return _managedObjectContext;
     }
     NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
     if (coordinator != nil) {
-        managedObjectContext = [[NSManagedObjectContext alloc] init];
-        [managedObjectContext setPersistentStoreCoordinator: coordinator];
+        _managedObjectContext = [[NSManagedObjectContext alloc] init];
+        [_managedObjectContext setPersistentStoreCoordinator: coordinator];
     }
     
-    return managedObjectContext;
+    return _managedObjectContext;
 }
 
 - (NSManagedObjectModel *)managedObjectModel {
-    if (managedObjectModel != nil) {
-        return managedObjectModel;
+    if (_managedObjectModel != nil) {
+        return _managedObjectModel;
     }
-    managedObjectModel = [NSManagedObjectModel mergedModelFromBundles:nil];
+    _managedObjectModel = [NSManagedObjectModel mergedModelFromBundles:nil];
     
-    return managedObjectModel;
+    return _managedObjectModel;
 }
 
 - (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
-    if (persistentStoreCoordinator != nil) {
-        return persistentStoreCoordinator;
+    if (_persistentStoreCoordinator != nil) {
+        return _persistentStoreCoordinator;
     }
     NSURL *storeUrl = [NSURL fileURLWithPath: [[self applicationDocumentsDirectory]
                                                stringByAppendingPathComponent: @"Congress.sqlite"]];
     NSError *error = nil;
-    persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc]
+    _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc]
                                   initWithManagedObjectModel:[self managedObjectModel]];
-    if(![persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType
+    if(![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType
                                                  configuration:nil URL:storeUrl options:nil error:&error]) {
         /*Error for store creation should be handled in here*/
     }
     
-    return persistentStoreCoordinator;
+    return _persistentStoreCoordinator;
 }
 
 - (NSString *)applicationDocumentsDirectory {

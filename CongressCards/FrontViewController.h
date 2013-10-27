@@ -11,11 +11,7 @@
 #import "StatePickerViewDelegate.h"
 #import "ParentViewController.h"
 
-@interface FrontViewController : ParentViewController <UIGestureRecognizerDelegate, UIPickerViewDelegate> {
-    NSFetchedResultsController *fetchedResultsController;
-    NSManagedObjectContext *managedObjectContext;
-    StatePickerViewDelegate *statePickerDelegate;
-}
+@interface FrontViewController : ParentViewController <UIGestureRecognizerDelegate, UIPickerViewDelegate>
 
 @property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
