@@ -80,6 +80,42 @@
     return _thumbnailFileName;
 }
 
+//Set defaults to blank for contact fields
+- (NSString *) phone {
+    if ( !_phone ) {
+        _phone = @"";
+    }
+    return _phone;
+}
+
+- (NSString *) website {
+    if ( !_website ) {
+        _website = @"";
+    }
+    return _website;
+}
+
+- (NSString *) office {
+    if ( !_office ) {
+        _office = @"";
+    }
+    return _office;
+}
+
+- (NSString *) contactForm {
+    if ( !_contactForm ) {
+        _contactForm = @"";
+    }
+    return _contactForm;
+}
+
+- (NSString *) fax {
+    if ( !_fax ) {
+        _fax = @"";
+    }
+    return _fax;
+}
+
 - (BOOL) isSenator {
     return [self.chamber isEqualToString:@"senate"];
 }
