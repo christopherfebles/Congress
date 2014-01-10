@@ -17,11 +17,16 @@
         <thomas_id>02194</thomas_id>
         <govtrack_id>412598</govtrack_id>
         <votesmart_id>76151</votesmart_id>
-        <crp_id></crp_id>
+        <crp_id>N00035267</crp_id>
         <lis_id>S370</lis_id>
         <first_name>Cory</first_name>
         <last_name>Booker</last_name>
         <middle_name>Anthony</middle_name>
+        <phone>202-224-3224</phone>
+        <website>http://www.booker.senate.gov</website>
+        <office>141 Hart Senate Office Building</office>
+        <contact_form>http://www.booker.senate.gov/contact.cfm</contact_form>
+        <twitter_id>SenBookerOfc</twitter_id>
         <committees>
             <committee>
                 <name>Senate Committee on Small Business and Entrepreneurship</name>
@@ -374,7 +379,7 @@
         <phone>202-224-5922</phone>
         <website>http://www.cruz.senate.gov</website>
         <office>185 Dirksen Senate Office Building</office>
-        <contact_form>http://www.cruz.senate.gov/contact.cfm</contact_form>
+        <contact_form>http://www.cruz.senate.gov/?p=email_senator</contact_form>
         <fax>202-228-3398</fax>
         <twitter_id>SenTedCruz</twitter_id>
         <youtube_id>sentedcruz</youtube_id>
@@ -1465,7 +1470,7 @@
         <website>http://www.warren.senate.gov</website>
         <office>317 Hart Senate Office Building</office>
         <contact_form>http://www.warren.senate.gov/?p=email_senator</contact_form>
-        <twitter_id>senwarren</twitter_id>
+        <twitter_id>SenWarren</twitter_id>
         <youtube_id>senelizabethwarren</youtube_id>
         <facebook_id>131559043673264</facebook_id>
         <committees>
@@ -1634,6 +1639,8 @@
         <contact_form>http://www.schatz.senate.gov/contact.cfm</contact_form>
         <fax>202-224-6747</fax>
         <twitter_id>SenBrianSchatz</twitter_id>
+        <youtube_id>senbrianschatz</youtube_id>
+        <facebook_id>357806137657533</facebook_id>
         <committees>
             <committee>
                 <name>Senate Committee on Indian Affairs</name>
@@ -2903,7 +2910,7 @@
         <office>511 Dirksen Senate Office Building</office>
         <contact_form>http://www.thune.senate.gov/public/index.cfm/contact</contact_form>
         <fax>202-228-5429</fax>
-        <twitter_id>senjohnthune</twitter_id>
+        <twitter_id>SenJohnThune</twitter_id>
         <youtube_id>johnthune</youtube_id>
         <committees>
             <committee>
@@ -3846,7 +3853,7 @@
         <office>322 Hart Senate Office Building</office>
         <contact_form>http://www.schumer.senate.gov/Contact/contact_chuck.cfm</contact_form>
         <fax>202-228-3027</fax>
-        <twitter_id>chuckschumer</twitter_id>
+        <twitter_id>ChuckSchumer</twitter_id>
         <youtube_id>SenatorSchumer</youtube_id>
         <facebook_id>15771239406</facebook_id>
         <committees>
@@ -4471,7 +4478,7 @@
         <website>http://www.portman.senate.gov</website>
         <office>448 Russell Senate Office Building</office>
         <contact_form>http://www.portman.senate.gov/public/index.cfm/contact?p=contact-form</contact_form>
-        <twitter_id>robportman</twitter_id>
+        <twitter_id>RobPortman</twitter_id>
         <youtube_id>SenRobPortman</youtube_id>
         <facebook_id>45243961073</facebook_id>
         <committees>
@@ -4983,7 +4990,7 @@
         <office>154 Russell Senate Office Building</office>
         <contact_form>http://www.murray.senate.gov/public/index.cfm/contactme</contact_form>
         <fax>202-224-0238</fax>
-        <twitter_id>pattymurray</twitter_id>
+        <twitter_id>PattyMurray</twitter_id>
         <youtube_id>SenatorPattyMurray</youtube_id>
         <committees>
             <committee>
@@ -5245,9 +5252,9 @@
         <phone>202-224-4041</phone>
         <website>http://www.murphy.senate.gov</website>
         <office>303 Hart Senate Office Building</office>
-        <contact_form>http://www.murphy.senate.gov/contact.cfm</contact_form>
+        <contact_form>http://www.murphy.senate.gov/contact</contact_form>
         <fax>202-225-5933</fax>
-        <twitter_id>chrismurphyct</twitter_id>
+        <twitter_id>ChrisMurphyCT</twitter_id>
         <youtube_id>senchrismurphy</youtube_id>
         <facebook_id>19437978960</facebook_id>
         <committees>
@@ -5441,7 +5448,7 @@
         <office>709 Hart Senate Office Building</office>
         <contact_form>http://www.murkowski.senate.gov/public/index.cfm?p=Contact</contact_form>
         <fax>202-224-5301</fax>
-        <twitter_id>lisamurkowski</twitter_id>
+        <twitter_id>LisaMurkowski</twitter_id>
         <youtube_id>senatormurkowski</youtube_id>
         <facebook_id>25271170290</facebook_id>
         <committees>
@@ -6022,7 +6029,7 @@
         <office>503 Hart Senate Office Building</office>
         <contact_form>http://www.mikulski.senate.gov/contact/</contact_form>
         <fax>202-224-8858</fax>
-        <twitter_id>senatorbarb</twitter_id>
+        <twitter_id>SenatorBarb</twitter_id>
         <youtube_id>senatormikulski</youtube_id>
         <facebook_id>142890125771427</facebook_id>
         <committees>
@@ -6349,7 +6356,7 @@
         <phone>202-224-2235</phone>
         <website>http://www.mccain.senate.gov</website>
         <office>241 Russell Senate Office Building</office>
-        <contact_form>http://www.mccain.senate.gov/public/index.cfm?FuseAction=Contact.ContactForm</contact_form>
+        <contact_form>http://www.mccain.senate.gov/public/index.cfm/contact-form</contact_form>
         <fax>202-228-2862</fax>
         <twitter_id>SenJohnMcCain</twitter_id>
         <youtube_id>SenatorJohnMcCain</youtube_id>
@@ -6647,7 +6654,7 @@
         <website>http://www.markey.senate.gov</website>
         <office>218 Russell Senate Office Building</office>
         <contact_form>http://www.markey.senate.gov/contact.cfm</contact_form>
-        <twitter_id>markeymemo</twitter_id>
+        <twitter_id>MarkeyMemo</twitter_id>
         <youtube_id>RepMarkey</youtube_id>
         <facebook_id>6846731378</facebook_id>
         <committees>
@@ -7462,7 +7469,7 @@
         <website>http://www.kirk.senate.gov</website>
         <office>524 Hart Senate Office Building</office>
         <contact_form>http://www.kirk.senate.gov/?p=contact</contact_form>
-        <twitter_id>senatorkirk</twitter_id>
+        <twitter_id>SenatorKirk</twitter_id>
         <youtube_id>SenatorKirk</youtube_id>
         <facebook_id>116381528428230</facebook_id>
         <committees>
@@ -8622,7 +8629,7 @@
         <office>330 Hart Senate Office Building</office>
         <contact_form>http://www.hirono.senate.gov/contact</contact_form>
         <fax>202-225-4987</fax>
-        <twitter_id>maziehirono</twitter_id>
+        <twitter_id>MazieHirono</twitter_id>
         <youtube_id>CongresswomanHirono</youtube_id>
         <committees>
             <committee>
@@ -8833,7 +8840,7 @@
         <office>702 Hart Senate Office Building</office>
         <contact_form>http://www.heinrich.senate.gov/contact</contact_form>
         <fax>202-225-4975</fax>
-        <twitter_id>martinheinrich</twitter_id>
+        <twitter_id>MartinHeinrich</twitter_id>
         <youtube_id>SenMartinHeinrich</youtube_id>
         <facebook_id>137523189213</facebook_id>
         <committees>
@@ -9251,9 +9258,9 @@
         <phone>202-224-4521</phone>
         <website>http://www.flake.senate.gov</website>
         <office>368 Russell Senate Office Building</office>
-        <contact_form>http://www.flake.senate.gov/contact.cfm</contact_form>
+        <contact_form>http://www.flake.senate.gov/public/index.cfm/contact-jeff</contact_form>
         <fax>202-226-4386</fax>
-        <twitter_id>jeffflake</twitter_id>
+        <twitter_id>JeffFlake</twitter_id>
         <youtube_id>flakeoffice</youtube_id>
         <facebook_id>senatorjeffflake</facebook_id>
         <committees>
@@ -9779,7 +9786,7 @@
         <office>239 Dirksen Senate Office Building</office>
         <contact_form>http://www.crapo.senate.gov/contact/email.cfm</contact_form>
         <fax>202-228-1375</fax>
-        <twitter_id>mikecrapo</twitter_id>
+        <twitter_id>MikeCrapo</twitter_id>
         <youtube_id>senatorcrapo</youtube_id>
         <facebook_id>80335332266</facebook_id>
         <committees>
@@ -10294,7 +10301,7 @@
         <website>http://www.coats.senate.gov</website>
         <office>493 Russell Senate Office Building</office>
         <contact_form>http://www.coats.senate.gov/contact/</contact_form>
-        <twitter_id>sendancoats</twitter_id>
+        <twitter_id>SenDanCoats</twitter_id>
         <youtube_id>SenatorCoats</youtube_id>
         <facebook_id>180671148633644</facebook_id>
         <committees>
@@ -10615,7 +10622,7 @@
         <office>217 Russell Senate Office Building</office>
         <contact_form>http://www.burr.senate.gov/public/index.cfm?FuseAction=Contact.ContactForm</contact_form>
         <fax>202-228-2981</fax>
-        <twitter_id>senatorburr</twitter_id>
+        <twitter_id>SenatorBurr</twitter_id>
         <youtube_id>SenatorRichardBurr</youtube_id>
         <facebook_id>132653626787856</facebook_id>
         <committees>
@@ -10798,7 +10805,7 @@
         <office>112 Hart Senate Office Building</office>
         <contact_form>http://www.boxer.senate.gov/en/contact/</contact_form>
         <fax>202-224-0454</fax>
-        <twitter_id>senatorboxer</twitter_id>
+        <twitter_id>SenatorBoxer</twitter_id>
         <youtube_id>SenatorBoxer</youtube_id>
         <facebook_id>116513005087055</facebook_id>
         <committees>
@@ -14533,7 +14540,6 @@
         <website>http://www.tomudall.senate.gov</website>
         <office>110 Hart Senate Office Building</office>
         <contact_form>http://www.tomudall.senate.gov/?p=contact</contact_form>
-        <fax>202-226-1331</fax>
         <twitter_id>SenatorTomUdall</twitter_id>
         <youtube_id>senatortomudall</youtube_id>
         <facebook_id>106433512869</facebook_id>
@@ -15820,7 +15826,7 @@
         <office>531 Hart Senate Office Building</office>
         <contact_form>http://www.rockefeller.senate.gov/public/index.cfm/email-jay</contact_form>
         <fax>202-224-7665</fax>
-        <twitter_id>senrockefeller</twitter_id>
+        <twitter_id>SenRockefeller</twitter_id>
         <youtube_id>SenatorRockefeller</youtube_id>
         <facebook_id>134189283320639</facebook_id>
         <committees>
@@ -16110,7 +16116,7 @@
         <office>109 Hart Senate Office Building</office>
         <contact_form>http://www.roberts.senate.gov/public/index.cfm?p=EmailPat</contact_form>
         <fax>202-224-3514</fax>
-        <twitter_id>senpatroberts</twitter_id>
+        <twitter_id>SenPatRoberts</twitter_id>
         <youtube_id>SenPatRoberts</youtube_id>
         <facebook_id>205694792808927</facebook_id>
         <committees>
@@ -16962,7 +16968,7 @@
         <office>255 Dirksen Senate Office Building</office>
         <contact_form>http://www.pryor.senate.gov/public/index.cfm?p=ContactMe</contact_form>
         <fax>202-228-0908</fax>
-        <twitter_id>senmarkpryor</twitter_id>
+        <twitter_id>SenMarkPryor</twitter_id>
         <youtube_id>senatorpryor</youtube_id>
         <facebook_id>9248638978</facebook_id>
         <committees>
@@ -18007,7 +18013,7 @@
         <office>269 Russell Senate Office Building</office>
         <contact_form>http://www.levin.senate.gov/contact/</contact_form>
         <fax>202-224-1388</fax>
-        <twitter_id>sencarllevin</twitter_id>
+        <twitter_id>SenCarlLevin</twitter_id>
         <youtube_id>SenCarlLevin</youtube_id>
         <facebook_id>7481814545</facebook_id>
         <committees>
@@ -18248,7 +18254,7 @@
         <office>703 Hart Senate Office Building</office>
         <contact_form>http://www.landrieu.senate.gov/?p=contact</contact_form>
         <fax>202-224-9735</fax>
-        <twitter_id>senlandrieu</twitter_id>
+        <twitter_id>SenLandrieu</twitter_id>
         <youtube_id>senatorlandrieu</youtube_id>
         <facebook_id>122518851125820</facebook_id>
         <committees>
@@ -21405,7 +21411,7 @@
         <office>413 Dirksen Senate Office Building</office>
         <contact_form>http://www.collins.senate.gov/public/index.cfm/email</contact_form>
         <fax>202-224-2693</fax>
-        <twitter_id>senatorcollins</twitter_id>
+        <twitter_id>SenatorCollins</twitter_id>
         <youtube_id>SenatorSusanCollins</youtube_id>
         <facebook_id>7593313361</facebook_id>
         <committees>
@@ -22834,7 +22840,7 @@
         <office>455 Dirksen Senate Office Building</office>
         <contact_form>http://www.alexander.senate.gov/public/index.cfm?p=Email</contact_form>
         <fax>202-228-3398</fax>
-        <twitter_id>senalexander</twitter_id>
+        <twitter_id>SenAlexander</twitter_id>
         <youtube_id>lamaralexander</youtube_id>
         <facebook_id>89927603836</facebook_id>
         <committees>
@@ -23168,7 +23174,7 @@
         <office>555 Dirksen Senate Office Building</office>
         <contact_form>http://www.wicker.senate.gov/public/index.cfm/contact</contact_form>
         <fax>202-228-0378</fax>
-        <twitter_id>senatorwicker</twitter_id>
+        <twitter_id>SenatorWicker</twitter_id>
         <youtube_id>SenatorWicker</youtube_id>
         <facebook_id>SenatorWicker</facebook_id>
         <committees>
@@ -24088,7 +24094,7 @@
         <office>706 Hart Senate Office Building</office>
         <contact_form>http://www.tester.senate.gov/Contact/index.cfm</contact_form>
         <fax>202-224-8594</fax>
-        <twitter_id>testerpress</twitter_id>
+        <twitter_id>TesterPress</twitter_id>
         <youtube_id>senatorjontester</youtube_id>
         <facebook_id>210573031664</facebook_id>
         <committees>
@@ -24737,7 +24743,7 @@
         <office>332 Dirksen Senate Office Building</office>
         <contact_form>http://www.sanders.senate.gov/contact/</contact_form>
         <fax>202-228-0776</fax>
-        <twitter_id>sensanders</twitter_id>
+        <twitter_id>SenSanders</twitter_id>
         <youtube_id>senatorsanders</youtube_id>
         <facebook_id>9124187907</facebook_id>
         <committees>
@@ -25641,7 +25647,7 @@
         <office>506 Hart Senate Office Building</office>
         <contact_form>http://www.mccaskill.senate.gov/?p=contact</contact_form>
         <fax>202-228-6326</fax>
-        <twitter_id>mccaskilloffice</twitter_id>
+        <twitter_id>McCaskillOffice</twitter_id>
         <youtube_id>SenatorMcCaskill</youtube_id>
         <facebook_id>131498087618</facebook_id>
         <committees>
@@ -25920,7 +25926,7 @@
         <phone>202-224-3244</phone>
         <website>http://www.klobuchar.senate.gov</website>
         <office>302 Hart Senate Office Building</office>
-        <contact_form>http://www.klobuchar.senate.gov/emailamy.cfm</contact_form>
+        <contact_form>http://www.klobuchar.senate.gov/public/contact-amy</contact_form>
         <fax>202-228-2186</fax>
         <youtube_id>senatorklobuchar</youtube_id>
         <committees>
@@ -26605,7 +26611,7 @@
         <office>331 Hart Senate Office Building</office>
         <contact_form>http://www.feinstein.senate.gov/public/index.cfm/e-mail-me</contact_form>
         <fax>202-228-3954</fax>
-        <twitter_id>senfeinstein</twitter_id>
+        <twitter_id>SenFeinstein</twitter_id>
         <youtube_id>SenatorFeinstein</youtube_id>
         <facebook_id>334887279867783</facebook_id>
         <committees>
@@ -27162,7 +27168,7 @@
         <phone>202-224-6324</phone>
         <website>http://www.casey.senate.gov</website>
         <office>393 Russell Senate Office Building</office>
-        <contact_form>http://www.casey.senate.gov/contact/email-bob</contact_form>
+        <contact_form>http://www.casey.senate.gov/contact/</contact_form>
         <fax>202-228-0604</fax>
         <twitter_id>SenBobCasey</twitter_id>
         <youtube_id>SenatorBobCasey</youtube_id>

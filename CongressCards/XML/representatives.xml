@@ -4,6 +4,79 @@
         <in_office>true</in_office>
         <party>R</party>
         <gender>M</gender>
+        <state>AL</state>
+        <state_name>Alabama</state_name>
+        <district>1</district>
+        <title>Rep</title>
+        <chamber>house</chamber>
+        <birthday>1955-02-16</birthday>
+        <term_start>2014-01-08</term_start>
+        <term_end>2015-01-03</term_end>
+        <bioguide_id>B001289</bioguide_id>
+        <thomas_id>02197</thomas_id>
+        <govtrack_id>412601</govtrack_id>
+        <votesmart_id>27584</votesmart_id>
+        <crp_id>N00035380</crp_id>
+        <first_name>Bradley</first_name>
+        <nickname></nickname>
+        <last_name>Byrne</last_name>
+        <photoUrl>http://upload.wikimedia.org/wikipedia/commons/a/ae/Bradley_Byrne%2C_TV_Interview%2C_ALGOP_Forum%2C_June_25_2010.jpg</photoUrl>
+    </legislator>
+    <legislator>
+        <in_office>true</in_office>
+        <party>D</party>
+        <gender>F</gender>
+        <state>MA</state>
+        <state_name>Massachusetts</state_name>
+        <district>5</district>
+        <title>Rep</title>
+        <chamber>house</chamber>
+        <birthday>1963-07-17</birthday>
+        <term_start>2013-12-12</term_start>
+        <term_end>2015-01-03</term_end>
+        <bioguide_id>C001101</bioguide_id>
+        <thomas_id>02196</thomas_id>
+        <govtrack_id>412600</govtrack_id>
+        <votesmart_id>35858</votesmart_id>
+        <crp_id>N00035278</crp_id>
+        <first_name>Katherine</first_name>
+        <nickname></nickname>
+        <last_name>Clark</last_name>
+        <middle_name>M.</middle_name>
+        <website>http://katherineclark.house.gov</website>
+        <photoUrl>http://upload.wikimedia.org/wikipedia/en/8/89/Katherine_Clark_2013.jpg</photoUrl>
+    </legislator>
+    <legislator>
+        <in_office>true</in_office>
+        <party>R</party>
+        <gender>M</gender>
+        <state>LA</state>
+        <state_name>Louisiana</state_name>
+        <district>5</district>
+        <title>Rep</title>
+        <chamber>house</chamber>
+        <birthday>1974-01-07</birthday>
+        <term_start>2013-11-16</term_start>
+        <term_end>2015-01-03</term_end>
+        <bioguide_id>M001192</bioguide_id>
+        <thomas_id>02195</thomas_id>
+        <govtrack_id>412599</govtrack_id>
+        <votesmart_id>145379</votesmart_id>
+        <crp_id>N00035593</crp_id>
+        <first_name>Vance</first_name>
+        <nickname></nickname>
+        <last_name>McAllister</last_name>
+        <phone>202-225-8490</phone>
+        <website>http://mcallister.house.gov</website>
+        <office>316 Cannon House Office Building</office>
+        <twitter_id>RepMcAllister</twitter_id>
+        <facebook_id>218352868343621</facebook_id>
+        <photoUrl>http://upload.wikimedia.org/wikipedia/en/4/4b/Vance_McAllister.jpg</photoUrl>
+    </legislator>
+    <legislator>
+        <in_office>true</in_office>
+        <party>R</party>
+        <gender>M</gender>
         <state>MO</state>
         <state_name>Missouri</state_name>
         <district>8</district>
@@ -393,7 +466,7 @@
         <office>313 Cannon House Office Building</office>
         <contact_form>http://pocan.house.gov/contact/email-me</contact_form>
         <fax>202-225-6942</fax>
-        <twitter_id>repmarkpocan</twitter_id>
+        <twitter_id>RepMarkPocan</twitter_id>
         <youtube_id>repmarkpocan</youtube_id>
         <facebook_id>436881033058309</facebook_id>
         <committees>
@@ -442,6 +515,38 @@
                     <phone>(202) 225-4527</phone>
                     <subcommittee>false</subcommittee>
                 </subcommittees>
+            </committee>
+            <committee>
+                <name>Early Childhood, Elementary, and Secondary Education</name>
+                <committee_id>HSED14</committee_id>
+                <chamber>house</chamber>
+                <phone>(202) 225-4527</phone>
+                <subcommittee>true</subcommittee>
+                <parent_committee_id>HSED</parent_committee_id>
+                <parent_committee>
+                    <name>House Committee on Education and the Workforce</name>
+                    <committee_id>HSED</committee_id>
+                    <chamber>house</chamber>
+                    <office>2181 RHOB</office>
+                    <phone>(202) 225-4527</phone>
+                    <subcommittee>false</subcommittee>
+                </parent_committee>
+            </committee>
+            <committee>
+                <name>Workforce Protections</name>
+                <committee_id>HSED10</committee_id>
+                <chamber>house</chamber>
+                <phone>(202) 225-4527</phone>
+                <subcommittee>true</subcommittee>
+                <parent_committee_id>HSED</parent_committee_id>
+                <parent_committee>
+                    <name>House Committee on Education and the Workforce</name>
+                    <committee_id>HSED</committee_id>
+                    <chamber>house</chamber>
+                    <office>2181 RHOB</office>
+                    <phone>(202) 225-4527</phone>
+                    <subcommittee>false</subcommittee>
+                </parent_committee>
             </committee>
         </committees>
         <photoUrl>http://upload.wikimedia.org/wikipedia/commons/a/a4/Mark_Pocan%2C_official_portrait%2C_113th_Congress.jpg</photoUrl>
@@ -775,7 +880,7 @@
         <office>323 Cannon House Office Building</office>
         <contact_form>http://stewart.house.gov/contact/email-me</contact_form>
         <fax>801-364-5551</fax>
-        <twitter_id>repchrisstewart</twitter_id>
+        <twitter_id>RepChrisStewart</twitter_id>
         <youtube_id>repchrisstewart</youtube_id>
         <facebook_id>242042855928904</facebook_id>
         <committees>
@@ -1941,7 +2046,7 @@
         <website>http://orourke.house.gov</website>
         <office>1721 Longworth House Office Building</office>
         <contact_form>http://orourke.house.gov/contact/email-me</contact_form>
-        <twitter_id>betoorourketx16</twitter_id>
+        <twitter_id>BetooRourkeTX16</twitter_id>
         <youtube_id>betoorourketx16</youtube_id>
         <facebook_id>460776160654909</facebook_id>
         <committees>
@@ -5015,7 +5120,7 @@
         <office>214 Cannon House Office Building</office>
         <contact_form>http://lujangrisham.house.gov/contact/email-me</contact_form>
         <fax>202-225-4975</fax>
-        <twitter_id>replujangrisham</twitter_id>
+        <twitter_id>RepLujanGrisham</twitter_id>
         <youtube_id>RepLujanGrisham</youtube_id>
         <facebook_id>191640657646128</facebook_id>
         <committees>
@@ -6511,7 +6616,7 @@
         <website>http://daines.house.gov</website>
         <office>206 Cannon House Office Building</office>
         <contact_form>https://daines.house.gov/email-me</contact_form>
-        <twitter_id>stevedaines</twitter_id>
+        <twitter_id>SteveDaines</twitter_id>
         <youtube_id>SteveDainesMT</youtube_id>
         <facebook_id>185361254941832</facebook_id>
         <committees>
@@ -6923,7 +7028,7 @@
         <website>http://bentivolio.house.gov</website>
         <office>226 Cannon House Office Building</office>
         <contact_form>http://bentivolio.house.gov/contact/email-me</contact_form>
-        <twitter_id>repkerryb</twitter_id>
+        <twitter_id>RepKerryB</twitter_id>
         <youtube_id>repkerry</youtube_id>
         <facebook_id>316865541750741</facebook_id>
         <committees>
@@ -8630,7 +8735,7 @@
         <website>http://enyart.house.gov</website>
         <office>1722 Longworth House Office Building</office>
         <contact_form>http://enyart.house.gov/contact/email-me</contact_form>
-        <twitter_id>repbillenyart</twitter_id>
+        <twitter_id>RepBillEnyart</twitter_id>
         <youtube_id>CongBillEnyart</youtube_id>
         <facebook_id>527281100637880</facebook_id>
         <committees>
@@ -9018,7 +9123,7 @@
         <website>http://duckworth.house.gov</website>
         <office>104 Cannon House Office Building</office>
         <contact_form>http://duckworth.house.gov/contact/email-me</contact_form>
-        <twitter_id>repduckworth</twitter_id>
+        <twitter_id>RepDuckworth</twitter_id>
         <youtube_id>repduckworth</youtube_id>
         <facebook_id>112300955610529</facebook_id>
         <committees>
@@ -9216,7 +9321,7 @@
         <office>502 Cannon House Office Building</office>
         <contact_form>http://gabbard.house.gov/contact/email-me</contact_form>
         <fax>202-225-4987</fax>
-        <twitter_id>tulsipress</twitter_id>
+        <twitter_id>TulsiPress</twitter_id>
         <facebook_id>392284484191405</facebook_id>
         <committees>
             <committee>
@@ -9648,7 +9753,7 @@
         <website>http://garcia.house.gov</website>
         <office>1440 Longworth House Office Building</office>
         <contact_form>http://garciaforms.house.gov/email-me/</contact_form>
-        <twitter_id>repjoegarcia</twitter_id>
+        <twitter_id>RepJoeGarcia</twitter_id>
         <youtube_id>repjoegarcia</youtube_id>
         <facebook_id>378800468888204</facebook_id>
         <committees>
@@ -10046,7 +10151,7 @@
         <website>http://radel.house.gov</website>
         <office>1123 Longworth House Office Building</office>
         <contact_form>http://radel.house.gov/contact</contact_form>
-        <twitter_id>treyradel</twitter_id>
+        <twitter_id>TreyRadel</twitter_id>
         <youtube_id>RepTreyRadel</youtube_id>
         <facebook_id>391501350939452</facebook_id>
         <committees>
@@ -12235,7 +12340,7 @@
         <office>1508 Longworth House Office Building</office>
         <contact_form>http://cardenas.house.gov/contact/email-me</contact_form>
         <fax>202-225-0819</fax>
-        <twitter_id>repcardenas</twitter_id>
+        <twitter_id>RepCardenas</twitter_id>
         <youtube_id>repcardenas</youtube_id>
         <facebook_id>485493954794945</facebook_id>
         <committees>
@@ -12778,7 +12883,7 @@
         <website>http://swalwell.house.gov</website>
         <office>501 Cannon House Office Building</office>
         <contact_form>http://swalwell.house.gov/contact-me</contact_form>
-        <twitter_id>repswalwell</twitter_id>
+        <twitter_id>RepSwalwell</twitter_id>
         <youtube_id>ericswalwell</youtube_id>
         <facebook_id>450130878375355</facebook_id>
         <committees>
@@ -13226,7 +13331,7 @@
         <office>1408 Longworth House Office Building</office>
         <contact_form>http://bera.house.gov/contact</contact_form>
         <fax>202-226-1298</fax>
-        <twitter_id>repbera</twitter_id>
+        <twitter_id>RepBera</twitter_id>
         <youtube_id>repamibera</youtube_id>
         <facebook_id>528662157146886</facebook_id>
         <committees>
@@ -14047,7 +14152,7 @@
         <website>http://titus.house.gov</website>
         <office>401 Cannon House Office Building</office>
         <contact_form>http://titus.house.gov/contact/email-me</contact_form>
-        <twitter_id>repdinatitus</twitter_id>
+        <twitter_id>RepDinaTitus</twitter_id>
         <youtube_id>CongresswomanTitus</youtube_id>
         <facebook_id>120660834778561</facebook_id>
         <committees>
@@ -15749,7 +15854,7 @@
         <website>http://nolan.house.gov</website>
         <office>2447 Rayburn House Office Building</office>
         <contact_form>http://nolan.house.gov/contact/email-me</contact_form>
-        <twitter_id>usrepricknolan</twitter_id>
+        <twitter_id>USRepRickNolan</twitter_id>
         <youtube_id>USRepRickNolan</youtube_id>
         <facebook_id>388085277945339</facebook_id>
         <committees>
@@ -17013,8 +17118,8 @@
                 </parent_committee>
             </committee>
             <committee>
-                <name>Workforce Protections</name>
-                <committee_id>HSED10</committee_id>
+                <name>Health, Employment, Labor, and Pensions</name>
+                <committee_id>HSED02</committee_id>
                 <chamber>house</chamber>
                 <phone>(202) 225-4527</phone>
                 <subcommittee>true</subcommittee>
@@ -17059,7 +17164,7 @@
         <office>222 Cannon House Office Building</office>
         <contact_form>https://amodei.house.gov/contact-me</contact_form>
         <fax>202-225-5679</fax>
-        <twitter_id>markamodeinv2</twitter_id>
+        <twitter_id>MarkAmodeiNV2</twitter_id>
         <youtube_id>markamodeinv2</youtube_id>
         <facebook_id>307227745970624</facebook_id>
         <committees>
@@ -17620,7 +17725,7 @@
         <office>2314 Rayburn House Office Building</office>
         <contact_form>http://donyoung.house.gov/Contact/</contact_form>
         <fax>202-225-0425</fax>
-        <twitter_id>repdonyoung</twitter_id>
+        <twitter_id>RepDonYoung</twitter_id>
         <youtube_id>RepDonYoung</youtube_id>
         <facebook_id>7476269851</facebook_id>
         <committees>
@@ -18977,8 +19082,8 @@
                 </subcommittees>
             </committee>
             <committee>
-                <name>Early Childhood, Elementary, and Secondary Education</name>
-                <committee_id>HSED14</committee_id>
+                <name>Higher Education and Workforce Training</name>
+                <committee_id>HSED13</committee_id>
                 <chamber>house</chamber>
                 <phone>(202) 225-4527</phone>
                 <subcommittee>true</subcommittee>
@@ -19295,7 +19400,7 @@
         <office>2184 Rayburn House Office Building</office>
         <contact_form>https://whitfield.house.gov/contact-ed/email-ed</contact_form>
         <fax>202-225-3547</fax>
-        <twitter_id>repedwhitfield</twitter_id>
+        <twitter_id>RepEdWhitfield</twitter_id>
         <youtube_id>WhitfieldKY01</youtube_id>
         <facebook_id>91115765425</facebook_id>
         <committees>
@@ -19427,7 +19532,7 @@
         <office>2433 Rayburn House Office Building</office>
         <contact_form>http://www.house.gov/writerep</contact_form>
         <fax>202-225-2515</fax>
-        <twitter_id>repwestmoreland</twitter_id>
+        <twitter_id>RepWestmoreland</twitter_id>
         <youtube_id>RepLynnWestmoreland</youtube_id>
         <facebook_id>71389451419</facebook_id>
         <committees>
@@ -20400,7 +20505,7 @@
         <website>http://wassermanschultz.house.gov</website>
         <office>118 Cannon House Office Building</office>
         <contact_form>http://wassermanschultz.house.gov/contact/email-me.shtml</contact_form>
-        <fax>202-225-2052</fax>
+        <fax>202-226-2052</fax>
         <twitter_id>RepDWStweets</twitter_id>
         <youtube_id>RepWassermanSchultz</youtube_id>
         <facebook_id>88904724121</facebook_id>
@@ -20819,7 +20924,7 @@
         <office>2182 Rayburn House Office Building</office>
         <contact_form>http://walden.house.gov/contact-greg/</contact_form>
         <fax>202-225-5774</fax>
-        <twitter_id>repgregwalden</twitter_id>
+        <twitter_id>RepGregWalden</twitter_id>
         <youtube_id>RepGregWalden</youtube_id>
         <facebook_id>313301365382225</facebook_id>
         <committees>
@@ -21096,7 +21201,7 @@
         <office>2256 Rayburn House Office Building</office>
         <contact_form>http://www.house.gov/writerep</contact_form>
         <fax>202-225-2493</fax>
-        <twitter_id>repvisclosky</twitter_id>
+        <twitter_id>RepVisclosky</twitter_id>
         <youtube_id>PeteVisclosky1</youtube_id>
         <facebook_id>118723661514709</facebook_id>
         <committees>
@@ -21407,7 +21512,7 @@
         <office>1707 Longworth House Office Building</office>
         <contact_form>http://vanhollen.house.gov/contact/</contact_form>
         <fax>202-225-0375</fax>
-        <twitter_id>chrisvanhollen</twitter_id>
+        <twitter_id>ChrisVanHollen</twitter_id>
         <youtube_id>RepChrisVanHollen</youtube_id>
         <facebook_id>109304033877</facebook_id>
         <committees>
@@ -21813,7 +21918,7 @@
         <office>1607 Longworth House Office Building</office>
         <contact_form>http://tsongas.house.gov/?sectionid=11&amp;amp;sectiontree=3,11</contact_form>
         <fax>202-226-0771</fax>
-        <twitter_id>nikiinthehouse</twitter_id>
+        <twitter_id>NikiInTheHouse</twitter_id>
         <youtube_id>RepTsongas</youtube_id>
         <facebook_id>131079823624873</facebook_id>
         <committees>
@@ -22551,7 +22656,7 @@
         <office>106 Cannon House Office Building</office>
         <contact_form>http://www.house.gov/writerep</contact_form>
         <fax>202-226-4523</fax>
-        <twitter_id>tiberipress</twitter_id>
+        <twitter_id>TiberiPress</twitter_id>
         <youtube_id>PatTiberi</youtube_id>
         <facebook_id>90452932937</facebook_id>
         <committees>
@@ -23561,7 +23666,7 @@
         <office>2423 Rayburn House Office Building</office>
         <contact_form>http://www.house.gov/writerep</contact_form>
         <fax>202-226-1012</fax>
-        <twitter_id>replindasanchez</twitter_id>
+        <twitter_id>RepLindaSanchez</twitter_id>
         <youtube_id>LindaTSanchez</youtube_id>
         <facebook_id>110685735673141</facebook_id>
         <committees>
@@ -23686,7 +23791,7 @@
         <website>http://stutzman.house.gov</website>
         <office>1728 Longworth House Office Building</office>
         <contact_form>http://stutzman.house.gov/contacts/new</contact_form>
-        <fax>202-225-3479</fax>
+        <fax>202-226-9870</fax>
         <twitter_id>RepStutzman</twitter_id>
         <youtube_id>repstutzman</youtube_id>
         <facebook_id>109067049164902</facebook_id>
@@ -23903,7 +24008,7 @@
         <office>211 Cannon House Office Building</office>
         <contact_form>https://forms.house.gov/speier/webforms/email_jackie.shtml</contact_form>
         <fax>202-347-0956</fax>
-        <twitter_id>repspeier</twitter_id>
+        <twitter_id>RepSpeier</twitter_id>
         <youtube_id>jackiespeierca12</youtube_id>
         <facebook_id>99332606976</facebook_id>
         <committees>
@@ -24888,7 +24993,7 @@
         <office>2469 Rayburn House Office Building</office>
         <contact_form>https://forms.house.gov/slaughter/webforms/zip_auth.shtm</contact_form>
         <fax>202-225-7822</fax>
-        <twitter_id>louiseslaughter</twitter_id>
+        <twitter_id>LouiseSlaughter</twitter_id>
         <youtube_id>louiseslaughter</youtube_id>
         <facebook_id>82424647700</facebook_id>
         <committees>
@@ -24966,6 +25071,7 @@
         <contact_form>https://sires.house.gov/contact-me/email-me</contact_form>
         <fax>202-226-0792</fax>
         <twitter_id>Rep_Albio_Sires</twitter_id>
+        <youtube_id>RepSiresNJ13</youtube_id>
         <facebook_id>81058818750</facebook_id>
         <committees>
             <committee>
@@ -26085,7 +26191,7 @@
         <office>2233 Rayburn House Office Building</office>
         <contact_form>http://sessions.house.gov/index.cfm/contact</contact_form>
         <fax>202-225-5878</fax>
-        <twitter_id>petesessions</twitter_id>
+        <twitter_id>PeteSessions</twitter_id>
         <youtube_id>PeteSessions</youtube_id>
         <facebook_id>367963843082</facebook_id>
         <committees>
@@ -26157,7 +26263,7 @@
         <office>2227 Rayburn House Office Building</office>
         <contact_form>http://serrano.house.gov/contact-me/email-me</contact_form>
         <fax>202-225-6001</fax>
-        <twitter_id>repjoseserrano</twitter_id>
+        <twitter_id>RepJoseSerrano</twitter_id>
         <facebook_id>273446508512</facebook_id>
         <committees>
             <committee>
@@ -26517,7 +26623,7 @@
         <office>1201 Longworth House Office Building</office>
         <contact_form>http://www.house.gov/writerep</contact_form>
         <fax>202-225-8354</fax>
-        <twitter_id>repbobbyscott</twitter_id>
+        <twitter_id>RepBobbyScott</twitter_id>
         <youtube_id>repbobbyscott</youtube_id>
         <facebook_id>123839200978190</facebook_id>
         <committees>
@@ -26694,7 +26800,7 @@
         <office>225 Cannon House Office Building</office>
         <contact_form>http://www.house.gov/writerep</contact_form>
         <fax>202-225-4628</fax>
-        <twitter_id>repdavidscott</twitter_id>
+        <twitter_id>RepDavidScott</twitter_id>
         <youtube_id>RepDavidScott</youtube_id>
         <facebook_id>113303673339</facebook_id>
         <committees>
@@ -27434,7 +27540,7 @@
         <office>108 Cannon House Office Building</office>
         <contact_form>http://schrader.house.gov/contact/</contact_form>
         <fax>202-225-5699</fax>
-        <twitter_id>repschrader</twitter_id>
+        <twitter_id>RepSchrader</twitter_id>
         <youtube_id>repkurtschrader</youtube_id>
         <facebook_id>94978896695</facebook_id>
         <committees>
@@ -27643,7 +27749,7 @@
         <office>328 Cannon House Office Building</office>
         <contact_form>https://forms.house.gov/schock/contact-form.shtml</contact_form>
         <fax>202-225-9249</fax>
-        <twitter_id>repaaronschock</twitter_id>
+        <twitter_id>RepAaronSchock</twitter_id>
         <youtube_id>repaaronschock</youtube_id>
         <facebook_id>70882853544</facebook_id>
         <committees>
@@ -27988,7 +28094,7 @@
         <office>2367 Rayburn House Office Building</office>
         <contact_form>https://forms.house.gov/schakowsky/webforms/issue_subscribe.htm</contact_form>
         <fax>202-226-6890</fax>
-        <twitter_id>janschakowsky</twitter_id>
+        <twitter_id>JanSchakowsky</twitter_id>
         <youtube_id>repschakowsky</youtube_id>
         <facebook_id>160143957118</facebook_id>
         <committees>
@@ -28427,7 +28533,7 @@
         <office>1114 Longworth House Office Building</office>
         <contact_form>http://www.lorettasanchez.house.gov/index.php?option=com_content&amp;amp;task=view&amp;amp;id=218&amp;amp;Itemid=17</contact_form>
         <fax>202-225-5859</fax>
-        <twitter_id>lorettasanchez</twitter_id>
+        <twitter_id>LorettaSanchez</twitter_id>
         <youtube_id>LorettaSanchezLive</youtube_id>
         <facebook_id>90966961167</facebook_id>
         <committees>
@@ -28984,7 +29090,7 @@
         <office>1233 Longworth House Office Building</office>
         <contact_form>http://www.house.gov/ryan/email.htm</contact_form>
         <fax>202-225-3393</fax>
-        <twitter_id>reppaulryan</twitter_id>
+        <twitter_id>RepPaulRyan</twitter_id>
         <youtube_id>reppaulryan</youtube_id>
         <facebook_id>7123827676</facebook_id>
         <committees>
@@ -31802,7 +31908,7 @@
         <office>418 Cannon House Office Building</office>
         <contact_form>http://rigell.house.gov/contact/</contact_form>
         <fax>202-225-4218</fax>
-        <twitter_id>repscottrigell</twitter_id>
+        <twitter_id>RepScottRigell</twitter_id>
         <youtube_id>RepScottRigell</youtube_id>
         <facebook_id>167851429918010</facebook_id>
         <committees>
@@ -31934,7 +32040,7 @@
         <office>240 Cannon House Office Building</office>
         <contact_form>http://richmond.house.gov/contact-me/email-me</contact_form>
         <fax>202- 225-1988</fax>
-        <twitter_id>reprichmond</twitter_id>
+        <twitter_id>RepRichmond</twitter_id>
         <facebook_id>197737020257085</facebook_id>
         <committees>
             <committee>
@@ -32326,7 +32432,7 @@
         <office>130 Cannon House Office Building</office>
         <contact_form>http://renacci.house.gov/contact-me/</contact_form>
         <fax>202-225-3059</fax>
-        <twitter_id>repjimrenacci</twitter_id>
+        <twitter_id>RepJimRenacci</twitter_id>
         <youtube_id>repjimrenacci</youtube_id>
         <facebook_id>187639524595278</facebook_id>
         <committees>
@@ -32442,7 +32548,7 @@
         <office>1127 Longworth House Office Building</office>
         <contact_form>http://reichert.house.gov/contact-me</contact_form>
         <fax>202-225-4282</fax>
-        <twitter_id>davereichert</twitter_id>
+        <twitter_id>DaveReichert</twitter_id>
         <youtube_id>repdavereichert</youtube_id>
         <facebook_id>91504302598</facebook_id>
         <committees>
@@ -32691,7 +32797,7 @@
         <office>2354 Rayburn House Office Building</office>
         <contact_form>http://rangel.house.gov/contact-me/email-me</contact_form>
         <fax>202-225-0816</fax>
-        <twitter_id>cbrangel</twitter_id>
+        <twitter_id>CBRangel</twitter_id>
         <youtube_id>RepRangel</youtube_id>
         <facebook_id>7390589055</facebook_id>
         <committees>
@@ -33483,7 +33589,7 @@
         <office>120 Cannon House Office Building</office>
         <contact_form>http://posey.house.gov/Contact/</contact_form>
         <fax>202-225-3516</fax>
-        <twitter_id>congbillposey</twitter_id>
+        <twitter_id>CongBillPosey</twitter_id>
         <youtube_id>CongressmanPosey</youtube_id>
         <facebook_id>100000080395369</facebook_id>
         <committees>
@@ -33667,7 +33773,7 @@
         <office>107 Cannon House Office Building</office>
         <contact_form>http://pompeo.house.gov/contact/</contact_form>
         <fax>202-225-3489</fax>
-        <twitter_id>repmikepompeo</twitter_id>
+        <twitter_id>RepMikePompeo</twitter_id>
         <youtube_id>congressmanpompeo</youtube_id>
         <facebook_id>101965369880683</facebook_id>
         <committees>
@@ -33859,7 +33965,7 @@
         <office>1433 Longworth House Office Building</office>
         <contact_form>http://polis.house.gov/Contact/</contact_form>
         <fax>202-226-7840</fax>
-        <twitter_id>jaredpolis</twitter_id>
+        <twitter_id>JaredPolis</twitter_id>
         <youtube_id>JaredPolis31275</youtube_id>
         <facebook_id>53481427529</facebook_id>
         <committees>
@@ -34329,7 +34435,7 @@
         <office>1318 Longworth House Office Building</office>
         <contact_form>https://forms.house.gov/pingree/webforms/contact-form.shtml</contact_form>
         <fax>202-225-5590</fax>
-        <twitter_id>chelliepingree</twitter_id>
+        <twitter_id>ChelliePingree</twitter_id>
         <youtube_id>congresswomanpingree</youtube_id>
         <facebook_id>91529332807</facebook_id>
         <committees>
@@ -34487,7 +34593,7 @@
         <office>1213 Longworth House Office Building</office>
         <contact_form>http://pierluisi.house.gov/contact/email-me</contact_form>
         <fax>202-225-2154</fax>
-        <twitter_id>pedropierluisi</twitter_id>
+        <twitter_id>PedroPierluisi</twitter_id>
         <youtube_id>PierluisiCongress</youtube_id>
         <facebook_id>55139978107</facebook_id>
         <committees>
@@ -35971,7 +36077,7 @@
         <office>331 Cannon House Office Building</office>
         <contact_form>http://palazzo.house.gov/contact</contact_form>
         <fax>202- 225-7074</fax>
-        <twitter_id>congpalazzo</twitter_id>
+        <twitter_id>CongPalazzo</twitter_id>
         <youtube_id>CongressmanPalazzo</youtube_id>
         <facebook_id>186908658003781</facebook_id>
         <committees>
@@ -36540,7 +36646,7 @@
         <office>1427 Longworth House Office Building</office>
         <contact_form>http://nunnelee.house.gov/contact/</contact_form>
         <fax>202- 225-3549</fax>
-        <twitter_id>repalannunnelee</twitter_id>
+        <twitter_id>RepAlanNunnelee</twitter_id>
         <youtube_id>congressmannunnelee</youtube_id>
         <facebook_id>144919278895639</facebook_id>
         <committees>
@@ -37284,7 +37390,7 @@
         <office>1323 Longworth House Office Building</office>
         <contact_form>http://noem.house.gov/index.cfm/contact</contact_form>
         <fax>202-225-5823</fax>
-        <twitter_id>repkristinoem</twitter_id>
+        <twitter_id>RepKristiNoem</twitter_id>
         <youtube_id>RepKristiNoem</youtube_id>
         <committees>
             <committee>
@@ -37874,7 +37980,7 @@
         <office>1610 Longworth House Office Building</office>
         <contact_form>http://napolitano.house.gov/contact-me/email-me</contact_form>
         <fax>202-225-0027</fax>
-        <twitter_id>gracenapolitano</twitter_id>
+        <twitter_id>GraceNapolitano</twitter_id>
         <youtube_id>RepGraceNapolitano</youtube_id>
         <facebook_id>163108420409412</facebook_id>
         <committees>
@@ -38388,7 +38494,7 @@
         <office>1207 Longworth House Office Building</office>
         <contact_form>https://forms.house.gov/mulvaney/webforms/zipauthen_contact.shtml</contact_form>
         <fax>202-225-0464</fax>
-        <twitter_id>repmickmulvaney</twitter_id>
+        <twitter_id>RepMickMulvaney</twitter_id>
         <youtube_id>RepMickMulvaney</youtube_id>
         <facebook_id>188649667827713</facebook_id>
         <committees>
@@ -39068,7 +39174,7 @@
         <office>2205 Rayburn House Office Building</office>
         <contact_form>http://georgemiller.house.gov/contact-me</contact_form>
         <fax>202-225-5609</fax>
-        <twitter_id>askgeorge</twitter_id>
+        <twitter_id>AskGeorge</twitter_id>
         <youtube_id>RepGeorgeMiller</youtube_id>
         <facebook_id>75298637905</facebook_id>
         <committees>
@@ -39138,7 +39244,7 @@
         <office>2467 Rayburn House Office Building</office>
         <contact_form>http://garymiller.house.gov/Contact/</contact_form>
         <fax>202-226-6962</fax>
-        <twitter_id>repgarymiller</twitter_id>
+        <twitter_id>RepGaryMiller</twitter_id>
         <youtube_id>GaryGMiller</youtube_id>
         <facebook_id>105352226181045</facebook_id>
         <committees>
@@ -40117,7 +40223,7 @@
         <office>204 Cannon House Office Building</office>
         <contact_form>http://meehan.house.gov/email-me</contact_form>
         <fax>202- 226-0280</fax>
-        <twitter_id>repmeehan</twitter_id>
+        <twitter_id>RepMeehan</twitter_id>
         <youtube_id>repmeehan</youtube_id>
         <facebook_id>136000283132824</facebook_id>
         <committees>
@@ -40548,7 +40654,7 @@
         <office>203 Cannon House Office Building</office>
         <contact_form>http://mcmorris.house.gov/contact-cathy1/</contact_form>
         <fax>202-225-3392</fax>
-        <twitter_id>cathymcmorris</twitter_id>
+        <twitter_id>CathyMcMorris</twitter_id>
         <youtube_id>mcmorrisrodgers</youtube_id>
         <facebook_id>321618789771</facebook_id>
         <committees>
@@ -40924,7 +41030,7 @@
         <office>2428 Rayburn House Office Building</office>
         <contact_form>http://mcintyreforms.house.gov/contact/</contact_form>
         <fax>202-225-5773</fax>
-        <twitter_id>repmikemcintyre</twitter_id>
+        <twitter_id>RepMikeMcIntyre</twitter_id>
         <youtube_id>RepMikeMcIntyre</youtube_id>
         <facebook_id>340903514856</facebook_id>
         <committees>
@@ -43162,6 +43268,7 @@
         <contact_form>http://maloney.house.gov/index.php?option=com_email_form&amp;amp;Itemid=73</contact_form>
         <fax>202-225-4709</fax>
         <twitter_id>RepMaloney</twitter_id>
+        <facebook_id>397176447066236</facebook_id>
         <committees>
             <committee>
                 <name>Joint Economic Committee</name>
@@ -43814,7 +43921,7 @@
         <office>2446 Rayburn House Office Building</office>
         <contact_form>https://forms.house.gov/lujan/contact-form.shtml</contact_form>
         <fax>202-226-1528</fax>
-        <twitter_id>repbenraylujan</twitter_id>
+        <twitter_id>RepBenRayLujan</twitter_id>
         <youtube_id>Repbenraylujan</youtube_id>
         <facebook_id>112962521120</facebook_id>
         <committees>
@@ -43929,7 +44036,7 @@
         <office>2440 Rayburn House Office Building</office>
         <contact_form>http://luetkemeyer.house.gov/contact/</contact_form>
         <fax>202-225-5712</fax>
-        <twitter_id>repblainepress</twitter_id>
+        <twitter_id>RepBlainePress</twitter_id>
         <youtube_id>BLuetkemeyer</youtube_id>
         <facebook_id>1358702716</facebook_id>
         <committees>
@@ -44484,6 +44591,7 @@
         <office>1541 Longworth House Office Building</office>
         <contact_form>http://long.house.gov/contact-billy/</contact_form>
         <fax>202-225-5604</fax>
+        <twitter_id>USRepLong</twitter_id>
         <youtube_id>MOdistrict7</youtube_id>
         <facebook_id>139631049438354</facebook_id>
         <committees>
@@ -44813,7 +44921,7 @@
         <office>1527 Longworth House Office Building</office>
         <contact_form>http://loebsack.house.gov/contactform/</contact_form>
         <fax>202-226-0757</fax>
-        <twitter_id>daveloebsack</twitter_id>
+        <twitter_id>DaveLoebsack</twitter_id>
         <youtube_id>congressmanloebsack</youtube_id>
         <facebook_id>291731316748</facebook_id>
         <committees>
@@ -45288,7 +45396,7 @@
         <office>1717 Longworth House Office Building</office>
         <contact_form>http://www.house.gov/formlipinski/zipauth.html</contact_form>
         <fax>202-225-1012</fax>
-        <twitter_id>replipinski</twitter_id>
+        <twitter_id>RepLipinski</twitter_id>
         <youtube_id>lipinski03</youtube_id>
         <facebook_id>103286879730089</facebook_id>
         <committees>
@@ -45596,7 +45704,7 @@
         <office>1236 Longworth House Office Building</office>
         <contact_form>http://levin.house.gov/contact-me/email-me</contact_form>
         <fax>202-226-1033</fax>
-        <twitter_id>repsandylevin</twitter_id>
+        <twitter_id>RepSandyLevin</twitter_id>
         <youtube_id>mi12yes</youtube_id>
         <facebook_id>223726364320243</facebook_id>
         <committees>
@@ -45685,7 +45793,7 @@
         <office>2267 Rayburn House Office Building</office>
         <contact_form>http://lee.house.gov/?sectionid=44&amp;amp;sectiontree=18,44</contact_form>
         <fax>202-225-9817</fax>
-        <twitter_id>repbarbaralee</twitter_id>
+        <twitter_id>RepBarbaraLee</twitter_id>
         <youtube_id>RepLee</youtube_id>
         <facebook_id>92190287786</facebook_id>
         <committees>
@@ -45852,7 +45960,7 @@
         <office>2448 Rayburn House Office Building</office>
         <contact_form>http://latta.house.gov/contact/</contact_form>
         <fax>202-225-1985</fax>
-        <twitter_id>boblatta</twitter_id>
+        <twitter_id>BobLatta</twitter_id>
         <youtube_id>CongressmanBobLatta</youtube_id>
         <facebook_id>100000004848334</facebook_id>
         <committees>
@@ -46158,7 +46266,7 @@
         <office>1501 Longworth House Office Building</office>
         <contact_form>http://www.house.gov/writerep</contact_form>
         <fax>202-225-1031</fax>
-        <twitter_id>repjohnlarson</twitter_id>
+        <twitter_id>RepJohnLarson</twitter_id>
         <youtube_id>RepJohnLarson</youtube_id>
         <facebook_id>6352928631</facebook_id>
         <committees>
@@ -46478,7 +46586,7 @@
         <office>228 Cannon House Office Building</office>
         <contact_form>http://lankford.house.gov/contact-me/email-me</contact_form>
         <fax>202-226-1463</fax>
-        <twitter_id>replankford</twitter_id>
+        <twitter_id>RepLankford</twitter_id>
         <youtube_id>replankford</youtube_id>
         <facebook_id>130873066975024</facebook_id>
         <committees>
@@ -46581,7 +46689,7 @@
         <office>109 Cannon House Office Building</office>
         <contact_form>http://langevin.house.gov/contact-me</contact_form>
         <fax>202-225-5976</fax>
-        <twitter_id>jimlangevin</twitter_id>
+        <twitter_id>JimLangevin</twitter_id>
         <youtube_id>jimlangevin</youtube_id>
         <facebook_id>6578978441</facebook_id>
         <committees>
@@ -46765,6 +46873,7 @@
         <office>133 Cannon House Office Building</office>
         <contact_form>https://forms.house.gov/lance/contact-form.shtml</contact_form>
         <fax>202-225-9460</fax>
+        <twitter_id>RepLanceNJ7</twitter_id>
         <youtube_id>CongressmanLance</youtube_id>
         <facebook_id>100830109970339</facebook_id>
         <committees>
@@ -47348,7 +47457,7 @@
         <office>2439 Rayburn House Office Building</office>
         <contact_form>http://kline.house.gov/contact-us/</contact_form>
         <fax>202-225-2595</fax>
-        <twitter_id>repjohnkline</twitter_id>
+        <twitter_id>RepJohnKline</twitter_id>
         <youtube_id>repjohnkline</youtube_id>
         <committees>
             <committee>
@@ -47910,7 +48019,7 @@
         <office>2210 Rayburn House Office Building</office>
         <contact_form>https://forms.house.gov/king/webforms/issue_subscribe.html</contact_form>
         <fax>202-225-3193</fax>
-        <twitter_id>stevekingia</twitter_id>
+        <twitter_id>SteveKingIA</twitter_id>
         <youtube_id>stevekingia</youtube_id>
         <facebook_id>134325379926458</facebook_id>
         <committees>
@@ -48440,7 +48549,7 @@
         <office>1502 Longworth House Office Building</office>
         <contact_form>http://kind.house.gov/contact/</contact_form>
         <fax>202-225-5739</fax>
-        <twitter_id>repronkind</twitter_id>
+        <twitter_id>RepRonKind</twitter_id>
         <youtube_id>RepRonKind</youtube_id>
         <facebook_id>89152017954</facebook_id>
         <committees>
@@ -49977,7 +50086,7 @@
         <office>1710 Longworth House Office Building</office>
         <contact_form>http://billjohnson.house.gov/contact/</contact_form>
         <fax>202-225-5907</fax>
-        <twitter_id>repbilljohnson</twitter_id>
+        <twitter_id>RepBillJohnson</twitter_id>
         <youtube_id>RepBillJohnson</youtube_id>
         <facebook_id>170477096312258</facebook_id>
         <committees>
@@ -50982,7 +51091,7 @@
         <office>332 Cannon House Office Building</office>
         <contact_form>http://hultgren.house.gov/email-me/</contact_form>
         <fax>202- 225-0697</fax>
-        <twitter_id>rephultgren</twitter_id>
+        <twitter_id>RepHultgren</twitter_id>
         <youtube_id>rephultgren</youtube_id>
         <facebook_id>186221644739359</facebook_id>
         <committees>
@@ -51166,7 +51275,7 @@
         <office>1217 Longworth House Office Building</office>
         <contact_form>http://huizenga.house.gov/contact/</contact_form>
         <fax>202- 226-0779</fax>
-        <twitter_id>rephuizenga</twitter_id>
+        <twitter_id>RepHuizenga</twitter_id>
         <youtube_id>RepHuizenga</youtube_id>
         <facebook_id>145764842143763</facebook_id>
         <committees>
@@ -51274,7 +51383,7 @@
         <office>129 Cannon House Office Building</office>
         <contact_form>https://forms.house.gov/huelskamp/webforms/zipauthen_contact.shtml</contact_form>
         <fax>202- 225-5124</fax>
-        <twitter_id>conghuelskamp</twitter_id>
+        <twitter_id>CongHuelskamp</twitter_id>
         <youtube_id>congressmanhuelskamp</youtube_id>
         <facebook_id>congressmanhuelskamp</facebook_id>
         <committees>
@@ -52012,7 +52121,7 @@
         <office>119 Cannon House Office Building</office>
         <contact_form>http://himes.house.gov/contact-me/email-me</contact_form>
         <fax>202-225-9629</fax>
-        <twitter_id>jahimes</twitter_id>
+        <twitter_id>JAHimes</twitter_id>
         <youtube_id>congressmanhimes</youtube_id>
         <facebook_id>85767418619</facebook_id>
         <committees>
@@ -52380,7 +52489,7 @@
         <office>1130 Longworth House Office Building</office>
         <contact_form>http://herrerabeutler.house.gov/contact/</contact_form>
         <fax>202-225-3478</fax>
-        <twitter_id>herrerabeutler</twitter_id>
+        <twitter_id>HerreraBeutler</twitter_id>
         <youtube_id>RepHerreraBeutler</youtube_id>
         <facebook_id>177551525610164</facebook_id>
         <committees>
@@ -53250,7 +53359,7 @@
         <website>http://hartzler.house.gov</website>
         <office>1023 Longworth House Office Building</office>
         <contact_form>http://hartzler.house.gov/contact-me/email-me</contact_form>
-        <fax>202- 225-2695</fax>
+        <fax>202-225-0148</fax>
         <twitter_id>RepHartzler</twitter_id>
         <youtube_id>repvickyhartzler</youtube_id>
         <facebook_id>183580061667324</facebook_id>
@@ -53458,7 +53567,7 @@
         <office>1533 Longworth House Office Building</office>
         <contact_form>http://harris.house.gov/contact-me/email-me</contact_form>
         <fax>202-225-0254</fax>
-        <twitter_id>repandyharrismd</twitter_id>
+        <twitter_id>RepAndyHarrisMD</twitter_id>
         <youtube_id>RepAndyHarris</youtube_id>
         <facebook_id>508912729153334</facebook_id>
         <committees>
@@ -54558,6 +54667,7 @@
         <office>308 Cannon House Office Building</office>
         <contact_form>http://guthrie.house.gov/contact-brett/</contact_form>
         <fax>202-226-2019</fax>
+        <twitter_id>RepGuthrie</twitter_id>
         <youtube_id>BrettGuthrie</youtube_id>
         <committees>
             <committee>
@@ -54757,7 +54867,7 @@
         <office>512 Cannon House Office Building</office>
         <contact_form>http://grimm.house.gov/contact-me/email-me</contact_form>
         <fax>202- 226-1272</fax>
-        <twitter_id>repmichaelgrimm</twitter_id>
+        <twitter_id>RepMichaelGrimm</twitter_id>
         <committees>
             <committee>
                 <name>House Committee on Financial Services</name>
@@ -54880,7 +54990,7 @@
         <office>1511 Longworth House Office Building</office>
         <contact_form>http://grijalva.house.gov/?sectionid=49&amp;amp;sectiontree=2,49</contact_form>
         <fax>202-225-1541</fax>
-        <twitter_id>repraulgrijalva</twitter_id>
+        <twitter_id>RepraulGrijalva</twitter_id>
         <youtube_id>raulgrijalvaaz07</youtube_id>
         <facebook_id>73539896233</facebook_id>
         <committees>
@@ -55574,7 +55684,7 @@
         <office>432 Cannon House Office Building</office>
         <contact_form>http://tomgraves.house.gov/contact/</contact_form>
         <fax>202-225-8272</fax>
-        <twitter_id>reptomgraves</twitter_id>
+        <twitter_id>RepTomGraves</twitter_id>
         <youtube_id>CongressmanGraves</youtube_id>
         <facebook_id>104548906262119</facebook_id>
         <committees>
@@ -56094,7 +56204,7 @@
         <office>1404 Longworth House Office Building</office>
         <contact_form>http://gowdy.house.gov/contact/</contact_form>
         <fax>202-226-1177</fax>
-        <twitter_id>tgowdysc</twitter_id>
+        <twitter_id>TGowdySC</twitter_id>
         <youtube_id>TGowdySC</youtube_id>
         <facebook_id>143059759084016</facebook_id>
         <committees>
@@ -56340,7 +56450,7 @@
         <website>http://gosar.house.gov</website>
         <office>504 Cannon House Office Building</office>
         <contact_form>http://gosar.house.gov/contact-me/email-me</contact_form>
-        <fax>200-226-9739</fax>
+        <fax>202-226-9739</fax>
         <twitter_id>RepGosar</twitter_id>
         <youtube_id>repgosar</youtube_id>
         <facebook_id>104329699641957</facebook_id>
@@ -56712,7 +56822,7 @@
         <office>2243 Rayburn House Office Building</office>
         <contact_form>http://gohmert.house.gov/contact/</contact_form>
         <fax>202-226-1230</fax>
-        <twitter_id>replouiegohmert</twitter_id>
+        <twitter_id>RepLouieGohmert</twitter_id>
         <youtube_id>GohmertTX01</youtube_id>
         <facebook_id>50375006903</facebook_id>
         <committees>
@@ -57258,7 +57368,7 @@
         <office>329 Cannon House Office Building</office>
         <contact_form>http://gibbs.house.gov/contact-me/email-me</contact_form>
         <fax>202-225-3394</fax>
-        <twitter_id>repbobgibbs</twitter_id>
+        <twitter_id>RepBobGibbs</twitter_id>
         <youtube_id>RepBobGibbs</youtube_id>
         <facebook_id>191159267565100</facebook_id>
         <committees>
@@ -57596,7 +57706,7 @@
         <office>2232 Rayburn House Office Building</office>
         <contact_form>http://garrett.house.gov/contact-me/email-me</contact_form>
         <fax>202-225-9048</fax>
-        <twitter_id>repgarrett</twitter_id>
+        <twitter_id>RepGarrett</twitter_id>
         <youtube_id>repscottgarrett</youtube_id>
         <facebook_id>6756553401</facebook_id>
         <committees>
@@ -57713,7 +57823,7 @@
         <office>213 Cannon House Office Building</office>
         <contact_form>http://gardner.house.gov/contact-me</contact_form>
         <fax>202-225-5870</fax>
-        <twitter_id>repcorygardner</twitter_id>
+        <twitter_id>RepCoryGardner</twitter_id>
         <youtube_id>CongressmanGardner</youtube_id>
         <facebook_id>160924893954206</facebook_id>
         <committees>
@@ -58658,7 +58768,7 @@
         <office>2350 Rayburn House Office Building</office>
         <contact_form>http://www.house.gov/formfoxx/IMA/issue_subscribe.htm</contact_form>
         <fax>202-225-2995</fax>
-        <twitter_id>virginiafoxx</twitter_id>
+        <twitter_id>VirginiaFoxx</twitter_id>
         <youtube_id>repvirginiafoxx</youtube_id>
         <facebook_id>RepVirginiaFoxx</facebook_id>
         <committees>
@@ -60024,7 +60134,7 @@
         <office>2301 Rayburn House Office Building</office>
         <contact_form>http://fattah.house.gov/?sectionid=8&amp;amp;sectiontree=8</contact_form>
         <fax>202-225-5392</fax>
-        <twitter_id>chakafattah</twitter_id>
+        <twitter_id>ChakaFattah</twitter_id>
         <youtube_id>ChakaFattah</youtube_id>
         <facebook_id>165961823475034</facebook_id>
         <committees>
@@ -60354,7 +60464,7 @@
         <office>117 Cannon House Office Building</office>
         <contact_form>http://farentholdforms.house.gov/contact/</contact_form>
         <fax>202-226-1134</fax>
-        <twitter_id>farenthold</twitter_id>
+        <twitter_id>Farenthold</twitter_id>
         <youtube_id>BlakeFarenthold</youtube_id>
         <facebook_id>186894244673001</facebook_id>
         <committees>
@@ -60638,7 +60748,7 @@
         <office>2422 Rayburn House Office Building</office>
         <contact_form>http://www.house.gov/writerep</contact_form>
         <fax>202-225-8757</fax>
-        <twitter_id>efaleomavaega</twitter_id>
+        <twitter_id>EFaleomavaega</twitter_id>
         <facebook_id>617466718276952</facebook_id>
         <committees>
             <committee>
@@ -61228,7 +61338,7 @@
         <office>2244 Rayburn House Office Building</office>
         <contact_form>http://ellison.house.gov/index.php?option=com_content&amp;amp;task=view&amp;amp;id=87</contact_form>
         <fax>202-225-4886</fax>
-        <twitter_id>keithellison</twitter_id>
+        <twitter_id>KeithEllison</twitter_id>
         <youtube_id>RepKeithEllison</youtube_id>
         <facebook_id>7997462059</facebook_id>
         <committees>
@@ -61353,7 +61463,7 @@
         <office>2445 Rayburn House Office Building</office>
         <contact_form>http://www.house.gov/writerep</contact_form>
         <fax>202-225-8714</fax>
-        <twitter_id>repdonnaedwards</twitter_id>
+        <twitter_id>RepDonnaEdwards</twitter_id>
         <youtube_id>RepDonnaFEdwards</youtube_id>
         <facebook_id>107297211756</facebook_id>
         <committees>
@@ -62420,7 +62530,7 @@
         <office>2328 Rayburn House Office Building</office>
         <contact_form>https://forms.house.gov/wyr/welcome.shtml</contact_form>
         <fax>202-226-0371</fax>
-        <twitter_id>john_dingell</twitter_id>
+        <twitter_id>John_Dingell</twitter_id>
         <facebook_id>87490183861</facebook_id>
         <committees>
             <committee>
@@ -62740,7 +62850,7 @@
         <office>1024 Longworth House Office Building</office>
         <contact_form>https://teddeutch.house.gov/Forms/WriteYourRep/default.aspx</contact_form>
         <fax>202-225-5974</fax>
-        <twitter_id>repteddeutch</twitter_id>
+        <twitter_id>RepTedDeutch</twitter_id>
         <youtube_id>congressmanteddeutch</youtube_id>
         <facebook_id>112179098816942</facebook_id>
         <committees>
@@ -63620,7 +63730,7 @@
         <office>2413 Rayburn House Office Building</office>
         <contact_form>http://delauro.house.gov/index.php?option=com_content&amp;amp;view=article&amp;amp;id=987&amp;amp;Itemid=7</contact_form>
         <fax>202-225-4890</fax>
-        <twitter_id>rosadelauro</twitter_id>
+        <twitter_id>RosaDeLauro</twitter_id>
         <youtube_id>rosadelauro</youtube_id>
         <facebook_id>181302611907634</facebook_id>
         <committees>
@@ -63910,7 +64020,6 @@
         <website>http://www.defazio.house.gov</website>
         <office>2134 Rayburn House Office Building</office>
         <contact_form>https://forms.house.gov/defazio/IMA/contact.html</contact_form>
-        <fax>202-225-0032</fax>
         <twitter_id>RepPeterDeFazio</twitter_id>
         <youtube_id>PeterDeFazio</youtube_id>
         <facebook_id>94324364811</facebook_id>
@@ -64715,7 +64824,7 @@
         <office>2352 Rayburn House Office Building</office>
         <contact_form>http://culbersonforms.house.gov/contact/</contact_form>
         <fax>202-225-4381</fax>
-        <twitter_id>congculberson</twitter_id>
+        <twitter_id>CongCulberson</twitter_id>
         <youtube_id>johnculbersontx07</youtube_id>
         <facebook_id>1751723339</facebook_id>
         <committees>
@@ -65045,7 +65154,7 @@
         <office>1436 Longworth House Office Building</office>
         <contact_form>http://crowley.house.gov/contact-me/email-me</contact_form>
         <fax>202-225-1909</fax>
-        <twitter_id>repjoecrowley</twitter_id>
+        <twitter_id>RepJoeCrowley</twitter_id>
         <youtube_id>RepJoeCrowley</youtube_id>
         <facebook_id>176197712425090</facebook_id>
         <committees>
@@ -65558,7 +65667,7 @@
         <office>2348 Rayburn House Office Building</office>
         <contact_form>http://forms.house.gov/courtney/webforms/contact-form.shtml</contact_form>
         <fax>202-225-4977</fax>
-        <twitter_id>repjoecourtney</twitter_id>
+        <twitter_id>RepJoeCourtney</twitter_id>
         <youtube_id>repcourtney</youtube_id>
         <facebook_id>330408799230</facebook_id>
         <committees>
@@ -65809,7 +65918,7 @@
         <office>1314 Longworth House Office Building</office>
         <contact_form>http://www.house.gov/formcosta/issue.htm</contact_form>
         <fax>202-225-9308</fax>
-        <twitter_id>repjimcosta</twitter_id>
+        <twitter_id>RepJimCosta</twitter_id>
         <youtube_id>RepJimCostaCA20</youtube_id>
         <facebook_id>RepJimCosta</facebook_id>
         <committees>
@@ -66011,7 +66120,7 @@
         <office>1536 Longworth House Office Building</office>
         <contact_form>https://forms.house.gov/cooper/webforms/issue_subscribe.html</contact_form>
         <fax>202-226-1035</fax>
-        <twitter_id>repjimcooper</twitter_id>
+        <twitter_id>RepJimCooper</twitter_id>
         <youtube_id>RepJimCooper</youtube_id>
         <facebook_id>JimCooper</facebook_id>
         <committees>
@@ -66210,7 +66319,7 @@
         <office>2426 Rayburn House Office Building</office>
         <contact_form>http://conyers.house.gov/index.cfm?FuseAction=Contact.OnlineContactForm</contact_form>
         <fax>202-225-0072</fax>
-        <twitter_id>repjohnconyers</twitter_id>
+        <twitter_id>RepJohnConyers</twitter_id>
         <youtube_id>JCMI14</youtube_id>
         <facebook_id>206947066849</facebook_id>
         <committees>
@@ -66764,7 +66873,7 @@
         <office>2458 Rayburn House Office Building</office>
         <contact_form>https://coleforms.house.gov/contact/default.aspx</contact_form>
         <fax>202-225-3512</fax>
-        <twitter_id>tomcoleok04</twitter_id>
+        <twitter_id>TomColeOK04</twitter_id>
         <youtube_id>reptomcole</youtube_id>
         <facebook_id>146497782066300</facebook_id>
         <committees>
@@ -66773,6 +66882,22 @@
                 <committee_id>HSAP20</committee_id>
                 <chamber>house</chamber>
                 <phone>(202) 225-2141</phone>
+                <subcommittee>true</subcommittee>
+                <parent_committee_id>HSAP</parent_committee_id>
+                <parent_committee>
+                    <name>House Committee on Appropriations</name>
+                    <committee_id>HSAP</committee_id>
+                    <chamber>house</chamber>
+                    <office>H305 CAPITOL</office>
+                    <phone>(202) 225-2771</phone>
+                    <subcommittee>false</subcommittee>
+                </parent_committee>
+            </committee>
+            <committee>
+                <name>Legislative Branch</name>
+                <committee_id>HSAP24</committee_id>
+                <chamber>house</chamber>
+                <phone>(202) 226-7252</phone>
                 <subcommittee>true</subcommittee>
                 <parent_committee_id>HSAP</parent_committee_id>
                 <parent_committee>
@@ -66969,7 +67094,7 @@
         <office>2404 Rayburn House Office Building</office>
         <contact_form>http://cohen.house.gov/index.php?option=com_email_form&amp;amp;Itemid=113</contact_form>
         <fax>202-225-5663</fax>
-        <twitter_id>repcohen</twitter_id>
+        <twitter_id>RepCohen</twitter_id>
         <youtube_id>repcohen</youtube_id>
         <facebook_id>111456965545421</facebook_id>
         <committees>
@@ -67658,7 +67783,7 @@
         <office>242 Cannon House Office Building</office>
         <contact_form>http://clyburn.house.gov/contact-me/email-me</contact_form>
         <fax>202-225-2313</fax>
-        <twitter_id>clyburn</twitter_id>
+        <twitter_id>Clyburn</twitter_id>
         <youtube_id>repjamesclyburn</youtube_id>
         <facebook_id>127744320598870</facebook_id>
         <photoUrl>http://upload.wikimedia.org/wikipedia/commons/d/dd/James_Clyburn%2C_official_Congressional_Majority_Whip_photo.jpg</photoUrl>
@@ -67689,7 +67814,7 @@
         <office>2335 Rayburn House Office Building</office>
         <contact_form>http://cleaver.house.gov/contact-me/email-me</contact_form>
         <fax>202-225-4403</fax>
-        <twitter_id>repcleaver</twitter_id>
+        <twitter_id>RepCleaver</twitter_id>
         <facebook_id>7954512692</facebook_id>
         <committees>
             <committee>
@@ -68167,7 +68292,7 @@
         <office>128 Cannon House Office Building</office>
         <contact_form>http://cicilline.house.gov/contact-me/email-me</contact_form>
         <fax>202- 225-3290</fax>
-        <twitter_id>repcicilline</twitter_id>
+        <twitter_id>RepCicilline</twitter_id>
         <youtube_id>RepDavidCicilline</youtube_id>
         <facebook_id>186949061341027</facebook_id>
         <committees>
@@ -68624,7 +68749,7 @@
         <office>2464 Rayburn House Office Building</office>
         <contact_form>http://chaffetz.house.gov/contact-me/email-me</contact_form>
         <fax>202-225-5629</fax>
-        <twitter_id>jasoninthehouse</twitter_id>
+        <twitter_id>JasonInTheHouse</twitter_id>
         <youtube_id>JasonChaffetz</youtube_id>
         <facebook_id>390419731073316</facebook_id>
         <committees>
@@ -69809,7 +69934,7 @@
         <office>1406 Longworth House Office Building</office>
         <contact_form>https://forms.house.gov/carney/webforms/email-me.shtml</contact_form>
         <fax>202-225-2291</fax>
-        <twitter_id>johncarneyde</twitter_id>
+        <twitter_id>JohnCarneyde</twitter_id>
         <youtube_id>RepJohnCarney</youtube_id>
         <facebook_id>156024857781159</facebook_id>
         <committees>
@@ -70475,7 +70600,7 @@
         <office>303 Cannon House Office Building</office>
         <contact_form>https://writerep.house.gov/writerep/welcome.shtml</contact_form>
         <fax>202-225-0011</fax>
-        <twitter_id>gopleader</twitter_id>
+        <twitter_id>GOPLeader</twitter_id>
         <youtube_id>EricCantor</youtube_id>
         <photoUrl>http://upload.wikimedia.org/wikipedia/commons/9/96/Eric_Cantor%2C_official_113th_Congress_photo_portrait.jpg</photoUrl>
     </legislator>
@@ -70906,7 +71031,7 @@
         <office>2305 Rayburn House Office Building</office>
         <contact_form>https://butterfield.house.gov/email-congressman-butterfield</contact_form>
         <fax>202-225-3354</fax>
-        <twitter_id>gkbutterfield</twitter_id>
+        <twitter_id>GKButterfield</twitter_id>
         <youtube_id>GKBNC01</youtube_id>
         <facebook_id>274687979233940</facebook_id>
         <committees>
@@ -71038,7 +71163,7 @@
         <office>2336 Rayburn House Office Building</office>
         <contact_form>https://forms.house.gov/wyr/welcome.shtml</contact_form>
         <fax>202-225-2919</fax>
-        <twitter_id>michaelcburgess</twitter_id>
+        <twitter_id>MichaelCBurgess</twitter_id>
         <youtube_id>michaelcburgessmd</youtube_id>
         <facebook_id>6916472567</facebook_id>
         <committees>
@@ -72343,7 +72468,7 @@
         <office>2263 Rayburn House Office Building</office>
         <contact_form>http://braley.house.gov/contact</contact_form>
         <fax>202-225-6666</fax>
-        <twitter_id>brucebraley</twitter_id>
+        <twitter_id>BruceBraley</twitter_id>
         <youtube_id>repbrucebraley</youtube_id>
         <facebook_id>178887452188843</facebook_id>
         <committees>
@@ -73092,7 +73217,7 @@
         <office>1111 Longworth House Office Building</office>
         <contact_form>https://forms.house.gov/blumenauer/webforms/issue_subscribe.html</contact_form>
         <fax>202-225-8941</fax>
-        <twitter_id>blumenauermedia</twitter_id>
+        <twitter_id>BlumenauerMedia</twitter_id>
         <youtube_id>RepBlumenauer</youtube_id>
         <committees>
             <committee>
@@ -73481,7 +73606,7 @@
         <office>306 Cannon House Office Building</office>
         <contact_form>http://timbishop.house.gov/?sectionid=96&amp;amp;sectiontree=7,96</contact_form>
         <fax>202-225-3143</fax>
-        <twitter_id>timbishopny</twitter_id>
+        <twitter_id>TimBishopNY</twitter_id>
         <youtube_id>timbishop01</youtube_id>
         <facebook_id>7940339401</facebook_id>
         <committees>
@@ -74514,7 +74639,7 @@
         <office>1226 Longworth House Office Building</office>
         <contact_form>https://forms.house.gov/becerra/webforms/issue_subscribe.html</contact_form>
         <fax>202-225-2202</fax>
-        <twitter_id>repbecerra</twitter_id>
+        <twitter_id>RepBecerra</twitter_id>
         <youtube_id>XavierBecerra</youtube_id>
         <facebook_id>90311772229</facebook_id>
         <committees>
@@ -74969,7 +75094,7 @@
         <office>2202 Rayburn House Office Building</office>
         <contact_form>http://barrow.house.gov/contact/email-me</contact_form>
         <fax>202-225-3377</fax>
-        <twitter_id>repjohnbarrow</twitter_id>
+        <twitter_id>RepJohnBarrow</twitter_id>
         <youtube_id>RepJohnBarrow</youtube_id>
         <facebook_id>285483767395</facebook_id>
         <committees>
@@ -75930,7 +76055,7 @@
         <office>114 Cannon House Office Building</office>
         <contact_form>http://amash.house.gov/contact-me/email-me</contact_form>
         <fax>202-225-5144</fax>
-        <twitter_id>repjustinamash</twitter_id>
+        <twitter_id>RepJustinAmash</twitter_id>
         <youtube_id>repjustinamash</youtube_id>
         <facebook_id>173604349345646</facebook_id>
         <committees>

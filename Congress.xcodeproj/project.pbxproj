@@ -1178,6 +1178,12 @@
 		00C6859D16BB767000865F27 /* CongressAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C6859C16BB767000865F27 /* CongressAppDelegate.m */; };
 		00C685A616BB767000865F27 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C685A416BB767000865F27 /* MainStoryboard.storyboard */; };
 		00C685A916BB767000865F27 /* FrontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C685A816BB767000865F27 /* FrontViewController.m */; };
+		00CE296D187F9F2400DEFCDD /* M001192_thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 00CE2967187F9F2400DEFCDD /* M001192_thumb.png */; };
+		00CE296E187F9F2400DEFCDD /* M001192.png in Resources */ = {isa = PBXBuildFile; fileRef = 00CE2968187F9F2400DEFCDD /* M001192.png */; };
+		00CE296F187F9F2400DEFCDD /* C001101_thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 00CE2969187F9F2400DEFCDD /* C001101_thumb.png */; };
+		00CE2970187F9F2400DEFCDD /* C001101.png in Resources */ = {isa = PBXBuildFile; fileRef = 00CE296A187F9F2400DEFCDD /* C001101.png */; };
+		00CE2971187F9F2400DEFCDD /* B001289_thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 00CE296B187F9F2400DEFCDD /* B001289_thumb.png */; };
+		00CE2972187F9F2400DEFCDD /* B001289.png in Resources */ = {isa = PBXBuildFile; fileRef = 00CE296C187F9F2400DEFCDD /* B001289.png */; };
 		00E88D3817D6B3570061F895 /* iPhoneIcon@120.png in Resources */ = {isa = PBXBuildFile; fileRef = 00E88D3717D6B3570061F895 /* iPhoneIcon@120.png */; };
 		00E88D3A17D6B3A90061F895 /* spotlightiPhoneIcon@80.png in Resources */ = {isa = PBXBuildFile; fileRef = 00E88D3917D6B3A90061F895 /* spotlightiPhoneIcon@80.png */; };
 		00F6DE11182FFE41004699FE /* B001288_thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 00F6DE0F182FFE41004699FE /* B001288_thumb.png */; };
@@ -2368,6 +2374,12 @@
 		00C685A516BB767000865F27 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		00C685A716BB767000865F27 /* FrontViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrontViewController.h; sourceTree = "<group>"; };
 		00C685A816BB767000865F27 /* FrontViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrontViewController.m; sourceTree = "<group>"; };
+		00CE2967187F9F2400DEFCDD /* M001192_thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = M001192_thumb.png; sourceTree = "<group>"; };
+		00CE2968187F9F2400DEFCDD /* M001192.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = M001192.png; sourceTree = "<group>"; };
+		00CE2969187F9F2400DEFCDD /* C001101_thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = C001101_thumb.png; sourceTree = "<group>"; };
+		00CE296A187F9F2400DEFCDD /* C001101.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = C001101.png; sourceTree = "<group>"; };
+		00CE296B187F9F2400DEFCDD /* B001289_thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = B001289_thumb.png; sourceTree = "<group>"; };
+		00CE296C187F9F2400DEFCDD /* B001289.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = B001289.png; sourceTree = "<group>"; };
 		00E88D3717D6B3570061F895 /* iPhoneIcon@120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhoneIcon@120.png"; sourceTree = "<group>"; };
 		00E88D3917D6B3A90061F895 /* spotlightiPhoneIcon@80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spotlightiPhoneIcon@80.png"; sourceTree = "<group>"; };
 		00F6DE0F182FFE41004699FE /* B001288_thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = B001288_thumb.png; sourceTree = "<group>"; };
@@ -2587,6 +2599,12 @@
 		00C685AF16BB79B500865F27 /* Photos */ = {
 			isa = PBXGroup;
 			children = (
+				00CE2967187F9F2400DEFCDD /* M001192_thumb.png */,
+				00CE2968187F9F2400DEFCDD /* M001192.png */,
+				00CE2969187F9F2400DEFCDD /* C001101_thumb.png */,
+				00CE296A187F9F2400DEFCDD /* C001101.png */,
+				00CE296B187F9F2400DEFCDD /* B001289_thumb.png */,
+				00CE296C187F9F2400DEFCDD /* B001289.png */,
 				00F6DE0F182FFE41004699FE /* B001288_thumb.png */,
 				00F6DE10182FFE41004699FE /* B001288.png */,
 				00A3B08F17E4E3F900783C91 /* A000055_thumb.png */,
@@ -4192,6 +4210,7 @@
 				00A3B61017E4E40500783C91 /* F000460.png in Resources */,
 				00A3B5B817E4E40500783C91 /* D000399.png in Resources */,
 				00BC6EAB170FE7D900DA13FC /* MP.png in Resources */,
+				00CE2972187F9F2400DEFCDD /* B001289.png in Resources */,
 				00A3B81B17E4E40500783C91 /* R000597_thumb.png in Resources */,
 				00A3B81417E4E40500783C91 /* R000593.png in Resources */,
 				00A3B51717E4E40500783C91 /* B001271_thumb.png in Resources */,
@@ -4201,6 +4220,7 @@
 				00A3B71217E4E40500783C91 /* L000575.png in Resources */,
 				00A3B6B717E4E40500783C91 /* J000294_thumb.png in Resources */,
 				00A3B84A17E4E40500783C91 /* S001148.png in Resources */,
+				00CE2971187F9F2400DEFCDD /* B001289_thumb.png in Resources */,
 				00A3B7D817E4E40500783C91 /* Q000023.png in Resources */,
 				00A3B6AE17E4E40500783C91 /* J000289.png in Resources */,
 				00BC6EAC170FE7D900DA13FC /* MS.png in Resources */,
@@ -4230,6 +4250,7 @@
 				00BC6EAF170FE7D900DA13FC /* ND.png in Resources */,
 				00A3B89017E4E40500783C91 /* T000461.png in Resources */,
 				00A3B83D17E4E40500783C91 /* S000522_thumb.png in Resources */,
+				00CE296F187F9F2400DEFCDD /* C001101_thumb.png in Resources */,
 				00A3B50117E4E40500783C91 /* B001255_thumb.png in Resources */,
 				00A3B4F317E4E40500783C91 /* B001242_thumb.png in Resources */,
 				00A3B7CE17E4E40500783C91 /* P000604.png in Resources */,
@@ -4415,6 +4436,7 @@
 				00A3B7F917E4E40500783C91 /* R000577_thumb.png in Resources */,
 				00A3B71617E4E40500783C91 /* L000577.png in Resources */,
 				00A3B56817E4E40500783C91 /* C001049.png in Resources */,
+				00CE2970187F9F2400DEFCDD /* C001101.png in Resources */,
 				00A3B89617E4E40500783C91 /* T000464.png in Resources */,
 				00A3B4E017E4E40500783C91 /* B000575.png in Resources */,
 				00A3B8B017E4E40500783C91 /* V000128.png in Resources */,
@@ -4726,6 +4748,7 @@
 				00A3B8F417E4E40500783C91 /* Y000062.png in Resources */,
 				00A79542181C1CD700E8A2B7 /* senate_logo.png in Resources */,
 				00A3B6A817E4E40500783C91 /* J000177.png in Resources */,
+				00CE296E187F9F2400DEFCDD /* M001192.png in Resources */,
 				00A3B67117E4E40500783C91 /* H001048_thumb.png in Resources */,
 				00A3B87417E4E40500783C91 /* S001188.png in Resources */,
 				00A3B6AD17E4E40500783C91 /* J000289_thumb.png in Resources */,
@@ -4851,6 +4874,7 @@
 				001A059A171261430054B66C /* Default@2x.png in Resources */,
 				00A3B5F917E4E40500783C91 /* F000445_thumb.png in Resources */,
 				00A3B62A17E4E40500783C91 /* G000550.png in Resources */,
+				00CE296D187F9F2400DEFCDD /* M001192_thumb.png in Resources */,
 				00A3B7F717E4E40500783C91 /* R000576_thumb.png in Resources */,
 				00A3B76517E4E40500783C91 /* M001176_thumb.png in Resources */,
 				00A3B5D317E4E40500783C91 /* D000618_thumb.png in Resources */,
