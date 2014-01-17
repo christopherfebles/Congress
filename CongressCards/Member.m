@@ -66,7 +66,7 @@
 
 - (NSString *) photoFileName {
     if ( !_photoFileName ) {
-        _photoFileName = [self.bioguideId stringByAppendingString:@".png"];
+        _photoFileName = [self.bioguideId stringByAppendingString:@".jpg"];
     }
     
     return _photoFileName;
@@ -74,7 +74,7 @@
 
 - (NSString *) thumbnailFileName {
     if ( !_thumbnailFileName ) {
-        _thumbnailFileName = [self.bioguideId stringByAppendingString:@"_thumb.png"];
+        _thumbnailFileName = [self.bioguideId stringByAppendingString:@"_thumb.jpg"];
     }
     
     return _thumbnailFileName;
