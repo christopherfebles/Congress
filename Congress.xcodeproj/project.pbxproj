@@ -100,6 +100,7 @@
 		00C6859D16BB767000865F27 /* CongressAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C6859C16BB767000865F27 /* CongressAppDelegate.m */; };
 		00C685A616BB767000865F27 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C685A416BB767000865F27 /* MainStoryboard.storyboard */; };
 		00C685A916BB767000865F27 /* FrontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C685A816BB767000865F27 /* FrontViewController.m */; };
+		00CA59031894F8AE00D9B19B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 00CA59021894F8AE00D9B19B /* README.md */; };
 		00D100001888DA7400EBDA7F /* V000127_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00D1FBCA1888DA7300EBDA7F /* V000127_thumb.jpg */; };
 		00D100011888DA7400EBDA7F /* V000127.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00D1FBCB1888DA7300EBDA7F /* V000127.jpg */; };
 		00D100021888DA7400EBDA7F /* V000128_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00D1FBCC1888DA7300EBDA7F /* V000128_thumb.jpg */; };
@@ -1288,6 +1289,7 @@
 		00C685A516BB767000865F27 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		00C685A716BB767000865F27 /* FrontViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrontViewController.h; sourceTree = "<group>"; };
 		00C685A816BB767000865F27 /* FrontViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrontViewController.m; sourceTree = "<group>"; };
+		00CA59021894F8AE00D9B19B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		00D1F7DE1888DA6B00EBDA7F /* A000055_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = A000055_thumb.jpg; sourceTree = "<group>"; };
 		00D1F7DF1888DA6B00EBDA7F /* A000055.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = A000055.jpg; sourceTree = "<group>"; };
 		00D1F7E01888DA6B00EBDA7F /* A000210_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = A000210_thumb.jpg; sourceTree = "<group>"; };
@@ -3658,6 +3660,7 @@
 				001A0595171260F90054B66C /* Default-568h@2x.png */,
 				001A0599171261430054B66C /* Default@2x.png */,
 				001A05971712610D0054B66C /* Default.png */,
+				00CA59021894F8AE00D9B19B /* README.md */,
 				00C6859516BB767000865F27 /* InfoPlist.strings */,
 				00C6859816BB767000865F27 /* main.m */,
 				00C6859A16BB767000865F27 /* Congress-Prefix.pch */,
@@ -4477,6 +4480,7 @@
 				00D1FD911888DA7400EBDA7F /* G000564.jpg in Resources */,
 				00D1FFC61888DA7400EBDA7F /* S001188_thumb.jpg in Resources */,
 				00D1FC631888DA7400EBDA7F /* B001270.jpg in Resources */,
+				00CA59031894F8AE00D9B19B /* README.md in Resources */,
 				00D1FD5A1888DA7400EBDA7F /* F000457_thumb.jpg in Resources */,
 				00BC6EBC170FE7D900DA13FC /* SC.png in Resources */,
 				00D1FF8B1888DA7400EBDA7F /* S000364.jpg in Resources */,
