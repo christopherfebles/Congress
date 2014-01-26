@@ -18,7 +18,6 @@
         <votesmart_id>27584</votesmart_id>
         <crp_id>N00035380</crp_id>
         <first_name>Bradley</first_name>
-        <nickname></nickname>
         <last_name>Byrne</last_name>
         <photoUrl>http://upload.wikimedia.org/wikipedia/commons/a/ae/Bradley_Byrne%2C_TV_Interview%2C_ALGOP_Forum%2C_June_25_2010.jpg</photoUrl>
     </legislator>
@@ -40,10 +39,57 @@
         <votesmart_id>35858</votesmart_id>
         <crp_id>N00035278</crp_id>
         <first_name>Katherine</first_name>
-        <nickname></nickname>
         <last_name>Clark</last_name>
         <middle_name>M.</middle_name>
+        <phone>202-225-2836</phone>
         <website>http://katherineclark.house.gov</website>
+        <office>2108 Rayburn House Office Building</office>
+        <committees>
+            <committee>
+                <name>House Committee on Natural Resources</name>
+                <committee_id>HSII</committee_id>
+                <chamber>house</chamber>
+                <url>http://naturalresources.house.gov/</url>
+                <office>1324 LHOB</office>
+                <phone>(202) 225-2761</phone>
+                <subcommittee>false</subcommittee>
+                <subcommittees>
+                    <name>Energy and Mineral Resources</name>
+                    <committee_id>HSII06</committee_id>
+                    <chamber>house</chamber>
+                    <phone>(202) 225-9297</phone>
+                    <subcommittee>false</subcommittee>
+                </subcommittees>
+                <subcommittees>
+                    <name>Public Lands and Environmental Regulation</name>
+                    <committee_id>HSII10</committee_id>
+                    <chamber>house</chamber>
+                    <phone>(202) 226-7736</phone>
+                    <subcommittee>false</subcommittee>
+                </subcommittees>
+                <subcommittees>
+                    <name>Water and Power</name>
+                    <committee_id>HSII13</committee_id>
+                    <chamber>house</chamber>
+                    <phone>(202) 225-8331</phone>
+                    <subcommittee>false</subcommittee>
+                </subcommittees>
+                <subcommittees>
+                    <name>Fisheries, Wildlife, Oceans and Insular Affairs</name>
+                    <committee_id>HSII22</committee_id>
+                    <chamber>house</chamber>
+                    <phone>(202) 226-0200</phone>
+                    <subcommittee>false</subcommittee>
+                </subcommittees>
+                <subcommittees>
+                    <name>Indian and Alaska Native Affairs</name>
+                    <committee_id>HSII24</committee_id>
+                    <chamber>house</chamber>
+                    <phone>(202) 226-9725</phone>
+                    <subcommittee>false</subcommittee>
+                </subcommittees>
+            </committee>
+        </committees>
         <photoUrl>http://upload.wikimedia.org/wikipedia/en/8/89/Katherine_Clark_2013.jpg</photoUrl>
     </legislator>
     <legislator>
@@ -64,13 +110,102 @@
         <votesmart_id>145379</votesmart_id>
         <crp_id>N00035593</crp_id>
         <first_name>Vance</first_name>
-        <nickname></nickname>
         <last_name>McAllister</last_name>
         <phone>202-225-8490</phone>
         <website>http://mcallister.house.gov</website>
         <office>316 Cannon House Office Building</office>
         <twitter_id>RepMcAllister</twitter_id>
         <facebook_id>218352868343621</facebook_id>
+        <committees>
+            <committee>
+                <name>House Committee on Natural Resources</name>
+                <committee_id>HSII</committee_id>
+                <chamber>house</chamber>
+                <url>http://naturalresources.house.gov/</url>
+                <office>1324 LHOB</office>
+                <phone>(202) 225-2761</phone>
+                <subcommittee>false</subcommittee>
+                <subcommittees>
+                    <name>Energy and Mineral Resources</name>
+                    <committee_id>HSII06</committee_id>
+                    <chamber>house</chamber>
+                    <phone>(202) 225-9297</phone>
+                    <subcommittee>false</subcommittee>
+                </subcommittees>
+                <subcommittees>
+                    <name>Public Lands and Environmental Regulation</name>
+                    <committee_id>HSII10</committee_id>
+                    <chamber>house</chamber>
+                    <phone>(202) 226-7736</phone>
+                    <subcommittee>false</subcommittee>
+                </subcommittees>
+                <subcommittees>
+                    <name>Water and Power</name>
+                    <committee_id>HSII13</committee_id>
+                    <chamber>house</chamber>
+                    <phone>(202) 225-8331</phone>
+                    <subcommittee>false</subcommittee>
+                </subcommittees>
+                <subcommittees>
+                    <name>Fisheries, Wildlife, Oceans and Insular Affairs</name>
+                    <committee_id>HSII22</committee_id>
+                    <chamber>house</chamber>
+                    <phone>(202) 226-0200</phone>
+                    <subcommittee>false</subcommittee>
+                </subcommittees>
+                <subcommittees>
+                    <name>Indian and Alaska Native Affairs</name>
+                    <committee_id>HSII24</committee_id>
+                    <chamber>house</chamber>
+                    <phone>(202) 226-9725</phone>
+                    <subcommittee>false</subcommittee>
+                </subcommittees>
+            </committee>
+            <committee>
+                <name>House Committee on Agriculture</name>
+                <committee_id>HSAG</committee_id>
+                <chamber>house</chamber>
+                <url>http://agriculture.house.gov/</url>
+                <office>1301 LHOB</office>
+                <phone>(202) 225-2171</phone>
+                <subcommittee>false</subcommittee>
+                <subcommittees>
+                    <name>Conservation, Energy, and Forestry</name>
+                    <committee_id>HSAG15</committee_id>
+                    <chamber>house</chamber>
+                    <phone>(202) 225-2171</phone>
+                    <subcommittee>false</subcommittee>
+                </subcommittees>
+                <subcommittees>
+                    <name>Department Operations, Oversight, and Nutrition</name>
+                    <committee_id>HSAG22</committee_id>
+                    <chamber>house</chamber>
+                    <phone>(202) 225-2171</phone>
+                    <subcommittee>false</subcommittee>
+                </subcommittees>
+                <subcommittees>
+                    <name>General Farm Commodities and Risk Management</name>
+                    <committee_id>HSAG16</committee_id>
+                    <chamber>house</chamber>
+                    <phone>(202) 225-2171</phone>
+                    <subcommittee>false</subcommittee>
+                </subcommittees>
+                <subcommittees>
+                    <name>Livestock, Rural Development, and Credit</name>
+                    <committee_id>HSAG29</committee_id>
+                    <chamber>house</chamber>
+                    <phone>(202) 225-2171</phone>
+                    <subcommittee>false</subcommittee>
+                </subcommittees>
+                <subcommittees>
+                    <name>Horticulture, Research, Biotechnology, and Foreign Agriculture</name>
+                    <committee_id>HSAG14</committee_id>
+                    <chamber>house</chamber>
+                    <phone>(202) 225-2171</phone>
+                    <subcommittee>false</subcommittee>
+                </subcommittees>
+            </committee>
+        </committees>
         <photoUrl>http://upload.wikimedia.org/wikipedia/en/4/4b/Vance_McAllister.jpg</photoUrl>
     </legislator>
     <legislator>
@@ -885,239 +1020,97 @@
         <facebook_id>242042855928904</facebook_id>
         <committees>
             <committee>
-                <name>House Committee on Homeland Security</name>
-                <committee_id>HSHM</committee_id>
+                <name>House Committee on Appropriations</name>
+                <committee_id>HSAP</committee_id>
                 <chamber>house</chamber>
-                <url>http://homeland.house.gov/</url>
-                <office>H2-176 FHOB</office>
-                <phone>(202) 226-8417</phone>
+                <url>http://appropriations.house.gov/</url>
+                <office>H305 CAPITOL</office>
+                <phone>(202) 225-2771</phone>
                 <subcommittee>false</subcommittee>
                 <subcommittees>
-                    <name>Border and Maritime Security</name>
-                    <committee_id>HSHM11</committee_id>
+                    <name>Agriculture, Rural Development, Food and Drug Administration, and Related Agencies</name>
+                    <committee_id>HSAP01</committee_id>
                     <chamber>house</chamber>
-                    <phone>(202) 226-8417</phone>
+                    <phone>(202) 225-2638</phone>
                     <subcommittee>false</subcommittee>
                 </subcommittees>
                 <subcommittees>
-                    <name>Emergency Preparedness, Response and Communications</name>
-                    <committee_id>HSHM12</committee_id>
+                    <name>Commerce, Justice, Science, and Related Agencies</name>
+                    <committee_id>HSAP19</committee_id>
                     <chamber>house</chamber>
-                    <phone>(202) 226-8417</phone>
+                    <phone>(202) 225-3351</phone>
                     <subcommittee>false</subcommittee>
                 </subcommittees>
                 <subcommittees>
-                    <name>Cybersecurity, Infrastructure Protection, and Security Technologies</name>
-                    <committee_id>HSHM08</committee_id>
+                    <name>Defense</name>
+                    <committee_id>HSAP02</committee_id>
                     <chamber>house</chamber>
-                    <phone>(202) 226-8417</phone>
+                    <phone>(202) 225-2847</phone>
                     <subcommittee>false</subcommittee>
                 </subcommittees>
                 <subcommittees>
-                    <name>Counterterrorism and Intelligence</name>
-                    <committee_id>HSHM05</committee_id>
+                    <name>Energy and Water Development, and Related Agencies</name>
+                    <committee_id>HSAP10</committee_id>
                     <chamber>house</chamber>
-                    <phone>(202) 226-8417</phone>
+                    <phone>(202) 225-3421</phone>
                     <subcommittee>false</subcommittee>
                 </subcommittees>
                 <subcommittees>
-                    <name>Oversight and Management Efficiency</name>
-                    <committee_id>HSHM09</committee_id>
+                    <name>Financial Services and General Government</name>
+                    <committee_id>HSAP23</committee_id>
                     <chamber>house</chamber>
-                    <phone>(202) 226-8417</phone>
+                    <phone>(202) 225-7245</phone>
                     <subcommittee>false</subcommittee>
                 </subcommittees>
                 <subcommittees>
-                    <name>Transportation Security</name>
-                    <committee_id>HSHM07</committee_id>
+                    <name>Homeland Security</name>
+                    <committee_id>HSAP15</committee_id>
                     <chamber>house</chamber>
-                    <phone>(202) 226-8417</phone>
-                    <subcommittee>false</subcommittee>
-                </subcommittees>
-            </committee>
-            <committee>
-                <name>Border and Maritime Security</name>
-                <committee_id>HSHM11</committee_id>
-                <chamber>house</chamber>
-                <phone>(202) 226-8417</phone>
-                <subcommittee>true</subcommittee>
-                <parent_committee_id>HSHM</parent_committee_id>
-                <parent_committee>
-                    <name>House Committee on Homeland Security</name>
-                    <committee_id>HSHM</committee_id>
-                    <chamber>house</chamber>
-                    <office>H2-176 FHOB</office>
-                    <phone>(202) 226-8417</phone>
-                    <subcommittee>false</subcommittee>
-                </parent_committee>
-            </committee>
-            <committee>
-                <name>Counterterrorism and Intelligence</name>
-                <committee_id>HSHM05</committee_id>
-                <chamber>house</chamber>
-                <phone>(202) 226-8417</phone>
-                <subcommittee>true</subcommittee>
-                <parent_committee_id>HSHM</parent_committee_id>
-                <parent_committee>
-                    <name>House Committee on Homeland Security</name>
-                    <committee_id>HSHM</committee_id>
-                    <chamber>house</chamber>
-                    <office>H2-176 FHOB</office>
-                    <phone>(202) 226-8417</phone>
-                    <subcommittee>false</subcommittee>
-                </parent_committee>
-            </committee>
-            <committee>
-                <name>House Committee on Science, Space, and Technology</name>
-                <committee_id>HSSY</committee_id>
-                <chamber>house</chamber>
-                <url>http://science.house.gov/</url>
-                <office>2321 RHOB</office>
-                <phone>(202) 225-6371</phone>
-                <subcommittee>false</subcommittee>
-                <subcommittees>
-                    <name>Energy</name>
-                    <committee_id>HSSY20</committee_id>
-                    <chamber>house</chamber>
-                    <phone>(202) 225-6371</phone>
+                    <phone>(202) 225-5834</phone>
                     <subcommittee>false</subcommittee>
                 </subcommittees>
                 <subcommittees>
-                    <name>Oversight</name>
-                    <committee_id>HSSY21</committee_id>
+                    <name>Interior, Environment, and Related Agencies</name>
+                    <committee_id>HSAP06</committee_id>
                     <chamber>house</chamber>
-                    <phone>(202) 225-6371</phone>
+                    <phone>(202) 225-3081</phone>
                     <subcommittee>false</subcommittee>
                 </subcommittees>
                 <subcommittees>
-                    <name>Space</name>
-                    <committee_id>HSSY16</committee_id>
+                    <name>Labor, Health and Human Services, Education, and Related Agencies</name>
+                    <committee_id>HSAP07</committee_id>
                     <chamber>house</chamber>
-                    <phone>(202) 225-6371</phone>
+                    <phone>(202) 225-3508</phone>
                     <subcommittee>false</subcommittee>
                 </subcommittees>
                 <subcommittees>
-                    <name>Environment</name>
-                    <committee_id>HSSY18</committee_id>
+                    <name>Legislative Branch</name>
+                    <committee_id>HSAP24</committee_id>
                     <chamber>house</chamber>
-                    <phone>(202) 225-6371</phone>
+                    <phone>(202) 226-7252</phone>
                     <subcommittee>false</subcommittee>
                 </subcommittees>
                 <subcommittees>
-                    <name>Research and Technology</name>
-                    <committee_id>HSSY15</committee_id>
+                    <name>Military Construction, Veterans Affairs, and Related Agencies</name>
+                    <committee_id>HSAP18</committee_id>
                     <chamber>house</chamber>
-                    <phone>(202) 225-6371</phone>
-                    <subcommittee>false</subcommittee>
-                </subcommittees>
-            </committee>
-            <committee>
-                <name>Space</name>
-                <committee_id>HSSY16</committee_id>
-                <chamber>house</chamber>
-                <phone>(202) 225-6371</phone>
-                <subcommittee>true</subcommittee>
-                <parent_committee_id>HSSY</parent_committee_id>
-                <parent_committee>
-                    <name>House Committee on Science, Space, and Technology</name>
-                    <committee_id>HSSY</committee_id>
-                    <chamber>house</chamber>
-                    <office>2321 RHOB</office>
-                    <phone>(202) 225-6371</phone>
-                    <subcommittee>false</subcommittee>
-                </parent_committee>
-            </committee>
-            <committee>
-                <name>Environment</name>
-                <committee_id>HSSY18</committee_id>
-                <chamber>house</chamber>
-                <phone>(202) 225-6371</phone>
-                <subcommittee>true</subcommittee>
-                <parent_committee_id>HSSY</parent_committee_id>
-                <parent_committee>
-                    <name>House Committee on Science, Space, and Technology</name>
-                    <committee_id>HSSY</committee_id>
-                    <chamber>house</chamber>
-                    <office>2321 RHOB</office>
-                    <phone>(202) 225-6371</phone>
-                    <subcommittee>false</subcommittee>
-                </parent_committee>
-            </committee>
-            <committee>
-                <name>House Committee on Natural Resources</name>
-                <committee_id>HSII</committee_id>
-                <chamber>house</chamber>
-                <url>http://naturalresources.house.gov/</url>
-                <office>1324 LHOB</office>
-                <phone>(202) 225-2761</phone>
-                <subcommittee>false</subcommittee>
-                <subcommittees>
-                    <name>Energy and Mineral Resources</name>
-                    <committee_id>HSII06</committee_id>
-                    <chamber>house</chamber>
-                    <phone>(202) 225-9297</phone>
+                    <phone>(202) 225-3047</phone>
                     <subcommittee>false</subcommittee>
                 </subcommittees>
                 <subcommittees>
-                    <name>Public Lands and Environmental Regulation</name>
-                    <committee_id>HSII10</committee_id>
+                    <name>State, Foreign Operations, and Related Programs</name>
+                    <committee_id>HSAP04</committee_id>
                     <chamber>house</chamber>
-                    <phone>(202) 226-7736</phone>
+                    <phone>(202) 225-2041</phone>
                     <subcommittee>false</subcommittee>
                 </subcommittees>
                 <subcommittees>
-                    <name>Water and Power</name>
-                    <committee_id>HSII13</committee_id>
+                    <name>Transportation, and Housing and Urban Development, and Related Agencies</name>
+                    <committee_id>HSAP20</committee_id>
                     <chamber>house</chamber>
-                    <phone>(202) 225-8331</phone>
+                    <phone>(202) 225-2141</phone>
                     <subcommittee>false</subcommittee>
                 </subcommittees>
-                <subcommittees>
-                    <name>Fisheries, Wildlife, Oceans and Insular Affairs</name>
-                    <committee_id>HSII22</committee_id>
-                    <chamber>house</chamber>
-                    <phone>(202) 226-0200</phone>
-                    <subcommittee>false</subcommittee>
-                </subcommittees>
-                <subcommittees>
-                    <name>Indian and Alaska Native Affairs</name>
-                    <committee_id>HSII24</committee_id>
-                    <chamber>house</chamber>
-                    <phone>(202) 226-9725</phone>
-                    <subcommittee>false</subcommittee>
-                </subcommittees>
-            </committee>
-            <committee>
-                <name>Water and Power</name>
-                <committee_id>HSII13</committee_id>
-                <chamber>house</chamber>
-                <phone>(202) 225-8331</phone>
-                <subcommittee>true</subcommittee>
-                <parent_committee_id>HSII</parent_committee_id>
-                <parent_committee>
-                    <name>House Committee on Natural Resources</name>
-                    <committee_id>HSII</committee_id>
-                    <chamber>house</chamber>
-                    <office>1324 LHOB</office>
-                    <phone>(202) 225-2761</phone>
-                    <subcommittee>false</subcommittee>
-                </parent_committee>
-            </committee>
-            <committee>
-                <name>Energy and Mineral Resources</name>
-                <committee_id>HSII06</committee_id>
-                <chamber>house</chamber>
-                <phone>(202) 225-9297</phone>
-                <subcommittee>true</subcommittee>
-                <parent_committee_id>HSII</parent_committee_id>
-                <parent_committee>
-                    <name>House Committee on Natural Resources</name>
-                    <committee_id>HSII</committee_id>
-                    <chamber>house</chamber>
-                    <office>1324 LHOB</office>
-                    <phone>(202) 225-2761</phone>
-                    <subcommittee>false</subcommittee>
-                </parent_committee>
             </committee>
         </committees>
         <photoUrl>http://upload.wikimedia.org/wikipedia/commons/b/b7/Chris_Stewart%2C_official_portrait%2C_113th_Congress.jpg</photoUrl>
@@ -17169,209 +17162,97 @@
         <facebook_id>307227745970624</facebook_id>
         <committees>
             <committee>
-                <name>House Committee on Veterans' Affairs</name>
-                <committee_id>HSVR</committee_id>
+                <name>House Committee on Appropriations</name>
+                <committee_id>HSAP</committee_id>
                 <chamber>house</chamber>
-                <url>http://veterans.house.gov/</url>
-                <office>335 CHOB</office>
-                <phone>(202) 225-3527</phone>
+                <url>http://appropriations.house.gov/</url>
+                <office>H305 CAPITOL</office>
+                <phone>(202) 225-2771</phone>
                 <subcommittee>false</subcommittee>
                 <subcommittees>
-                    <name>Disability Assistance and Memorial Affairs</name>
-                    <committee_id>HSVR09</committee_id>
+                    <name>Agriculture, Rural Development, Food and Drug Administration, and Related Agencies</name>
+                    <committee_id>HSAP01</committee_id>
                     <chamber>house</chamber>
-                    <phone>(202) 225-9164</phone>
+                    <phone>(202) 225-2638</phone>
                     <subcommittee>false</subcommittee>
                 </subcommittees>
                 <subcommittees>
-                    <name>Economic Opportunity</name>
-                    <committee_id>HSVR10</committee_id>
+                    <name>Commerce, Justice, Science, and Related Agencies</name>
+                    <committee_id>HSAP19</committee_id>
                     <chamber>house</chamber>
-                    <phone>(202) 226-5491</phone>
+                    <phone>(202) 225-3351</phone>
                     <subcommittee>false</subcommittee>
                 </subcommittees>
                 <subcommittees>
-                    <name>Health</name>
-                    <committee_id>HSVR03</committee_id>
+                    <name>Defense</name>
+                    <committee_id>HSAP02</committee_id>
                     <chamber>house</chamber>
-                    <phone>(202) 225-9154</phone>
+                    <phone>(202) 225-2847</phone>
                     <subcommittee>false</subcommittee>
                 </subcommittees>
                 <subcommittees>
-                    <name>Oversight and Investigations</name>
-                    <committee_id>HSVR08</committee_id>
+                    <name>Energy and Water Development, and Related Agencies</name>
+                    <committee_id>HSAP10</committee_id>
                     <chamber>house</chamber>
-                    <phone>(202) 225-3569</phone>
-                    <subcommittee>false</subcommittee>
-                </subcommittees>
-            </committee>
-            <committee>
-                <name>Disability Assistance and Memorial Affairs</name>
-                <committee_id>HSVR09</committee_id>
-                <chamber>house</chamber>
-                <phone>(202) 225-9164</phone>
-                <subcommittee>true</subcommittee>
-                <parent_committee_id>HSVR</parent_committee_id>
-                <parent_committee>
-                    <name>House Committee on Veterans' Affairs</name>
-                    <committee_id>HSVR</committee_id>
-                    <chamber>house</chamber>
-                    <office>335 CHOB</office>
-                    <phone>(202) 225-3527</phone>
-                    <subcommittee>false</subcommittee>
-                </parent_committee>
-            </committee>
-            <committee>
-                <name>House Committee on the Judiciary</name>
-                <committee_id>HSJU</committee_id>
-                <chamber>house</chamber>
-                <url>http://judiciary.house.gov/</url>
-                <office>2138 RHOB</office>
-                <phone>(202) 225-3951</phone>
-                <subcommittee>false</subcommittee>
-                <subcommittees>
-                    <name>The Constitution and Civil Justice</name>
-                    <committee_id>HSJU10</committee_id>
-                    <chamber>house</chamber>
-                    <phone>(202) 225-2825</phone>
+                    <phone>(202) 225-3421</phone>
                     <subcommittee>false</subcommittee>
                 </subcommittees>
                 <subcommittees>
-                    <name>Courts, Intellectual Property, and the Internet</name>
-                    <committee_id>HSJU03</committee_id>
+                    <name>Financial Services and General Government</name>
+                    <committee_id>HSAP23</committee_id>
                     <chamber>house</chamber>
-                    <phone>(202) 225-5741</phone>
+                    <phone>(202) 225-7245</phone>
                     <subcommittee>false</subcommittee>
                 </subcommittees>
                 <subcommittees>
-                    <name>Crime, Terrorism, Homeland Security, and Investigations</name>
-                    <committee_id>HSJU08</committee_id>
+                    <name>Homeland Security</name>
+                    <committee_id>HSAP15</committee_id>
                     <chamber>house</chamber>
-                    <phone>(202) 225-5727</phone>
+                    <phone>(202) 225-5834</phone>
                     <subcommittee>false</subcommittee>
                 </subcommittees>
                 <subcommittees>
-                    <name>Immigration and Border Security</name>
-                    <committee_id>HSJU01</committee_id>
+                    <name>Interior, Environment, and Related Agencies</name>
+                    <committee_id>HSAP06</committee_id>
                     <chamber>house</chamber>
-                    <phone>(202) 225-3926</phone>
+                    <phone>(202) 225-3081</phone>
                     <subcommittee>false</subcommittee>
                 </subcommittees>
                 <subcommittees>
-                    <name>Regulatory Reform, Commercial, and Antitrust Law</name>
-                    <committee_id>HSJU05</committee_id>
+                    <name>Labor, Health and Human Services, Education, and Related Agencies</name>
+                    <committee_id>HSAP07</committee_id>
                     <chamber>house</chamber>
-                    <phone>(202) 226-7680</phone>
-                    <subcommittee>false</subcommittee>
-                </subcommittees>
-            </committee>
-            <committee>
-                <name>Immigration and Border Security</name>
-                <committee_id>HSJU01</committee_id>
-                <chamber>house</chamber>
-                <phone>(202) 225-3926</phone>
-                <subcommittee>true</subcommittee>
-                <parent_committee_id>HSJU</parent_committee_id>
-                <parent_committee>
-                    <name>House Committee on the Judiciary</name>
-                    <committee_id>HSJU</committee_id>
-                    <chamber>house</chamber>
-                    <office>2138 RHOB</office>
-                    <phone>(202) 225-3951</phone>
-                    <subcommittee>false</subcommittee>
-                </parent_committee>
-            </committee>
-            <committee>
-                <name>Courts, Intellectual Property, and the Internet</name>
-                <committee_id>HSJU03</committee_id>
-                <chamber>house</chamber>
-                <phone>(202) 225-5741</phone>
-                <subcommittee>true</subcommittee>
-                <parent_committee_id>HSJU</parent_committee_id>
-                <parent_committee>
-                    <name>House Committee on the Judiciary</name>
-                    <committee_id>HSJU</committee_id>
-                    <chamber>house</chamber>
-                    <office>2138 RHOB</office>
-                    <phone>(202) 225-3951</phone>
-                    <subcommittee>false</subcommittee>
-                </parent_committee>
-            </committee>
-            <committee>
-                <name>House Committee on Natural Resources</name>
-                <committee_id>HSII</committee_id>
-                <chamber>house</chamber>
-                <url>http://naturalresources.house.gov/</url>
-                <office>1324 LHOB</office>
-                <phone>(202) 225-2761</phone>
-                <subcommittee>false</subcommittee>
-                <subcommittees>
-                    <name>Energy and Mineral Resources</name>
-                    <committee_id>HSII06</committee_id>
-                    <chamber>house</chamber>
-                    <phone>(202) 225-9297</phone>
+                    <phone>(202) 225-3508</phone>
                     <subcommittee>false</subcommittee>
                 </subcommittees>
                 <subcommittees>
-                    <name>Public Lands and Environmental Regulation</name>
-                    <committee_id>HSII10</committee_id>
+                    <name>Legislative Branch</name>
+                    <committee_id>HSAP24</committee_id>
                     <chamber>house</chamber>
-                    <phone>(202) 226-7736</phone>
+                    <phone>(202) 226-7252</phone>
                     <subcommittee>false</subcommittee>
                 </subcommittees>
                 <subcommittees>
-                    <name>Water and Power</name>
-                    <committee_id>HSII13</committee_id>
+                    <name>Military Construction, Veterans Affairs, and Related Agencies</name>
+                    <committee_id>HSAP18</committee_id>
                     <chamber>house</chamber>
-                    <phone>(202) 225-8331</phone>
+                    <phone>(202) 225-3047</phone>
                     <subcommittee>false</subcommittee>
                 </subcommittees>
                 <subcommittees>
-                    <name>Fisheries, Wildlife, Oceans and Insular Affairs</name>
-                    <committee_id>HSII22</committee_id>
+                    <name>State, Foreign Operations, and Related Programs</name>
+                    <committee_id>HSAP04</committee_id>
                     <chamber>house</chamber>
-                    <phone>(202) 226-0200</phone>
+                    <phone>(202) 225-2041</phone>
                     <subcommittee>false</subcommittee>
                 </subcommittees>
                 <subcommittees>
-                    <name>Indian and Alaska Native Affairs</name>
-                    <committee_id>HSII24</committee_id>
+                    <name>Transportation, and Housing and Urban Development, and Related Agencies</name>
+                    <committee_id>HSAP20</committee_id>
                     <chamber>house</chamber>
-                    <phone>(202) 226-9725</phone>
+                    <phone>(202) 225-2141</phone>
                     <subcommittee>false</subcommittee>
                 </subcommittees>
-            </committee>
-            <committee>
-                <name>Public Lands and Environmental Regulation</name>
-                <committee_id>HSII10</committee_id>
-                <chamber>house</chamber>
-                <phone>(202) 226-7736</phone>
-                <subcommittee>true</subcommittee>
-                <parent_committee_id>HSII</parent_committee_id>
-                <parent_committee>
-                    <name>House Committee on Natural Resources</name>
-                    <committee_id>HSII</committee_id>
-                    <chamber>house</chamber>
-                    <office>1324 LHOB</office>
-                    <phone>(202) 225-2761</phone>
-                    <subcommittee>false</subcommittee>
-                </parent_committee>
-            </committee>
-            <committee>
-                <name>Energy and Mineral Resources</name>
-                <committee_id>HSII06</committee_id>
-                <chamber>house</chamber>
-                <phone>(202) 225-9297</phone>
-                <subcommittee>true</subcommittee>
-                <parent_committee_id>HSII</parent_committee_id>
-                <parent_committee>
-                    <name>House Committee on Natural Resources</name>
-                    <committee_id>HSII</committee_id>
-                    <chamber>house</chamber>
-                    <office>1324 LHOB</office>
-                    <phone>(202) 225-2761</phone>
-                    <subcommittee>false</subcommittee>
-                </parent_committee>
             </committee>
         </committees>
         <photoUrl>http://upload.wikimedia.org/wikipedia/commons/0/06/Mark_Amodei.jpg</photoUrl>
@@ -20238,176 +20119,6 @@
     <legislator>
         <in_office>true</in_office>
         <party>D</party>
-        <gender>M</gender>
-        <state>NC</state>
-        <state_name>North Carolina</state_name>
-        <district>12</district>
-        <title>Rep</title>
-        <chamber>house</chamber>
-        <birthday>1945-08-26</birthday>
-        <term_start>2013-01-03</term_start>
-        <term_end>2015-01-03</term_end>
-        <bioguide_id>W000207</bioguide_id>
-        <thomas_id>01207</thomas_id>
-        <govtrack_id>400424</govtrack_id>
-        <votesmart_id>26997</votesmart_id>
-        <crp_id>N00002328</crp_id>
-        <fec_ids>H2NC12021</fec_ids>
-        <first_name>Melvin</first_name>
-        <nickname>Mel</nickname>
-        <last_name>Watt</last_name>
-        <middle_name>L.</middle_name>
-        <phone>202-225-1510</phone>
-        <website>http://watt.house.gov</website>
-        <office>2304 Rayburn House Office Building</office>
-        <contact_form>http://www.house.gov/formwatt/IMA/issue_subscribe.htm</contact_form>
-        <fax>202-225-1512</fax>
-        <twitter_id>MelWattNC12</twitter_id>
-        <youtube_id>Wattnc12</youtube_id>
-        <facebook_id>191136754250537</facebook_id>
-        <committees>
-            <committee>
-                <name>House Committee on the Judiciary</name>
-                <committee_id>HSJU</committee_id>
-                <chamber>house</chamber>
-                <url>http://judiciary.house.gov/</url>
-                <office>2138 RHOB</office>
-                <phone>(202) 225-3951</phone>
-                <subcommittee>false</subcommittee>
-                <subcommittees>
-                    <name>The Constitution and Civil Justice</name>
-                    <committee_id>HSJU10</committee_id>
-                    <chamber>house</chamber>
-                    <phone>(202) 225-2825</phone>
-                    <subcommittee>false</subcommittee>
-                </subcommittees>
-                <subcommittees>
-                    <name>Courts, Intellectual Property, and the Internet</name>
-                    <committee_id>HSJU03</committee_id>
-                    <chamber>house</chamber>
-                    <phone>(202) 225-5741</phone>
-                    <subcommittee>false</subcommittee>
-                </subcommittees>
-                <subcommittees>
-                    <name>Crime, Terrorism, Homeland Security, and Investigations</name>
-                    <committee_id>HSJU08</committee_id>
-                    <chamber>house</chamber>
-                    <phone>(202) 225-5727</phone>
-                    <subcommittee>false</subcommittee>
-                </subcommittees>
-                <subcommittees>
-                    <name>Immigration and Border Security</name>
-                    <committee_id>HSJU01</committee_id>
-                    <chamber>house</chamber>
-                    <phone>(202) 225-3926</phone>
-                    <subcommittee>false</subcommittee>
-                </subcommittees>
-                <subcommittees>
-                    <name>Regulatory Reform, Commercial, and Antitrust Law</name>
-                    <committee_id>HSJU05</committee_id>
-                    <chamber>house</chamber>
-                    <phone>(202) 226-7680</phone>
-                    <subcommittee>false</subcommittee>
-                </subcommittees>
-            </committee>
-            <committee>
-                <name>Courts, Intellectual Property, and the Internet</name>
-                <committee_id>HSJU03</committee_id>
-                <chamber>house</chamber>
-                <phone>(202) 225-5741</phone>
-                <subcommittee>true</subcommittee>
-                <parent_committee_id>HSJU</parent_committee_id>
-                <parent_committee>
-                    <name>House Committee on the Judiciary</name>
-                    <committee_id>HSJU</committee_id>
-                    <chamber>house</chamber>
-                    <office>2138 RHOB</office>
-                    <phone>(202) 225-3951</phone>
-                    <subcommittee>false</subcommittee>
-                </parent_committee>
-            </committee>
-            <committee>
-                <name>House Committee on Financial Services</name>
-                <committee_id>HSBA</committee_id>
-                <chamber>house</chamber>
-                <url>http://financialservices.house.gov/</url>
-                <office>2129 RHOB</office>
-                <phone>(202) 225-7502</phone>
-                <subcommittee>false</subcommittee>
-                <subcommittees>
-                    <name>Capital Markets and Government Sponsored Enterprises</name>
-                    <committee_id>HSBA16</committee_id>
-                    <chamber>house</chamber>
-                    <phone>(202) 225-7502</phone>
-                    <subcommittee>false</subcommittee>
-                </subcommittees>
-                <subcommittees>
-                    <name>Financial Institutions and Consumer Credit</name>
-                    <committee_id>HSBA15</committee_id>
-                    <chamber>house</chamber>
-                    <phone>(202) 225-7502</phone>
-                    <subcommittee>false</subcommittee>
-                </subcommittees>
-                <subcommittees>
-                    <name>Housing and Insurance</name>
-                    <committee_id>HSBA04</committee_id>
-                    <chamber>house</chamber>
-                    <phone>(202) 225-7502</phone>
-                    <subcommittee>false</subcommittee>
-                </subcommittees>
-                <subcommittees>
-                    <name>Monetary Policy and Trade</name>
-                    <committee_id>HSBA20</committee_id>
-                    <chamber>house</chamber>
-                    <phone>(202) 225-7502</phone>
-                    <subcommittee>false</subcommittee>
-                </subcommittees>
-                <subcommittees>
-                    <name>Oversight and Investigations</name>
-                    <committee_id>HSBA09</committee_id>
-                    <chamber>house</chamber>
-                    <phone>(202) 225-7502</phone>
-                    <subcommittee>false</subcommittee>
-                </subcommittees>
-            </committee>
-            <committee>
-                <name>Financial Institutions and Consumer Credit</name>
-                <committee_id>HSBA15</committee_id>
-                <chamber>house</chamber>
-                <phone>(202) 225-7502</phone>
-                <subcommittee>true</subcommittee>
-                <parent_committee_id>HSBA</parent_committee_id>
-                <parent_committee>
-                    <name>House Committee on Financial Services</name>
-                    <committee_id>HSBA</committee_id>
-                    <chamber>house</chamber>
-                    <office>2129 RHOB</office>
-                    <phone>(202) 225-7502</phone>
-                    <subcommittee>false</subcommittee>
-                </parent_committee>
-            </committee>
-            <committee>
-                <name>Capital Markets and Government Sponsored Enterprises</name>
-                <committee_id>HSBA16</committee_id>
-                <chamber>house</chamber>
-                <phone>(202) 225-7502</phone>
-                <subcommittee>true</subcommittee>
-                <parent_committee_id>HSBA</parent_committee_id>
-                <parent_committee>
-                    <name>House Committee on Financial Services</name>
-                    <committee_id>HSBA</committee_id>
-                    <chamber>house</chamber>
-                    <office>2129 RHOB</office>
-                    <phone>(202) 225-7502</phone>
-                    <subcommittee>false</subcommittee>
-                </parent_committee>
-            </committee>
-        </committees>
-        <photoUrl>http://upload.wikimedia.org/wikipedia/commons/6/60/Mel_Watt%2C_official_portrait%2C_111th_Congress.jpg</photoUrl>
-    </legislator>
-    <legislator>
-        <in_office>true</in_office>
-        <party>D</party>
         <gender>F</gender>
         <state>CA</state>
         <state_name>California</state_name>
@@ -21331,7 +21042,7 @@
                 </parent_committee>
             </committee>
         </committees>
-        <photoUrl>http://upload.wikimedia.org/wikipedia/en/6/61/Pete_Visclosky%2C_Official_Portrait%2C_112th_Congress.jpg</photoUrl>
+        <photoUrl>http://upload.wikimedia.org/wikipedia/commons/e/e8/Vislosky2007.jpg</photoUrl>
     </legislator>
     <legislator>
         <in_office>true</in_office>
@@ -31629,255 +31340,97 @@
         <facebook_id>174519582574426</facebook_id>
         <committees>
             <committee>
-                <name>House Committee on Education and the Workforce</name>
-                <committee_id>HSED</committee_id>
+                <name>House Committee on Appropriations</name>
+                <committee_id>HSAP</committee_id>
                 <chamber>house</chamber>
-                <url>http://edlabor.house.gov/</url>
-                <office>2181 RHOB</office>
-                <phone>(202) 225-4527</phone>
+                <url>http://appropriations.house.gov/</url>
+                <office>H305 CAPITOL</office>
+                <phone>(202) 225-2771</phone>
                 <subcommittee>false</subcommittee>
                 <subcommittees>
-                    <name>Early Childhood, Elementary, and Secondary Education</name>
-                    <committee_id>HSED14</committee_id>
+                    <name>Agriculture, Rural Development, Food and Drug Administration, and Related Agencies</name>
+                    <committee_id>HSAP01</committee_id>
                     <chamber>house</chamber>
-                    <phone>(202) 225-4527</phone>
+                    <phone>(202) 225-2638</phone>
                     <subcommittee>false</subcommittee>
                 </subcommittees>
                 <subcommittees>
-                    <name>Health, Employment, Labor, and Pensions</name>
-                    <committee_id>HSED02</committee_id>
+                    <name>Commerce, Justice, Science, and Related Agencies</name>
+                    <committee_id>HSAP19</committee_id>
                     <chamber>house</chamber>
-                    <phone>(202) 225-4527</phone>
+                    <phone>(202) 225-3351</phone>
                     <subcommittee>false</subcommittee>
                 </subcommittees>
                 <subcommittees>
-                    <name>Higher Education and Workforce Training</name>
-                    <committee_id>HSED13</committee_id>
+                    <name>Defense</name>
+                    <committee_id>HSAP02</committee_id>
                     <chamber>house</chamber>
-                    <phone>(202) 225-4527</phone>
+                    <phone>(202) 225-2847</phone>
                     <subcommittee>false</subcommittee>
                 </subcommittees>
                 <subcommittees>
-                    <name>Workforce Protections</name>
-                    <committee_id>HSED10</committee_id>
+                    <name>Energy and Water Development, and Related Agencies</name>
+                    <committee_id>HSAP10</committee_id>
                     <chamber>house</chamber>
-                    <phone>(202) 225-4527</phone>
-                    <subcommittee>false</subcommittee>
-                </subcommittees>
-            </committee>
-            <committee>
-                <name>Early Childhood, Elementary, and Secondary Education</name>
-                <committee_id>HSED14</committee_id>
-                <chamber>house</chamber>
-                <phone>(202) 225-4527</phone>
-                <subcommittee>true</subcommittee>
-                <parent_committee_id>HSED</parent_committee_id>
-                <parent_committee>
-                    <name>House Committee on Education and the Workforce</name>
-                    <committee_id>HSED</committee_id>
-                    <chamber>house</chamber>
-                    <office>2181 RHOB</office>
-                    <phone>(202) 225-4527</phone>
-                    <subcommittee>false</subcommittee>
-                </parent_committee>
-            </committee>
-            <committee>
-                <name>Health, Employment, Labor, and Pensions</name>
-                <committee_id>HSED02</committee_id>
-                <chamber>house</chamber>
-                <phone>(202) 225-4527</phone>
-                <subcommittee>true</subcommittee>
-                <parent_committee_id>HSED</parent_committee_id>
-                <parent_committee>
-                    <name>House Committee on Education and the Workforce</name>
-                    <committee_id>HSED</committee_id>
-                    <chamber>house</chamber>
-                    <office>2181 RHOB</office>
-                    <phone>(202) 225-4527</phone>
-                    <subcommittee>false</subcommittee>
-                </parent_committee>
-            </committee>
-            <committee>
-                <name>House Committee on Armed Services</name>
-                <committee_id>HSAS</committee_id>
-                <chamber>house</chamber>
-                <url>http://armedservices.house.gov/</url>
-                <office>2120 RHOB</office>
-                <phone>(202) 225-4151</phone>
-                <subcommittee>false</subcommittee>
-                <subcommittees>
-                    <name>Tactical Air and Land Forces</name>
-                    <committee_id>HSAS25</committee_id>
-                    <chamber>house</chamber>
-                    <phone>(202) 225-4440</phone>
+                    <phone>(202) 225-3421</phone>
                     <subcommittee>false</subcommittee>
                 </subcommittees>
                 <subcommittees>
-                    <name>Military Personnel</name>
-                    <committee_id>HSAS02</committee_id>
+                    <name>Financial Services and General Government</name>
+                    <committee_id>HSAP23</committee_id>
                     <chamber>house</chamber>
-                    <phone>(202) 225-7560</phone>
+                    <phone>(202) 225-7245</phone>
                     <subcommittee>false</subcommittee>
                 </subcommittees>
                 <subcommittees>
-                    <name>Oversight and Investigations</name>
-                    <committee_id>HSAS06</committee_id>
+                    <name>Homeland Security</name>
+                    <committee_id>HSAP15</committee_id>
                     <chamber>house</chamber>
-                    <phone>(202) 226-5048</phone>
+                    <phone>(202) 225-5834</phone>
                     <subcommittee>false</subcommittee>
                 </subcommittees>
                 <subcommittees>
-                    <name>Readiness</name>
-                    <committee_id>HSAS03</committee_id>
+                    <name>Interior, Environment, and Related Agencies</name>
+                    <committee_id>HSAP06</committee_id>
                     <chamber>house</chamber>
-                    <phone>(202) 226-8979</phone>
+                    <phone>(202) 225-3081</phone>
                     <subcommittee>false</subcommittee>
                 </subcommittees>
                 <subcommittees>
-                    <name>Seapower and Projection Forces</name>
-                    <committee_id>HSAS28</committee_id>
+                    <name>Labor, Health and Human Services, Education, and Related Agencies</name>
+                    <committee_id>HSAP07</committee_id>
                     <chamber>house</chamber>
-                    <phone>(202) 226-2211</phone>
+                    <phone>(202) 225-3508</phone>
                     <subcommittee>false</subcommittee>
                 </subcommittees>
                 <subcommittees>
-                    <name>Strategic Forces</name>
-                    <committee_id>HSAS29</committee_id>
+                    <name>Legislative Branch</name>
+                    <committee_id>HSAP24</committee_id>
                     <chamber>house</chamber>
-                    <phone>(202) 225-1967</phone>
+                    <phone>(202) 226-7252</phone>
                     <subcommittee>false</subcommittee>
                 </subcommittees>
                 <subcommittees>
-                    <name>Intelligence, Emerging Threats and Capabilities</name>
-                    <committee_id>HSAS26</committee_id>
+                    <name>Military Construction, Veterans Affairs, and Related Agencies</name>
+                    <committee_id>HSAP18</committee_id>
                     <chamber>house</chamber>
-                    <phone>(202) 226-2843</phone>
-                    <subcommittee>false</subcommittee>
-                </subcommittees>
-            </committee>
-            <committee>
-                <name>Tactical Air and Land Forces</name>
-                <committee_id>HSAS25</committee_id>
-                <chamber>house</chamber>
-                <phone>(202) 225-4440</phone>
-                <subcommittee>true</subcommittee>
-                <parent_committee_id>HSAS</parent_committee_id>
-                <parent_committee>
-                    <name>House Committee on Armed Services</name>
-                    <committee_id>HSAS</committee_id>
-                    <chamber>house</chamber>
-                    <office>2120 RHOB</office>
-                    <phone>(202) 225-4151</phone>
-                    <subcommittee>false</subcommittee>
-                </parent_committee>
-            </committee>
-            <committee>
-                <name>Oversight and Investigations</name>
-                <committee_id>HSAS06</committee_id>
-                <chamber>house</chamber>
-                <phone>(202) 226-5048</phone>
-                <subcommittee>true</subcommittee>
-                <parent_committee_id>HSAS</parent_committee_id>
-                <parent_committee>
-                    <name>House Committee on Armed Services</name>
-                    <committee_id>HSAS</committee_id>
-                    <chamber>house</chamber>
-                    <office>2120 RHOB</office>
-                    <phone>(202) 225-4151</phone>
-                    <subcommittee>false</subcommittee>
-                </parent_committee>
-            </committee>
-            <committee>
-                <name>House Committee on Agriculture</name>
-                <committee_id>HSAG</committee_id>
-                <chamber>house</chamber>
-                <url>http://agriculture.house.gov/</url>
-                <office>1301 LHOB</office>
-                <phone>(202) 225-2171</phone>
-                <subcommittee>false</subcommittee>
-                <subcommittees>
-                    <name>Conservation, Energy, and Forestry</name>
-                    <committee_id>HSAG15</committee_id>
-                    <chamber>house</chamber>
-                    <phone>(202) 225-2171</phone>
+                    <phone>(202) 225-3047</phone>
                     <subcommittee>false</subcommittee>
                 </subcommittees>
                 <subcommittees>
-                    <name>Department Operations, Oversight, and Nutrition</name>
-                    <committee_id>HSAG22</committee_id>
+                    <name>State, Foreign Operations, and Related Programs</name>
+                    <committee_id>HSAP04</committee_id>
                     <chamber>house</chamber>
-                    <phone>(202) 225-2171</phone>
+                    <phone>(202) 225-2041</phone>
                     <subcommittee>false</subcommittee>
                 </subcommittees>
                 <subcommittees>
-                    <name>General Farm Commodities and Risk Management</name>
-                    <committee_id>HSAG16</committee_id>
+                    <name>Transportation, and Housing and Urban Development, and Related Agencies</name>
+                    <committee_id>HSAP20</committee_id>
                     <chamber>house</chamber>
-                    <phone>(202) 225-2171</phone>
+                    <phone>(202) 225-2141</phone>
                     <subcommittee>false</subcommittee>
                 </subcommittees>
-                <subcommittees>
-                    <name>Livestock, Rural Development, and Credit</name>
-                    <committee_id>HSAG29</committee_id>
-                    <chamber>house</chamber>
-                    <phone>(202) 225-2171</phone>
-                    <subcommittee>false</subcommittee>
-                </subcommittees>
-                <subcommittees>
-                    <name>Horticulture, Research, Biotechnology, and Foreign Agriculture</name>
-                    <committee_id>HSAG14</committee_id>
-                    <chamber>house</chamber>
-                    <phone>(202) 225-2171</phone>
-                    <subcommittee>false</subcommittee>
-                </subcommittees>
-            </committee>
-            <committee>
-                <name>General Farm Commodities and Risk Management</name>
-                <committee_id>HSAG16</committee_id>
-                <chamber>house</chamber>
-                <phone>(202) 225-2171</phone>
-                <subcommittee>true</subcommittee>
-                <parent_committee_id>HSAG</parent_committee_id>
-                <parent_committee>
-                    <name>House Committee on Agriculture</name>
-                    <committee_id>HSAG</committee_id>
-                    <chamber>house</chamber>
-                    <office>1301 LHOB</office>
-                    <phone>(202) 225-2171</phone>
-                    <subcommittee>false</subcommittee>
-                </parent_committee>
-            </committee>
-            <committee>
-                <name>Conservation, Energy, and Forestry</name>
-                <committee_id>HSAG15</committee_id>
-                <chamber>house</chamber>
-                <phone>(202) 225-2171</phone>
-                <subcommittee>true</subcommittee>
-                <parent_committee_id>HSAG</parent_committee_id>
-                <parent_committee>
-                    <name>House Committee on Agriculture</name>
-                    <committee_id>HSAG</committee_id>
-                    <chamber>house</chamber>
-                    <office>1301 LHOB</office>
-                    <phone>(202) 225-2171</phone>
-                    <subcommittee>false</subcommittee>
-                </parent_committee>
-            </committee>
-            <committee>
-                <name>Department Operations, Oversight, and Nutrition</name>
-                <committee_id>HSAG22</committee_id>
-                <chamber>house</chamber>
-                <phone>(202) 225-2171</phone>
-                <subcommittee>true</subcommittee>
-                <parent_committee_id>HSAG</parent_committee_id>
-                <parent_committee>
-                    <name>House Committee on Agriculture</name>
-                    <committee_id>HSAG</committee_id>
-                    <chamber>house</chamber>
-                    <office>1301 LHOB</office>
-                    <phone>(202) 225-2171</phone>
-                    <subcommittee>false</subcommittee>
-                </parent_committee>
             </committee>
         </committees>
         <photoUrl>http://upload.wikimedia.org/wikipedia/commons/e/e1/Martha_Roby%2C_Official_Portrait%2C_112th_Congress.jpg</photoUrl>
@@ -32790,6 +32343,7 @@
         <crp_id>N00000964</crp_id>
         <fec_ids>H6NY19029</fec_ids>
         <first_name>Charles</first_name>
+        <nickname>Charlie</nickname>
         <last_name>Rangel</last_name>
         <middle_name>B.</middle_name>
         <phone>202-225-4365</phone>
@@ -47459,6 +47013,7 @@
         <fax>202-225-2595</fax>
         <twitter_id>RepJohnKline</twitter_id>
         <youtube_id>repjohnkline</youtube_id>
+        <facebook_id>770135879667732</facebook_id>
         <committees>
             <committee>
                 <name>House Committee on Education and the Workforce</name>

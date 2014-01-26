@@ -127,6 +127,71 @@
                     <subcommittee>false</subcommittee>
                 </subcommittees>
             </committee>
+            <committee>
+                <name>Communications, Technology, and the Internet</name>
+                <committee_id>SSCM26</committee_id>
+                <chamber>senate</chamber>
+                <subcommittee>true</subcommittee>
+                <parent_committee_id>SSCM</parent_committee_id>
+                <parent_committee>
+                    <name>Senate Committee on Commerce, Science, and Transportation</name>
+                    <committee_id>SSCM</committee_id>
+                    <chamber>senate</chamber>
+                    <subcommittee>false</subcommittee>
+                </parent_committee>
+            </committee>
+            <committee>
+                <name>Surface Transportation and Merchant Marine Infrastructure, Safety, and Security</name>
+                <committee_id>SSCM25</committee_id>
+                <chamber>senate</chamber>
+                <subcommittee>true</subcommittee>
+                <parent_committee_id>SSCM</parent_committee_id>
+                <parent_committee>
+                    <name>Senate Committee on Commerce, Science, and Transportation</name>
+                    <committee_id>SSCM</committee_id>
+                    <chamber>senate</chamber>
+                    <subcommittee>false</subcommittee>
+                </parent_committee>
+            </committee>
+            <committee>
+                <name>Oceans, Atmosphere, Fisheries, and Coast Guard</name>
+                <committee_id>SSCM22</committee_id>
+                <chamber>senate</chamber>
+                <subcommittee>true</subcommittee>
+                <parent_committee_id>SSCM</parent_committee_id>
+                <parent_committee>
+                    <name>Senate Committee on Commerce, Science, and Transportation</name>
+                    <committee_id>SSCM</committee_id>
+                    <chamber>senate</chamber>
+                    <subcommittee>false</subcommittee>
+                </parent_committee>
+            </committee>
+            <committee>
+                <name>Consumer Protection, Product Safety, and Insurance</name>
+                <committee_id>SSCM20</committee_id>
+                <chamber>senate</chamber>
+                <subcommittee>true</subcommittee>
+                <parent_committee_id>SSCM</parent_committee_id>
+                <parent_committee>
+                    <name>Senate Committee on Commerce, Science, and Transportation</name>
+                    <committee_id>SSCM</committee_id>
+                    <chamber>senate</chamber>
+                    <subcommittee>false</subcommittee>
+                </parent_committee>
+            </committee>
+            <committee>
+                <name>Aviation Operations, Safety, and Security</name>
+                <committee_id>SSCM01</committee_id>
+                <chamber>senate</chamber>
+                <subcommittee>true</subcommittee>
+                <parent_committee_id>SSCM</parent_committee_id>
+                <parent_committee>
+                    <name>Senate Committee on Commerce, Science, and Transportation</name>
+                    <committee_id>SSCM</committee_id>
+                    <chamber>senate</chamber>
+                    <subcommittee>false</subcommittee>
+                </parent_committee>
+            </committee>
         </committees>
         <photoUrl>http://upload.wikimedia.org/wikipedia/commons/8/82/Cory_Booker_2011_Shankbone.JPG</photoUrl>
     </legislator>
@@ -6631,7 +6696,6 @@
         <gender>M</gender>
         <state>MA</state>
         <state_name>Massachusetts</state_name>
-        <district>5</district>
         <title>Sen</title>
         <chamber>senate</chamber>
         <senate_class>2</senate_class>
@@ -6667,6 +6731,32 @@
                 <parent_committee>
                     <name>Senate Committee on Foreign Relations</name>
                     <committee_id>SSFR</committee_id>
+                    <chamber>senate</chamber>
+                    <subcommittee>false</subcommittee>
+                </parent_committee>
+            </committee>
+            <committee>
+                <name>Science and Space</name>
+                <committee_id>SSCM24</committee_id>
+                <chamber>senate</chamber>
+                <subcommittee>true</subcommittee>
+                <parent_committee_id>SSCM</parent_committee_id>
+                <parent_committee>
+                    <name>Senate Committee on Commerce, Science, and Transportation</name>
+                    <committee_id>SSCM</committee_id>
+                    <chamber>senate</chamber>
+                    <subcommittee>false</subcommittee>
+                </parent_committee>
+            </committee>
+            <committee>
+                <name>Competitiveness, Innovation, and Export Promotion</name>
+                <committee_id>SSCM27</committee_id>
+                <chamber>senate</chamber>
+                <subcommittee>true</subcommittee>
+                <parent_committee_id>SSCM</parent_committee_id>
+                <parent_committee>
+                    <name>Senate Committee on Commerce, Science, and Transportation</name>
+                    <committee_id>SSCM</committee_id>
                     <chamber>senate</chamber>
                     <subcommittee>false</subcommittee>
                 </parent_committee>
@@ -6801,6 +6891,45 @@
                     <chamber>senate</chamber>
                     <subcommittee>false</subcommittee>
                 </subcommittees>
+            </committee>
+            <committee>
+                <name>Communications, Technology, and the Internet</name>
+                <committee_id>SSCM26</committee_id>
+                <chamber>senate</chamber>
+                <subcommittee>true</subcommittee>
+                <parent_committee_id>SSCM</parent_committee_id>
+                <parent_committee>
+                    <name>Senate Committee on Commerce, Science, and Transportation</name>
+                    <committee_id>SSCM</committee_id>
+                    <chamber>senate</chamber>
+                    <subcommittee>false</subcommittee>
+                </parent_committee>
+            </committee>
+            <committee>
+                <name>Surface Transportation and Merchant Marine Infrastructure, Safety, and Security</name>
+                <committee_id>SSCM25</committee_id>
+                <chamber>senate</chamber>
+                <subcommittee>true</subcommittee>
+                <parent_committee_id>SSCM</parent_committee_id>
+                <parent_committee>
+                    <name>Senate Committee on Commerce, Science, and Transportation</name>
+                    <committee_id>SSCM</committee_id>
+                    <chamber>senate</chamber>
+                    <subcommittee>false</subcommittee>
+                </parent_committee>
+            </committee>
+            <committee>
+                <name>Oceans, Atmosphere, Fisheries, and Coast Guard</name>
+                <committee_id>SSCM22</committee_id>
+                <chamber>senate</chamber>
+                <subcommittee>true</subcommittee>
+                <parent_committee_id>SSCM</parent_committee_id>
+                <parent_committee>
+                    <name>Senate Committee on Commerce, Science, and Transportation</name>
+                    <committee_id>SSCM</committee_id>
+                    <chamber>senate</chamber>
+                    <subcommittee>false</subcommittee>
+                </parent_committee>
             </committee>
         </committees>
         <photoUrl>http://upload.wikimedia.org/wikipedia/commons/3/33/Ed_Markey%2C_Official_Portrait%2C_112th_Congress_2.jpg</photoUrl>
@@ -21616,6 +21745,7 @@
         <contact_form>http://www.cochran.senate.gov/public/index.cfm/email-me</contact_form>
         <fax>202-224-9450</fax>
         <twitter_id>SenThadCochran</twitter_id>
+        <youtube_id>sencochran</youtube_id>
         <committees>
             <committee>
                 <name>Livestock, Dairy, Poultry, Marketing and Agriculture Security</name>
