@@ -3485,8 +3485,8 @@
 				00D1FC131888DA7400EBDA7F /* Y000065.jpg */,
 			);
 			name = Photos;
-			path = /Volumes/Hard_Disk/Dropbox/Xcode/Congress/CongressCards/Photos;
-			sourceTree = "<absolute>";
+			path = CongressCards/Photos;
+			sourceTree = SOURCE_ROOT;
 		};
 		00611FBE17E54AB1006F3D2E /* HTML */ = {
 			isa = PBXGroup;
